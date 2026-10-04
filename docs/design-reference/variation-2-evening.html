@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gazette variation 2, evening edition</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courier+Prime:wght@400;700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+body{margin:0}
+a{color:#EFE6CF}a:hover{color:#E3C16F}
+</style>
+</helmet>
+<div style="background:#10231B;color:#EFE6CF;font-family:'Libre Caslon Text',Georgia,serif;min-height:100%">
+<div style="max-width:1200px;margin:0 auto;padding:28px 32px 56px;box-sizing:border-box">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:1px;text-transform:uppercase;padding-bottom:8px;border-bottom:1px solid {{gold}};color:{{gold}}">
+<span>Evening Edition &middot; Sunday, October 4, 2026</span>
+<span>Vol. I &middot; No. 1</span>
+<span>News &middot; Scores &middot; Stats &middot; Kits</span>
+</div>
+
+<div style="text-align:center;padding:22px 0 14px;border-bottom:4px double {{gold}}">
+<div style="font-family:'Abril Fatface',serif;font-size:clamp(56px,13vw,110px);line-height:1;letter-spacing:1px;color:{{gold}}">Halftime</div>
+<div style="font-style:italic;font-size:18px;margin-top:8px">Floodlit reports from last night&rsquo;s football, and the shirts to match</div>
+</div>
+
+<nav style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px 36px;padding:14px 0;border-bottom:1px solid {{gold}};font-family:'Courier Prime',monospace;font-weight:700;font-size:15px;letter-spacing:2px;text-transform:uppercase">
+<a href="variation-2-evening.html" style="text-decoration:none">News</a>
+<a href="variation-2-evening.html" style="text-decoration:none">Scores</a>
+<a href="MatchCard.html" style="text-decoration:none">Stats</a>
+<a href="KitRoom.html" style="text-decoration:none">Jerseys</a>
+<a href="variation-2-evening.html" style="text-decoration:none">Archive</a>
+</nav>
+
+<div style="display:flex;flex-wrap:wrap;gap:32px;padding-top:28px">
+
+<div style="flex:999 1 560px;min-width:0">
+<div style="font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#F0A38F;font-weight:700">Lead Story</div>
+<h2 style="font-weight:700;font-size:48px;line-height:1.08;margin:8px 0 12px">[Lead headline sets in bold Caslon, two or three lines]</h2>
+<div style="font-style:italic;font-size:19px;line-height:1.45;margin-bottom:16px">[Standfirst: one sentence that sells the story, set in italic.]</div>
+<div style="height:340px;border:2px solid {{gold}};background:repeating-linear-gradient(45deg,#17352A,#17352A 10px,#10231B 10px,#10231B 20px);display:flex;align-items:flex-end;padding:12px;box-sizing:border-box">
+<span style="font-family:'Courier Prime',monospace;font-size:13px;background:#10231B;padding:4px 8px;border:1px solid {{gold}}">PHOTOGRAPH &mdash; [floodlit match photo]</span>
+</div>
+<div style="font-family:'Courier Prime',monospace;font-size:13px;margin-top:8px">By [Reporter] &middot; [Time] &middot; [Competition]</div>
+<p style="font-size:17px;line-height:1.6;margin:14px 0 0">[Opening paragraph of the story, with a drop cap in the finished version.]</p>
+</div>
+
+<aside style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:24px">
+
+<div style="border:3px double {{gold}};padding:16px;background:#17352A">
+<div style="font-family:'Courier Prime',monospace;font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase;text-align:center;border-bottom:1px solid {{gold}};padding-bottom:8px;color:{{gold}}">Final Whistle</div>
+<sc-for list="{{scores}}" as="s" hint-placeholder-count="4">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:10px 0;border-bottom:1px dotted #5E7A6B;font-family:'Courier Prime',monospace;font-size:15px">
+<span>{{s.home}}</span><span style="font-weight:700;color:{{gold}}">{{s.score}}</span><span style="text-align:right">{{s.away}}</span>
+</div>
+</sc-for>
+<a href="MatchCard.html" style="display:block;text-align:center;margin-top:12px;font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:1px;text-transform:uppercase">Full tables &amp; match cards</a>
+</div>
+
+<div style="background:#EFE6CF;color:#10231B;padding:20px">
+<div style="font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#8C2A1F;font-weight:700">From the Archive</div>
+<div style="font-family:'Abril Fatface',serif;font-size:34px;line-height:1.1;margin:8px 0">Mexico City, 21 June 1970</div>
+<div style="font-size:16px;line-height:1.5">Brazil 4&ndash;1 Italy in the World Cup final. See the match card, minute by minute.</div>
+<a href="MatchCard.html" style="display:inline-block;margin-top:14px;color:#10231B;font-family:'Courier Prime',monospace;font-weight:700;font-size:14px;letter-spacing:1px;text-transform:uppercase;border:2px solid #10231B;padding:10px 16px;text-decoration:none">Open match card</a>
+</div>
+
+</aside>
+</div>
+
+<div style="margin-top:36px;border-top:4px double {{gold}};padding-top:20px;display:flex;flex-wrap:wrap;gap:28px">
+<sc-for list="{{stories}}" as="st" hint-placeholder-count="3">
+<article style="flex:1 1 260px;min-width:0">
+<div style="font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#F0A38F;font-weight:700">{{st.tag}}</div>
+<h3 style="font-size:24px;line-height:1.2;margin:6px 0 8px">[Headline, up to three lines]</h3>
+<p style="font-size:15px;line-height:1.55;margin:0">[Two-line summary of the story in body Caslon.]</p>
+</article>
+</sc-for>
+</div>
+
+<div style="margin-top:36px;border:3px double {{gold}};background:#17352A;padding:24px 28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px">
+<div style="flex:1 1 360px">
+<div style="font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#F0A38F;font-weight:700">The Kit Room</div>
+<div style="font-family:'Abril Fatface',serif;font-size:40px;line-height:1.1;margin:6px 0;color:{{gold}}">Browse shirts by decade, nation and club</div>
+<div style="font-size:16px;line-height:1.5">Every kit catalogued with its year, colours and the matches it was worn in.</div>
+</div>
+<a href="KitRoom.html" style="background:{{gold}};color:#10231B;font-family:'Courier Prime',monospace;font-weight:700;font-size:15px;letter-spacing:2px;text-transform:uppercase;padding:16px 28px;text-decoration:none">Enter the Kit Room</a>
+</div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"gold":{"editor":"color","default":"#E3C16F","options":["#E3C16F","#EFE6CF","#F0A38F","#9FD3B5"]},"$preview":{"width":1280,"height":1560}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+gold: this.props.gold ?? '#E3C16F',
+scores: [1, 2, 3, 4].map(() => ({ home: '[HOME]', score: '0 - 0', away: '[AWAY]' })),
+stories: [{ tag: 'Transfers' }, { tag: 'Tactics' }, { tag: 'Women\u2019s Game' }]
+};
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Operating system clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor settings
+.vscode/
+.idea/
+
+# Node (only if tooling is added later)
+node_modules/

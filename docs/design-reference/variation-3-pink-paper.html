@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gazette variation 3, pink paper</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courier+Prime:wght@400;700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+body{margin:0}
+a{color:#1B1A17}a:hover{color:#A3201B}
+</style>
+</helmet>
+<div style="background:{{paper}};color:#1B1A17;font-family:'Libre Caslon Text',Georgia,serif;min-height:100%">
+<div style="max-width:1240px;margin:0 auto;padding:20px 28px 56px;box-sizing:border-box">
+
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;border-bottom:3px solid #1B1A17;padding-bottom:10px">
+<div style="font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:1px;text-transform:uppercase;flex:1 1 200px">Sunday, October 4, 2026<br>Vol. I &middot; No. 1</div>
+<div style="font-family:'Abril Fatface',serif;font-size:clamp(52px,12vw,96px);line-height:1;text-align:center;flex:3 1 480px">Halftime</div>
+<div style="font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:1px;text-transform:uppercase;text-align:right;flex:1 1 200px">News &middot; Scores<br>Stats &middot; Kits</div>
+</div>
+
+<nav style="display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid #1B1A17;font-family:'Courier Prime',monospace;font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase">
+<a href="variation-3-pink-paper.html" style="flex:1 1 120px;text-align:center;text-decoration:none;padding:14px 8px;background:#1B1A17;color:{{paper}}">News</a>
+<a href="variation-3-pink-paper.html" style="flex:1 1 120px;text-align:center;text-decoration:none;padding:14px 8px">Scores</a>
+<a href="MatchCard.html" style="flex:1 1 120px;text-align:center;text-decoration:none;padding:14px 8px">Stats</a>
+<a href="KitRoom.html" style="flex:1 1 120px;text-align:center;text-decoration:none;padding:14px 8px">Jerseys</a>
+<a href="variation-3-pink-paper.html" style="flex:1 1 120px;text-align:center;text-decoration:none;padding:14px 8px">Archive</a>
+</nav>
+
+<div style="display:flex;flex-wrap:wrap;margin-top:20px">
+
+<div style="flex:1 1 240px;min-width:0;padding-right:20px;border-right:1px solid #1B1A17">
+<div style="font-family:'Courier Prime',monospace;font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase;border-bottom:3px solid #1B1A17;padding-bottom:6px">Results</div>
+<sc-for list="{{scores}}" as="s" hint-placeholder-count="6">
+<div style="padding:10px 0;border-bottom:1px dotted #1B1A17;font-family:'Courier Prime',monospace;font-size:14px">
+<div style="display:flex;justify-content:space-between"><span>{{s.home}}</span><span style="font-weight:700">{{s.score}}</span></div>
+<div>{{s.away}}</div>
+</div>
+</sc-for>
+<a href="MatchCard.html" style="display:block;margin-top:12px;font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:1px;text-transform:uppercase">Tables and match cards</a>
+</div>
+
+<div style="flex:2.4 1 520px;min-width:0;padding:0 24px;border-right:1px solid #1B1A17">
+<div style="font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:{{accent}};font-weight:700">Lead Story</div>
+<h2 style="font-weight:700;font-size:46px;line-height:1.08;margin:8px 0 12px">[Lead headline in bold Caslon, three lines]</h2>
+<div style="height:300px;border:2px solid #1B1A17;background:repeating-linear-gradient(45deg,#E9AFA0,#E9AFA0 10px,{{paper}} 10px,{{paper}} 20px);display:flex;align-items:flex-end;padding:12px;box-sizing:border-box">
+<span style="font-family:'Courier Prime',monospace;font-size:13px;background:{{paper}};padding:4px 8px;border:1px solid #1B1A17">PHOTOGRAPH &mdash; [match photo]</span>
+</div>
+<div style="font-style:italic;font-size:18px;line-height:1.5;margin-top:12px">[Standfirst: one sentence that sells the story.]</div>
+<div style="font-family:'Courier Prime',monospace;font-size:13px;margin-top:8px">By [Reporter] &middot; [Time] &middot; [Competition]</div>
+</div>
+
+<div style="flex:1.2 1 280px;min-width:0;padding-left:20px">
+<div style="font-family:'Courier Prime',monospace;font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase;border-bottom:3px solid #1B1A17;padding-bottom:6px">Also Today</div>
+<sc-for list="{{stories}}" as="st" hint-placeholder-count="3">
+<article style="padding:14px 0;border-bottom:1px dotted #1B1A17">
+<div style="font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:{{accent}};font-weight:700">{{st.tag}}</div>
+<h3 style="font-size:21px;line-height:1.2;margin:4px 0">[Headline, up to three lines]</h3>
+</article>
+</sc-for>
+<div style="margin-top:16px;border:3px double #1B1A17;padding:14px">
+<div style="font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:{{accent}};font-weight:700">From the Archive</div>
+<div style="font-family:'Abril Fatface',serif;font-size:26px;line-height:1.1;margin:6px 0">Mexico City, 1970</div>
+<div style="font-size:14px;line-height:1.5">Brazil 4&ndash;1 Italy. <a href="MatchCard.html">Open the match card.</a></div>
+</div>
+</div>
+</div>
+
+<div style="margin-top:28px;border-top:3px solid #1B1A17;border-bottom:3px solid #1B1A17;padding:20px 0;display:flex;flex-wrap:wrap;align-items:center;gap:20px 28px">
+<div style="flex:1 1 300px">
+<div style="font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:{{accent}};font-weight:700">The Kit Room</div>
+<div style="font-family:'Abril Fatface',serif;font-size:36px;line-height:1.1;margin-top:4px">Shirts by decade, nation and club</div>
+</div>
+<div style="display:flex;gap:6px">
+<sc-for list="{{kits}}" as="k" hint-placeholder-count="4">
+<svg viewBox="0 0 120 120" width="80" height="80" role="img" aria-label="{{k.label}}">
+<path d="M40 8 L20 18 L4 44 L22 54 L30 44 L30 112 L90 112 L90 44 L98 54 L116 44 L100 18 L80 8 Q60 24 40 8 Z" fill="{{k.body}}" stroke="#1B1A17" stroke-width="3" stroke-linejoin="round"/>
+<path d="M40 8 Q60 24 80 8" fill="none" stroke="{{k.trim}}" stroke-width="6"/>
+</svg>
+</sc-for>
+</div>
+<a href="KitRoom.html" style="background:#1B1A17;color:{{paper}};font-family:'Courier Prime',monospace;font-weight:700;font-size:15px;letter-spacing:2px;text-transform:uppercase;padding:16px 28px;text-decoration:none">Enter the Kit Room</a>
+</div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"paper":{"editor":"color","default":"#F3C9BC","options":["#F3C9BC","#EFE6CF","#DCE8D5","#F2E2A8"]},"accent":{"editor":"color","default":"#A3201B","options":["#A3201B","#1F4D3A","#1F3A5F","#1B1A17"]},"$preview":{"width":1280,"height":1200}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+paper: this.props.paper ?? '#F3C9BC',
+accent: this.props.accent ?? '#A3201B',
+scores: [1, 2, 3, 4, 5, 6].map(() => ({ home: '[HOME]', score: '0 - 0', away: '[AWAY]' })),
+stories: [{ tag: 'Transfers' }, { tag: 'Tactics' }, { tag: 'Women\u2019s Game' }],
+kits: [
+{ label: 'Brazil 1970 shirt', body: '#E8C32A', trim: '#1F6B3A' },
+{ label: 'Netherlands 1974 shirt', body: '#E86F1C', trim: '#1B1A17' },
+{ label: 'Argentina 1986 shirt', body: '#7DB8E0', trim: '#1B1A17' },
+{ label: 'England 1966 shirt', body: '#B3261E', trim: '#F4F1E6' }
+]
+};
+}
+}
+</script>
+</body>
+</html>

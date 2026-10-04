@@ -1,0 +1,397 @@
+/* =========================================================
+   Halftime — shared stylesheet
+   Vintage newspaper / old match programme look.
+   Colours and fonts come from docs/HANDOFF.md.
+   ========================================================= */
+
+:root {
+  --paper: #F7F1E1;        /* page background */
+  --panel: #FCF9EF;        /* boxes and cards */
+  --stripe: #EBE2C8;       /* photo placeholder stripes */
+  --ink: #1B1A17;          /* text and rules */
+  --oxblood: #8C2A1F;      /* accent */
+  --pitch: #1F4D3A;        /* pitch green */
+  --gold: #E3C16F;
+
+  --serif: 'Libre Caslon Text', Georgia, 'Times New Roman', serif;
+  --display: 'Abril Fatface', Georgia, serif;
+  --mono: 'Courier Prime', 'Courier New', Courier, monospace;
+
+  --gutter: 32px;
+}
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+a { color: var(--ink); }
+a:hover { color: var(--oxblood); }
+a:focus-visible { outline: 3px solid var(--oxblood); outline-offset: 2px; }
+
+button { font-family: var(--mono); }
+
+img, svg { max-width: 100%; }
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px var(--gutter) 56px;
+}
+
+/* Small-caps typewriter label used everywhere */
+.label {
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.label--accent { color: var(--oxblood); font-weight: 700; }
+.label--bold { font-weight: 700; }
+
+.rule-double { border-bottom: 4px double var(--ink); }
+
+/* ---------- Dateline ---------- */
+.dateline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--ink);
+}
+
+/* ---------- Masthead ---------- */
+.masthead {
+  text-align: center;
+  padding: 22px 0 14px;
+  border-bottom: 4px double var(--ink);
+}
+.masthead__title {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(56px, 13vw, 110px);
+  line-height: 1;
+  letter-spacing: 1px;
+  color: var(--oxblood);
+}
+.masthead__title a { color: inherit; text-decoration: none; }
+.masthead__tagline {
+  font-style: italic;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+/* ---------- Navigation ---------- */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 24px;
+  padding: 2px 0;
+  border-bottom: 1px solid var(--ink);
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+/* Each link is a 44px-tall tap target; the padding keeps the row
+   visually the same height as the design (14px above and below). */
+.nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 6px;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+.nav a[aria-current="page"] { border-bottom-color: var(--oxblood); }
+
+/* Compact header used on inside pages (Kit Room, Match Card) */
+.header-compact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 4px double var(--ink);
+}
+.header-compact__brand {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-family: var(--display);
+  font-size: 34px;
+  color: var(--oxblood);
+  text-decoration: none;
+  line-height: 1;
+}
+.header-compact .nav {
+  border-bottom: 0;
+  padding: 0;
+  gap: 0 16px;
+  font-size: 14px;
+}
+
+/* ---------- Front page: lead + sidebar ---------- */
+.front {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding-top: 28px;
+}
+
+.lead {
+  flex: 999 1 560px;
+  min-width: 0;
+}
+.lead__headline {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.08;
+  margin: 8px 0 12px;
+}
+.lead__standfirst {
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.45;
+  margin-bottom: 16px;
+}
+.lead__byline {
+  font-family: var(--mono);
+  font-size: 13px;
+  margin-top: 8px;
+}
+.lead__body {
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 14px 0 0;
+}
+/* Add class "dropcap" to the first paragraph once real copy is in. */
+.dropcap::first-letter {
+  font-family: var(--display);
+  font-size: 3.1em;
+  float: left;
+  line-height: 0.85;
+  padding: 6px 8px 0 0;
+  color: var(--oxblood);
+}
+
+/* Striped photo placeholder, captioned "PHOTOGRAPH — …" */
+.photo {
+  height: 340px;
+  border: 2px solid var(--ink);
+  background: repeating-linear-gradient(45deg, var(--stripe), var(--stripe) 10px, var(--paper) 10px, var(--paper) 20px);
+  display: flex;
+  align-items: flex-end;
+  padding: 12px;
+}
+.photo__caption {
+  font-family: var(--mono);
+  font-size: 13px;
+  background: var(--paper);
+  padding: 4px 8px;
+  border: 1px solid var(--ink);
+}
+
+.sidebar {
+  flex: 1 1 300px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Latest Results box */
+.results {
+  border: 3px double var(--ink);
+  padding: 16px;
+  background: var(--panel);
+}
+.results__title {
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 8px;
+  margin: 0;
+}
+.results__list { list-style: none; margin: 0; padding: 0; }
+.results__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  padding: 10px 0;
+  border-bottom: 1px dotted var(--ink);
+  font-family: var(--mono);
+  font-size: 15px;
+}
+.results__row .score { font-weight: 700; white-space: nowrap; }
+.results__row .away { text-align: right; }
+.results__more {
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  padding: 10px 0 0;
+  min-height: 44px;
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* From the Archive panel (pitch green) */
+.archive {
+  background: var(--pitch);
+  color: var(--paper);
+  padding: 20px;
+}
+.archive .label { color: var(--gold); }
+.archive__title {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(28px, 7vw, 34px);
+  line-height: 1.1;
+  margin: 8px 0;
+}
+.archive__text { font-size: 16px; line-height: 1.5; }
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  font-family: var(--mono);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn--outline-paper {
+  margin-top: 14px;
+  color: var(--paper);
+  font-size: 14px;
+  border: 2px solid var(--paper);
+  padding: 10px 16px;
+}
+.btn--outline-paper:hover { color: var(--pitch); background: var(--paper); }
+.btn--oxblood {
+  background: var(--oxblood);
+  color: var(--panel);
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 16px 28px;
+}
+.btn--oxblood:hover { background: var(--ink); color: var(--panel); }
+
+/* ---------- Secondary stories ---------- */
+.stories {
+  margin-top: 36px;
+  border-top: 4px double var(--ink);
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+.story {
+  flex: 1 1 260px;
+  min-width: 0;
+}
+.story .label { font-size: 12px; }
+.story__headline {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 6px 0 8px;
+}
+.story__headline a {
+  text-decoration: none;
+  /* 44px tap target without changing the visual spacing */
+  display: block;
+  padding: 9px 0;
+  margin: -9px 0;
+}
+.story__summary { font-size: 15px; line-height: 1.55; margin: 0; }
+
+/* ---------- Kit Room call to action ---------- */
+.kit-cta {
+  margin-top: 36px;
+  border: 3px double var(--ink);
+  background: var(--panel);
+  padding: 24px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.kit-cta__text { flex: 1 1 360px; min-width: 0; }
+.kit-cta__title {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(28px, 6vw, 40px);
+  line-height: 1.1;
+  margin: 6px 0;
+}
+.kit-cta__sub { font-size: 16px; line-height: 1.5; }
+
+/* ---------- Inside-page placeholder notice ---------- */
+.notice {
+  margin-top: 28px;
+  border: 3px double var(--ink);
+  background: var(--panel);
+  padding: 32px;
+  text-align: center;
+}
+.notice__title {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(40px, 9vw, 72px);
+  line-height: 1;
+  margin: 8px 0 10px;
+}
+.notice__text { font-style: italic; font-size: 18px; max-width: 46ch; margin: 0 auto 20px; }
+
+/* ---------- Phone ---------- */
+@media (max-width: 600px) {
+  :root { --gutter: 16px; }
+  .page { padding-top: 20px; padding-bottom: 40px; }
+  .dateline { font-size: 12px; justify-content: center; text-align: center; }
+  .masthead__tagline { font-size: 16px; }
+  .nav { gap: 0 10px; font-size: 14px; letter-spacing: 1.5px; }
+  .nav a { padding: 0 4px; }
+  .front { gap: 28px; padding-top: 22px; }
+  .lead__standfirst { font-size: 17px; }
+  .photo { height: 240px; }
+  .kit-cta { padding: 20px 16px; }
+  .kit-cta .btn--oxblood { width: 100%; }
+  .notice { padding: 24px 16px; }
+}
+
+@media print {
+  .nav, .btn { display: none; }
+}

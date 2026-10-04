@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halftime — Football news, stats and shirts</title>
+<meta name="description" content="Football news, stats and shirts, served at the interval. A vintage-look football paper with scores, match cards and a catalogue of classic kits.">
+<meta name="theme-color" content="#F7F1E1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%238C2A1F'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='40' fill='%23F7F1E1'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="assets/css/halftime.css">
+</head>
+<body>
+<div class="page">
+
+  <!-- Dateline -->
+  <div class="dateline">
+    <span data-today>Sunday, October 4, 2026</span>
+    <span>Vol. I &middot; No. 1</span>
+    <span>News &middot; Scores &middot; Stats &middot; Kits</span>
+  </div>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <h1 class="masthead__title"><a href="index.html">Halftime</a></h1>
+    <p class="masthead__tagline">Football news, stats and shirts, served at the interval</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav" aria-label="Main">
+    <a href="index.html" aria-current="page">News</a>
+    <a href="#results">Scores</a>
+    <a href="matches/">Stats</a>
+    <a href="kits/">Jerseys</a>
+    <a href="#archive">Archive</a>
+  </nav>
+
+  <main>
+    <div class="front">
+
+      <!-- Lead story -->
+      <article class="lead">
+        <div class="label label--accent">Lead Story</div>
+        <h2 class="lead__headline">[Lead headline sets in bold Caslon, two or three lines]</h2>
+        <p class="lead__standfirst">[Standfirst: one sentence that sells the story, set in italic.]</p>
+        <figure class="photo" style="margin:0">
+          <figcaption class="photo__caption">PHOTOGRAPH &mdash; [sepia-toned match photo]</figcaption>
+        </figure>
+        <div class="lead__byline">By [Reporter] &middot; [Time] &middot; [Competition]</div>
+        <p class="lead__body">[Opening paragraph of the story, with a drop cap in the finished version. Body copy in Caslon at 17px keeps the long read comfortable.]</p>
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+
+        <section class="results" id="results" aria-labelledby="results-title">
+          <h2 class="results__title" id="results-title">Latest Results</h2>
+          <ul class="results__list">
+            <li class="results__row"><span class="home">[HOME]</span><span class="score">0 - 0</span><span class="away">[AWAY]</span></li>
+            <li class="results__row"><span class="home">[HOME]</span><span class="score">0 - 0</span><span class="away">[AWAY]</span></li>
+            <li class="results__row"><span class="home">[HOME]</span><span class="score">0 - 0</span><span class="away">[AWAY]</span></li>
+            <li class="results__row"><span class="home">[HOME]</span><span class="score">0 - 0</span><span class="away">[AWAY]</span></li>
+          </ul>
+          <a class="results__more" href="matches/">Full tables &amp; match cards</a>
+        </section>
+
+        <section class="archive" id="archive">
+          <div class="label">From the Archive</div>
+          <h2 class="archive__title">Mexico City, 21 June 1970</h2>
+          <p class="archive__text" style="margin:0">Brazil 4&ndash;1 Italy in the World Cup final. See the match card, minute by minute.</p>
+          <a class="btn btn--outline-paper" href="matches/">Open match card</a>
+        </section>
+
+      </aside>
+    </div>
+
+    <!-- Secondary stories -->
+    <section class="stories" aria-label="More stories">
+      <article class="story">
+        <div class="label label--accent">Transfers</div>
+        <h3 class="story__headline"><a href="#">[Headline, up to three lines]</a></h3>
+        <p class="story__summary">[Two-line summary of the story in body Caslon.]</p>
+      </article>
+      <article class="story">
+        <div class="label label--accent">Tactics</div>
+        <h3 class="story__headline"><a href="#">[Headline, up to three lines]</a></h3>
+        <p class="story__summary">[Two-line summary of the story in body Caslon.]</p>
+      </article>
+      <article class="story">
+        <div class="label label--accent">Women&rsquo;s Game</div>
+        <h3 class="story__headline"><a href="#">[Headline, up to three lines]</a></h3>
+        <p class="story__summary">[Two-line summary of the story in body Caslon.]</p>
+      </article>
+    </section>
+
+    <!-- Kit Room call to action -->
+    <section class="kit-cta">
+      <div class="kit-cta__text">
+        <div class="label label--accent">The Kit Room</div>
+        <h2 class="kit-cta__title">Browse shirts by decade, nation and club</h2>
+        <p class="kit-cta__sub" style="margin:0">Every kit catalogued with its year, colours and the matches it was worn in.</p>
+      </div>
+      <a class="btn btn--oxblood" href="kits/">Enter the Kit Room</a>
+    </section>
+  </main>
+
+</div>
+<script src="assets/js/dateline.js"></script>
+</body>
+</html>

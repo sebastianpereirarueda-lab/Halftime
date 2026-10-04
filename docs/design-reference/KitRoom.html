@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Kit Room</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courier+Prime:wght@400;700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+body{margin:0}
+a{color:#1B1A17}a:hover{color:#8C2A1F}
+button{font-family:'Courier Prime',monospace}
+</style>
+</helmet>
+<div style="background:#F7F1E1;color:#1B1A17;font-family:'Libre Caslon Text',Georgia,serif;min-height:100%">
+<div style="max-width:1200px;margin:0 auto;padding:28px 32px 56px;box-sizing:border-box">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px;padding-bottom:12px;border-bottom:4px double #1B1A17">
+<a href="FrontPage.html" style="font-family:'Abril Fatface',serif;font-size:34px;color:#8C2A1F;text-decoration:none">Halftime</a>
+<nav style="display:flex;flex-wrap:wrap;gap:8px 28px;font-family:'Courier Prime',monospace;font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase">
+<a href="FrontPage.html" style="text-decoration:none">News</a>
+<a href="FrontPage.html" style="text-decoration:none">Scores</a>
+<a href="MatchCard.html" style="text-decoration:none">Stats</a>
+<a href="KitRoom.html" style="text-decoration:none;border-bottom:3px solid #8C2A1F">Jerseys</a>
+</nav>
+</div>
+
+<div style="padding:32px 0 20px;text-align:center">
+<div style="font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:#8C2A1F;font-weight:700">Catalogue of Football Shirts</div>
+<h1 style="font-family:'Abril Fatface',serif;font-weight:400;font-size:72px;line-height:1;margin:8px 0 10px">The Kit Room</h1>
+<div style="font-style:italic;font-size:18px">Find a shirt by decade, by nation, by the day it was worn.</div>
+</div>
+
+<div style="border-top:1px solid #1B1A17;border-bottom:1px solid #1B1A17;padding:14px 0;display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px">
+<label for="q" style="font-family:'Courier Prime',monospace;font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase">Search</label>
+<input id="q" type="text" placeholder="Nation, club or year" style="flex:1 1 220px;min-width:0;height:44px;box-sizing:border-box;padding:0 12px;border:2px solid #1B1A17;background:#FCF9EF;font-family:'Courier Prime',monospace;font-size:15px;color:#1B1A17">
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<button type="button" style="min-height:44px;padding:0 16px;border:2px solid #1B1A17;background:#1B1A17;color:#F7F1E1;font-weight:700;font-size:14px;cursor:pointer">All</button>
+<button type="button" style="min-height:44px;padding:0 16px;border:2px solid #1B1A17;background:transparent;color:#1B1A17;font-weight:700;font-size:14px;cursor:pointer">1950s</button>
+<button type="button" style="min-height:44px;padding:0 16px;border:2px solid #1B1A17;background:transparent;color:#1B1A17;font-weight:700;font-size:14px;cursor:pointer">1960s</button>
+<button type="button" style="min-height:44px;padding:0 16px;border:2px solid #1B1A17;background:transparent;color:#1B1A17;font-weight:700;font-size:14px;cursor:pointer">1970s</button>
+<button type="button" style="min-height:44px;padding:0 16px;border:2px solid #1B1A17;background:transparent;color:#1B1A17;font-weight:700;font-size:14px;cursor:pointer">1980s</button>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<button type="button" style="min-height:44px;padding:0 16px;border:2px solid #8C2A1F;background:transparent;color:#8C2A1F;font-weight:700;font-size:14px;cursor:pointer">Nations</button>
+<button type="button" style="min-height:44px;padding:0 16px;border:2px solid #8C2A1F;background:transparent;color:#8C2A1F;font-weight:700;font-size:14px;cursor:pointer">Clubs</button>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;padding-top:28px">
+<sc-for list="{{kits}}" as="k" hint-placeholder-count="6">
+<a href="MatchCard.html" style="display:block;text-decoration:none;color:#1B1A17;border:3px double #1B1A17;background:#FCF9EF;padding:18px">
+<div style="display:flex;justify-content:space-between;font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase">
+<span>{{k.no}}</span><span style="color:#8C2A1F;font-weight:700">{{k.year}}</span>
+</div>
+<div style="display:flex;justify-content:center;padding:16px 0 8px;background:repeating-linear-gradient(0deg,#F7F1E1,#F7F1E1 22px,#EFE7CE 22px,#EFE7CE 23px);margin-top:10px">
+<svg viewBox="0 0 120 120" width="190" height="190" role="img" aria-label="{{k.label}}">
+<path d="M40 8 L20 18 L4 44 L22 54 L30 44 L30 112 L90 112 L90 44 L98 54 L116 44 L100 18 L80 8 Q60 24 40 8 Z" fill="{{k.body}}"/>
+<rect x="30" y="44" width="12" height="68" fill="{{k.s1}}"/>
+<rect x="42" y="44" width="12" height="68" fill="{{k.s2}}"/>
+<rect x="54" y="44" width="12" height="68" fill="{{k.s3}}"/>
+<rect x="66" y="44" width="12" height="68" fill="{{k.s4}}"/>
+<rect x="78" y="44" width="12" height="68" fill="{{k.s5}}"/>
+<path d="M40 8 L20 18 L4 44 L22 54 L30 44 L30 112 L90 112 L90 44 L98 54 L116 44 L100 18 L80 8 Q60 24 40 8 Z" fill="none" stroke="#1B1A17" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M40 8 Q60 24 80 8" fill="none" stroke="{{k.trim}}" stroke-width="5"/>
+<path d="M4 44 L22 54" fill="none" stroke="{{k.trim}}" stroke-width="5"/>
+<path d="M98 54 L116 44" fill="none" stroke="{{k.trim}}" stroke-width="5"/>
+</svg>
+</div>
+<div style="font-family:'Abril Fatface',serif;font-size:30px;line-height:1.1;margin-top:12px">{{k.team}}</div>
+<div style="font-style:italic;font-size:15px;margin-top:2px">{{k.note}}</div>
+<div style="margin-top:12px;padding-top:10px;border-top:1px dotted #1B1A17;font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:1px;text-transform:uppercase;font-weight:700">View kit details</div>
+</a>
+</sc-for>
+</div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1320}}'>
+class Component extends DCLogic {
+renderVals() {
+const W = '#F4F1E6', K = '#1B1A17';
+const solid = (c) => ({ s1: c, s2: c, s3: c, s4: c, s5: c });
+const striped = (a, b) => ({ s1: a, s2: b, s3: a, s4: b, s5: a });
+const kits = [
+{ no: 'No. 001', year: '1970', team: 'Brazil', note: 'World Cup winners', label: 'Brazil 1970 shirt, yellow with green trim', body: '#E8C32A', trim: '#1F6B3A', ...solid('#E8C32A') },
+{ no: 'No. 002', year: '1974', team: 'Netherlands', note: 'World Cup runners-up', label: 'Netherlands 1974 shirt, orange with black trim', body: '#E86F1C', trim: K, ...solid('#E86F1C') },
+{ no: 'No. 003', year: '1986', team: 'Argentina', note: 'World Cup winners', label: 'Argentina 1986 shirt, sky blue and white stripes', body: '#7DB8E0', trim: K, ...striped('#7DB8E0', W) },
+{ no: 'No. 004', year: '1966', team: 'England', note: 'World Cup winners', label: 'England 1966 shirt, red with white trim', body: '#B3261E', trim: W, ...solid('#B3261E') },
+{ no: 'No. 005', year: '1982', team: 'Italy', note: 'World Cup winners', label: 'Italy 1982 shirt, blue with white trim', body: '#1F4E9C', trim: W, ...solid('#1F4E9C') },
+{ no: 'No. 006', year: '1950', team: 'Uruguay', note: 'World Cup winners', label: 'Uruguay 1950 shirt, light blue with black trim', body: '#6FA9DC', trim: K, ...solid('#6FA9DC') }
+];
+return { kits };
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gazette variation 1, green masthead</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courier+Prime:wght@400;700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+body{margin:0}
+a{color:#1B1A17}a:hover{color:#8C2A1F}
+</style>
+</helmet>
+<div style="background:#EFE6CF;color:#1B1A17;font-family:'Libre Caslon Text',Georgia,serif;min-height:100%">
+
+<div style="background:{{band}};color:#EFE6CF;text-align:center;padding:28px 24px 20px;border-bottom:6px double #E3C16F">
+<div style="font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:#E3C16F">Sunday, October 4, 2026 &middot; Vol. I &middot; No. 1</div>
+<div style="font-family:'Abril Fatface',serif;font-size:clamp(56px,13vw,110px);line-height:1.05;margin:8px 0">Halftime</div>
+<div style="font-style:italic;font-size:18px;color:#E3C16F">Football news, stats and shirts, served at the interval</div>
+</div>
+
+<nav style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px 36px;padding:14px 24px;border-bottom:1px solid #1B1A17;font-family:'Courier Prime',monospace;font-weight:700;font-size:15px;letter-spacing:2px;text-transform:uppercase">
+<a href="variation-1-green-masthead.html" style="text-decoration:none">News</a>
+<a href="variation-1-green-masthead.html" style="text-decoration:none">Scores</a>
+<a href="MatchCard.html" style="text-decoration:none">Stats</a>
+<a href="KitRoom.html" style="text-decoration:none">Jerseys</a>
+<a href="variation-1-green-masthead.html" style="text-decoration:none">Archive</a>
+</nav>
+
+<div style="max-width:1200px;margin:0 auto;padding:32px 32px 56px;box-sizing:border-box">
+
+<div style="display:flex;flex-wrap:wrap;gap:32px;align-items:stretch">
+<div style="flex:1.4 1 520px;min-width:0;min-height:420px;border:2px solid #1B1A17;background:repeating-linear-gradient(45deg,#E4D9BC,#E4D9BC 10px,#EFE6CF 10px,#EFE6CF 20px);display:flex;align-items:flex-end;padding:12px;box-sizing:border-box">
+<span style="font-family:'Courier Prime',monospace;font-size:13px;background:#EFE6CF;padding:4px 8px;border:1px solid #1B1A17">PHOTOGRAPH &mdash; [sepia-toned match photo]</span>
+</div>
+<div style="flex:1 1 320px;min-width:0;display:flex;flex-direction:column;justify-content:center">
+<div style="font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#8C2A1F;font-weight:700">Lead Story</div>
+<h2 style="font-weight:700;font-size:44px;line-height:1.1;margin:10px 0 14px">[Lead headline in bold Caslon, three lines]</h2>
+<div style="font-style:italic;font-size:19px;line-height:1.5">[Standfirst: one sentence that sells the story.]</div>
+<div style="font-family:'Courier Prime',monospace;font-size:13px;margin-top:14px">By [Reporter] &middot; [Time] &middot; [Competition]</div>
+</div>
+</div>
+
+<div style="margin-top:32px;border-top:4px double #1B1A17;border-bottom:1px solid #1B1A17;padding:16px 0;display:flex;flex-wrap:wrap;gap:12px">
+<div style="font-family:'Courier Prime',monospace;font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase;align-self:center;flex:0 0 auto;padding-right:12px">Latest Results</div>
+<sc-for list="{{scores}}" as="s" hint-placeholder-count="4">
+<a href="MatchCard.html" style="flex:1 1 200px;text-decoration:none;border:1px solid #1B1A17;background:#F5EEDA;padding:10px 14px;font-family:'Courier Prime',monospace;font-size:15px;display:flex;justify-content:space-between;gap:8px;min-height:44px;box-sizing:border-box;align-items:center">
+<span>{{s.home}}</span><span style="font-weight:700">{{s.score}}</span><span>{{s.away}}</span>
+</a>
+</sc-for>
+</div>
+
+<div style="margin-top:32px;display:flex;flex-wrap:wrap;gap:28px">
+<sc-for list="{{stories}}" as="st" hint-placeholder-count="3">
+<article style="flex:1 1 260px;min-width:0">
+<div style="font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#8C2A1F;font-weight:700">{{st.tag}}</div>
+<h3 style="font-size:24px;line-height:1.2;margin:6px 0 8px">[Headline, up to three lines]</h3>
+<p style="font-size:15px;line-height:1.55;margin:0">[Two-line summary of the story in body Caslon.]</p>
+</article>
+</sc-for>
+</div>
+
+<div style="margin-top:40px;background:#8C2A1F;color:#F5EEDA;padding:28px;display:flex;flex-wrap:wrap;align-items:center;gap:24px">
+<div style="flex:1 1 340px">
+<div style="font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#F0D9A0;font-weight:700">The Kit Room</div>
+<div style="font-family:'Abril Fatface',serif;font-size:40px;line-height:1.1;margin:6px 0">Browse shirts by decade, nation and club</div>
+</div>
+<div style="display:flex;gap:8px">
+<sc-for list="{{kits}}" as="k" hint-placeholder-count="3">
+<svg viewBox="0 0 120 120" width="84" height="84" role="img" aria-label="{{k.label}}">
+<path d="M40 8 L20 18 L4 44 L22 54 L30 44 L30 112 L90 112 L90 44 L98 54 L116 44 L100 18 L80 8 Q60 24 40 8 Z" fill="{{k.body}}" stroke="#1B1A17" stroke-width="3" stroke-linejoin="round"/>
+<path d="M40 8 Q60 24 80 8" fill="none" stroke="{{k.trim}}" stroke-width="6"/>
+</svg>
+</sc-for>
+</div>
+<a href="KitRoom.html" style="background:#F5EEDA;color:#8C2A1F;font-family:'Courier Prime',monospace;font-weight:700;font-size:15px;letter-spacing:2px;text-transform:uppercase;padding:16px 28px;text-decoration:none">Enter the Kit Room</a>
+</div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"band":{"editor":"color","default":"#1F4D3A","options":["#1F4D3A","#1F3A5F","#5A1F18","#1B1A17"]},"$preview":{"width":1280,"height":1480}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+band: this.props.band ?? '#1F4D3A',
+scores: [1, 2, 3, 4].map(() => ({ home: '[HOME]', score: '0 - 0', away: '[AWAY]' })),
+stories: [{ tag: 'Transfers' }, { tag: 'Tactics' }, { tag: 'Women\u2019s Game' }],
+kits: [
+{ label: 'Brazil 1970 shirt', body: '#E8C32A', trim: '#1F6B3A' },
+{ label: 'Netherlands 1974 shirt', body: '#E86F1C', trim: '#1B1A17' },
+{ label: 'Argentina 1986 shirt', body: '#7DB8E0', trim: '#1B1A17' }
+]
+};
+}
+}
+</script>
+</body>
+</html>
