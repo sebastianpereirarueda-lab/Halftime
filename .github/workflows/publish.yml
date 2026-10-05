@@ -1,0 +1,30 @@
+# Publishes the contents of public/ to the gh-pages branch, which GitHub Pages serves.
+# Runs on every push to main. Nothing to configure.
+name: Publish site
+
+on:
+  push:
+    branches: [main]
+    paths: ["public/**", ".github/workflows/publish.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add .nojekyll so GitHub serves files as-is
+        run: touch public/.nojekyll
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          commit_message: "Publish site from ${{ github.sha }}"

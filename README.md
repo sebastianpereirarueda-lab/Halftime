@@ -36,14 +36,24 @@ There is no build step and nothing to install. The site is plain HTML and CSS.
 The fonts download from Google Fonts, so the page looks right only while you are online.
 Offline it falls back to Georgia and Courier New.
 
-## Putting it on the internet (Cloudflare Pages)
+## The live site
+
+The site is published with **GitHub Pages** at:
+
+**https://sebastianpereirarueda-lab.github.io/Halftime/**
+
+How it works: the `main` branch holds the source. Every time `main` changes,
+a small robot (`.github/workflows/publish.yml`) copies the `public` folder to a
+branch called `gh-pages`, and GitHub serves that branch as the website.
+It takes about a minute. You never need to touch `gh-pages` yourself.
+
+### Moving to Cloudflare Pages later (optional)
 
 1. Sign in at dash.cloudflare.com and go to **Workers & Pages**, then **Create**, then **Pages**.
 2. Choose **Connect to Git** and pick this repository.
-3. Leave **Framework preset** as *None* and the **Build command** empty.
-   Set **Build output directory** to `public`.
-4. Click **Save and Deploy**. Every time a change is pushed to the main branch,
-   Cloudflare publishes it again on its own.
+3. Set **Production branch** to `main`, leave **Build command** empty, and set
+   **Build output directory** to `public`.
+4. Click **Save and Deploy**. Cloudflare then publishes every change to `main` on its own.
 
 ## Editing text
 
