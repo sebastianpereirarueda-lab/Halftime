@@ -23,44 +23,76 @@ function decodePng(buf) {
     else if (name === 'IEND') break;
     pos += 12 + len;
   }
-  if (depth !== 8) throw new Error('Only 8-bit PNGs are supported (this one is ' + depth + '-bit)');
-  if (interlace) throw new Error('Interlaced PNGs are not supported');
   const channels = { 0: 1, 2: 3, 3: 1, 4: 2, 6: 4 }[type];
   if (!channels) throw new Error('Unknown PNG colour type ' + type);
+  if ([1, 2, 4, 8, 16].indexOf(depth) === -1) throw new Error('Unsupported bit depth ' + depth);
+  const bitsPerPixel = channels * depth;
+  const bpp = Math.max(1, Math.ceil(bitsPerPixel / 8));          // bytes per pixel, for filtering
+  const maxv = (1 << depth) - 1;
   const raw = zlib.inflateSync(Buffer.concat(idat));
-  const stride = width * channels;
-  const out = Buffer.alloc(stride * height);
-  let prev = Buffer.alloc(stride);
-  for (let y = 0; y < height; y++) {
-    const filter = raw[y * (stride + 1)];
-    const line = raw.subarray(y * (stride + 1) + 1, (y + 1) * (stride + 1));
-    const cur = Buffer.alloc(stride);
-    for (let i = 0; i < stride; i++) {
-      const a = i >= channels ? cur[i - channels] : 0;
-      const b = prev[i];
-      const c = i >= channels ? prev[i - channels] : 0;
-      let v = line[i];
-      if (filter === 1) v += a;
-      else if (filter === 2) v += b;
-      else if (filter === 3) v += (a + b) >> 1;
-      else if (filter === 4) {
-        const p = a + b - c, pa = Math.abs(p - a), pb = Math.abs(p - b), pc = Math.abs(p - c);
-        v += (pa <= pb && pa <= pc) ? a : (pb <= pc ? b : c);
+  // Samples for the whole picture, one value per channel per pixel (palette indexes stay as indexes).
+  const samples = new Uint8Array(width * height * channels);
+
+  // Undo the row filters of one pass of pw by ph pixels, starting at raw[offset].
+  // Returns the unfiltered bytes and the offset after the pass.
+  function readPass(offset, pw, ph) {
+    const stride = Math.ceil(pw * bitsPerPixel / 8);
+    const out = Buffer.alloc(stride * ph);
+    let prev = Buffer.alloc(stride);
+    for (let y = 0; y < ph; y++) {
+      const filter = raw[offset];
+      const line = raw.subarray(offset + 1, offset + 1 + stride);
+      const cur = Buffer.alloc(stride);
+      for (let i = 0; i < stride; i++) {
+        const a = i >= bpp ? cur[i - bpp] : 0, b = prev[i], c = i >= bpp ? prev[i - bpp] : 0;
+        let v = line[i];
+        if (filter === 1) v += a;
+        else if (filter === 2) v += b;
+        else if (filter === 3) v += (a + b) >> 1;
+        else if (filter === 4) {
+          const p = a + b - c, pa = Math.abs(p - a), pb = Math.abs(p - b), pc = Math.abs(p - c);
+          v += (pa <= pb && pa <= pc) ? a : (pb <= pc ? b : c);
+        }
+        cur[i] = v & 255;
       }
-      cur[i] = v & 255;
+      cur.copy(out, y * stride);
+      prev = cur;
+      offset += 1 + stride;
     }
-    cur.copy(out, y * stride);
-    prev = cur;
+    return { bytes: out, stride: stride, next: offset };
+  }
+  function sampleOf(pass, y, x, ch) {
+    const idx = x * channels + ch;
+    if (depth === 8) return pass.bytes[y * pass.stride + idx];
+    if (depth === 16) return pass.bytes[y * pass.stride + idx * 2];
+    const bit = idx * depth, byte = pass.bytes[y * pass.stride + (bit >> 3)];
+    const v = (byte >> (8 - depth - (bit & 7))) & maxv;
+    return type === 3 ? v : Math.round(v * 255 / maxv);
+  }
+  // Passes: the whole picture at once, or the seven Adam7 passes of an interlaced file.
+  const passes = interlace
+    ? [[0, 0, 8, 8], [4, 0, 8, 8], [0, 4, 4, 8], [2, 0, 4, 4], [0, 2, 2, 4], [1, 0, 2, 2], [0, 1, 1, 2]]
+    : [[0, 0, 1, 1]];
+  let offset = 0;
+  for (const [xs, ys, xstep, ystep] of passes) {
+    const pw = Math.ceil((width - xs) / xstep), ph = Math.ceil((height - ys) / ystep);
+    if (pw <= 0 || ph <= 0) continue;
+    const pass = readPass(offset, pw, ph);
+    offset = pass.next;
+    for (let py = 0; py < ph; py++) for (let px = 0; px < pw; px++) {
+      const base = ((ys + py * ystep) * width + (xs + px * xstep)) * channels;
+      for (let ch = 0; ch < channels; ch++) samples[base + ch] = sampleOf(pass, py, px, ch);
+    }
   }
   const rgba = Buffer.alloc(width * height * 4);
   for (let p = 0; p < width * height; p++) {
     const i = p * channels, o = p * 4;
-    if (type === 6) { rgba[o] = out[i]; rgba[o + 1] = out[i + 1]; rgba[o + 2] = out[i + 2]; rgba[o + 3] = out[i + 3]; }
-    else if (type === 2) { rgba[o] = out[i]; rgba[o + 1] = out[i + 1]; rgba[o + 2] = out[i + 2]; rgba[o + 3] = 255; }
-    else if (type === 0) { rgba[o] = rgba[o + 1] = rgba[o + 2] = out[i]; rgba[o + 3] = 255; }
-    else if (type === 4) { rgba[o] = rgba[o + 1] = rgba[o + 2] = out[i]; rgba[o + 3] = out[i + 1]; }
+    if (type === 6) { rgba[o] = samples[i]; rgba[o + 1] = samples[i + 1]; rgba[o + 2] = samples[i + 2]; rgba[o + 3] = samples[i + 3]; }
+    else if (type === 2) { rgba[o] = samples[i]; rgba[o + 1] = samples[i + 1]; rgba[o + 2] = samples[i + 2]; rgba[o + 3] = 255; }
+    else if (type === 0) { rgba[o] = rgba[o + 1] = rgba[o + 2] = samples[i]; rgba[o + 3] = 255; }
+    else if (type === 4) { rgba[o] = rgba[o + 1] = rgba[o + 2] = samples[i]; rgba[o + 3] = samples[i + 1]; }
     else if (type === 3) {
-      const k = out[i];
+      const k = samples[i];
       rgba[o] = palette[k * 3]; rgba[o + 1] = palette[k * 3 + 1]; rgba[o + 2] = palette[k * 3 + 2];
       rgba[o + 3] = trns && k < trns.length ? trns[k] : 255;
     }
