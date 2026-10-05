@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Match Cards — Halftime</title>
+<title>Shirt — Halftime</title>
 <meta name="theme-color" content="#F7F1E1">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%238C2A1F'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='40' fill='%23F7F1E1'%3EH%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../assets/fonts/fonts.css">
@@ -17,23 +17,17 @@
     <nav class="nav" aria-label="Main">
       <a href="../index.html">News</a>
       <a href="../index.html#results">Scores</a>
-      <a href="../matches/" aria-current="page">Stats</a>
-      <a href="../kits/">Jerseys</a>
+      <a href="../matches/">Stats</a>
+      <a href="../kits/" aria-current="page">Jerseys</a>
     </nav>
   </header>
 
-  <main>
-    <div class="page-intro">
-      <div class="label label--accent">Stats &amp; Match Cards</div>
-      <h1 class="page-intro__title">Match Cards</h1>
-      <p class="page-intro__sub">Great matches, minute by minute, with the shirts they were played in.</p>
-    </div>
-    <ul class="match-list" id="match-list"></ul>
-  </main>
+  <main id="kit"></main>
 
 </div>
+<script src="../data/kits.js"></script>
 <script src="../data/matches.js"></script>
 <script src="../assets/js/halftime.js"></script>
-<script src="../assets/js/matches.js"></script>
+<script src="../assets/js/kit.js"></script>
 </body>
 </html>
