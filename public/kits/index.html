@@ -32,12 +32,9 @@
     <form class="filters" role="search" onsubmit="return false">
       <label class="filters__label" for="q">Search</label>
       <input class="filters__search" id="q" type="search" placeholder="Nation, club or year" autocomplete="off">
-      <div class="filters__group" role="group" aria-label="Decade">
+      <!-- One button per decade is added here by kit-room.js, from the years in kits.js. -->
+      <div class="filters__group" role="group" aria-label="Decade" id="decades">
         <button type="button" class="chip" data-decade="all" aria-pressed="true">All</button>
-        <button type="button" class="chip" data-decade="1950" aria-pressed="false">1950s</button>
-        <button type="button" class="chip" data-decade="1960" aria-pressed="false">1960s</button>
-        <button type="button" class="chip" data-decade="1970" aria-pressed="false">1970s</button>
-        <button type="button" class="chip" data-decade="1980" aria-pressed="false">1980s</button>
       </div>
       <div class="filters__group" role="group" aria-label="Type">
         <button type="button" class="chip chip--accent" data-kind="nation" aria-pressed="false">Nations</button>

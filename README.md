@@ -22,7 +22,9 @@ styled like an old newspaper or match programme.
 | `scripts/` | The data pipeline: fetches scores and lineups, collects headlines, writes the news. |
 | `scripts/config.mjs` | Which competitions and news feeds the pipeline follows. Edit to change them. |
 | `.github/workflows/update-data.yml` | The schedule that runs the pipeline four times a day. |
+| `tools/import-kits.js` | A small script that fills the two lists from free public-domain tournament data. See below. |
 | `docs/HANDOFF.md` | The project brief: design system, plan and open decisions. |
+| `docs/KIT-DATA-SOURCES.md` | Research note: which kit databases exist, which may be used, and what fills the Kit Room today. |
 | `docs/design-reference/` | The original design mock-ups. Reference only, not part of the site. |
 
 The site itself is plain HTML, CSS and JavaScript with no build step. The data pipeline
@@ -134,6 +136,34 @@ at `kits/kit.html?id=` followed by its `id`.
 Matches work the same way in `matches.js`. A match card appears in the Match Cards list and
 gets its own page at `matches/match.html?id=` followed by its `id`. To link a shirt to a match,
 put the match's `id` in the shirt's `matches` list and the shirt's `id` in the match's `kit` field.
+
+## Where the shirts came from
+
+The catalogue holds one shirt for each team in every World Cup final from 1930 to 2026, and
+the Euro 2020 and 2024 finals, with a match card for each final. That data (teams, dates,
+venues, scores, scorers) comes from the openfootball project, which publishes it as public
+domain. `docs/KIT-DATA-SOURCES.md` explains what else was looked at and why it could not be
+used.
+
+What the data does **not** include is the look of each shirt. Those shirts are drawn in the
+team's traditional home colours and say so in their description. The shirt actually worn
+in a final is sometimes a change kit (England wore red in 1966, for example), so each one
+still needs checking against a kit history, after which the colours and description can
+be corrected in `kits.js` by hand. Manufacturer, debut and design notes show
+"To be researched" until someone fills them in.
+
+### Running the importer again (optional)
+
+You do not need to run anything: the generated shirts are already in the two data files.
+If a new tournament is added to the openfootball data and you want it in the Kit Room:
+
+1. Install Node.js from https://nodejs.org (the LTS version, with the default options).
+2. In File Explorer, open the project folder, click in the address bar, type `cmd` and press Enter.
+3. Type `node tools\import-kits.js` and press Enter.
+
+It adds what is new and leaves every existing entry exactly as it is, so hand edits are
+safe. Shirts for a team it does not know will stop with a message asking for the team's
+colours to be added to the table at the top of the script.
 
 Two rules that matter:
 
