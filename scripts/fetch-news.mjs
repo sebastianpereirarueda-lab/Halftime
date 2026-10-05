@@ -49,6 +49,11 @@ async function main() {
       const items = parseFeed(xml, feed.outlet);
       const recent = items.filter(i => i.published && hoursAgo(i.published) <= NEWS_MAX_AGE_HOURS);
       log(`${feed.outlet}: ${items.length} items, ${recent.length} within ${NEWS_MAX_AGE_HOURS}h`);
+      if (!recent.length) {
+        // Help diagnose a stale or oddly formatted feed from the run log alone.
+        const first = items[0];
+        log(`  ${feed.outlet} detail: HTTP ${res.status}, ${xml.length} chars, first item: ${first ? JSON.stringify({ title: first.title.slice(0, 60), published: first.published }) : "none parsed"}; starts with ${JSON.stringify(xml.slice(0, 80))}`);
+      }
       all.push(...recent);
     } catch (e) {
       log(`${feed.outlet}: skipped (${e.message})`);
