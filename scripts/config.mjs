@@ -16,9 +16,10 @@ export const LEAGUES = [
   { id: 2,   name: "Champions League", short: "UCL" },
 ];
 
-// How many finished and upcoming fixtures to pull per competition.
-export const LAST_PER_LEAGUE = 6;
-export const NEXT_PER_LEAGUE = 4;
+// The pipeline asks the provider for one calendar day at a time (all
+// competitions in one request): this many days back and ahead of today.
+export const DAYS_BACK = 3;
+export const DAYS_AHEAD = 4;
 
 // Only fetch goals and lineups for matches that finished within this window.
 export const DETAIL_WINDOW_HOURS = 72;

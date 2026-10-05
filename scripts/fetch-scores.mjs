@@ -17,7 +17,7 @@
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { LEAGUES, LAST_PER_LEAGUE, NEXT_PER_LEAGUE, DETAIL_WINDOW_HOURS, MAX_REQUESTS_PER_RUN } from "./config.mjs";
+import { LEAGUES, DAYS_BACK, DAYS_AHEAD, DETAIL_WINDOW_HOURS, MAX_REQUESTS_PER_RUN } from "./config.mjs";
 import { ROOT, PUBLIC_DATA, CACHE, readJson, writeJson, writeDataFile, log, hoursAgo, currentSeason, slug, formatDate } from "./lib/util.mjs";
 
 const args = new Set(process.argv.slice(2));
@@ -53,7 +53,7 @@ async function api(pathAndQuery) {
 
 // Offline stand-in for tests: files named after the request.
 function sample(pathAndQuery) {
-  const name = pathAndQuery.replace(/^\//, "").replace(/season=\d+/, "season=SEASON").replace(/[\/?&=]/g, "_") + ".json";
+  const name = pathAndQuery.replace(/^\//, "").replace(/date=\d{4}-\d{2}-\d{2}/, "date=DATE").replace(/[\/?&=]/g, "_") + ".json";
   const file = path.join(ROOT, "scripts", "sample", name);
   const data = readJson(file);
   if (!data) throw new Error("No sample file for " + pathAndQuery + " (expected " + file + ")");
@@ -120,38 +120,60 @@ async function main() {
   const results = [], upcoming = [], matches = [];
   let probed = false;
 
-  for (const league of LEAGUES) {
-    const last = await api(`/fixtures?league=${league.id}&season=${season}&last=${LAST_PER_LEAGUE}`);
-    const next = await api(`/fixtures?league=${league.id}&season=${season}&next=${NEXT_PER_LEAGUE}`);
-    const seenName = last[0] && last[0].league && last[0].league.name;
-    log(`${league.name} (id ${league.id}, season ${season}): API says "${seenName || "no fixtures"}", ${last.length} recent, ${next.length} upcoming`);
-    if (seenName && seenName !== league.name) log(`  WARNING: league id ${league.id} returned "${seenName}", expected "${league.name}". Check scripts/config.mjs.`);
+  // One request per calendar day covers every competition at once, which the
+  // free plan allows (it refuses the per-league "last" and "next" parameters).
+  // In test mode the window is the same calendar days in the test season.
+  const leagueById = new Map(LEAGUES.map(l => [l.id, l]));
+  const anchor = new Date();
+  if (TEST_SEASON) anchor.setUTCFullYear(TEST_SEASON + (anchor.getUTCMonth() >= 6 ? 0 : 1));
+  const days = [];
+  for (let d = -DAYS_BACK; d <= DAYS_AHEAD; d++) {
+    const day = new Date(anchor.getTime() + d * 864e5);
+    days.push(day.toISOString().slice(0, 10));
+  }
+  const seen = new Map();
+  for (const day of days) {
+    const all = await api(`/fixtures?date=${day}`);
+    let kept = 0;
+    for (const fx of all) {
+      const league = fx.league && leagueById.get(fx.league.id);
+      if (!league || seen.has(fx.fixture.id)) continue;
+      seen.set(fx.fixture.id, { fx, league });
+      kept++;
+    }
+    log(`${day}: ${all.length} fixtures worldwide, ${kept} in followed competitions`);
+  }
+  for (const l of LEAGUES) {
+    const got = [...seen.values()].filter(v => v.league.id === l.id);
+    const apiName = got[0] && got[0].fx.league.name;
+    if (apiName && apiName !== l.name) log(`  WARNING: league id ${l.id} is "${apiName}" at the provider, config says "${l.name}". Check scripts/config.mjs.`);
+  }
 
-    for (const fx of last) {
-      const status = fx.fixture.status && fx.fixture.status.short;
-      if (!FINISHED.has(status)) continue;
-      const id = String(fx.fixture.id);
-      let detail = cache[id];
-      const fresh = hoursAgo(fx.fixture.date) <= DETAIL_WINDOW_HOURS;
-      if (!detail && fresh && requests + 2 <= MAX_REQUESTS_PER_RUN) {
-        const events = await api(`/fixtures/events?fixture=${id}`);
-        const lineups = await api(`/fixtures/lineups?fixture=${id}`);
-        detail = { events, lineups, fetched: new Date().toISOString() };
-        cache[id] = detail;
-        if (PROBE && !probed) {
-          probed = true;
-          console.log("\n===== PROBE: raw fixture =====\n" + JSON.stringify(fx, null, 2));
-          console.log("\n===== PROBE: raw events (first 3) =====\n" + JSON.stringify(events.slice(0, 3), null, 2));
-          console.log("\n===== PROBE: raw lineups (first team, first 2 players) =====\n" + JSON.stringify((lineups[0] && { ...lineups[0], startXI: (lineups[0].startXI || []).slice(0, 2), substitutes: [] }) || null, null, 2) + "\n");
-        }
-      }
-      const m = toMatch(fx, detail && detail.events, detail && detail.lineups, league);
-      matches.push(m);
-      results.push({ id: m.id, competition: league.short, dateIso: m.dateIso, home: m.home.name, away: m.away.name, score: m.score, hasCard: true });
-    }
-    for (const fx of next) {
+  for (const { fx, league } of seen.values()) {
+    const status = fx.fixture.status && fx.fixture.status.short;
+    if (status === "NS" || status === "TBD") {
       upcoming.push({ competition: league.short, dateIso: fx.fixture.date, home: fx.teams.home.name, away: fx.teams.away.name, venue: fx.fixture.venue && fx.fixture.venue.name });
+      continue;
     }
+    if (!FINISHED.has(status)) continue;
+    const id = String(fx.fixture.id);
+    let detail = cache[id];
+    const fresh = hoursAgo(fx.fixture.date) <= DETAIL_WINDOW_HOURS || TEST_SEASON;
+    if (!detail && fresh && requests + 2 <= MAX_REQUESTS_PER_RUN) {
+      const events = await api(`/fixtures/events?fixture=${id}`);
+      const lineups = await api(`/fixtures/lineups?fixture=${id}`);
+      detail = { events, lineups, fetched: new Date().toISOString() };
+      cache[id] = detail;
+      if (PROBE && !probed) {
+        probed = true;
+        console.log("\n===== PROBE: raw fixture =====\n" + JSON.stringify(fx, null, 2));
+        console.log("\n===== PROBE: raw events (first 3) =====\n" + JSON.stringify(events.slice(0, 3), null, 2));
+        console.log("\n===== PROBE: raw lineups (first team, first 2 players) =====\n" + JSON.stringify((lineups[0] && { ...lineups[0], startXI: (lineups[0].startXI || []).slice(0, 2), substitutes: [] }) || null, null, 2) + "\n");
+      }
+    }
+    const m = toMatch(fx, detail && detail.events, detail && detail.lineups, league);
+    matches.push(m);
+    results.push({ id: m.id, competition: league.short, dateIso: m.dateIso, home: m.home.name, away: m.away.name, score: m.score, hasCard: true });
   }
 
   // Trim the cache to the last 400 fixtures so the file stays small.

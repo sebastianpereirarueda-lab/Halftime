@@ -60,7 +60,8 @@ Hard rules:
 4. Prefer stories covered by more than one outlet. Where outlets disagree, say so in the summary or leave the point out.
 5. Choose a lead story of broad interest, then exactly three secondary stories on different topics. Give each a short section tag.
 6. The lead has two to four paragraphs. Each secondary story has one summary of two sentences.
-7. No opinion, no speculation, no hype words. If the day's coverage is thin, say so in the notes field and keep the stories short.`;
+7. No opinion, no speculation, no hype words. If the day's coverage is thin, say so in the notes field and keep the stories short.
+8. Write for the reader, not for the editor. Never mention the wire copy, "the supplied reports", "the articles", what the sources did or did not include, or your own process in a headline, standfirst, paragraph or summary. If something is unknown, simply leave it out; any caveat for the editor goes in the notes field only. Attributing a fact to an outlet in passing ("BBC Sport reported") is fine.`;
 
 function validate(edition, known) {
   const problems = [];
