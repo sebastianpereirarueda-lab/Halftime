@@ -783,6 +783,15 @@ img, svg { max-width: 100%; }
   .timeline__goal-label .nm { display: none; }
 }
 @media (max-width: 600px) {
+  /* Two shirts per row on a phone, so a long catalogue stays a short scroll. */
+  .kit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .kit-card { padding: 12px; }
+  .kit-card__meta { font-size: 10px; letter-spacing: 1px; }
+  .shirt-stage { padding: 8px 0 4px; }
+  .shirt-stage svg { width: 110px; height: 110px; }
+  .kit-card__team { font-size: 22px; }
+  .kit-card__note { font-size: 13px; }
+  .kit-card__more { font-size: 11px; letter-spacing: 0.5px; }
   .card { padding: 20px 14px; }
   .kit-detail { padding: 18px 14px; }
   .filters { gap: 12px 16px; }
