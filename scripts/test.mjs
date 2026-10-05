@@ -55,6 +55,16 @@ const dry = execFileSync("node", ["scripts/write-news.mjs", "--dry-run"], { env:
 ok(dry.includes("Dry run: no API call made") && dry.includes("[5] Test — Story 5"), "news writer dry run builds the wire copy and makes no call");
 ok(!fs.existsSync(path.join(tmp, "news.js")), "dry run writes nothing");
 
+// 4b. image maker dry run reads an edition and prints one prompt per story
+const newsFile = path.join(tmp, "news-with-pictures.js");
+fs.writeFileSync(newsFile, "window.HALFTIME_NEWS = " + JSON.stringify({ updated: "x", lead: { headline: "Lead", picture: { scene: "a goalkeeper under floodlights", alt: "goalkeeper" }, sources: [] },
+  stories: [1, 2, 3].map(i => ({ headline: "S" + i, picture: { scene: "scene " + i, alt: "alt " + i }, sources: [] })) }) + ";\n");
+const imgDry = execFileSync("node", ["scripts/make-images.mjs", "--dry-run"], { env: { ...process.env, HALFTIME_NEWS_OUT: newsFile, HALFTIME_IMAGE_DIR: path.join(tmp, "img") }, encoding: "utf8" });
+ok((imgDry.match(/\.jpg /g) || []).length === 4 && imgDry.includes("no text, letters") && imgDry.includes("a goalkeeper under floodlights"), "image maker dry run lists 4 pictures with the house style");
+ok(!fs.existsSync(path.join(tmp, "img")), "image maker dry run writes nothing");
+const imgSkip = execFileSync("node", ["scripts/make-images.mjs"], { env: { ...process.env, OPENAI_API_KEY: "", HALFTIME_NEWS_OUT: newsFile, HALFTIME_IMAGE_DIR: path.join(tmp, "img") }, encoding: "utf8" });
+ok(imgSkip.includes("OPENAI_API_KEY is not set"), "image maker skips without a key");
+
 // 5. without a key, the writer skips cleanly
 const skip = execFileSync("node", ["scripts/write-news.mjs"], { env: { ...process.env, OPENAI_API_KEY: "", HALFTIME_NEWS_CANDIDATES: cand, HALFTIME_NEWS_OUT: path.join(tmp, "news.js") }, encoding: "utf8" });
 ok(skip.includes("OPENAI_API_KEY is not set"), "news writer skips without a key");

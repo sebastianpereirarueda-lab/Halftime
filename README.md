@@ -88,7 +88,14 @@ Four times a day GitHub runs the pipeline in `scripts/`:
    cite its sources on every story, and summarises in its own words. Every story on the
    Front Page links to the reports it came from. If an edition cannot be written, the
    previous one stays.
-4. The generated files are committed to `main` and the site is republished.
+4. **Illustrations.** Each story gets a picture drawn by OpenAI's image model in the
+   style of a 1960s newspaper: halftone, sepia ink, no text. They are illustrations, never
+   photographs, and the page says so under each one. They are deliberately generic (a
+   terrace, a goalkeeper, a touchline) and never show a real person, badge or flag: a
+   made-up picture that looked like a real photo would be a fabrication. Photos from the
+   news outlets are not used because they are copyrighted. A picture is drawn once per
+   story and reused while the story stays up; old ones are deleted.
+5. The generated files are committed to `main` and the site is republished.
 
 ### Switching it on: two secrets
 
@@ -100,7 +107,9 @@ site or in the code.
 2. **OpenAI API key.** Sign in at platform.openai.com, open **API keys**, and create one.
    The news writer costs a few cents per edition at four editions a day. The default model
    is `gpt-5.5`; to use another, add a repository **variable** (not a secret) named
-   `OPENAI_MODEL` on the same settings page, under the **Variables** tab.
+   `OPENAI_MODEL` on the same settings page, under the **Variables** tab. The pictures use
+   `gpt-image-2` by default (variable `OPENAI_IMAGE_MODEL` to change it); set the variable
+   `NEWS_IMAGES` to `lead` to draw only the lead story's picture and save on cost.
 3. On github.com open this repository, click **Settings**, then **Secrets and variables**,
    then **Actions**, then **New repository secret**. Add one named `API_FOOTBALL_KEY` and one
    named `OPENAI_API_KEY`, pasting the matching key as the value.

@@ -8,8 +8,9 @@
     "scores": "node scripts/fetch-scores.mjs",
     "news:fetch": "node scripts/fetch-news.mjs",
     "news:write": "node scripts/write-news.mjs",
-    "update": "npm run scores && npm run news:fetch && npm run news:write",
-    "test": "node scripts/test.mjs"
+    "update": "npm run scores && npm run news:fetch && npm run news:write && npm run news:images",
+    "test": "node scripts/test.mjs",
+    "news:images": "node scripts/make-images.mjs"
   },
   "dependencies": {
     "openai": "^7.28.0",

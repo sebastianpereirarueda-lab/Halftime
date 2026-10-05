@@ -24,6 +24,12 @@
     lead.querySelector('.lead__standfirst').textContent = news.lead.standfirst;
     lead.querySelector('.lead__byline').innerHTML = 'By the Halftime desk &middot; written from ' + news.lead.sources.length +
       (news.lead.sources.length === 1 ? ' report' : ' reports') + ' &middot; updated ' + H.esc(when(news.updated));
+    if (news.lead.image && news.lead.image.file) {
+      var fig = lead.querySelector('.photo');
+      fig.classList.add('photo--image');
+      fig.innerHTML = '<img src="' + H.esc(news.lead.image.file) + '" alt="' + H.esc(news.lead.image.alt || '') + '" width="1536" height="1024">' +
+        '<figcaption class="photo__caption">ILLUSTRATION &mdash; drawn for this story</figcaption>';
+    }
     var body = lead.querySelector('.lead__body');
     body.outerHTML = news.lead.paragraphs.map(function (p, i) {
       return '<p class="lead__body' + (i === 0 ? ' dropcap' : '') + '">' + H.esc(p) + '</p>';
@@ -33,6 +39,9 @@
     news.stories.slice(0, cards.length).forEach(function (st, i) {
       var c = cards[i];
       c.querySelector('.label').textContent = st.tag;
+      if (st.image && st.image.file) {
+        c.insertAdjacentHTML('afterbegin', '<figure class="story__figure"><img src="' + H.esc(st.image.file) + '" alt="' + H.esc(st.image.alt || '') + '" width="1024" height="1024" loading="lazy"><figcaption>Illustration</figcaption></figure>');
+      }
       var h = c.querySelector('.story__headline a');
       h.textContent = st.headline;
       h.href = (st.sources[0] && st.sources[0].url) || '#';

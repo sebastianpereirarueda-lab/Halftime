@@ -4,7 +4,8 @@
 # Needs two repository secrets (Settings > Secrets and variables > Actions):
 #   API_FOOTBALL_KEY   from https://dashboard.api-football.com (free plan)
 #   OPENAI_API_KEY     from https://platform.openai.com/api-keys
-# Optional repository variable OPENAI_MODEL (default gpt-5.5).
+# Optional repository variables: OPENAI_MODEL (default gpt-5.5),
+# OPENAI_IMAGE_MODEL (default gpt-image-2), NEWS_IMAGES (all | lead).
 # Without a secret, that step is skipped and the previous data is kept.
 name: Update data
 
@@ -23,6 +24,10 @@ on:
         description: "Test mode: fetch this season (e.g. 2024) to a temporary file, never to the site"
         type: string
         default: ""
+      force_news:
+        description: "Write a fresh edition even if the headlines have not changed"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -61,14 +66,22 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          FORCE_NEWS: ${{ inputs.force_news && '1' || '' }}
         run: node scripts/write-news.mjs
+
+      - name: Draw the illustrations
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_IMAGE_MODEL: ${{ vars.OPENAI_IMAGE_MODEL }}
+          NEWS_IMAGES: ${{ vars.NEWS_IMAGES }}
+        run: node scripts/make-images.mjs
 
       - name: Commit the generated data to main
         id: commit
         run: |
           git config user.name "halftime-bot"
           git config user.email "halftime-bot@users.noreply.github.com"
-          git add public/data/results.js public/data/news.js data-cache
+          git add public/data/results.js public/data/news.js public/images/news data-cache
           if git diff --cached --quiet; then
             echo "No data changes."
             echo "changed=false" >> "$GITHUB_OUTPUT"
