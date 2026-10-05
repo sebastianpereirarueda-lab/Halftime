@@ -8,12 +8,14 @@
     "scores": "node scripts/fetch-scores.mjs",
     "news:fetch": "node scripts/fetch-news.mjs",
     "news:write": "node scripts/write-news.mjs",
-    "update": "npm run scores && npm run news:fetch && npm run news:write && npm run news:images",
+    "update": "npm run scores && npm run news:fetch && npm run news:write && npm run news:images && npm run social",
     "test": "node scripts/test.mjs",
-    "news:images": "node scripts/make-images.mjs"
+    "news:images": "node scripts/make-images.mjs",
+    "social": "node scripts/make-social.mjs"
   },
   "dependencies": {
     "openai": "^7.28.0",
+    "playwright": "1.56.1",
     "zod": "^3.23.8"
   }
 }

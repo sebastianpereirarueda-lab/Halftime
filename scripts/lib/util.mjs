@@ -46,3 +46,12 @@ export function formatDate(iso) {
   const d = new Date(iso);
   return d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 }
+
+// Reads a generated browser data file (`window.NAME = {...};`) back into an object.
+export function readGenerated(file) {
+  try {
+    const text = fs.readFileSync(file, "utf8");
+    const i = text.indexOf("= ");
+    return i === -1 ? null : JSON.parse(text.slice(i + 2).replace(/;\s*$/, ""));
+  } catch { return null; }
+}
