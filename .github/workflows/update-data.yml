@@ -4,6 +4,7 @@
 # Needs two repository secrets (Settings > Secrets and variables > Actions):
 #   API_FOOTBALL_KEY   from https://dashboard.api-football.com (free plan)
 #   OPENAI_API_KEY     from https://platform.openai.com/api-keys
+#   OWNER_PASSPHRASE   your own long passphrase; locks the Instagram Studio
 # Optional repository variables: OPENAI_MODEL (default gpt-5.5),
 # OPENAI_IMAGE_MODEL (default gpt-image-2), NEWS_IMAGES (all | lead).
 # Without a secret, that step is skipped and the previous data is kept.
@@ -40,6 +41,8 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    env:
+      HAS_OWNER_PASSPHRASE: ${{ secrets.OWNER_PASSPHRASE != '' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -77,12 +80,31 @@ jobs:
           NEWS_IMAGES: ${{ vars.NEWS_IMAGES }}
         run: node scripts/make-images.mjs
 
+      # Owner-only Instagram posts. Skipped until the OWNER_PASSPHRASE secret exists.
+      - name: Cache the browser that draws the Instagram cards
+        if: env.HAS_OWNER_PASSPHRASE == 'true'
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-1.56.1
+      - name: Install the browser that draws the Instagram cards
+        if: env.HAS_OWNER_PASSPHRASE == 'true'
+        run: npx playwright install --with-deps chromium
+      - name: Make the Instagram posts (encrypted, owner only)
+        if: env.HAS_OWNER_PASSPHRASE == 'true'
+        continue-on-error: true
+        env:
+          OWNER_PASSPHRASE: ${{ secrets.OWNER_PASSPHRASE }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+        run: node scripts/make-social.mjs
+
       - name: Commit the generated data to main
         id: commit
         run: |
           git config user.name "halftime-bot"
           git config user.email "halftime-bot@users.noreply.github.com"
-          git add public/data/results.js public/data/news.js public/images/news data-cache
+          git add public/data/results.js public/data/news.js public/images/news public/studio data-cache
           if git diff --cached --quiet; then
             echo "No data changes."
             echo "changed=false" >> "$GITHUB_OUTPUT"

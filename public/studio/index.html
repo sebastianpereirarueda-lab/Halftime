@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Studio — Halftime</title>
+<meta name="theme-color" content="#F7F1E1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%238C2A1F'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='40' fill='%23F7F1E1'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../assets/css/halftime.css">
+<style>
+  .studio-lock { max-width: 520px; margin: 28px auto 0; border: 3px double var(--ink); background: var(--panel); padding: 28px; }
+  .studio-lock p { font-size: 16px; line-height: 1.55; margin: 8px 0 18px; }
+  .studio-lock label { display: block; font-family: var(--mono); font-weight: 700; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+  .studio-lock input[type=password] { width: 100%; height: 48px; padding: 0 12px; border: 2px solid var(--ink); border-radius: 0; background: #fff; font-family: var(--mono); font-size: 16px; }
+  .studio-lock .btn { margin-top: 14px; width: 100%; border: 0; }
+  .studio-msg { font-family: var(--mono); font-size: 14px; min-height: 22px; margin-top: 12px; }
+  .studio-msg.err { color: var(--oxblood); font-weight: 700; }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .studio-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-top: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--ink); }
+  .studio-grid { list-style: none; margin: 0; padding: 20px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+  .post { border: 3px double var(--ink); background: var(--panel); padding: 14px; display: flex; flex-direction: column; gap: 10px; }
+  .post__img { aspect-ratio: 4 / 5; background: var(--stripe); border: 1px solid var(--ink); }
+  .post__img img { width: 100%; height: 100%; display: block; object-fit: cover; }
+  .post__meta { display: flex; justify-content: space-between; gap: 8px; font-family: var(--mono); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+  .post__title { font-weight: 700; font-size: 18px; line-height: 1.25; margin: 0; }
+  .post textarea { width: 100%; min-height: 150px; padding: 10px; border: 1px solid var(--ink); border-radius: 0; background: #fff; font-family: var(--mono); font-size: 13px; line-height: 1.45; resize: vertical; }
+  .post__actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .post__actions .btn { font-size: 12px; letter-spacing: 1px; padding: 0 8px; border: 2px solid var(--ink); background: transparent; color: var(--ink); }
+  .post__actions .btn--primary { background: var(--oxblood); border-color: var(--oxblood); color: var(--panel); }
+  .btn--small { border: 2px solid var(--ink); background: transparent; color: var(--ink); font-size: 13px; padding: 0 16px; }
+  @media (max-width: 600px) { .studio-lock { padding: 20px 16px; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="header-compact">
+    <a class="header-compact__brand" href="../index.html">Halftime</a>
+    <div class="label label--accent">Owner's Studio</div>
+  </header>
+
+  <main>
+    <form class="studio-lock" id="lock" autocomplete="on">
+      <div class="label label--accent">Private</div>
+      <h1 class="notice__title" style="font-size:44px;margin:8px 0 0">The Studio</h1>
+      <p>Ready-made Instagram posts, refreshed with every edition. Everything here is encrypted; your passphrase is the only key.</p>
+      <input class="visually-hidden" type="text" name="username" autocomplete="username" value="halftime-owner" tabindex="-1" aria-hidden="true">
+      <label for="pass">Passphrase</label>
+      <input id="pass" name="password" type="password" autocomplete="current-password" required>
+      <button class="btn btn--oxblood" type="submit">Unlock</button>
+      <div class="studio-msg" id="msg" role="status" aria-live="polite"></div>
+    </form>
+
+    <section id="studio" hidden>
+      <div class="studio-bar">
+        <div class="label label--bold" id="count"></div>
+        <button class="btn btn--small" type="button" id="relock">Lock</button>
+      </div>
+      <ul class="studio-grid" id="posts"></ul>
+    </section>
+  </main>
+
+</div>
+<script src="../assets/js/studio.js"></script>
+</body>
+</html>

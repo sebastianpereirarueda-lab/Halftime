@@ -65,6 +65,21 @@ ok(!fs.existsSync(path.join(tmp, "img")), "image maker dry run writes nothing");
 const imgSkip = execFileSync("node", ["scripts/make-images.mjs"], { env: { ...process.env, OPENAI_API_KEY: "", HALFTIME_NEWS_OUT: newsFile, HALFTIME_IMAGE_DIR: path.join(tmp, "img") }, encoding: "utf8" });
 ok(imgSkip.includes("OPENAI_API_KEY is not set"), "image maker skips without a key");
 
+// 4c. Instagram studio: encryption round trip and the safety checks
+const social = await import("./make-social.mjs");
+const k = social.deriveKey("a long test passphrase", Buffer.from("0123456789abcdef"), 1000);
+const box = social.encrypt(k, Buffer.from("secret caption"));
+ok(social.decrypt(k, box).toString() === "secret caption", "studio encryption round-trips");
+ok(!box.includes(Buffer.from("secret caption")), "studio ciphertext does not contain the plain text");
+let wrongKeyFails = false;
+try { social.decrypt(social.deriveKey("another passphrase!!", Buffer.from("0123456789abcdef"), 1000), box); } catch { wrongKeyFails = true; }
+ok(wrongKeyFails, "a wrong passphrase cannot decrypt");
+const pub = path.join(tmp, "pub");
+const noPass = execFileSync("node", ["scripts/make-social.mjs"], { env: { ...process.env, OWNER_PASSPHRASE: "", HALFTIME_PUBLIC: pub }, encoding: "utf8" });
+ok(noPass.includes("OWNER_PASSPHRASE is not set") && !fs.existsSync(path.join(pub, "studio")), "no passphrase: nothing is made");
+const shortPass = execFileSync("node", ["scripts/make-social.mjs"], { env: { ...process.env, OWNER_PASSPHRASE: "short", HALFTIME_PUBLIC: pub }, encoding: "utf8" });
+ok(shortPass.includes("shorter than 12") && !fs.existsSync(path.join(pub, "studio")), "short passphrase: nothing is made");
+
 // 5. without a key, the writer skips cleanly
 const skip = execFileSync("node", ["scripts/write-news.mjs"], { env: { ...process.env, OPENAI_API_KEY: "", HALFTIME_NEWS_CANDIDATES: cand, HALFTIME_NEWS_OUT: path.join(tmp, "news.js") }, encoding: "utf8" });
 ok(skip.includes("OPENAI_API_KEY is not set"), "news writer skips without a key");

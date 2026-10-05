@@ -21,6 +21,7 @@ styled like an old newspaper or match programme.
 | `public/assets/js/dateline.js` | Tiny script that writes today's date at the top of the page. |
 | `public/404.html` | The "page not found" page Cloudflare shows for a wrong address. |
 | `scripts/` | The data pipeline: fetches scores and lineups, collects headlines, writes the news. |
+| `public/studio/` | The owner's private Studio: encrypted Instagram posts. |
 | `scripts/config.mjs` | Which competitions and news feeds the pipeline follows. Edit to change them. |
 | `.github/workflows/update-data.yml` | The schedule that runs the pipeline four times a day. |
 | `tools/import-kits.js` | A small script that fills the two lists from free tournament data and Wikipedia. See below. |
@@ -120,6 +121,43 @@ site or in the code.
 
 Until the secrets exist, each step says so in its log and skips. The site keeps working
 with the hand-written archive and the printed placeholders.
+
+## Instagram posts (the owner's Studio)
+
+Every time a new edition is written, the pipeline also makes ready-to-post Instagram
+content and puts it in a private page only you can open:
+
+- one 1080 x 1350 card per story (the illustration, the headline, the summary, the
+  masthead), with a caption that credits the outlets and says the picture is AI-made;
+- one "Latest Results" scoreboard card with its caption.
+
+**Where:** https://sebastianpereirarueda-lab.github.io/Halftime/studio/ . Nothing on the
+site links to it and it asks search engines not to list it. Bookmark it on your phone.
+
+**Why it needs a passphrase, and why that is safe.** The site and its code are public, so a
+hidden page alone would not be private: anyone who found the address could read it. Instead
+every post is **encrypted** before it is saved. Visitors can see that scrambled files exist,
+but without your passphrase they are unreadable. The passphrase itself is never stored on
+the site; it lives only as a GitHub secret and in your head (or your phone's password
+manager).
+
+**Switching it on (once):**
+
+1. Choose a passphrase of at least 12 characters. Four or five unrelated words work well,
+   for example `lantern pickle orbit marmalade`. Do not reuse a password from elsewhere.
+2. On github.com open this repository, then **Settings**, **Secrets and variables**,
+   **Actions**, **New repository secret**. Name it `OWNER_PASSPHRASE` and paste the passphrase.
+3. The next run makes the first posts. Open the Studio, type the passphrase, tap **Unlock**.
+   Your iPhone will offer to save it in your passwords.
+
+**Posting from your iPhone:** tap **Copy caption**, then **Save or share**. Choose
+**Instagram** in the share sheet (or **Save Image**, then post from Instagram), and paste the
+caption. When Instagram asks, mark the post as containing AI-generated imagery; the story
+cards use AI illustrations.
+
+**Good to know:** the Studio keeps the 40 most recent posts. If you change the passphrase,
+the next run starts a fresh, empty Studio, because the old posts were locked with the old one.
+Captions follow the same rule as the news: only facts from the reports, sources credited.
 
 ### Checking it locally
 
