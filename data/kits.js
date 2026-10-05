@@ -189,7 +189,7 @@ window.HALFTIME_KITS = [
     matches: ["1958-world-cup-final"],
     coloursSource: "Wikipedia, \"1958 FIFA World Cup final\" (revision 1370476889), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1958_FIFA_World_Cup_final&oldid=1370476889",
-    illustration: { file: "brazil-1958.png", credit: "Drawn after the kit shown in Wikipedia’s \"1958 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body collar.png (Public domain, VEO15); Kit shorts darkblue stripes.png (CC BY-SA 4.0, Manya_1996). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "brazil-1958.png", credit: "Drawn after the kit shown in Wikipedia’s \"1958 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body collar.png (Public domain, VEO15); Kit shorts darkblue stripes.png (CC BY-SA 4.0, Manya_1996); Kit socks brasil1954l.png (CC BY 4.0, NeoRibeiro). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "sweden-1958",
@@ -549,7 +549,7 @@ window.HALFTIME_KITS = [
     matches: ["2006-world-cup-final"],
     coloursSource: "Wikipedia, \"2006 FIFA World Cup final\" (revision 1376632237), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2006_FIFA_World_Cup_final&oldid=1376632237",
-    illustration: { file: "france-2006.png", credit: "Drawn after the kit shown in Wikipedia’s \"2006 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm fra06A.png (CC BY-SA 4.0, Hurfer); Kit body fra06A.png (CC BY-SA 4.0, Hurfer); Kit right arm fra06A.png (CC BY-SA 4.0, Hurfer); Kit shorts fra06H1.png (CC BY-SA 4.0, Hurfer). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "france-2006.png", credit: "Drawn after the kit shown in Wikipedia’s \"2006 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm fra06A.png (CC BY-SA 4.0, Hurfer); Kit body fra06A.png (CC BY-SA 4.0, Hurfer); Kit right arm fra06A.png (CC BY-SA 4.0, Hurfer); Kit shorts fra06H1.png (CC BY-SA 4.0, Hurfer); Kit socks fra06Al.png (CC BY-SA 4.0, Hurfer). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "italy-2006",
