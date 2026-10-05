@@ -793,7 +793,8 @@ img, svg { max-width: 100%; }
   .kit-card__meta { font-size: 10px; letter-spacing: 1px; }
   .shirt-stage { padding: 8px 0 4px; }
   .shirt-stage svg { width: 110px; height: 110px; }
-  .kit-card__team { font-size: 22px; }
+  .shirt-stage img.kit-art { width: 130px; margin: 18px 0; }
+  .kit-card__team { font-size: 22px; overflow-wrap: anywhere; hyphens: auto; }
   .kit-card__note { font-size: 13px; }
   .kit-card__more { font-size: 11px; letter-spacing: 0.5px; }
   .card { padding: 20px 14px; }
