@@ -1,7 +1,7 @@
 // GENERATED FILE — do not edit by hand. Results, fixtures and match details from API-Football.
-// Written 2026-10-05T05:17:56.688Z by the Halftime data pipeline.
+// Written 2026-10-05T06:08:27.127Z by the Halftime data pipeline.
 window.HALFTIME_RESULTS = {
-  "updated": "2026-10-05T05:17:56.688Z",
+  "updated": "2026-10-05T06:08:27.127Z",
   "season": 2026,
   "provider": "API-Football (api-sports.io)",
   "sample": false,
@@ -243,7 +243,7 @@ window.HALFTIME_RESULTS = {
       "venue": "Toumba Stadium, Thessaloniki",
       "home": {
         "name": "Greece",
-        "short": "GRE",
+        "short": "Greece",
         "colour": "hsl(197, 45%, 38%)",
         "label": "",
         "kit": null,
@@ -251,7 +251,7 @@ window.HALFTIME_RESULTS = {
       },
       "away": {
         "name": "Germany",
-        "short": "GER",
+        "short": "Germany",
         "colour": "hsl(243, 45%, 38%)",
         "label": "",
         "kit": null,
@@ -527,7 +527,7 @@ window.HALFTIME_RESULTS = {
       "venue": "Philips Stadion, Eindhoven",
       "home": {
         "name": "Netherlands",
-        "short": "NET",
+        "short": "Netherlands",
         "colour": "hsl(304, 45%, 38%)",
         "label": "Winners",
         "kit": null,
@@ -535,7 +535,7 @@ window.HALFTIME_RESULTS = {
       },
       "away": {
         "name": "Serbia",
-        "short": "SER",
+        "short": "Serbia",
         "colour": "hsl(178, 45%, 38%)",
         "label": "",
         "kit": null,
@@ -744,7 +744,7 @@ window.HALFTIME_RESULTS = {
               "pos": "M"
             },
             {
-              "name": "M. CvetkoviÄ",
+              "name": "M. Cvetković",
               "number": 18,
               "pos": "F"
             },
@@ -791,7 +791,7 @@ window.HALFTIME_RESULTS = {
               "pos": "M"
             },
             {
-              "name": "O. MimoviÄ",
+              "name": "O. Mimović",
               "number": 4,
               "pos": "D"
             },
@@ -833,7 +833,7 @@ window.HALFTIME_RESULTS = {
       "venue": "Estádio do Dragão, Porto",
       "home": {
         "name": "Portugal",
-        "short": "POR",
+        "short": "Portugal",
         "colour": "hsl(246, 45%, 38%)",
         "label": "Winners",
         "kit": null,
@@ -841,7 +841,7 @@ window.HALFTIME_RESULTS = {
       },
       "away": {
         "name": "Norway",
-        "short": "NOR",
+        "short": "Norway",
         "colour": "hsl(70, 45%, 38%)",
         "label": "",
         "kit": null,
@@ -1139,7 +1139,7 @@ window.HALFTIME_RESULTS = {
       "venue": "Cardiff City Stadium, Cardiff",
       "home": {
         "name": "Wales",
-        "short": "WAL",
+        "short": "Wales",
         "colour": "hsl(208, 45%, 38%)",
         "label": "",
         "kit": null,
@@ -1147,7 +1147,7 @@ window.HALFTIME_RESULTS = {
       },
       "away": {
         "name": "Denmark",
-        "short": "DEN",
+        "short": "Denmark",
         "colour": "hsl(226, 45%, 38%)",
         "label": "Winners",
         "kit": null,
@@ -1426,7 +1426,7 @@ window.HALFTIME_RESULTS = {
       "venue": "Gradski Stadion, Backa Topola",
       "home": {
         "name": "Rep. Of Ireland",
-        "short": "REP",
+        "short": "Rep. Of Ireland",
         "colour": "hsl(149, 45%, 38%)",
         "label": "",
         "kit": null,
@@ -1434,7 +1434,7 @@ window.HALFTIME_RESULTS = {
       },
       "away": {
         "name": "Israel",
-        "short": "ISR",
+        "short": "Israel",
         "colour": "hsl(8, 45%, 38%)",
         "label": "",
         "kit": null,
@@ -1720,7 +1720,7 @@ window.HALFTIME_RESULTS = {
       "venue": "Stadiumi Fadil Vokrri, Pristina",
       "home": {
         "name": "Kosovo",
-        "short": "KOS",
+        "short": "Kosovo",
         "colour": "hsl(41, 45%, 38%)",
         "label": "",
         "kit": null,
@@ -1728,7 +1728,7 @@ window.HALFTIME_RESULTS = {
       },
       "away": {
         "name": "Austria",
-        "short": "AUS",
+        "short": "Austria",
         "colour": "hsl(309, 45%, 38%)",
         "label": "",
         "kit": null,
@@ -2019,7 +2019,7 @@ window.HALFTIME_RESULTS = {
       "venue": "Ta'Qali National Stadium, Takali",
       "home": {
         "name": "Malta",
-        "short": "MAL",
+        "short": "Malta",
         "colour": "hsl(165, 45%, 38%)",
         "label": "Winners",
         "kit": null,
@@ -2027,7 +2027,7 @@ window.HALFTIME_RESULTS = {
       },
       "away": {
         "name": "Andorra",
-        "short": "AND",
+        "short": "Andorra",
         "colour": "hsl(321, 45%, 38%)",
         "label": "",
         "kit": null,
@@ -2311,7 +2311,7 @@ window.HALFTIME_RESULTS = {
       "venue": "Bakcell Arena, Baku",
       "home": {
         "name": "Azerbaijan",
-        "short": "AZE",
+        "short": "Azerbaijan",
         "colour": "hsl(355, 45%, 38%)",
         "label": "Winners",
         "kit": null,
@@ -2319,7 +2319,7 @@ window.HALFTIME_RESULTS = {
       },
       "away": {
         "name": "Lithuania",
-        "short": "LIT",
+        "short": "Lithuania",
         "colour": "hsl(57, 45%, 38%)",
         "label": "",
         "kit": null,
