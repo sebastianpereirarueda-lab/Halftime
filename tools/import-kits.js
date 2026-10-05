@@ -524,7 +524,7 @@ async function patternPicture(part, patternName) {
   }
   try {
     const img = decodePng(fs.readFileSync(pngFile));
-    if (img.width !== part.width || img.height !== 59) { console.warn('  Unexpected size for ' + file); return null; }
+    if (img.width !== part.width || img.height !== part.height) { console.warn('  Unexpected size for ' + file); return null; }
     return { img: img, credit: file + ' (' + meta.licence + (meta.artist ? ', ' + meta.artist : '') + ')' };
   } catch (e) { console.warn('  Could not read ' + file + ': ' + e.message); return null; }
 }
@@ -542,7 +542,7 @@ function loadBases() {
   if (baseImages) return baseImages;
   baseImages = {};
   for (const part of PARTS) {
-    const file = path.join(BASE_DIR, part.file.replace(/ /g, '_') + '@' + ART_SCALE + 'x.png');
+    const file = path.join(BASE_DIR, part.base.replace(/ /g, '_') + '@' + ART_SCALE + 'x.png');
     if (!fs.existsSync(file)) throw new Error('Missing outline drawing ' + file);
     baseImages[part.key] = decodePng(fs.readFileSync(file));
   }
@@ -555,9 +555,12 @@ async function drawKit(kit, tpl, page) {
   const parts = {}, credits = [];
   const bodyHex = hexOk(tpl.body) ? tpl.body : null;
   for (const part of PARTS) {
-    const key = { la: 'leftarm', b: 'body', ra: 'rightarm' }[part.key];
-    const hex = hexOk(tpl[key]) ? tpl[key] : bodyHex;
+    const key = { la: 'leftarm', b: 'body', ra: 'rightarm', sh: 'shorts', so: 'socks' }[part.key];
+    // Sleeves without a colour of their own take the body colour; shorts and socks are left
+    // out of the drawing when the template says nothing about them.
+    const hex = hexOk(tpl[key]) ? tpl[key] : ((part.key === 'sh' || part.key === 'so') ? null : bodyHex);
     const name = (tpl['pattern_' + part.key] || '').trim();
+    if ((part.key === 'sh' || part.key === 'so') && !hex && !name) continue;
     let pattern = null;
     if (name) {
       pattern = await patternPicture(part, name);

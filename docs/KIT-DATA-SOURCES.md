@@ -76,17 +76,18 @@ would keep the team's traditional colours and say so; at the moment none does.
 
 ### The drawings
 
-Stage 3 of the importer draws each shirt exactly as Wikipedia's `Football kit` template
-does: the sleeve and body colours from the template, the pattern picture for each part
-laid over them, and the outline drawing (`tools/base/`, public domain) on top. The white
-area the pictures leave outside the shirt is cut away so the drawing sits on the paper.
-Drawings are saved at four times the template's size (400 by 236 pixels) under
+Stage 3 of the importer draws each kit exactly as Wikipedia's `Football kit` template
+does: the sleeve, body, shorts and socks colours from the template, the pattern picture
+for each part laid over them, and the outline drawings (`tools/base/`, public domain) on
+top. The white area the pictures leave outside the kit is cut away so the drawing sits on
+the paper. Drawings are saved at four times the template's size (400 by 540 pixels) under
 `public/assets/kits/`, one per shirt, and each shirt's `illustration.credit` lists every
 picture used with its licence and author. The pictures are pixel art, so the drawings
 keep that look; it suits a printed catalogue.
 
-Where a pattern picture is missing on Commons (England's Euro 2020 sleeves, for instance)
-the part is drawn in its plain colour and the importer says so when it runs.
+Where a pattern picture is missing on Commons (England's Euro 2020 sleeves and Italy's
+Euro 2020 shorts and socks, for instance) the part is drawn in its plain colour and the
+importer says so when it runs.
 
 Scorer names follow the source's spelling. The openfootball files write some names
 without accents (Puskas, Mueller, Voeller); correct them by hand in `matches.js` if wanted.

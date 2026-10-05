@@ -5,13 +5,15 @@
 'use strict';
 const { scaleUp } = require('./png.js');
 
-// Geometry of the template, in pixels at 1x.
+// Geometry of the template, in pixels at 1x: shirt on top, shorts, then socks.
 const PARTS = [
-  { key: 'la', x: 0, width: 31, file: 'Kit left arm' },
-  { key: 'b', x: 31, width: 38, file: 'Kit body' },
-  { key: 'ra', x: 69, width: 31, file: 'Kit right arm' }
+  { key: 'la', x: 0, y: 0, width: 31, height: 59, file: 'Kit left arm', base: 'Kit left arm' },
+  { key: 'b', x: 31, y: 0, width: 38, height: 59, file: 'Kit body', base: 'Kit body' },
+  { key: 'ra', x: 69, y: 0, width: 31, height: 59, file: 'Kit right arm', base: 'Kit right arm' },
+  { key: 'sh', x: 0, y: 59, width: 100, height: 36, file: 'Kit shorts', base: 'Kit shorts' },
+  { key: 'so', x: 0, y: 95, width: 100, height: 40, file: 'Kit socks', base: 'Kit socks long' }
 ];
-const WIDTH = 100, HEIGHT = 59;
+const WIDTH = 100, HEIGHT = 135;
 
 function hexToRgb(hex) {
   const h = hex.replace('#', '');
@@ -45,15 +47,16 @@ function over(dst, src) {
   }
 }
 
-// parts: { la: { colour: '#RRGGBB' | null, pattern: img | null }, b: ..., ra: ... }
-// bases: { la: img, b: img, ra: img } outline pictures, all at the same scale k.
-// Returns an RGBA picture of the shirt at scale k.
+// parts: { la: { colour: '#RRGGBB' | null, pattern: img | null }, b, ra, sh, so }
+// bases: { la: img, b: img, ra: img, sh: img, so: img } outline pictures, all at scale k.
+// A part left out of "parts" is not drawn. Returns an RGBA picture of the kit at scale k.
 function drawShirt(parts, bases, k) {
   const out = { width: WIDTH * k, height: HEIGHT * k, rgba: Buffer.alloc(WIDTH * k * HEIGHT * k * 4) };
   for (const part of PARTS) {
+    if (!(part.key in parts)) continue;
     const p = parts[part.key] || {};
     const base = bases[part.key];
-    const w = part.width * k, h = HEIGHT * k;
+    const w = part.width * k, h = part.height * k;
     const layer = { width: w, height: h, rgba: Buffer.alloc(w * h * 4) };
     if (p.colour) {
       const [r, g, b] = hexToRgb(p.colour);
@@ -64,7 +67,7 @@ function drawShirt(parts, bases, k) {
     const outside = outsideMask(base);
     for (let i = 0; i < w * h; i++) if (outside[i]) layer.rgba[i * 4 + 3] = 0;
     // Copy the part into place.
-    for (let y = 0; y < h; y++) layer.rgba.copy(out.rgba, (y * out.width + part.x * k) * 4, y * w * 4, (y + 1) * w * 4);
+    for (let y = 0; y < h; y++) layer.rgba.copy(out.rgba, ((part.y * k + y) * out.width + part.x * k) * 4, y * w * 4, (y + 1) * w * 4);
   }
   return out;
 }

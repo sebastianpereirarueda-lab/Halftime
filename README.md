@@ -206,9 +206,10 @@ The colour of each shirt comes from the Wikipedia article about that final, whic
 the kit both teams wore that day (free to reuse with credit, CC BY-SA 4.0). Each shirt's
 page links to the exact article revision it was taken from.
 
-Each shirt also has a **drawing**, built the same way Wikipedia draws kits: a block of
-colour for each sleeve and the body, with the small pattern pictures from Wikimedia Commons
-laid over it (collars, stripes, badges, sashes), then the outline on top. Those pictures
+Each shirt also has a **drawing** of the full kit, built the same way Wikipedia draws
+kits: a block of colour for each sleeve, the body, the shorts and the socks, with the small
+pattern pictures from Wikimedia Commons laid over it (collars, stripes, badges, sashes),
+then the outline on top. Those pictures
 are drawn by Wikipedia's volunteers and published under free licences (CC BY-SA, CC BY,
 CC0 or public domain) that ask for credit. The credit for every picture used appears
 under the drawing on the shirt's page, and the drawings themselves are shared under the
