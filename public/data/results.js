@@ -1,11 +1,23 @@
 // GENERATED FILE — do not edit by hand. Results, fixtures and match details from API-Football.
-// Written 2026-10-05T06:08:27.127Z by the Halftime data pipeline.
+// Written 2026-10-05T18:06:52.933Z by the Halftime data pipeline.
 window.HALFTIME_RESULTS = {
-  "updated": "2026-10-05T06:08:27.127Z",
+  "updated": "2026-10-05T18:06:52.933Z",
   "season": 2026,
   "provider": "API-Football (api-sports.io)",
   "sample": false,
   "results": [
+    {
+      "id": "cyprus-latvia-2026-10-05",
+      "competition": "UNL",
+      "dateIso": "2026-10-05T16:00:00+00:00",
+      "home": "Cyprus",
+      "away": "Latvia",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "hasCard": true
+    },
     {
       "id": "greece-germany-2026-10-04",
       "competition": "UNL",
@@ -104,13 +116,6 @@ window.HALFTIME_RESULTS = {
     }
   ],
   "upcoming": [
-    {
-      "competition": "UNL",
-      "dateIso": "2026-10-05T16:00:00+00:00",
-      "home": "Cyprus",
-      "away": "Latvia",
-      "venue": "GSP Stadium"
-    },
     {
       "competition": "UNL",
       "dateIso": "2026-10-05T18:45:00+00:00",
@@ -232,6 +237,307 @@ window.HALFTIME_RESULTS = {
     }
   ],
   "matches": [
+    {
+      "id": "cyprus-latvia-2026-10-05",
+      "fixtureId": 1545611,
+      "competition": "UEFA Nations League",
+      "stage": "League C - 4",
+      "date": "5 October 2026",
+      "dateIso": "2026-10-05T16:00:00+00:00",
+      "status": "finished",
+      "venue": "GSP Stadium, Nicosia",
+      "home": {
+        "name": "Cyprus",
+        "short": "Cyprus",
+        "colour": "hsl(286, 45%, 38%)",
+        "label": "Winners",
+        "kit": null,
+        "logo": "https://media.api-sports.io/football/teams/1106.png"
+      },
+      "away": {
+        "name": "Latvia",
+        "short": "Latvia",
+        "colour": "hsl(39, 45%, 38%)",
+        "label": "",
+        "kit": null,
+        "logo": "https://media.api-sports.io/football/teams/1092.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "goals": [
+        {
+          "minute": 57,
+          "extra": 0,
+          "scorer": "Eduards Daskevics",
+          "team": "away",
+          "kind": "goal"
+        },
+        {
+          "minute": 70,
+          "extra": 0,
+          "scorer": "Giannis Kosti",
+          "team": "home",
+          "kind": "goal"
+        },
+        {
+          "minute": 90,
+          "extra": 4,
+          "scorer": "Marcus Edwards",
+          "team": "home",
+          "kind": "goal"
+        }
+      ],
+      "lineups": [
+        {
+          "team": "home",
+          "formation": "4-2-3-1",
+          "coach": "A. Mantzios",
+          "startXI": [
+            {
+              "name": "Fabiano",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "L. Konomis",
+              "number": 15,
+              "pos": "D"
+            },
+            {
+              "name": "H. Kyprianou",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "N. Panagiotou",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "G. Malekkides",
+              "number": 14,
+              "pos": "D"
+            },
+            {
+              "name": "K. Artymatas",
+              "number": 18,
+              "pos": "M"
+            },
+            {
+              "name": "G. Kastanos",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "M. Edwards",
+              "number": 23,
+              "pos": "M"
+            },
+            {
+              "name": "L. Loizou",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "A. Kakoullis",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "I. Pittas",
+              "number": 9,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "A. Christou",
+              "number": 17,
+              "pos": "D"
+            },
+            {
+              "name": "J. Mall",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "C. Kyriakou",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "A. Neophytou",
+              "number": 7,
+              "pos": "F"
+            },
+            {
+              "name": "A. Paraskevas",
+              "number": 22,
+              "pos": "G"
+            },
+            {
+              "name": "I. Kosti",
+              "number": 13,
+              "pos": "M"
+            },
+            {
+              "name": "S. Georgiou",
+              "number": 19,
+              "pos": "F"
+            },
+            {
+              "name": "P. Andreou",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "K. Sotiriou",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "N. Tsaroulla",
+              "number": 6,
+              "pos": "D"
+            },
+            {
+              "name": "E. Antoniou",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "M. Tzionis",
+              "number": 21,
+              "pos": "F"
+            }
+          ]
+        },
+        {
+          "team": "away",
+          "formation": "5-4-1",
+          "coach": "P. Nicolato",
+          "startXI": [
+            {
+              "name": "R. Matrevics",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "R. Jurkovskis",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "D. Meļņiks",
+              "number": 21,
+              "pos": "D"
+            },
+            {
+              "name": "O. Vientiess",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "D. Balodis",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "A. Cigaņiks",
+              "number": 14,
+              "pos": "D"
+            },
+            {
+              "name": "E. Dašķevičs",
+              "number": 7,
+              "pos": "M"
+            },
+            {
+              "name": "L. Vapne",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "D. Zelenkovs",
+              "number": 15,
+              "pos": "M"
+            },
+            {
+              "name": "M. Strods",
+              "number": 17,
+              "pos": "M"
+            },
+            {
+              "name": "V. Gutkovskis",
+              "number": 9,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "O. Rubenis",
+              "number": 5,
+              "pos": "F"
+            },
+            {
+              "name": "N. Puriņš",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "D. Patijčuks",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "F. Orols",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "E. Emsis",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "A. Aleksanjan",
+              "number": 18,
+              "pos": "M"
+            },
+            {
+              "name": "R. Uldriķis",
+              "number": 20,
+              "pos": "F"
+            },
+            {
+              "name": "G. Žaleiko",
+              "number": 3,
+              "pos": "M"
+            },
+            {
+              "name": "M. Toņiševs",
+              "number": 19,
+              "pos": "D"
+            },
+            {
+              "name": "K. Čudars",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "A. Saveļjevs",
+              "number": 22,
+              "pos": "M"
+            }
+          ]
+        }
+      ],
+      "kitsNote": "",
+      "stats": null,
+      "source": "API-Football"
+    },
     {
       "id": "greece-germany-2026-10-04",
       "fixtureId": 1528939,

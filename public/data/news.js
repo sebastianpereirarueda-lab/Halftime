@@ -1,124 +1,119 @@
 // GENERATED FILE — do not edit by hand. Front Page news written by gpt-5.5 from the sources listed in each story.
-// Written 2026-10-05T06:09:16.711Z by the Halftime data pipeline.
+// Written 2026-10-05T18:07:24.481Z by the Halftime data pipeline.
 window.HALFTIME_NEWS = {
-  "updated": "2026-10-05T06:09:16.711Z",
+  "updated": "2026-10-05T18:07:24.481Z",
   "model": "gpt-5.5",
-  "articlesConsidered": 66,
-  "candidatesHash": "723582c263dddef6",
+  "articlesConsidered": 87,
+  "candidatesHash": "dd1948a9d920e926",
   "lead": {
-    "tag": "International",
-    "headline": "Ireland’s uneasy Israel double-header ends in stalemate",
-    "standfirst": "A closed-doors draw in Serbia left Heimir Hallgrimsson urging Uefa to keep the sides apart in future competitions.",
+    "tag": "England",
+    "headline": "Tuchel defends England care of injured Scott",
+    "standfirst": "Bournemouth are unhappy after Alex Scott’s England injury, while Thomas Tuchel says the national side took no needless chance.",
     "paragraphs": [
-      "The Republic of Ireland’s latest Nations League meeting with Israel ended 1-1 behind closed doors at TSC Arena in Backa Topola, Serbia. The fixture, which The Independent said had originally been due for Dublin’s Aviva Stadium, became the second controversial match between the sides and brought a difficult international window to a tense close for Heimir Hallgrimsson’s team.",
-      "Hallgrimsson said he felt Israel had attempted to unsettle Ireland amid allegations of spitting during the game. The Guardian reported that a member of Ireland’s backroom staff alleged he had been spat at by an Israeli player around a half-time confrontation, with the Ireland manager indicating that the matter was for disciplinary channels.",
-      "Afterwards, Hallgrimsson called on Uefa to avoid pairing Ireland and Israel in future draws. He also said he was glad the window was over and hoped no other national side would have to endure the same kind of fortnight, after two fixtures that carried controversy on and off the pitch."
+      "Alex Scott’s fine England week has turned awkward after the Bournemouth midfielder withdrew with a thigh problem that may keep him out for as long as two months. Bournemouth are unhappy with the way they believe the matter was handled, after Scott featured in England’s Nations League win over Croatia and then left the camp. BBC Sport put the possible absence at up to eight weeks, while The Guardian reported that he will play no further part in this international window.",
+      "Thomas Tuchel has defended England’s approach, saying his staff did not take a risk with Scott and acted after receiving clearance. The Guardian reported that Scott played despite discomfort, and The Independent said Tuchel had addressed what he called a strange injury situation. The episode has arrived just as Scott’s England standing was rising sharply after his recent display against Croatia.",
+      "England have also lost Ezri Konsa before the Czech Republic match, with The Independent describing the pair as the seventh and eighth players to withdraw from the squad during this break. For Tuchel, the balance is plain enough: encouraging young players into meaningful roles, while managing the club concerns that follow when injuries come home with them."
     ],
     "sources": [
       {
-        "outlet": "BBC Sport",
-        "title": "Israel 'tried to intimidate' Irish amid spitting row - Hallgrimsson",
-        "url": "https://www.bbc.co.uk/sport/football/articles/cw4g14eg5p22o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "outlet": "BBC Sport",
-        "title": "No other team should go through this - Hallgrimsson",
-        "url": "https://www.bbc.co.uk/sport/football/articles/cqe8lv6m1nn3o?at_medium=RSS&at_campaign=rss"
-      },
-      {
         "outlet": "The Guardian",
-        "title": "Hallgrímsson calls on Uefa to keep Ireland and Israel apart in future after bad-tempered draw",
-        "url": "https://www.theguardian.com/football/2026/oct/04/republic-of-ireland-israel-nations-league-match-report"
+        "title": "Bournemouth unhappy over Scott injury but Tuchel says England took ‘zero risk’",
+        "url": "https://www.theguardian.com/football/2026/oct/05/alex-scott-injury-two-months-england-bournemouth"
+      },
+      {
+        "outlet": "BBC Sport",
+        "title": "Bournemouth unhappy after Scott injured with England",
+        "url": "https://www.bbc.co.uk/sport/football/articles/cqm2dyrg84ymo?at_medium=RSS&at_campaign=rss"
       },
       {
         "outlet": "The Independent",
-        "title": "Ireland and Israel share spoils in ill-tempered Nations League clash behind closed doors",
-        "url": "https://www.independent.co.uk/sport/football/ireland-israel-nations-league-draw-result-b3061200.html"
+        "title": "Thomas Tuchel defends handling of ‘strange’ Alex Scott injury with England midfielder facing months out",
+        "url": "https://www.independent.co.uk/sport/football/alex-scott-injury-thomas-tuchel-england-nations-league-b3061547.html"
       },
       {
-        "outlet": "Sky Sports",
-        "title": "Republic of Ireland draw with Israel in second Nations League meeting",
-        "url": "https://www.skysports.com/football/republic-of-ireland-vs-israel/report/554064"
+        "outlet": "The Independent",
+        "title": "England confirm double injury blow as duo withdraw before Czech Republic clash",
+        "url": "https://www.independent.co.uk/sport/football/england-injury-latest-ezri-konsa-alex-scott-nations-league-b3061396.html"
       }
     ]
   },
   "stories": [
     {
+      "tag": "Finance",
+      "headline": "Rivals watch as City appeal looms",
+      "summary": "Manchester City’s case has moved towards an appeal after an independent commission found rule breaches across nine seasons, with The Independent saying the club were found guilty of all financial charges. Sky Sports said sympathy is limited among rival clubs, while BBC Sport used the case to examine finances at Manchester United.",
+      "sources": [
+        {
+          "outlet": "Sky Sports",
+          "title": "Man City's rivals do not expect them to be in Premier League next season",
+          "url": "https://www.skysports.com/football/news/12040/13595428/man-city-charges-premier-league-clubs-do-not-expect-city-to-be-in-premier-league-next-season-if-appeal-fails"
+        },
+        {
+          "outlet": "Sky Sports",
+          "title": "Explained: What other PL clubs expect to happen after Man City rule breaches",
+          "url": "https://www.skysports.com/watch/video/13595484/manchester-city-what-do-other-pl-clubs-expect-to-happen-after-man-city-rule-breaches"
+        },
+        {
+          "outlet": "The Independent",
+          "title": "Anger, denial, conspiracy theories: How fans cope when their club does wrong amid Man City scandal",
+          "url": "https://www.independent.co.uk/sport/football/man-city-fans-premier-league-charges-b3061381.html"
+        },
+        {
+          "outlet": "BBC Sport",
+          "title": "£800m in, £800m out - Why Man City scandal shines light on Man Utd finances",
+          "url": "https://www.bbc.co.uk/sport/football/articles/ckg5j87jy3zmo?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "tag": "International",
+      "headline": "Jesus leaves Ronaldo return in play",
+      "summary": "Cristiano Ronaldo’s Portugal future remains under scrutiny after he left the squad following a dispute over playing time, having been unused in Portugal’s first meeting with Norway. Jorge Jesus faced questions over his handling of the forward, and The Independent reported that the manager left open the possibility of a return.",
+      "sources": [
+        {
+          "outlet": "BBC Sport",
+          "title": "A nation divided as Ronaldo left with big decision on Portugal future",
+          "url": "https://www.bbc.co.uk/sport/football/articles/crwyd31nw2w4o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "BBC Sport",
+          "title": "Jesus fires back over Ronaldo question",
+          "url": "https://www.bbc.co.uk/sport/football/videos/ckn8wjezz462o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "The Independent",
+          "title": "Portugal boss opens door for Cristiano Ronaldo return after controversial walk-out",
+          "url": "https://www.independent.co.uk/sport/football/cristiano-ronaldo-portugal-return-jorge-jesus-b3061334.html"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Ronaldo’s break with Portugal is sad, fitting, and long overdue | Jonathan Wilson",
+          "url": "https://www.theguardian.com/football/2026/oct/05/cristiano-ronaldo-portugal-rift"
+        }
+      ]
+    },
+    {
       "tag": "Women's Game",
-      "headline": "City comeback deepens Arsenal’s early WSL trouble",
-      "summary": "At the Etihad, Manchester City recovered from two deficits to beat Arsenal 4-2 and preserve their unbeaten Women’s Super League start. Arsenal, last season’s runners-up, are already 10 points behind City after five matches, with Renée Slegers under mounting scrutiny.",
+      "headline": "Arsenal scrutiny grows as WSL pauses",
+      "summary": "The Women’s Super League has reached a two-week break after five busy weeks, with BBC Sport noting London City’s progress and Manchester City’s strong start. Arsenal’s form remains the sharper talking point after The Guardian highlighted one win in six matches in all competitions and a 10-point gap to City.",
       "sources": [
         {
           "outlet": "BBC Sport",
-          "title": "Man City fight back to beat struggling Arsenal",
-          "url": "https://www.bbc.co.uk/sport/football/videos/c64g71j3dkw7o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "BBC Sport",
-          "title": "Arsenal 10 points off WSL leaders - is Slegers' job at risk?",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c9p8gmvlvp57o?at_medium=RSS&at_campaign=rss"
+          "title": "London City gelling, Man City flying - takeaways from WSL start",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cm4g1l6rxypzo?at_medium=RSS&at_campaign=rss"
         },
         {
           "outlet": "The Guardian",
-          "title": "Shaw seals thrilling win over Arsenal to extend Manchester City’s 100% WSL start",
-          "url": "https://www.theguardian.com/football/2026/oct/04/manchester-city-arsenal-wsl-match-report"
+          "title": "WSL talking points: heat cranks up on Arsenal and Putellas and Diani shine",
+          "url": "https://www.theguardian.com/football/2026/oct/05/wsl-talking-points-renee-slegers-arsenal-keira-walsh-chelsea"
         },
         {
-          "outlet": "The Independent",
-          "title": "Manchester City beat hapless Arsenal as London City Lionesses rout Spurs in statement win",
-          "url": "https://www.independent.co.uk/sport/football/wsl-man-city-arsenal-london-city-lionesses-spurs-b3061174.html"
-        }
-      ]
-    },
-    {
-      "tag": "Europe",
-      "headline": "Portugal progress as Haaland limps off",
-      "summary": "Portugal kept their perfect Nations League record by beating Norway 2-1 and securing a quarter-final place, while Erling Haaland limped off for the visitors. Jorge Jesus said Cristiano Ronaldo could still return after Portugal’s latest win without him.",
-      "sources": [
-        {
-          "outlet": "The Guardian",
-          "title": "Nations League roundup: Haaland limps off in Norway’s loss to Portugal",
-          "url": "https://www.theguardian.com/football/2026/oct/04/nations-league-roundup-haaland-limps-off-in-norways-loss-to-portugal"
-        },
-        {
-          "outlet": "The Independent",
-          "title": "Portugal continue winning ways without Cristiano Ronaldo as Erling Haaland limps off",
-          "url": "https://www.independent.co.uk/sport/football/portugal-norway-cristiano-ronaldo-nations-league-wales-denmark-b3061203.html"
-        },
-        {
-          "outlet": "BBC Sport",
-          "title": "Portugal boss says door open for Ronaldo return",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c3dxwry8vydvo?at_medium=RSS&at_campaign=rss"
-        }
-      ]
-    },
-    {
-      "tag": "England",
-      "headline": "Croatia count cost of England rout",
-      "summary": "England’s 7-0 Nations League win over Croatia continued to draw reaction, with Luka Modric saying he was ashamed of a catastrophic night. Harry Kane felt the performance sent a message to Europe, while Alex Scott made his first England start.",
-      "sources": [
-        {
-          "outlet": "BBC Sport",
-          "title": "Modric 'ashamed' of Croatia's 'catastrophic night'",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cwzrdm3lyk21o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "The Independent",
-          "title": "Modric ‘ashamed’ after England hand Croatia worst defeat in their history",
-          "url": "https://www.independent.co.uk/sport/football/luka-modric-england-croatia-nations-league-b3061068.html"
-        },
-        {
-          "outlet": "The Independent",
-          "title": "How England’s thrashing of Croatia finally produced the blueprint to win big games",
-          "url": "https://www.independent.co.uk/sport/football/harry-kane-england-croatia-record-thomas-tuchel-b3060998.html"
-        },
-        {
-          "outlet": "The Independent",
-          "title": "Alex Scott: I’ve watched Harry Kane since I was little - he’s ridiculous up close",
-          "url": "https://www.independent.co.uk/sport/football/alex-scott-harry-kane-england-croatia-nations-league-b3060909.html"
+          "outlet": "Sky Sports",
+          "title": "Slegers can no longer hide behind 'fine margins' in defence of Arsenal",
+          "url": "https://www.skysports.com/football/news/12040/13595352/arsenal-must-be-accountable-for-their-own-failings-in-faltering-womens-super-league-season"
         }
       ]
     }
   ],
-  "notes": ""
+  "notes": "Some coverage is based on brief summaries or video items, so details have been kept narrow."
 };

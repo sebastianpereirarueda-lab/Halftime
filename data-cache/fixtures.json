@@ -6408,5 +6408,849 @@
       }
     ],
     "fetched": "2026-10-05T05:16:51.677Z"
+  },
+  "1545611": {
+    "events": [
+      {
+        "time": {
+          "elapsed": 29,
+          "extra": null
+        },
+        "team": {
+          "id": 1092,
+          "name": "Latvia",
+          "logo": "https://media.api-sports.io/football/teams/1092.png"
+        },
+        "player": {
+          "id": 70397,
+          "name": "Raivis Jurkovskis"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": "Foul"
+      },
+      {
+        "time": {
+          "elapsed": 45,
+          "extra": null
+        },
+        "team": {
+          "id": 1092,
+          "name": "Latvia",
+          "logo": "https://media.api-sports.io/football/teams/1092.png"
+        },
+        "player": {
+          "id": 210185,
+          "name": "Lukass Vapne"
+        },
+        "assist": {
+          "id": 92078,
+          "name": "Kristers Cudars"
+        },
+        "type": "subst",
+        "detail": "Substitution 1",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 45,
+          "extra": null
+        },
+        "team": {
+          "id": 1092,
+          "name": "Latvia",
+          "logo": "https://media.api-sports.io/football/teams/1092.png"
+        },
+        "player": {
+          "id": 412713,
+          "name": "Markuss Strods"
+        },
+        "assist": {
+          "id": 326046,
+          "name": "danila patijcuks"
+        },
+        "type": "subst",
+        "detail": "Substitution 2",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 57,
+          "extra": null
+        },
+        "team": {
+          "id": 1092,
+          "name": "Latvia",
+          "logo": "https://media.api-sports.io/football/teams/1092.png"
+        },
+        "player": {
+          "id": 215773,
+          "name": "Eduards Daskevics"
+        },
+        "assist": {
+          "id": 40813,
+          "name": "Vladislavs Gutkovskis"
+        },
+        "type": "Goal",
+        "detail": "Normal Goal",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 58,
+          "extra": null
+        },
+        "team": {
+          "id": 1106,
+          "name": "Cyprus",
+          "logo": "https://media.api-sports.io/football/teams/1106.png"
+        },
+        "player": {
+          "id": 15392,
+          "name": "Andronikos Kakoullis"
+        },
+        "assist": {
+          "id": 15347,
+          "name": "Giannis Kosti"
+        },
+        "type": "subst",
+        "detail": "Substitution 1",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 58,
+          "extra": null
+        },
+        "team": {
+          "id": 1106,
+          "name": "Cyprus",
+          "logo": "https://media.api-sports.io/football/teams/1106.png"
+        },
+        "player": {
+          "id": 68106,
+          "name": "Loizos Loizou"
+        },
+        "assist": {
+          "id": 561373,
+          "name": "Stavros Georgiou"
+        },
+        "type": "subst",
+        "detail": "Substitution 2",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 60,
+          "extra": null
+        },
+        "team": {
+          "id": 1092,
+          "name": "Latvia",
+          "logo": "https://media.api-sports.io/football/teams/1092.png"
+        },
+        "player": {
+          "id": 40813,
+          "name": "Vladislavs Gutkovskis"
+        },
+        "assist": {
+          "id": 48537,
+          "name": "Roberts Uldriķis"
+        },
+        "type": "subst",
+        "detail": "Substitution 3",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 67,
+          "extra": null
+        },
+        "team": {
+          "id": 1106,
+          "name": "Cyprus",
+          "logo": "https://media.api-sports.io/football/teams/1106.png"
+        },
+        "player": {
+          "id": 15518,
+          "name": "Ioannis Pittas"
+        },
+        "assist": {
+          "id": 343302,
+          "name": "A. Neophytou"
+        },
+        "type": "subst",
+        "detail": "Substitution 3",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 67,
+          "extra": null
+        },
+        "team": {
+          "id": 1106,
+          "name": "Cyprus",
+          "logo": "https://media.api-sports.io/football/teams/1106.png"
+        },
+        "player": {
+          "id": 15289,
+          "name": "Kostakis Artymatas"
+        },
+        "assist": {
+          "id": 1870,
+          "name": "Charalampos Kyriakou"
+        },
+        "type": "subst",
+        "detail": "Substitution 4",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 70,
+          "extra": null
+        },
+        "team": {
+          "id": 1106,
+          "name": "Cyprus",
+          "logo": "https://media.api-sports.io/football/teams/1106.png"
+        },
+        "player": {
+          "id": 15347,
+          "name": "Giannis Kosti"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Goal",
+        "detail": "Normal Goal",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 74,
+          "extra": null
+        },
+        "team": {
+          "id": 1092,
+          "name": "Latvia",
+          "logo": "https://media.api-sports.io/football/teams/1092.png"
+        },
+        "player": {
+          "id": 215773,
+          "name": "Eduards Daskevics"
+        },
+        "assist": {
+          "id": 573039,
+          "name": "Albert aleksanjan"
+        },
+        "type": "subst",
+        "detail": "Substitution 4",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 76,
+          "extra": null
+        },
+        "team": {
+          "id": 1092,
+          "name": "Latvia",
+          "logo": "https://media.api-sports.io/football/teams/1092.png"
+        },
+        "player": {
+          "id": 326046,
+          "name": "danila patijcuks"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": "Not Retreating"
+      },
+      {
+        "time": {
+          "elapsed": 85,
+          "extra": null
+        },
+        "team": {
+          "id": 1106,
+          "name": "Cyprus",
+          "logo": "https://media.api-sports.io/football/teams/1106.png"
+        },
+        "player": {
+          "id": 454358,
+          "name": "Leonidas·Konomis"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": "Foul"
+      },
+      {
+        "time": {
+          "elapsed": 85,
+          "extra": null
+        },
+        "team": {
+          "id": 1092,
+          "name": "Latvia",
+          "logo": "https://media.api-sports.io/football/teams/1092.png"
+        },
+        "player": {
+          "id": 37044,
+          "name": "Andrejs Cigaņiks"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": "Dissent"
+      },
+      {
+        "time": {
+          "elapsed": 88,
+          "extra": null
+        },
+        "team": {
+          "id": 1092,
+          "name": "Latvia",
+          "logo": "https://media.api-sports.io/football/teams/1092.png"
+        },
+        "player": {
+          "id": 128496,
+          "name": "Dmitrijs Zelenkovs"
+        },
+        "assist": {
+          "id": 30936,
+          "name": "Aleksejs Saveljevs"
+        },
+        "type": "subst",
+        "detail": "Substitution 5",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 90,
+          "extra": 1
+        },
+        "team": {
+          "id": 1106,
+          "name": "Cyprus",
+          "logo": "https://media.api-sports.io/football/teams/1106.png"
+        },
+        "player": {
+          "id": 867,
+          "name": "Grigoris Kastanos"
+        },
+        "assist": {
+          "id": 169224,
+          "name": "Nicholas Tsaroulla"
+        },
+        "type": "subst",
+        "detail": "Substitution 5",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 90,
+          "extra": 4
+        },
+        "team": {
+          "id": 1106,
+          "name": "Cyprus",
+          "logo": "https://media.api-sports.io/football/teams/1106.png"
+        },
+        "player": {
+          "id": 37882,
+          "name": "Marcus Edwards"
+        },
+        "assist": {
+          "id": 169224,
+          "name": "Nicholas Tsaroulla"
+        },
+        "type": "Goal",
+        "detail": "Normal Goal",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 90,
+          "extra": 5
+        },
+        "team": {
+          "id": 1106,
+          "name": "Cyprus",
+          "logo": "https://media.api-sports.io/football/teams/1106.png"
+        },
+        "player": {
+          "id": 37882,
+          "name": "Marcus Edwards"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": null
+      }
+    ],
+    "lineups": [
+      {
+        "team": {
+          "id": 1106,
+          "name": "Cyprus",
+          "logo": "https://media.api-sports.io/football/teams/1106.png",
+          "colors": null
+        },
+        "formation": "4-2-3-1",
+        "coach": {
+          "id": 1101,
+          "name": "A. Mantzios",
+          "photo": "https://media.api-sports.io/football/coachs/1101.png"
+        },
+        "startXI": [
+          {
+            "player": {
+              "id": 370,
+              "name": "Fabiano",
+              "number": 1,
+              "pos": "G",
+              "grid": "1:1"
+            }
+          },
+          {
+            "player": {
+              "id": 454358,
+              "name": "L. Konomis",
+              "number": 15,
+              "pos": "D",
+              "grid": "2:4"
+            }
+          },
+          {
+            "player": {
+              "id": 130856,
+              "name": "H. Kyprianou",
+              "number": 4,
+              "pos": "D",
+              "grid": "2:3"
+            }
+          },
+          {
+            "player": {
+              "id": 15411,
+              "name": "N. Panagiotou",
+              "number": 3,
+              "pos": "D",
+              "grid": "2:2"
+            }
+          },
+          {
+            "player": {
+              "id": 15008,
+              "name": "G. Malekkides",
+              "number": 14,
+              "pos": "D",
+              "grid": "2:1"
+            }
+          },
+          {
+            "player": {
+              "id": 15289,
+              "name": "K. Artymatas",
+              "number": 18,
+              "pos": "M",
+              "grid": "3:2"
+            }
+          },
+          {
+            "player": {
+              "id": 867,
+              "name": "G. Kastanos",
+              "number": 20,
+              "pos": "M",
+              "grid": "3:1"
+            }
+          },
+          {
+            "player": {
+              "id": 37882,
+              "name": "M. Edwards",
+              "number": 23,
+              "pos": "M",
+              "grid": "4:3"
+            }
+          },
+          {
+            "player": {
+              "id": 68106,
+              "name": "L. Loizou",
+              "number": 10,
+              "pos": "M",
+              "grid": "4:2"
+            }
+          },
+          {
+            "player": {
+              "id": 15392,
+              "name": "A. Kakoullis",
+              "number": 11,
+              "pos": "M",
+              "grid": "4:1"
+            }
+          },
+          {
+            "player": {
+              "id": 15518,
+              "name": "I. Pittas",
+              "number": 9,
+              "pos": "F",
+              "grid": "5:1"
+            }
+          }
+        ],
+        "substitutes": [
+          {
+            "player": {
+              "id": 561359,
+              "name": "A. Christou",
+              "number": 17,
+              "pos": "D",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 15423,
+              "name": "J. Mall",
+              "number": 12,
+              "pos": "G",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 1870,
+              "name": "C. Kyriakou",
+              "number": 8,
+              "pos": "M",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 343302,
+              "name": "A. Neophytou",
+              "number": 7,
+              "pos": "F",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 15028,
+              "name": "A. Paraskevas",
+              "number": 22,
+              "pos": "G",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 15347,
+              "name": "I. Kosti",
+              "number": 13,
+              "pos": "M",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 561373,
+              "name": "S. Georgiou",
+              "number": 19,
+              "pos": "F",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 388757,
+              "name": "P. Andreou",
+              "number": 16,
+              "pos": "M",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 15489,
+              "name": "K. Sotiriou",
+              "number": 5,
+              "pos": "D",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 169224,
+              "name": "N. Tsaroulla",
+              "number": 6,
+              "pos": "D",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 278137,
+              "name": "E. Antoniou",
+              "number": 2,
+              "pos": "D",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 15388,
+              "name": "M. Tzionis",
+              "number": 21,
+              "pos": "F",
+              "grid": null
+            }
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 1092,
+          "name": "Latvia",
+          "logo": "https://media.api-sports.io/football/teams/1092.png",
+          "colors": null
+        },
+        "formation": "5-4-1",
+        "coach": {
+          "id": 5855,
+          "name": "P. Nicolato",
+          "photo": "https://media.api-sports.io/football/coachs/5855.png"
+        },
+        "startXI": [
+          {
+            "player": {
+              "id": 18380,
+              "name": "R. Matrevics",
+              "number": 23,
+              "pos": "G",
+              "grid": "1:1"
+            }
+          },
+          {
+            "player": {
+              "id": 70397,
+              "name": "R. Jurkovskis",
+              "number": 13,
+              "pos": "D",
+              "grid": "2:5"
+            }
+          },
+          {
+            "player": {
+              "id": 215803,
+              "name": "D. Meļņiks",
+              "number": 21,
+              "pos": "D",
+              "grid": "2:4"
+            }
+          },
+          {
+            "player": {
+              "id": 72558,
+              "name": "O. Vientiess",
+              "number": 4,
+              "pos": "D",
+              "grid": "2:3"
+            }
+          },
+          {
+            "player": {
+              "id": 72479,
+              "name": "D. Balodis",
+              "number": 2,
+              "pos": "D",
+              "grid": "2:2"
+            }
+          },
+          {
+            "player": {
+              "id": 37044,
+              "name": "A. Cigaņiks",
+              "number": 14,
+              "pos": "D",
+              "grid": "2:1"
+            }
+          },
+          {
+            "player": {
+              "id": 215773,
+              "name": "E. Dašķevičs",
+              "number": 7,
+              "pos": "M",
+              "grid": "3:4"
+            }
+          },
+          {
+            "player": {
+              "id": 210185,
+              "name": "L. Vapne",
+              "number": 10,
+              "pos": "M",
+              "grid": "3:3"
+            }
+          },
+          {
+            "player": {
+              "id": 128496,
+              "name": "D. Zelenkovs",
+              "number": 15,
+              "pos": "M",
+              "grid": "3:2"
+            }
+          },
+          {
+            "player": {
+              "id": 412713,
+              "name": "M. Strods",
+              "number": 17,
+              "pos": "M",
+              "grid": "3:1"
+            }
+          },
+          {
+            "player": {
+              "id": 40813,
+              "name": "V. Gutkovskis",
+              "number": 9,
+              "pos": "F",
+              "grid": "4:1"
+            }
+          }
+        ],
+        "substitutes": [
+          {
+            "player": {
+              "id": 92224,
+              "name": "O. Rubenis",
+              "number": 5,
+              "pos": "F",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 72344,
+              "name": "N. Puriņš",
+              "number": 1,
+              "pos": "G",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 326046,
+              "name": "D. Patijčuks",
+              "number": 6,
+              "pos": "M",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 72446,
+              "name": "F. Orols",
+              "number": 12,
+              "pos": "G",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 72582,
+              "name": "E. Emsis",
+              "number": 8,
+              "pos": "M",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 573039,
+              "name": "A. Aleksanjan",
+              "number": 18,
+              "pos": "M",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 48537,
+              "name": "R. Uldriķis",
+              "number": 20,
+              "pos": "F",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 359491,
+              "name": "G. Žaleiko",
+              "number": 3,
+              "pos": "M",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 72502,
+              "name": "M. Toņiševs",
+              "number": 19,
+              "pos": "D",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 92078,
+              "name": "K. Čudars",
+              "number": 16,
+              "pos": "M",
+              "grid": null
+            }
+          },
+          {
+            "player": {
+              "id": 30936,
+              "name": "A. Saveļjevs",
+              "number": 22,
+              "pos": "M",
+              "grid": null
+            }
+          }
+        ]
+      }
+    ],
+    "fetched": "2026-10-05T18:06:52.929Z"
   }
 }
