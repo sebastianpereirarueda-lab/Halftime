@@ -512,7 +512,7 @@ async function patternPicture(part, patternName) {
     else {
       const ii = page.imageinfo[0], em = ii.extmetadata || {};
       meta = { url: ii.url.split('?')[0], mime: ii.mime, licence: (em.LicenseShortName || {}).value || 'licence not stated',
-               artist: ((em.Artist || {}).value || '').replace(/<[^>]+>/g, '').trim(), file: file };
+               artist: artistName((em.Artist || {}).value || ''), file: file };
     }
     fs.mkdirSync(CACHE, { recursive: true });
     fs.writeFileSync(metaFile, JSON.stringify(meta));
@@ -527,6 +527,14 @@ async function patternPicture(part, patternName) {
     if (img.width !== part.width || img.height !== 59) { console.warn('  Unexpected size for ' + file); return null; }
     return { img: img, credit: file + ' (' + meta.licence + (meta.artist ? ', ' + meta.artist : '') + ')' };
   } catch (e) { console.warn('  Could not read ' + file + ': ' + e.message); return null; }
+}
+
+// The artist field on Commons is HTML, usually a link to a user page: keep just the name.
+function artistName(raw) {
+  const s = String(raw).replace(/&amp;/g, '&').replace(/&quot;/g, '"');
+  const user = s.match(/User:([^&"<>|]+)/);
+  if (user) return user[1].trim();
+  return s.replace(/<[^>]*>?/g, '').trim();
 }
 
 let baseImages = null;
