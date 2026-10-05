@@ -18,6 +18,10 @@
 //                Leave it out if the colours are only the team's usual ones. Write "hand" to stop
 //                tools/import-kits.js from changing colours you have set yourself.
 //    coloursUrl  link to that source, shown on the shirt's page
+//    coloursSource  where the colours come from, e.g. 'Wikipedia, "1966 FIFA World Cup final" (revision ...)'.
+//                Leave it out if the colours are only the team's usual ones. Write "hand" to stop
+//                tools/import-kits.js from changing colours you have set yourself.
+//    coloursUrl  link to that source, shown on the shirt's page
 //
 //  Do not write a fact you have not checked. null shows as "to be researched".
 // ============================================================
@@ -337,11 +341,11 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1982, Spain",
     result: "World Cup winners",
-    colours: { body: "#1F4E9C", trim: "#F4F1E6", stripes: [] },
-    description: "Drawn in Italy’s traditional home colours, blue with white trim. Wikipedia records the shirt worn in the final only as a picture (pattern \"_ita82\"), so the exact colour is to be confirmed.",
+    colours: { body: "#4535CE", trim: "#F4F1E6", stripes: [] },
+    description: "Blue shirt, as worn in the 1982 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1982-world-cup-final"],
-    coloursSource: "Wikipedia, \"1982 FIFA World Cup final\" (revision 1376321424), CC BY-SA 4.0 (pattern only)",
+    coloursSource: "Wikipedia, \"1982 FIFA World Cup final\" (revision 1376321424), CC BY-SA 4.0; colour read from the Commons picture \"Kit body ita82.png\" (CC BY-SA 3.0)",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1982_FIFA_World_Cup_final&oldid=1376321424"
   },
   {
@@ -715,11 +719,11 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 2026, Canada, Mexico and United States",
     result: "World Cup winners",
-    colours: { body: "#B3261E", trim: "#E8C32A", stripes: [] },
-    description: "Drawn in Spain’s traditional home colours, red with yellow trim. Wikipedia records the shirt worn in the final only as a picture (pattern \"_esp26h\"), so the exact colour is to be confirmed.",
+    colours: { body: "#E81B17", trim: "#F4F1E6", stripes: [] },
+    description: "Red shirt, as worn in the 2026 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2026-world-cup-final"],
-    coloursSource: "Wikipedia, \"2026 FIFA World Cup final\" (revision 1377897277), CC BY-SA 4.0 (pattern only)",
+    coloursSource: "Wikipedia, \"2026 FIFA World Cup final\" (revision 1377897277), CC BY-SA 4.0; colour read from the Commons picture \"Kit body esp26h.png\" (CC0)",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2026_FIFA_World_Cup_final&oldid=1377897277"
   }
 ];

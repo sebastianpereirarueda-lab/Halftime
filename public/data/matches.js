@@ -16,8 +16,12 @@
 //    extraTime   true if the match went to extra time (the timeline then runs to 120')
 //    scoreNote   optional line under the score, e.g. "After extra time." or null
 //    extraTime   true if the match went to extra time (the timeline then runs to 120')
+//    scoreNote   optional line under the score, e.g. "After extra time." or null
+//    extraTime   true if the match went to extra time (the timeline then runs to 120')
 //    goals       list of { minute, scorer, team: "home" or "away" }
 //    stats       null until a stats source is chosen
+//    source      where the entry came from, e.g. "openfootball worldcup.json 1970 (CC0)",
+//                or leave it out for entries written by hand
 //    source      where the entry came from, e.g. "openfootball worldcup.json 1970 (CC0)",
 //                or leave it out for entries written by hand
 //    source      where the entry came from, e.g. "openfootball worldcup.json 1970 (CC0)",
@@ -268,7 +272,7 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "11 July 1982",
     venue: "Santiago Bernabeu, Madrid",
-    home: { name: "Italy", short: "ITA", colour: "#1F4E9C", label: "Winners", kit: "italy-1982" },
+    home: { name: "Italy", short: "ITA", colour: "#4535CE", label: "Winners", kit: "italy-1982" },
     away: { name: "West Germany", short: "FRG", colour: "#1B1A17", label: "Runners-up", kit: "west-germany-1982" },
     score: { home: 3, away: 1 },
     scoreNote: null,
@@ -524,7 +528,7 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "19 July 2026",
     venue: "New York/New Jersey Stadium, New Jersey",
-    home: { name: "Spain", short: "ESP", colour: "#B3261E", label: "Winners", kit: "spain-2026" },
+    home: { name: "Spain", short: "ESP", colour: "#E81B17", label: "Winners", kit: "spain-2026" },
     away: { name: "Argentina", short: "ARG", colour: "#1B1A17", label: "Runners-up", kit: "argentina-2026" },
     score: { home: 1, away: 0 },
     scoreNote: "After extra time.",

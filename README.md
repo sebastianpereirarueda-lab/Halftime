@@ -19,7 +19,8 @@ styled like an old newspaper or match programme.
 | `public/assets/fonts/` | The three typefaces, stored locally so the site works offline. |
 | `public/assets/js/dateline.js` | Tiny script that writes today's date at the top of the page. |
 | `public/404.html` | The "page not found" page Cloudflare shows for a wrong address. |
-| `tools/import-kits.js` | A small script that fills the two lists from free public-domain tournament data. See below. |
+| `tools/import-kits.js` | A small script that fills the two lists from free tournament data and Wikipedia. See below. |
+| `tools/png.js` | Helper for the script above: reads the small kit pictures from Wikimedia Commons. |
 | `docs/HANDOFF.md` | The project brief: design system, plan and open decisions. |
 | `docs/KIT-DATA-SOURCES.md` | Research note: which kit databases exist, which may be used, and what fills the Kit Room today. |
 | `docs/design-reference/` | The original design mock-ups. Reference only, not part of the site. |
@@ -95,9 +96,9 @@ used.
 The colour of each shirt comes from the Wikipedia article about that final, which records
 the kit both teams wore that day (free to reuse with credit, CC BY-SA 4.0). Each shirt's
 page links to the exact article revision it was taken from. Two shirts, Italy 1982 and
-Spain 2026, have their colour only in a picture on Wikipedia and are drawn in the team's
-usual colours until that is checked. Manufacturer, debut and design notes show
-"To be researched" until someone fills them in.
+Spain 2026, have their colour only in a small picture on Wikimedia Commons, which the
+importer reads as well. Manufacturer, debut and design notes show "To be researched"
+until someone fills them in.
 
 ### Running the importer again (optional)
 

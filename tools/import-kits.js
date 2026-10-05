@@ -35,6 +35,8 @@
 const fs = require('fs');
 const path = require('path');
 
+const { decodePng, mainColours } = require('./png.js');
+
 const ROOT = path.join(__dirname, '..');
 const CACHE = path.join(__dirname, '.cache');
 const KITS_FILE = path.join(ROOT, 'public', 'data', 'kits.js');
@@ -344,21 +346,91 @@ function trimFor(tpl, bodyHex) {
   return isLight(bodyHex) ? '#1B1A17' : '#F4F1E6';
 }
 
+// Body colour of a Wikipedia kit pattern, read from its picture on Wikimedia Commons
+// ("Kit body ita82.png"). Only the middle of the shirt is sampled, because the corners
+// of those pictures are white background. Returns null when there is no such picture
+// or the middle of it is transparent (the pattern only draws a collar or sleeves).
+async function patternBodyColour(patternName) {
+  const file = 'Kit body ' + patternName.replace(/^_/, '') + '.png';
+  const safe = file.replace(/[^A-Za-z0-9.]+/g, '_');
+  const metaFile = path.join(CACHE, 'commons__' + safe + '.json');
+  const pngFile = path.join(CACHE, 'commons__' + safe);
+  let meta;
+  if (fs.existsSync(metaFile)) meta = JSON.parse(fs.readFileSync(metaFile, 'utf8'));
+  else {
+    if (OFFLINE) return null;
+    const url = 'https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url|mime|extmetadata&format=json&formatversion=2&titles=' + encodeURIComponent('File:' + file);
+    const data = await fetchJsonRetry(url);
+    const page = data.query && data.query.pages && data.query.pages[0];
+    if (!page || page.missing || !page.imageinfo) meta = { missing: true };
+    else {
+      const ii = page.imageinfo[0];
+      const em = ii.extmetadata || {};
+      meta = { url: ii.url, mime: ii.mime, licence: (em.LicenseShortName || {}).value || 'licence not stated', file: file };
+    }
+    fs.mkdirSync(CACHE, { recursive: true });
+    fs.writeFileSync(metaFile, JSON.stringify(meta));
+  }
+  if (meta.missing || meta.mime !== 'image/png') return null;
+  if (!fs.existsSync(pngFile)) {
+    if (OFFLINE) return null;
+    const buf = await fetchBytesRetry(meta.url);
+    fs.writeFileSync(pngFile, buf);
+  }
+  let img;
+  try { img = decodePng(fs.readFileSync(pngFile)); }
+  catch (e) { console.warn('  Could not read ' + file + ': ' + e.message); return null; }
+  // Crop to the middle of the body: the central half across, lower two thirds down.
+  const x0 = Math.floor(img.width * 0.25), x1 = Math.ceil(img.width * 0.75);
+  const y0 = Math.floor(img.height * 0.33), y1 = Math.ceil(img.height * 0.95);
+  const w = x1 - x0, h = y1 - y0, rgba = Buffer.alloc(w * h * 4);
+  for (let y = 0; y < h; y++) img.rgba.copy(rgba, y * w * 4, ((y0 + y) * img.width + x0) * 4, ((y0 + y) * img.width + x1) * 4);
+  const mc = mainColours({ width: w, height: h, rgba: rgba });
+  if (mc.opaqueShare < 0.5 || !mc.colours.length) return null;
+  return { hex: mc.colours[0].hex, file: file, licence: meta.licence };
+}
+
+async function fetchJsonRetry(url) {
+  for (let attempt = 1; attempt <= 6; attempt++) {
+    const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
+    if (res.status === 429 || res.status >= 500) { await sleep(attempt * 4000); continue; }
+    if (!res.ok) throw new Error('Request failed (' + res.status + '): ' + url);
+    await sleep(1500);
+    return res.json();
+  }
+  throw new Error('Kept being rate-limited: ' + url);
+}
+
+async function fetchBytesRetry(url) {
+  for (let attempt = 1; attempt <= 6; attempt++) {
+    const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
+    if (res.status === 429 || res.status >= 500) { await sleep(attempt * 4000); continue; }
+    if (!res.ok) throw new Error('Download failed (' + res.status + '): ' + url);
+    await sleep(1500);
+    return Buffer.from(await res.arrayBuffer());
+  }
+  throw new Error('Kept being rate-limited: ' + url);
+}
+
 // Apply the sourced kit to a shirt. Returns a short phrase like "yellow" for the match note.
-function applyWikiKit(kit, tpl, page, match) {
+async function applyWikiKit(kit, tpl, page, match) {
   const wornIn = /final$/i.test(page.title) ? page.title.replace(/^UEFA /, '') : match.competition + ', ' + match.stage.toLowerCase();
   const team = TEAM[kit.team];
   const link = 'https://en.wikipedia.org/w/index.php?title=' + encodeURIComponent(page.title.replace(/ /g, '_')) + '&oldid=' + page.revid;
-  const source = 'Wikipedia, "' + page.title + '" (revision ' + page.revid + '), CC BY-SA 4.0';
-  if (!hexOk(tpl.body)) {
-    // Wikipedia holds this shirt's colour only inside a pattern picture.
+  let source = 'Wikipedia, "' + page.title + '" (revision ' + page.revid + '), CC BY-SA 4.0';
+  let body = hexOk(tpl.body) ? tpl.body.toUpperCase() : null;
+  if (!body && tpl.pattern_b) {
+    // Wikipedia holds this shirt's colour only inside a pattern picture: read the picture.
+    const pic = await patternBodyColour(tpl.pattern_b);
+    if (pic) { body = pic.hex; source += '; colour read from the Commons picture "' + pic.file + '" (' + pic.licence + ')'; }
+  }
+  if (!body) {
     kit.colours = { body: team.body, trim: team.trim, stripes: team.stripes };
     kit.description = 'Drawn in ' + kit.team + '\u2019s traditional home colours, ' + team.desc + '. Wikipedia records the shirt worn in the final only as a picture (pattern "' + (tpl.pattern_b || '?') + '"), so the exact colour is to be confirmed.';
     kit.coloursSource = source + ' (pattern only)';
     kit.coloursUrl = link;
     return team.desc.split(' with ')[0];
   }
-  const body = tpl.body.toUpperCase();
   const name = colourName(body);
   const trim = trimFor(tpl, body);
   // Argentina's home shirt is sky blue and white stripes; the template's single body
@@ -395,7 +467,7 @@ async function colourFromWikipedia(match, kitById) {
     const tpl = templates.find(t => t.title === kit.team);
     if (!tpl) { console.warn('  No kit for ' + kit.team + ' in "' + page.title + '"'); continue; }
     if (!canRefreshColours(kit)) { notes.push(kit.team + ' in ' + (kit.description || '').toLowerCase().replace(/[.].*$/, '')); continue; }
-    const look = applyWikiKit(kit, tpl, page, match);
+    const look = await applyWikiKit(kit, tpl, page, match);
     notes.push(kit.team + ' in ' + look);
     if (match[side].colour !== undefined) {
       // Timeline dot: the body colour, or the trim when the body is pale.
