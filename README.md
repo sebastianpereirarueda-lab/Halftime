@@ -20,13 +20,17 @@ styled like an old newspaper or match programme.
 | `public/assets/fonts/` | The three typefaces, stored locally so the site works offline. |
 | `public/assets/js/dateline.js` | Tiny script that writes today's date at the top of the page. |
 | `public/404.html` | The "page not found" page Cloudflare shows for a wrong address. |
+| `scripts/` | The data pipeline: fetches scores and lineups, collects headlines, writes the news. |
+| `scripts/config.mjs` | Which competitions and news feeds the pipeline follows. Edit to change them. |
+| `.github/workflows/update-data.yml` | The schedule that runs the pipeline four times a day. |
 | `tools/import-kits.js` | A small script that fills the two lists from free tournament data and Wikipedia. See below. |
 | `tools/png.js`, `tools/kit-art.js`, `tools/base/` | Helpers for the script above: read and write the small kit pictures, and draw a shirt from them. |
 | `docs/HANDOFF.md` | The project brief: design system, plan and open decisions. |
 | `docs/KIT-DATA-SOURCES.md` | Research note: which kit databases exist, which may be used, and what fills the Kit Room today. |
 | `docs/design-reference/` | The original design mock-ups. Reference only, not part of the site. |
 
-There is no build step and nothing to install. The site is plain HTML and CSS.
+The site itself is plain HTML, CSS and JavaScript with no build step. The data pipeline
+is a few small Node scripts that GitHub runs on a schedule; you do not run them yourself.
 
 ## How to look at the site on Windows 11
 
@@ -60,6 +64,63 @@ It takes about a minute. You never need to touch `gh-pages` yourself.
 3. Set **Production branch** to `main`, leave **Build command** empty, and set
    **Build output directory** to `public`.
 4. Click **Save and Deploy**. Cloudflare then publishes every change to `main` on its own.
+
+## Live scores, lineups and AI-written news
+
+Four times a day GitHub runs the pipeline in `scripts/`:
+
+1. **Scores and lineups** come from API-Football. The script asks for one day of fixtures at
+   a time, keeps the competitions listed in `scripts/config.mjs`, then fetches the goals and
+   lineups of each finished match, and writes `public/data/results.js`. Finished matches
+   stay on the site for a week.
+
+   What the **free plan** really gives (checked by running it, October 2026): fixtures for
+   yesterday, today and tomorrow only, 100 requests a day, 10 a minute. Goals and lineups
+   cost two requests per match and are fetched once, then cached. A run uses 3 requests for
+   the fixtures plus 2 per new finished match, capped at 24. A paid plan widens the day
+   window and the request allowance; nothing in the code needs to change for that.
+2. **Headlines** are collected from the public RSS feeds of established football desks
+   (BBC Sport, The Guardian, Sky Sports, The Independent). No key needed. ESPN was tried and
+   left out because its feed answers with a bot-check page.
+3. **The news edition** is written by an OpenAI model from those headlines and saved to
+   `public/data/news.js`. If the headlines have not changed since the last edition, nothing
+   is rewritten and nothing is spent. The writer may only use facts from the collected articles, must
+   cite its sources on every story, and summarises in its own words. Every story on the
+   Front Page links to the reports it came from. If an edition cannot be written, the
+   previous one stays.
+4. The generated files are committed to `main` and the site is republished.
+
+### Switching it on: two secrets
+
+The pipeline needs two keys, stored as GitHub secrets. Secrets are never shown on the
+site or in the code.
+
+1. **API-Football key.** Sign up at dashboard.api-football.com (free plan), then copy the
+   key from the dashboard.
+2. **OpenAI API key.** Sign in at platform.openai.com, open **API keys**, and create one.
+   The news writer costs a few cents per edition at four editions a day. The default model
+   is `gpt-5.5`; to use another, add a repository **variable** (not a secret) named
+   `OPENAI_MODEL` on the same settings page, under the **Variables** tab.
+3. On github.com open this repository, click **Settings**, then **Secrets and variables**,
+   then **Actions**, then **New repository secret**. Add one named `API_FOOTBALL_KEY` and one
+   named `OPENAI_API_KEY`, pasting the matching key as the value.
+4. To run it straight away instead of waiting for the schedule: click **Actions**, choose
+   **Update data** in the left list, click **Run workflow**, tick **probe** the first time,
+   and click the green **Run workflow** button. The probe prints one raw match from the
+   provider so the field names can be checked against the code.
+
+Until the secrets exist, each step says so in its log and skips. The site keeps working
+with the hand-written archive and the printed placeholders.
+
+### Checking it locally
+
+```
+npm install
+npm test
+```
+
+`npm test` runs the pipeline against sample data with made-up team names, so nothing it
+produces can be mistaken for real results. The sample output never reaches the site.
 
 ## Editing text
 

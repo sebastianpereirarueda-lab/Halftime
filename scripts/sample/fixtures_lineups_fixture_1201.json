@@ -1,0 +1,256 @@
+{
+ "response": [
+  {
+   "team": {
+    "id": 12011,
+    "name": "Sample Town 2"
+   },
+   "formation": "4-3-3",
+   "coach": {
+    "name": "Coach Sample Town 2"
+   },
+   "startXI": [
+    {
+     "player": {
+      "id": 1,
+      "name": "Player 1",
+      "number": 1,
+      "pos": "G"
+     }
+    },
+    {
+     "player": {
+      "id": 2,
+      "name": "Player 2",
+      "number": 2,
+      "pos": "D"
+     }
+    },
+    {
+     "player": {
+      "id": 3,
+      "name": "Player 3",
+      "number": 3,
+      "pos": "D"
+     }
+    },
+    {
+     "player": {
+      "id": 4,
+      "name": "Player 4",
+      "number": 4,
+      "pos": "D"
+     }
+    },
+    {
+     "player": {
+      "id": 5,
+      "name": "Player 5",
+      "number": 5,
+      "pos": "D"
+     }
+    },
+    {
+     "player": {
+      "id": 6,
+      "name": "Player 6",
+      "number": 6,
+      "pos": "M"
+     }
+    },
+    {
+     "player": {
+      "id": 7,
+      "name": "Player 7",
+      "number": 7,
+      "pos": "M"
+     }
+    },
+    {
+     "player": {
+      "id": 8,
+      "name": "Player 8",
+      "number": 8,
+      "pos": "M"
+     }
+    },
+    {
+     "player": {
+      "id": 9,
+      "name": "Player 9",
+      "number": 9,
+      "pos": "F"
+     }
+    },
+    {
+     "player": {
+      "id": 10,
+      "name": "Player 10",
+      "number": 10,
+      "pos": "F"
+     }
+    },
+    {
+     "player": {
+      "id": 11,
+      "name": "Player 11",
+      "number": 11,
+      "pos": "F"
+     }
+    }
+   ],
+   "substitutes": [
+    {
+     "player": {
+      "id": 21,
+      "name": "Sub 1",
+      "number": 21,
+      "pos": "M"
+     }
+    },
+    {
+     "player": {
+      "id": 22,
+      "name": "Sub 2",
+      "number": 22,
+      "pos": "M"
+     }
+    },
+    {
+     "player": {
+      "id": 23,
+      "name": "Sub 3",
+      "number": 23,
+      "pos": "M"
+     }
+    }
+   ]
+  },
+  {
+   "team": {
+    "id": 12012,
+    "name": "Example United 2"
+   },
+   "formation": "4-3-3",
+   "coach": {
+    "name": "Coach Example United 2"
+   },
+   "startXI": [
+    {
+     "player": {
+      "id": 1,
+      "name": "Player 1",
+      "number": 1,
+      "pos": "G"
+     }
+    },
+    {
+     "player": {
+      "id": 2,
+      "name": "Player 2",
+      "number": 2,
+      "pos": "D"
+     }
+    },
+    {
+     "player": {
+      "id": 3,
+      "name": "Player 3",
+      "number": 3,
+      "pos": "D"
+     }
+    },
+    {
+     "player": {
+      "id": 4,
+      "name": "Player 4",
+      "number": 4,
+      "pos": "D"
+     }
+    },
+    {
+     "player": {
+      "id": 5,
+      "name": "Player 5",
+      "number": 5,
+      "pos": "D"
+     }
+    },
+    {
+     "player": {
+      "id": 6,
+      "name": "Player 6",
+      "number": 6,
+      "pos": "M"
+     }
+    },
+    {
+     "player": {
+      "id": 7,
+      "name": "Player 7",
+      "number": 7,
+      "pos": "M"
+     }
+    },
+    {
+     "player": {
+      "id": 8,
+      "name": "Player 8",
+      "number": 8,
+      "pos": "M"
+     }
+    },
+    {
+     "player": {
+      "id": 9,
+      "name": "Player 9",
+      "number": 9,
+      "pos": "F"
+     }
+    },
+    {
+     "player": {
+      "id": 10,
+      "name": "Player 10",
+      "number": 10,
+      "pos": "F"
+     }
+    },
+    {
+     "player": {
+      "id": 11,
+      "name": "Player 11",
+      "number": 11,
+      "pos": "F"
+     }
+    }
+   ],
+   "substitutes": [
+    {
+     "player": {
+      "id": 21,
+      "name": "Sub 1",
+      "number": 21,
+      "pos": "M"
+     }
+    },
+    {
+     "player": {
+      "id": 22,
+      "name": "Sub 2",
+      "number": 22,
+      "pos": "M"
+     }
+    },
+    {
+     "player": {
+      "id": 23,
+      "name": "Sub 3",
+      "number": 23,
+      "pos": "M"
+     }
+    }
+   ]
+  }
+ ]
+}

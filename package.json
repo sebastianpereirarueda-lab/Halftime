@@ -1,0 +1,18 @@
+{
+  "name": "halftime",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Halftime: football news, stats and shirts, served at the interval. Static site plus a small data pipeline.",
+  "type": "module",
+  "scripts": {
+    "scores": "node scripts/fetch-scores.mjs",
+    "news:fetch": "node scripts/fetch-news.mjs",
+    "news:write": "node scripts/write-news.mjs",
+    "update": "npm run scores && npm run news:fetch && npm run news:write",
+    "test": "node scripts/test.mjs"
+  },
+  "dependencies": {
+    "openai": "^7.28.0",
+    "zod": "^3.23.8"
+  }
+}

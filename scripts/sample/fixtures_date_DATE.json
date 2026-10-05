@@ -1,0 +1,650 @@
+{
+ "response": [
+  {
+   "fixture": {
+    "id": 1000,
+    "date": "2026-10-04T19:08:03+00:00",
+    "status": {
+     "short": "FT"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 39,
+    "name": "Premier League",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 10001,
+     "name": "Sample Town 1",
+     "logo": null
+    },
+    "away": {
+     "id": 10002,
+     "name": "Example United 1",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": 0,
+    "away": 0
+   }
+  },
+  {
+   "fixture": {
+    "id": 1001,
+    "date": "2026-10-03T23:08:03+00:00",
+    "status": {
+     "short": "FT"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 39,
+    "name": "Premier League",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 10011,
+     "name": "Sample Town 2",
+     "logo": null
+    },
+    "away": {
+     "id": 10012,
+     "name": "Example United 2",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": 1,
+    "away": 1
+   }
+  },
+  {
+   "fixture": {
+    "id": 1050,
+    "date": "2026-10-06T05:08:03+00:00",
+    "status": {
+     "short": "NS"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 39,
+    "name": "Premier League",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 10501,
+     "name": "Model City 1",
+     "logo": null
+    },
+    "away": {
+     "id": 10502,
+     "name": "Placeholder FC 1",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": null,
+    "away": null
+   }
+  },
+  {
+   "fixture": {
+    "id": 1100,
+    "date": "2026-10-04T19:08:03+00:00",
+    "status": {
+     "short": "FT"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 140,
+    "name": "La Liga",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 11001,
+     "name": "Sample Town 1",
+     "logo": null
+    },
+    "away": {
+     "id": 11002,
+     "name": "Example United 1",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": 0,
+    "away": 0
+   }
+  },
+  {
+   "fixture": {
+    "id": 1101,
+    "date": "2026-10-03T23:08:03+00:00",
+    "status": {
+     "short": "FT"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 140,
+    "name": "La Liga",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 11011,
+     "name": "Sample Town 2",
+     "logo": null
+    },
+    "away": {
+     "id": 11012,
+     "name": "Example United 2",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": 1,
+    "away": 1
+   }
+  },
+  {
+   "fixture": {
+    "id": 1150,
+    "date": "2026-10-06T05:08:03+00:00",
+    "status": {
+     "short": "NS"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 140,
+    "name": "La Liga",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 11501,
+     "name": "Model City 1",
+     "logo": null
+    },
+    "away": {
+     "id": 11502,
+     "name": "Placeholder FC 1",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": null,
+    "away": null
+   }
+  },
+  {
+   "fixture": {
+    "id": 1200,
+    "date": "2026-10-04T19:08:03+00:00",
+    "status": {
+     "short": "FT"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 135,
+    "name": "Serie A",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 12001,
+     "name": "Sample Town 1",
+     "logo": null
+    },
+    "away": {
+     "id": 12002,
+     "name": "Example United 1",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": 0,
+    "away": 0
+   }
+  },
+  {
+   "fixture": {
+    "id": 1201,
+    "date": "2026-10-03T23:08:03+00:00",
+    "status": {
+     "short": "FT"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 135,
+    "name": "Serie A",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 12011,
+     "name": "Sample Town 2",
+     "logo": null
+    },
+    "away": {
+     "id": 12012,
+     "name": "Example United 2",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": 1,
+    "away": 1
+   }
+  },
+  {
+   "fixture": {
+    "id": 1250,
+    "date": "2026-10-06T05:08:03+00:00",
+    "status": {
+     "short": "NS"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 135,
+    "name": "Serie A",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 12501,
+     "name": "Model City 1",
+     "logo": null
+    },
+    "away": {
+     "id": 12502,
+     "name": "Placeholder FC 1",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": null,
+    "away": null
+   }
+  },
+  {
+   "fixture": {
+    "id": 1300,
+    "date": "2026-10-04T19:08:03+00:00",
+    "status": {
+     "short": "FT"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 78,
+    "name": "Bundesliga",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 13001,
+     "name": "Sample Town 1",
+     "logo": null
+    },
+    "away": {
+     "id": 13002,
+     "name": "Example United 1",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": 0,
+    "away": 0
+   }
+  },
+  {
+   "fixture": {
+    "id": 1301,
+    "date": "2026-10-03T23:08:03+00:00",
+    "status": {
+     "short": "FT"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 78,
+    "name": "Bundesliga",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 13011,
+     "name": "Sample Town 2",
+     "logo": null
+    },
+    "away": {
+     "id": 13012,
+     "name": "Example United 2",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": 1,
+    "away": 1
+   }
+  },
+  {
+   "fixture": {
+    "id": 1350,
+    "date": "2026-10-06T05:08:03+00:00",
+    "status": {
+     "short": "NS"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 78,
+    "name": "Bundesliga",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 13501,
+     "name": "Model City 1",
+     "logo": null
+    },
+    "away": {
+     "id": 13502,
+     "name": "Placeholder FC 1",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": null,
+    "away": null
+   }
+  },
+  {
+   "fixture": {
+    "id": 1400,
+    "date": "2026-10-04T19:08:03+00:00",
+    "status": {
+     "short": "FT"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 61,
+    "name": "Ligue 1",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 14001,
+     "name": "Sample Town 1",
+     "logo": null
+    },
+    "away": {
+     "id": 14002,
+     "name": "Example United 1",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": 0,
+    "away": 0
+   }
+  },
+  {
+   "fixture": {
+    "id": 1401,
+    "date": "2026-10-03T23:08:03+00:00",
+    "status": {
+     "short": "FT"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 61,
+    "name": "Ligue 1",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 14011,
+     "name": "Sample Town 2",
+     "logo": null
+    },
+    "away": {
+     "id": 14012,
+     "name": "Example United 2",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": 1,
+    "away": 1
+   }
+  },
+  {
+   "fixture": {
+    "id": 1450,
+    "date": "2026-10-06T05:08:03+00:00",
+    "status": {
+     "short": "NS"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 61,
+    "name": "Ligue 1",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 14501,
+     "name": "Model City 1",
+     "logo": null
+    },
+    "away": {
+     "id": 14502,
+     "name": "Placeholder FC 1",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": null,
+    "away": null
+   }
+  },
+  {
+   "fixture": {
+    "id": 1500,
+    "date": "2026-10-04T19:08:03+00:00",
+    "status": {
+     "short": "FT"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 2,
+    "name": "UEFA Champions League",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 15001,
+     "name": "Sample Town 1",
+     "logo": null
+    },
+    "away": {
+     "id": 15002,
+     "name": "Example United 1",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": 0,
+    "away": 0
+   }
+  },
+  {
+   "fixture": {
+    "id": 1501,
+    "date": "2026-10-03T23:08:03+00:00",
+    "status": {
+     "short": "FT"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 2,
+    "name": "UEFA Champions League",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 15011,
+     "name": "Sample Town 2",
+     "logo": null
+    },
+    "away": {
+     "id": 15012,
+     "name": "Example United 2",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": 1,
+    "away": 1
+   }
+  },
+  {
+   "fixture": {
+    "id": 1550,
+    "date": "2026-10-06T05:08:03+00:00",
+    "status": {
+     "short": "NS"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 2,
+    "name": "UEFA Champions League",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 15501,
+     "name": "Model City 1",
+     "logo": null
+    },
+    "away": {
+     "id": 15502,
+     "name": "Placeholder FC 1",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": null,
+    "away": null
+   }
+  },
+  {
+   "fixture": {
+    "id": 9999,
+    "date": "2026-10-05T00:08:03+00:00",
+    "status": {
+     "short": "FT"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 999,
+    "name": "Unfollowed League",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 99991,
+     "name": "Elsewhere FC",
+     "logo": null
+    },
+    "away": {
+     "id": 99992,
+     "name": "Nowhere United",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": 1,
+    "away": 1
+   }
+  }
+ ]
+}
