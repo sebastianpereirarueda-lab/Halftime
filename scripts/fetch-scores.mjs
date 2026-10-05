@@ -23,7 +23,10 @@ import { ROOT, PUBLIC_DATA, CACHE, readJson, writeJson, writeDataFile, log, hour
 const args = new Set(process.argv.slice(2));
 const PROBE = args.has("--probe");
 const SAMPLE = args.has("--sample");
-const OUT_FILE = process.env.HALFTIME_OUT || path.join(PUBLIC_DATA, "results.js");
+// SEASON=2024 (for example) is a test mode: it fetches that season but writes
+// to a temporary file, never to the site, so old results cannot be published.
+const TEST_SEASON = process.env.SEASON ? Number(process.env.SEASON) : null;
+const OUT_FILE = process.env.HALFTIME_OUT || (TEST_SEASON ? path.join(os.tmpdir(), "halftime-test-results.js") : path.join(PUBLIC_DATA, "results.js"));
 const KEY = process.env.API_FOOTBALL_KEY;
 const BASE = "https://v3.football.api-sports.io";
 
@@ -40,7 +43,11 @@ async function api(pathAndQuery) {
   const res = await fetch(BASE + pathAndQuery, { headers: { "x-apisports-key": KEY } });
   if (!res.ok) throw new Error("API-Football " + res.status + " for " + pathAndQuery);
   const body = await res.json();
-  if (body.errors && Object.keys(body.errors).length) throw new Error("API-Football error: " + JSON.stringify(body.errors));
+  if (body.errors && Object.keys(body.errors).length) {
+    const err = new Error("API-Football error: " + JSON.stringify(body.errors));
+    err.plan = Boolean(body.errors.plan || body.errors.requests || body.errors.rateLimit);
+    throw err;
+  }
   return body.response || [];
 }
 
@@ -105,9 +112,10 @@ function toMatch(fx, events, lineups, league) {
 }
 
 async function main() {
-  const season = Number(process.env.SEASON) || currentSeason();
-  // Sample runs use a throwaway cache so test data never reaches the repo.
-  const cacheFile = SAMPLE ? path.join(os.tmpdir(), "halftime-sample-cache.json") : path.join(CACHE, "fixtures.json");
+  const season = TEST_SEASON || currentSeason();
+  if (TEST_SEASON) log(`TEST MODE: season ${TEST_SEASON}. Output goes to ${OUT_FILE}, not to the site.`);
+  // Sample and test runs use a throwaway cache so that data never reaches the repo.
+  const cacheFile = (SAMPLE || TEST_SEASON) ? path.join(os.tmpdir(), "halftime-sample-cache.json") : path.join(CACHE, "fixtures.json");
   const cache = readJson(cacheFile, {});
   const results = [], upcoming = [], matches = [];
   let probed = false;
@@ -164,4 +172,8 @@ async function main() {
   log(`Wrote ${results.length} results, ${upcoming.length} fixtures, ${matches.filter(m => m.lineups).length} with lineups, using ${requests} API requests.`);
 }
 
-main().catch(err => { console.error("fetch-scores failed:", err.message); process.exit(1); });
+main().catch(err => {
+  console.error("fetch-scores failed:", err.message);
+  if (err.plan) console.error("This is a plan or quota limit at API-Football, not a bug. The existing results file is kept. See README, 'Switching it on'.");
+  process.exit(1);
+});

@@ -19,6 +19,10 @@ on:
         description: "Print one raw fixture, events and lineups to check field names"
         type: boolean
         default: false
+      season:
+        description: "Test mode: fetch this season (e.g. 2024) to a temporary file, never to the site"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -42,9 +46,12 @@ jobs:
 
       - run: npm ci
 
+      # continue-on-error: a provider problem must not stop the news from being written.
       - name: Fetch scores, fixtures and lineups
+        continue-on-error: true
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          SEASON: ${{ inputs.season }}
         run: node scripts/fetch-scores.mjs ${{ inputs.probe && '--probe' || '' }}
 
       - name: Collect headlines from the news feeds
