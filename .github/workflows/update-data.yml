@@ -32,8 +32,9 @@ on:
 permissions:
   contents: write
 
+# Its own queue: a site publish triggered by a code push must never cancel a data run.
 concurrency:
-  group: publish
+  group: update-data
   cancel-in-progress: false
 
 jobs:
@@ -87,7 +88,12 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "Update scores and news ($(date -u +'%Y-%m-%d %H:%M UTC'))"
-            git push origin HEAD:main
+            # main may have moved while this ran (other pushes); rebase onto it and retry.
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push origin HEAD:main && break
+              echo "Push attempt $attempt failed; retrying in 10 seconds."
+              sleep 10
+            done
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
