@@ -17,7 +17,7 @@
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { LEAGUES, DAYS_BACK, DAYS_AHEAD, DETAIL_WINDOW_HOURS, MAX_REQUESTS_PER_RUN } from "./config.mjs";
+import { LEAGUES, DAYS_BACK, DAYS_AHEAD, KEEP_DAYS, DETAIL_WINDOW_HOURS, MAX_REQUESTS_PER_RUN } from "./config.mjs";
 import { ROOT, PUBLIC_DATA, CACHE, readJson, writeJson, writeDataFile, log, hoursAgo, currentSeason, slug, formatDate } from "./lib/util.mjs";
 
 const args = new Set(process.argv.slice(2));
@@ -46,6 +46,9 @@ async function api(pathAndQuery) {
   if (body.errors && Object.keys(body.errors).length) {
     const err = new Error("API-Football error: " + JSON.stringify(body.errors));
     err.plan = Boolean(body.errors.plan || body.errors.requests || body.errors.rateLimit);
+    // "Free plans do not have access to this date, try from 2026-10-04 to 2026-10-06."
+    const m = String(body.errors.plan || "").match(/try from (\d{4}-\d{2}-\d{2}) to (\d{4}-\d{2}-\d{2})/);
+    if (m) err.allowed = { from: m[1], to: m[2] };
     throw err;
   }
   return body.response || [];
@@ -58,6 +61,15 @@ function sample(pathAndQuery) {
   const data = readJson(file);
   if (!data) throw new Error("No sample file for " + pathAndQuery + " (expected " + file + ")");
   return data.response || [];
+}
+
+// Reads a previously generated results.js back into an object (null if absent).
+function readResultsFile(file) {
+  try {
+    const text = fs.readFileSync(file, "utf8");
+    const i = text.indexOf("= ");
+    return i === -1 ? null : JSON.parse(text.slice(i + 2).replace(/;\s*$/, ""));
+  } catch { return null; }
 }
 
 const FINISHED = new Set(["FT", "AET", "PEN"]);
@@ -132,8 +144,20 @@ async function main() {
     days.push(day.toISOString().slice(0, 10));
   }
   const seen = new Map();
+  let allowed = null;   // date window the plan permits, learned from its first refusal
   for (const day of days) {
-    const all = await api(`/fixtures?date=${day}`);
+    if (allowed && (day < allowed.from || day > allowed.to)) continue;
+    let all;
+    try {
+      all = await api(`/fixtures?date=${day}`);
+    } catch (e) {
+      if (e.allowed && !allowed) {
+        allowed = e.allowed;
+        log(`The plan only serves ${allowed.from} to ${allowed.to}; narrowing the window to that.`);
+        continue;
+      }
+      throw e;
+    }
     let kept = 0;
     for (const fx of all) {
       const league = fx.league && leagueById.get(fx.league.id);
@@ -179,6 +203,19 @@ async function main() {
   // Trim the cache to the last 400 fixtures so the file stays small.
   const ids = Object.keys(cache).sort((a, b) => Number(b) - Number(a)).slice(0, 400);
   writeJson(cacheFile, Object.fromEntries(ids.map(i => [i, cache[i]])));
+
+  // Keep a rolling week: matches published on earlier runs stay until they are
+  // KEEP_DAYS old, so a narrow fetch window still leaves a full results box.
+  if (!TEST_SEASON) {
+    const previous = readResultsFile(OUT_FILE);
+    const have = new Set(matches.map(m => m.fixtureId));
+    for (const m of (previous && previous.matches) || []) {
+      if (!have.has(m.fixtureId) && hoursAgo(m.dateIso) <= KEEP_DAYS * 24) {
+        matches.push(m);
+        results.push({ id: m.id, competition: (LEAGUES.find(l => l.name === m.competition) || {}).short || m.competition, dateIso: m.dateIso, home: m.home.name, away: m.away.name, score: m.score, hasCard: true });
+      }
+    }
+  }
 
   results.sort((a, b) => b.dateIso.localeCompare(a.dateIso));
   upcoming.sort((a, b) => a.dateIso.localeCompare(b.dateIso));

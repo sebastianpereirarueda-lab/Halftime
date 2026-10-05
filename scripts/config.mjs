@@ -18,8 +18,13 @@ export const LEAGUES = [
 
 // The pipeline asks the provider for one calendar day at a time (all
 // competitions in one request): this many days back and ahead of today.
+// The free plan only serves yesterday, today and tomorrow; the fetcher narrows
+// itself to whatever the plan allows, so these can stay wider for paid plans.
 export const DAYS_BACK = 3;
 export const DAYS_AHEAD = 4;
+
+// Finished matches stay in the published results for this many days.
+export const KEEP_DAYS = 7;
 
 // Only fetch goals and lineups for matches that finished within this window.
 export const DETAIL_WINDOW_HOURS = 72;
