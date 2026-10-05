@@ -50,7 +50,7 @@
     return '<li>' +
       '<a class="kit-card" href="kit.html?id=' + encodeURIComponent(kit.id) + '">' +
         '<div class="kit-card__meta"><span>' + H.esc(H.kitNumber(kit)) + '</span><span class="year">' + H.esc(kit.year) + '</span></div>' +
-        '<div class="shirt-stage">' + H.shirtSvg(kit.colours, label, 190) + '</div>' +
+        '<div class="shirt-stage">' + H.shirtArt(kit, label, 190, '../assets') + '</div>' +
         '<div class="kit-card__team">' + H.esc(kit.team) + '</div>' +
         '<div class="kit-card__note">' + H.esc(kit.result || '') + '</div>' +
         '<div class="kit-card__more">View kit details</div>' +

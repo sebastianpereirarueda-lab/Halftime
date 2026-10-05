@@ -28,8 +28,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "30 July 1930",
     venue: "Estadio Centenario, Montevideo",
-    home: { name: "Uruguay", short: "URU", colour: "#6FA9DC", label: "Winners", kit: "uruguay-1930" },
-    away: { name: "Argentina", short: "ARG", colour: "#7DB8E0", label: "Runners-up", kit: "argentina-1930" },
+    home: { name: "Uruguay", short: "URU", colour: "#A2D0FC", label: "Winners", kit: "uruguay-1930" },
+    away: { name: "Argentina", short: "ARG", colour: "#1B1A17", label: "Runners-up", kit: "argentina-1930" },
     score: { home: 4, away: 2 },
     scoreNote: null,
     extraTime: false,
@@ -41,7 +41,7 @@ window.HALFTIME_MATCHES = [
       { minute: 68, scorer: "Iriarte", team: "home" },
       { minute: 89, scorer: "Castro", team: "home" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Uruguay in sky blue. Argentina in sky blue and white striped. (Wikipedia, \"1930 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 1930 (CC0)"
   },
@@ -51,8 +51,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "10 June 1934",
     venue: "Nazionale PNF, Rome",
-    home: { name: "Italy", short: "ITA", colour: "#1F4E9C", label: "Winners", kit: "italy-1934" },
-    away: { name: "Czechoslovakia", short: "TCH", colour: "#B3261E", label: "Runners-up", kit: "czechoslovakia-1934" },
+    home: { name: "Italy", short: "ITA", colour: "#547AAB", label: "Winners", kit: "italy-1934" },
+    away: { name: "Czechoslovakia", short: "TCH", colour: "#DE1822", label: "Runners-up", kit: "czechoslovakia-1934" },
     score: { home: 2, away: 1 },
     scoreNote: "After extra time.",
     extraTime: true,
@@ -61,7 +61,7 @@ window.HALFTIME_MATCHES = [
       { minute: 81, scorer: "Orsi", team: "home" },
       { minute: 95, scorer: "Schiavio", team: "home" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Italy in blue. Czechoslovakia in red. (Wikipedia, \"1934 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 1934 (CC0)"
   },
@@ -71,8 +71,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "19 June 1938",
     venue: "Stade Olympique, Paris (Colombes)",
-    home: { name: "Italy", short: "ITA", colour: "#1F4E9C", label: "Winners", kit: "italy-1938" },
-    away: { name: "Hungary", short: "HUN", colour: "#B3261E", label: "Runners-up", kit: "hungary-1938" },
+    home: { name: "Italy", short: "ITA", colour: "#547AAB", label: "Winners", kit: "italy-1938" },
+    away: { name: "Hungary", short: "HUN", colour: "#DE1822", label: "Runners-up", kit: "hungary-1938" },
     score: { home: 4, away: 2 },
     scoreNote: null,
     extraTime: false,
@@ -84,7 +84,7 @@ window.HALFTIME_MATCHES = [
       { minute: 70, scorer: "Sárosi", team: "home" },
       { minute: 82, scorer: "Piola", team: "away" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Italy in blue. Hungary in red. (Wikipedia, \"1938 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 1938 (CC0)"
   },
@@ -94,8 +94,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final round, deciding match",
     date: "16 July 1950",
     venue: "Maracanã, Rio de Janeiro",
-    home: { name: "Uruguay", short: "URU", colour: "#6FA9DC", label: "Winners", kit: "uruguay-1950" },
-    away: { name: "Brazil", short: "BRA", colour: "#E8C32A", label: "Runners-up", kit: "brazil-1950" },
+    home: { name: "Uruguay", short: "URU", colour: "#A2D0FC", label: "Winners", kit: "uruguay-1950" },
+    away: { name: "Brazil", short: "BRA", colour: "#1B1A17", label: "Runners-up", kit: "brazil-1950" },
     score: { home: 2, away: 1 },
     scoreNote: null,
     extraTime: false,
@@ -104,7 +104,7 @@ window.HALFTIME_MATCHES = [
       { minute: 66, scorer: "Schiaffino", team: "home" },
       { minute: 79, scorer: "Ghiggia", team: "home" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Uruguay in sky blue. Brazil in white. (Wikipedia, \"Uruguay v Brazil (1950 FIFA World Cup)\".)",
     stats: null,
     source: "openfootball worldcup.json 1950 (CC0)"
   },
@@ -114,8 +114,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "4 July 1954",
     venue: "Stade de Suisse, Bern",
-    home: { name: "West Germany", short: "FRG", colour: "#1B1A17", label: "Winners", kit: "west-germany-1954" },
-    away: { name: "Hungary", short: "HUN", colour: "#B3261E", label: "Runners-up", kit: "hungary-1954" },
+    home: { name: "West Germany", short: "FRG", colour: "#191817", label: "Winners", kit: "west-germany-1954" },
+    away: { name: "Hungary", short: "HUN", colour: "#D01817", label: "Runners-up", kit: "hungary-1954" },
     score: { home: 3, away: 2 },
     scoreNote: null,
     extraTime: false,
@@ -126,7 +126,7 @@ window.HALFTIME_MATCHES = [
       { minute: 18, scorer: "Rahn", team: "home" },
       { minute: 84, scorer: "Rahn", team: "home" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "West Germany in white. Hungary in red. (Wikipedia, \"1954 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 1954 (CC0)"
   },
@@ -136,8 +136,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "29 June 1958",
     venue: "Rasunda Stadium, Solna",
-    home: { name: "Brazil", short: "BRA", colour: "#E8C32A", label: "Winners", kit: "brazil-1958" },
-    away: { name: "Sweden", short: "SWE", colour: "#E8C32A", label: "Runners-up", kit: "sweden-1958" },
+    home: { name: "Brazil", short: "BRA", colour: "#3939A2", label: "Winners", kit: "brazil-1958" },
+    away: { name: "Sweden", short: "SWE", colour: "#FEDF44", label: "Runners-up", kit: "sweden-1958" },
     score: { home: 5, away: 2 },
     scoreNote: null,
     extraTime: false,
@@ -150,7 +150,7 @@ window.HALFTIME_MATCHES = [
       { minute: 80, scorer: "Simonsson", team: "away" },
       { minute: 90, scorer: "Pele", team: "home" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Brazil in blue. Sweden in yellow. (Wikipedia, \"1958 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 1958 (CC0)"
   },
@@ -160,8 +160,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "17 June 1962",
     venue: "Estadio Nacional Julio Martínez Prádanos, Santiago",
-    home: { name: "Brazil", short: "BRA", colour: "#E8C32A", label: "Winners", kit: "brazil-1962" },
-    away: { name: "Czechoslovakia", short: "TCH", colour: "#B3261E", label: "Runners-up", kit: "czechoslovakia-1962" },
+    home: { name: "Brazil", short: "BRA", colour: "#FEF030", label: "Winners", kit: "brazil-1962" },
+    away: { name: "Czechoslovakia", short: "TCH", colour: "#1B1A17", label: "Runners-up", kit: "czechoslovakia-1962" },
     score: { home: 3, away: 1 },
     scoreNote: null,
     extraTime: false,
@@ -171,7 +171,7 @@ window.HALFTIME_MATCHES = [
       { minute: 69, scorer: "Zito", team: "home" },
       { minute: 78, scorer: "Vava", team: "home" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Brazil in yellow. Czechoslovakia in white. (Wikipedia, \"1962 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 1962 (CC0)"
   },
@@ -181,8 +181,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "30 July 1966",
     venue: "Wembley Stadium, London",
-    home: { name: "England", short: "ENG", colour: "#1F2F5C", label: "Winners", kit: "england-1966" },
-    away: { name: "West Germany", short: "FRG", colour: "#1B1A17", label: "Runners-up", kit: "west-germany-1966" },
+    home: { name: "England", short: "ENG", colour: "#E01817", label: "Winners", kit: "england-1966" },
+    away: { name: "West Germany", short: "FRG", colour: "#191817", label: "Runners-up", kit: "west-germany-1966" },
     score: { home: 4, away: 2 },
     scoreNote: "After extra time.",
     extraTime: true,
@@ -194,7 +194,7 @@ window.HALFTIME_MATCHES = [
       { minute: 101, scorer: "Hurst", team: "home" },
       { minute: 120, scorer: "Hurst", team: "home" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "England in red. West Germany in white. (Wikipedia, \"1966 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 1966 (CC0)"
   },
@@ -204,8 +204,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "21 June 1970",
     venue: "Estadio Azteca, Mexico City",
-    home: { name: "Brazil", short: "BRA", colour: "#1F6B3A", label: "Winners", kit: "brazil-1970" },
-    away: { name: "Italy", short: "ITA", colour: "#1F4E9C", label: "Runners-up", kit: "italy-1970" },
+    home: { name: "Brazil", short: "BRA", colour: "#FCEA25", label: "Winners", kit: "brazil-1970" },
+    away: { name: "Italy", short: "ITA", colour: "#4535CE", label: "Runners-up", kit: "italy-1970" },
     score: { home: 4, away: 1 },
     goals: [
       { minute: 18, scorer: "Pelé", team: "home" },
@@ -223,8 +223,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "7 July 1974",
     venue: "Olympiastadion, Munich",
-    home: { name: "Netherlands", short: "NED", colour: "#E86F1C", label: "Runners-up", kit: "netherlands-1974" },
-    away: { name: "West Germany", short: "FRG", colour: "#1B1A17", label: "Winners", kit: "west-germany-1974" },
+    home: { name: "Netherlands", short: "NED", colour: "#FE6F17", label: "Runners-up", kit: "netherlands-1974" },
+    away: { name: "West Germany", short: "FRG", colour: "#191817", label: "Winners", kit: "west-germany-1974" },
     score: { home: 1, away: 2 },
     scoreNote: null,
     extraTime: false,
@@ -233,7 +233,7 @@ window.HALFTIME_MATCHES = [
       { minute: 25, scorer: "Breitner (pen.)", team: "away" },
       { minute: 43, scorer: "Mueller", team: "away" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Netherlands in orange. West Germany in white. (Wikipedia, \"1974 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 1974 (CC0)"
   },
@@ -243,8 +243,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "25 June 1978",
     venue: "El Monumental, Buenos Aires",
-    home: { name: "Argentina", short: "ARG", colour: "#7DB8E0", label: "Winners", kit: "argentina-1978" },
-    away: { name: "Netherlands", short: "NED", colour: "#E86F1C", label: "Runners-up", kit: "netherlands-1978" },
+    home: { name: "Argentina", short: "ARG", colour: "#82B1DC", label: "Winners", kit: "argentina-1978" },
+    away: { name: "Netherlands", short: "NED", colour: "#FE6F17", label: "Runners-up", kit: "netherlands-1978" },
     score: { home: 3, away: 1 },
     scoreNote: "After extra time.",
     extraTime: true,
@@ -254,7 +254,7 @@ window.HALFTIME_MATCHES = [
       { minute: 105, scorer: "Kempes", team: "home" },
       { minute: 115, scorer: "Bertoni", team: "home" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Argentina in sky blue and white striped. Netherlands in orange. (Wikipedia, \"1978 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 1978 (CC0)"
   },
@@ -264,7 +264,7 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "11 July 1982",
     venue: "Santiago Bernabeu, Madrid",
-    home: { name: "Italy", short: "ITA", colour: "#1F4E9C", label: "Winners", kit: "italy-1982" },
+    home: { name: "Italy", short: "ITA", colour: "#4535CE", label: "Winners", kit: "italy-1982" },
     away: { name: "West Germany", short: "FRG", colour: "#1B1A17", label: "Runners-up", kit: "west-germany-1982" },
     score: { home: 3, away: 1 },
     scoreNote: null,
@@ -275,7 +275,7 @@ window.HALFTIME_MATCHES = [
       { minute: 81, scorer: "Altobelli", team: "home" },
       { minute: 83, scorer: "Breitner", team: "away" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Italy in blue. West Germany in white. (Wikipedia, \"1982 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 1982 (CC0)"
   },
@@ -285,8 +285,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "29 June 1986",
     venue: "Estadio Azteca, Mexico City",
-    home: { name: "Argentina", short: "ARG", colour: "#7DB8E0", label: "Winners", kit: "argentina-1986" },
-    away: { name: "West Germany", short: "FRG", colour: "#1B1A17", label: "Runners-up", kit: "west-germany-1986" },
+    home: { name: "Argentina", short: "ARG", colour: "#A8D2FC", label: "Winners", kit: "argentina-1986" },
+    away: { name: "West Germany", short: "FRG", colour: "#198B17", label: "Runners-up", kit: "west-germany-1986" },
     score: { home: 3, away: 2 },
     scoreNote: null,
     extraTime: false,
@@ -297,7 +297,7 @@ window.HALFTIME_MATCHES = [
       { minute: 81, scorer: "Voeller", team: "away" },
       { minute: 84, scorer: "Burruchaga", team: "home" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Argentina in sky blue and white striped. West Germany in green. (Wikipedia, \"1986 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 1986 (CC0)"
   },
@@ -308,14 +308,14 @@ window.HALFTIME_MATCHES = [
     date: "8 July 1990",
     venue: "Stadio Olimpico, Rome",
     home: { name: "West Germany", short: "FRG", colour: "#1B1A17", label: "Winners", kit: "west-germany-1990" },
-    away: { name: "Argentina", short: "ARG", colour: "#7DB8E0", label: "Runners-up", kit: "argentina-1990" },
+    away: { name: "Argentina", short: "ARG", colour: "#1918C3", label: "Runners-up", kit: "argentina-1990" },
     score: { home: 1, away: 0 },
     scoreNote: null,
     extraTime: false,
     goals: [
       { minute: 85, scorer: "Brehme (pen.)", team: "home" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "West Germany in white. Argentina in royal blue. (Wikipedia, \"1990 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 1990 (CC0)"
   },
@@ -325,13 +325,13 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "17 July 1994",
     venue: "Rose Bowl, Los Angeles (Pasadena)",
-    home: { name: "Brazil", short: "BRA", colour: "#E8C32A", label: "Winners", kit: "brazil-1994" },
-    away: { name: "Italy", short: "ITA", colour: "#1F4E9C", label: "Runners-up", kit: "italy-1994" },
+    home: { name: "Brazil", short: "BRA", colour: "#FEFE17", label: "Winners", kit: "brazil-1994" },
+    away: { name: "Italy", short: "ITA", colour: "#1918C2", label: "Runners-up", kit: "italy-1994" },
     score: { home: 0, away: 0 },
     scoreNote: "After extra time. Brazil won 3–2 on penalties.",
     extraTime: true,
     goals: [],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Brazil in yellow. Italy in royal blue. (Wikipedia, \"1994 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 1994 (CC0)"
   },
@@ -341,8 +341,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "12 July 1998",
     venue: "Stade de France, Paris (Saint-Denis)",
-    home: { name: "Brazil", short: "BRA", colour: "#E8C32A", label: "Runners-up", kit: "brazil-1998" },
-    away: { name: "France", short: "FRA", colour: "#1F4E9C", label: "Winners", kit: "france-1998" },
+    home: { name: "Brazil", short: "BRA", colour: "#FED017", label: "Runners-up", kit: "brazil-1998" },
+    away: { name: "France", short: "FRA", colour: "#1918C3", label: "Winners", kit: "france-1998" },
     score: { home: 0, away: 3 },
     scoreNote: null,
     extraTime: false,
@@ -351,7 +351,7 @@ window.HALFTIME_MATCHES = [
       { minute: 46, scorer: "Zidane", team: "away" },
       { minute: 93, scorer: "Petit", team: "away" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Brazil in yellow. France in royal blue. (Wikipedia, \"1998 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 1998 (CC0)"
   },
@@ -362,7 +362,7 @@ window.HALFTIME_MATCHES = [
     date: "30 June 2002",
     venue: "International Stadium Yokohama, Yokohama",
     home: { name: "Germany", short: "GER", colour: "#1B1A17", label: "Runners-up", kit: "germany-2002" },
-    away: { name: "Brazil", short: "BRA", colour: "#E8C32A", label: "Winners", kit: "brazil-2002" },
+    away: { name: "Brazil", short: "BRA", colour: "#FEFE17", label: "Winners", kit: "brazil-2002" },
     score: { home: 0, away: 2 },
     scoreNote: null,
     extraTime: false,
@@ -370,7 +370,7 @@ window.HALFTIME_MATCHES = [
       { minute: 67, scorer: "Ronaldo", team: "away" },
       { minute: 79, scorer: "Ronaldo", team: "away" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Germany in white. Brazil in yellow. (Wikipedia, \"2002 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 2002 (CC0)"
   },
@@ -380,8 +380,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "9 July 2006",
     venue: "Olympiastadion, Berlin",
-    home: { name: "Italy", short: "ITA", colour: "#1F4E9C", label: "Winners", kit: "italy-2006" },
-    away: { name: "France", short: "FRA", colour: "#1F4E9C", label: "Runners-up", kit: "france-2006" },
+    home: { name: "Italy", short: "ITA", colour: "#3660C3", label: "Winners", kit: "italy-2006" },
+    away: { name: "France", short: "FRA", colour: "#1B1A17", label: "Runners-up", kit: "france-2006" },
     score: { home: 1, away: 1 },
     scoreNote: "After extra time. Italy won 5–3 on penalties.",
     extraTime: true,
@@ -389,7 +389,7 @@ window.HALFTIME_MATCHES = [
       { minute: 7, scorer: "Zidane (pen.)", team: "away" },
       { minute: 19, scorer: "Materazzi", team: "home" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Italy in blue. France in white. (Wikipedia, \"2006 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 2006 (CC0)"
   },
@@ -399,15 +399,15 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "11 July 2010",
     venue: "Soccer City Stadium, Johannesburg",
-    home: { name: "Netherlands", short: "NED", colour: "#E86F1C", label: "Runners-up", kit: "netherlands-2010" },
-    away: { name: "Spain", short: "ESP", colour: "#B3261E", label: "Winners", kit: "spain-2010" },
+    home: { name: "Netherlands", short: "NED", colour: "#FE6E17", label: "Runners-up", kit: "netherlands-2010" },
+    away: { name: "Spain", short: "ESP", colour: "#194672", label: "Winners", kit: "spain-2010" },
     score: { home: 0, away: 1 },
     scoreNote: "After extra time.",
     extraTime: true,
     goals: [
       { minute: 115, scorer: "Iniesta", team: "away" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Netherlands in orange. Spain in dark blue. (Wikipedia, \"2010 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 2010 (CC0)"
   },
@@ -418,14 +418,14 @@ window.HALFTIME_MATCHES = [
     date: "13 July 2014",
     venue: "Maracanã, Rio de Janeiro",
     home: { name: "Germany", short: "GER", colour: "#1B1A17", label: "Winners", kit: "germany-2014" },
-    away: { name: "Argentina", short: "ARG", colour: "#7DB8E0", label: "Runners-up", kit: "argentina-2014" },
+    away: { name: "Argentina", short: "ARG", colour: "#192970", label: "Runners-up", kit: "argentina-2014" },
     score: { home: 1, away: 0 },
     scoreNote: "After extra time.",
     extraTime: true,
     goals: [
       { minute: 113, scorer: "Götze", team: "home" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Germany in white. Argentina in navy. (Wikipedia, \"2014 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 2014 (CC0)"
   },
@@ -435,8 +435,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "15 July 2018",
     venue: "Lenin, Moscow",
-    home: { name: "France", short: "FRA", colour: "#1F4E9C", label: "Winners", kit: "france-2018" },
-    away: { name: "Croatia", short: "CRO", colour: "#B3261E", label: "Runners-up", kit: "croatia-2018" },
+    home: { name: "France", short: "FRA", colour: "#283C63", label: "Winners", kit: "france-2018" },
+    away: { name: "Croatia", short: "CRO", colour: "#F41817", label: "Runners-up", kit: "croatia-2018" },
     score: { home: 4, away: 2 },
     scoreNote: null,
     extraTime: false,
@@ -448,7 +448,7 @@ window.HALFTIME_MATCHES = [
       { minute: 65, scorer: "Mbappé", team: "home" },
       { minute: 69, scorer: "Mandžukić", team: "away" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "France in dark blue. Croatia in red. (Wikipedia, \"2018 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 2018 (CC0)"
   },
@@ -458,8 +458,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "11 July 2021",
     venue: "London",
-    home: { name: "Italy", short: "ITA", colour: "#1F4E9C", label: "Winners", kit: "italy-2021" },
-    away: { name: "England", short: "ENG", colour: "#1F2F5C", label: "Runners-up", kit: "england-2021" },
+    home: { name: "Italy", short: "ITA", colour: "#2850D8", label: "Winners", kit: "italy-2021" },
+    away: { name: "England", short: "ENG", colour: "#1B1A17", label: "Runners-up", kit: "england-2021" },
     score: { home: 1, away: 1 },
     scoreNote: "After extra time. Italy won 3–2 on penalties.",
     extraTime: true,
@@ -467,7 +467,7 @@ window.HALFTIME_MATCHES = [
       { minute: 2, scorer: "Shaw", team: "away" },
       { minute: 67, scorer: "Bonucci", team: "home" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Italy in blue. England in white. (Wikipedia, \"UEFA Euro 2020 final\".)",
     stats: null,
     source: "openfootball euro.json 2020 (CC0)"
   },
@@ -477,8 +477,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "18 December 2022",
     venue: "Lusail Stadium, Al Daayen",
-    home: { name: "Argentina", short: "ARG", colour: "#7DB8E0", label: "Winners", kit: "argentina-2022" },
-    away: { name: "France", short: "FRA", colour: "#1F4E9C", label: "Runners-up", kit: "france-2022" },
+    home: { name: "Argentina", short: "ARG", colour: "#1B1A17", label: "Winners", kit: "argentina-2022" },
+    away: { name: "France", short: "FRA", colour: "#37345D", label: "Runners-up", kit: "france-2022" },
     score: { home: 3, away: 3 },
     scoreNote: "After extra time. Argentina won 4–2 on penalties.",
     extraTime: true,
@@ -490,7 +490,7 @@ window.HALFTIME_MATCHES = [
       { minute: 108, scorer: "Messi", team: "home" },
       { minute: 118, scorer: "Mbappé (pen.)", team: "away" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Argentina in sky blue and white striped. France in dark blue. (Wikipedia, \"2022 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 2022 (CC0)"
   },
@@ -500,8 +500,8 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "14 July 2024",
     venue: "Berlin",
-    home: { name: "Spain", short: "ESP", colour: "#B3261E", label: "Winners", kit: "spain-2024" },
-    away: { name: "England", short: "ENG", colour: "#1F2F5C", label: "Runners-up", kit: "england-2024" },
+    home: { name: "Spain", short: "ESP", colour: "#FE1817", label: "Winners", kit: "spain-2024" },
+    away: { name: "England", short: "ENG", colour: "#1B1A17", label: "Runners-up", kit: "england-2024" },
     score: { home: 2, away: 1 },
     scoreNote: null,
     extraTime: false,
@@ -510,7 +510,7 @@ window.HALFTIME_MATCHES = [
       { minute: 73, scorer: "Palmer", team: "away" },
       { minute: 86, scorer: "Oyarzabal", team: "home" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Spain in red. England in white. (Wikipedia, \"UEFA Euro 2024 final\".)",
     stats: null,
     source: "openfootball euro.json 2024 (CC0)"
   },
@@ -520,15 +520,15 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "19 July 2026",
     venue: "New York/New Jersey Stadium, New Jersey",
-    home: { name: "Spain", short: "ESP", colour: "#B3261E", label: "Winners", kit: "spain-2026" },
-    away: { name: "Argentina", short: "ARG", colour: "#7DB8E0", label: "Runners-up", kit: "argentina-2026" },
+    home: { name: "Spain", short: "ESP", colour: "#E81B17", label: "Winners", kit: "spain-2026" },
+    away: { name: "Argentina", short: "ARG", colour: "#1B1A17", label: "Runners-up", kit: "argentina-2026" },
     score: { home: 1, away: 0 },
     scoreNote: "After extra time.",
     extraTime: true,
     goals: [
       { minute: 106, scorer: "Torres", team: "home" }
     ],
-    kitsNote: "Shirts worn in this match: to be researched.",
+    kitsNote: "Spain in red. Argentina in sky blue and white striped. (Wikipedia, \"2026 FIFA World Cup final\".)",
     stats: null,
     source: "openfootball worldcup.json 2026 (CC0)"
   }

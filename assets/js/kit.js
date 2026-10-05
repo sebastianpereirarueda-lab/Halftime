@@ -19,6 +19,13 @@
   var label = kit.team + ' ' + kit.year + ' shirt. ' + (kit.description || '');
   var worn = (kit.matches || []).map(H.matchById).filter(Boolean);
 
+  // Where the colours come from: a cited source, or a note that they are still the team's usual colours.
+  var coloursHtml = kit.coloursSource
+    ? (kit.coloursUrl
+        ? '<a href="' + H.esc(kit.coloursUrl) + '" rel="noopener">' + H.esc(kit.coloursSource) + '</a>'
+        : H.esc(kit.coloursSource))
+    : '<span class="tbr">Traditional colours, shirt worn on the day to be researched</span>';
+
   var wornHtml = worn.length
     ? '<ul class="linklist">' + worn.map(function (m) {
         return '<li><a href="../matches/match.html?id=' + encodeURIComponent(m.id) + '">' +
@@ -31,8 +38,10 @@
   root.innerHTML =
     '<div class="kit-detail">' +
       '<figure class="kit-detail__figure">' +
-        '<div class="shirt-stage">' + H.shirtSvg(kit.colours, label) + '</div>' +
-        '<figcaption>Illustration &mdash; ' + H.esc(kit.description || '') + '</figcaption>' +
+        '<div class="shirt-stage">' + H.shirtArt(kit, label, null, '../assets') + '</div>' +
+        '<figcaption>Illustration &mdash; ' + H.esc(kit.description || '') +
+          (kit.illustration && kit.illustration.credit ? '<br><span class="credit">' + H.esc(kit.illustration.credit) + '</span>' : '') +
+        '</figcaption>' +
       '</figure>' +
       '<div class="kit-detail__body">' +
         '<div class="label label--accent">' + H.esc(H.kitNumber(kit)) + ' &middot; ' + H.esc(kit.year) + '</div>' +
@@ -44,6 +53,7 @@
           '<li><span class="k">Manufacturer</span><span class="v">' + H.factOrTbr(kit.facts && kit.facts.manufacturer) + '</span></li>' +
           '<li><span class="k">Debut</span><span class="v">' + H.factOrTbr(kit.facts && kit.facts.debut) + '</span></li>' +
           '<li><span class="k">Design notes</span><span class="v">' + H.factOrTbr(kit.facts && kit.facts.story) + '</span></li>' +
+          '<li><span class="k">Colours</span><span class="v">' + coloursHtml + '</span></li>' +
         '</ul>' +
         '<h2 class="section-title">Worn in</h2>' + wornHtml +
         '<a class="backlink" href="./">&larr; Back to the Kit Room</a>' +
