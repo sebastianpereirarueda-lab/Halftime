@@ -524,7 +524,7 @@ async function patternPicture(part, patternName) {
   }
   try {
     const img = decodePng(fs.readFileSync(pngFile));
-    if (img.width !== part.width || img.height !== part.height) { console.warn('  Unexpected size for ' + file); return null; }
+    if (img.width !== part.width || img.height > part.height) { console.warn('  Unexpected size for ' + file + ' (' + img.width + ' by ' + img.height + ')'); return null; }
     return { img: img, credit: file + ' (' + meta.licence + (meta.artist ? ', ' + meta.artist : '') + ')' };
   } catch (e) { console.warn('  Could not read ' + file + ': ' + e.message); return null; }
 }

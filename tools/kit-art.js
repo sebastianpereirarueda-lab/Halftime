@@ -62,7 +62,14 @@ function drawShirt(parts, bases, k) {
       const [r, g, b] = hexToRgb(p.colour);
       for (let i = 0; i < w * h; i++) { layer.rgba[i * 4] = r; layer.rgba[i * 4 + 1] = g; layer.rgba[i * 4 + 2] = b; layer.rgba[i * 4 + 3] = 255; }
     }
-    if (p.pattern) over(layer, p.pattern.width === w ? p.pattern : scaleUp(p.pattern, k));
+    if (p.pattern) {
+      // Patterns are placed at the top-left of their part, as the template does; some
+      // socks pictures are shorter than the socks area and leave the colour below them.
+      const pat = p.pattern.width === w ? p.pattern : scaleUp(p.pattern, k);
+      const padded = { width: w, height: h, rgba: Buffer.alloc(w * h * 4) };
+      for (let y = 0; y < Math.min(h, pat.height); y++) pat.rgba.copy(padded.rgba, y * w * 4, y * pat.width * 4, (y + 1) * pat.width * 4);
+      over(layer, padded);
+    }
     over(layer, base);
     const outside = outsideMask(base);
     for (let i = 0; i < w * h; i++) if (outside[i]) layer.rgba[i * 4 + 3] = 0;
