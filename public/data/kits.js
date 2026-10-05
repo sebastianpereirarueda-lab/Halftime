@@ -129,7 +129,7 @@ window.HALFTIME_KITS = [
     matches: ["1950-world-cup-final"],
     coloursSource: "Wikipedia, \"Uruguay v Brazil (1950 FIFA World Cup)\" (revision 1370476799), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=Uruguay_v_Brazil_(1950_FIFA_World_Cup)&oldid=1370476799",
-    illustration: { file: "brazil-1950.png", credit: "Drawn after the kit shown in Wikipedia’s \"Uruguay v Brazil (1950 FIFA World Cup)\" article. Pattern pictures from Wikimedia Commons: Kit left arm borderonwhite.png (CC BY-SA 3.0); Kit body bra1949h.png (CC BY-SA 4.0, N); Kit right arm borderonwhite.png (CC BY-SA 3.0). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "brazil-1950.png", credit: "Drawn after the kit shown in Wikipedia’s \"Uruguay v Brazil (1950 FIFA World Cup)\" article. Pattern pictures from Wikimedia Commons: Kit left arm borderonwhite.png (CC BY-SA 3.0); Kit body bra1949h.png (CC BY-SA 4.0, N); Kit right arm borderonwhite.png (CC BY-SA 3.0); Kit socks brasil1942.png (CC BY-SA 3.0, antonio). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "uruguay-1950",
@@ -219,7 +219,7 @@ window.HALFTIME_KITS = [
     matches: ["1962-world-cup-final"],
     coloursSource: "Wikipedia, \"1962 FIFA World Cup final\" (revision 1370476934), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1962_FIFA_World_Cup_final&oldid=1370476934",
-    illustration: { file: "brazil-1962.png", credit: "Drawn after the kit shown in Wikipedia’s \"1962 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm greenborder.png (CC BY-SA 3.0, No machine-readable author provided.); Kit body collargreen.png (Public domain, Dre.comandante); Kit right arm greenborder.png (CC BY-SA 3.0, No machine-readable author provided.); Kit shorts whitesides.png (CC BY-SA 3.0). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "brazil-1962.png", credit: "Drawn after the kit shown in Wikipedia’s \"1962 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm greenborder.png (CC BY-SA 3.0, No machine-readable author provided.); Kit body collargreen.png (Public domain, Dre.comandante); Kit right arm greenborder.png (CC BY-SA 3.0, No machine-readable author provided.); Kit shorts whitesides.png (CC BY-SA 3.0); Kit socks brasil1962h.png (CC BY-SA 4.0, Fma12). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "czechoslovakia-1962",
@@ -429,7 +429,7 @@ window.HALFTIME_KITS = [
     matches: ["1990-world-cup-final"],
     coloursSource: "Wikipedia, \"1990 FIFA World Cup final\" (revision 1376676631), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1990_FIFA_World_Cup_final&oldid=1376676631",
-    illustration: { file: "argentina-1990.png", credit: "Drawn after the kit shown in Wikipedia’s \"1990 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm argentina1990a.png (CC BY-SA 3.0, Zotteteen1); Kit body argentina1990a.png (CC BY-SA 3.0, Zotteteen1); Kit right arm argentina1990a.png (CC BY-SA 3.0, Zotteteen1); Kit socks color 3 stripes white.png (Public domain, Dragases). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "argentina-1990.png", credit: "Drawn after the kit shown in Wikipedia’s \"1990 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm argentina1990a.png (CC BY-SA 3.0, Zotteteen1); Kit body argentina1990a.png (CC BY-SA 3.0, Zotteteen1); Kit right arm argentina1990a.png (CC BY-SA 3.0, Zotteteen1); Kit shorts argentina1990a.png (CC BY-SA 3.0, Zotteteen1); Kit socks color 3 stripes white.png (Public domain, Dragases). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "west-germany-1990",
@@ -519,7 +519,7 @@ window.HALFTIME_KITS = [
     matches: ["2002-world-cup-final"],
     coloursSource: "Wikipedia, \"2002 FIFA World Cup final\" (revision 1375281798), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2002_FIFA_World_Cup_final&oldid=1375281798",
-    illustration: { file: "brazil-2002.png", credit: "Drawn after the kit shown in Wikipedia’s \"2002 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm bra02h.png (CC0, Irypi); Kit body bra02h.png (Public domain, Bruno-ban); Kit right arm bra02h.png (CC0, Irypi); Kit shorts bra02h.png (CC BY-SA 4.0, NeoRibeiro). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "brazil-2002.png", credit: "Drawn after the kit shown in Wikipedia’s \"2002 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm bra02h.png (CC0, Irypi); Kit body bra02h.png (Public domain, Bruno-ban); Kit right arm bra02h.png (CC0, Irypi); Kit shorts bra02h.png (CC BY-SA 4.0, NeoRibeiro); Kit socks bra02al.png (CC0, Irypixel). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "germany-2002",
