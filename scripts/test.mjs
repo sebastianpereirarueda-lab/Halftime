@@ -5,6 +5,7 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { parseFeed, parseDate } from "./fetch-news.mjs";
 import { currentSeason, slug } from "./lib/util.mjs";
+import { fixText } from "./fetch-scores.mjs";
 
 let failed = 0;
 const ok = (c, msg) => { console.log((c ? "PASS " : "FAIL ") + msg); if (!c) failed++; };
@@ -13,6 +14,10 @@ const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "halftime-"));
 // 1. util
 ok(currentSeason(new Date("2026-10-05")) === 2026 && currentSeason(new Date("2027-03-01")) === 2026, "season year rolls over in July");
 ok(slug("Atlético Madrid-Real Betis-2026-10-04") === "atletico-madrid-real-betis-2026-10-04", "slug strips accents");
+
+ok(fixText("M. Cvetkovi\u00C4\u0087") === "M. Cvetković", "double-encoded names are repaired");
+ok(fixText("V. Milinković-Savić") === "V. Milinković-Savić", "correct names are left alone");
+ok(fixText(null) === null, "null passes through");
 
 // 2. scores fetcher, offline sample mode
 const out = path.join(tmp, "results.js");

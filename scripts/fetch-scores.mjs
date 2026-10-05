@@ -30,10 +30,6 @@ const OUT_FILE = process.env.HALFTIME_OUT || (TEST_SEASON ? path.join(os.tmpdir(
 const KEY = process.env.API_FOOTBALL_KEY;
 const BASE = "https://v3.football.api-sports.io";
 
-if (!SAMPLE && !KEY) {
-  log("API_FOOTBALL_KEY is not set. Nothing fetched; the existing results file is kept.");
-  process.exit(0);
-}
 
 let requests = 0;
 let lastRequestAt = 0;
@@ -88,6 +84,16 @@ function readResultsFile(file) {
 const FINISHED = new Set(["FT", "AET", "PEN"]);
 const LIVE = new Set(["1H", "HT", "2H", "ET", "BT", "P", "LIVE", "INT"]);
 
+// Some provider strings arrive double-encoded ("CvetkoviÄ\u0087" for "Cvetković").
+// If a string shows the tell-tale pattern, re-read its bytes as UTF-8.
+export function fixText(value) {
+  if (typeof value !== "string" || !/[\u00C3\u00C4\u00C5][\u0080-\u00BF]/.test(value)) return value;
+  try {
+    const fixed = Buffer.from(value, "latin1").toString("utf8");
+    return fixed.includes("\uFFFD") ? value : fixed;
+  } catch { return value; }
+}
+
 function teamColour(name) {
   // Deterministic but pleasant colour for timeline dots when no kit is known.
   let h = 0; for (const c of String(name)) h = (h * 31 + c.charCodeAt(0)) % 360;
@@ -102,7 +108,7 @@ function toMatch(fx, events, lineups, league) {
     .map(e => ({
       minute: (e.time && e.time.elapsed) || 0,
       extra: (e.time && e.time.extra) || 0,
-      scorer: (e.player && e.player.name) || "Unknown",
+      scorer: fixText((e.player && e.player.name) || "Unknown"),
       team: e.team && e.team.id === home.id ? "home" : "away",
       kind: e.detail === "Own Goal" ? "og" : e.detail === "Penalty" ? "pen" : "goal",
     }))
@@ -110,9 +116,9 @@ function toMatch(fx, events, lineups, league) {
   const lu = (lineups || []).map(l => ({
     team: l.team && l.team.id === home.id ? "home" : "away",
     formation: l.formation || null,
-    coach: (l.coach && l.coach.name) || null,
-    startXI: (l.startXI || []).map(p => ({ name: p.player.name, number: p.player.number, pos: p.player.pos })),
-    substitutes: (l.substitutes || []).map(p => ({ name: p.player.name, number: p.player.number, pos: p.player.pos })),
+    coach: fixText((l.coach && l.coach.name) || null),
+    startXI: (l.startXI || []).map(p => ({ name: fixText(p.player.name), number: p.player.number, pos: p.player.pos })),
+    substitutes: (l.substitutes || []).map(p => ({ name: fixText(p.player.name), number: p.player.number, pos: p.player.pos })),
   }));
   const dateIso = fx.fixture.date;
   const hw = (fx.goals.home ?? 0) > (fx.goals.away ?? 0), aw = (fx.goals.away ?? 0) > (fx.goals.home ?? 0);
@@ -125,8 +131,9 @@ function toMatch(fx, events, lineups, league) {
     dateIso,
     status: FINISHED.has(status) ? "finished" : LIVE.has(status) ? "live" : status === "NS" ? "upcoming" : "other",
     venue: [fx.fixture.venue && fx.fixture.venue.name, fx.fixture.venue && fx.fixture.venue.city].filter(Boolean).join(", "),
-    home: { name: home.name, short: (home.name || "").slice(0, 3).toUpperCase(), colour: teamColour(home.name), label: hw ? "Winners" : "", kit: null, logo: home.logo || null },
-    away: { name: away.name, short: (away.name || "").slice(0, 3).toUpperCase(), colour: teamColour(away.name), label: aw ? "Winners" : "", kit: null, logo: away.logo || null },
+    // The provider gives no official abbreviations, so the scorers column shows the full name.
+    home: { name: fixText(home.name), short: fixText(home.name), colour: teamColour(home.name), label: hw ? "Winners" : "", kit: null, logo: home.logo || null },
+    away: { name: fixText(away.name), short: fixText(away.name), colour: teamColour(away.name), label: aw ? "Winners" : "", kit: null, logo: away.logo || null },
     score: { home: fx.goals.home, away: fx.goals.away },
     goals,
     lineups: lu.length ? lu : null,
@@ -137,6 +144,10 @@ function toMatch(fx, events, lineups, league) {
 }
 
 async function main() {
+  if (!SAMPLE && !KEY) {
+    log("API_FOOTBALL_KEY is not set. Nothing fetched; the existing results file is kept.");
+    return;
+  }
   const season = TEST_SEASON || currentSeason();
   if (TEST_SEASON) log(`TEST MODE: season ${TEST_SEASON}. Output goes to ${OUT_FILE}, not to the site.`);
   // Sample and test runs use a throwaway cache so that data never reaches the repo.
@@ -266,7 +277,7 @@ async function main() {
   log(`Wrote ${results.length} results, ${upcoming.length} fixtures, ${matches.filter(m => m.lineups).length} with lineups, using ${requests} API requests.`);
 }
 
-main().catch(err => {
+if (process.argv[1] && import.meta.url.endsWith(path.basename(process.argv[1]))) main().catch(err => {
   console.error("fetch-scores failed:", err.message);
   if (err.plan) console.error("This is a plan or quota limit at API-Football, not a bug. The existing results file is kept. See README, 'Switching it on'.");
   process.exit(1);
