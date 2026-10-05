@@ -67,14 +67,22 @@ It takes about a minute. You never need to touch `gh-pages` yourself.
 
 Four times a day GitHub runs the pipeline in `scripts/`:
 
-1. **Scores and lineups** come from API-Football. The script pulls the latest results and
-   upcoming fixtures for the competitions in `scripts/config.mjs`, then the goals and lineups
-   for matches finished in the last three days, and writes `public/data/results.js`.
-   The free plan allows 100 requests a day; a run uses between 12 and 40.
+1. **Scores and lineups** come from API-Football. The script asks for one day of fixtures at
+   a time, keeps the competitions listed in `scripts/config.mjs`, then fetches the goals and
+   lineups of each finished match, and writes `public/data/results.js`. Finished matches
+   stay on the site for a week.
+
+   What the **free plan** really gives (checked by running it, October 2026): fixtures for
+   yesterday, today and tomorrow only, 100 requests a day, 10 a minute. Goals and lineups
+   cost two requests per match and are fetched once, then cached. A run uses 3 requests for
+   the fixtures plus 2 per new finished match, capped at 24. A paid plan widens the day
+   window and the request allowance; nothing in the code needs to change for that.
 2. **Headlines** are collected from the public RSS feeds of established football desks
-   (BBC Sport, The Guardian, Sky Sports, ESPN). No key needed.
+   (BBC Sport, The Guardian, Sky Sports, The Independent). No key needed. ESPN was tried and
+   left out because its feed answers with a bot-check page.
 3. **The news edition** is written by an OpenAI model from those headlines and saved to
-   `public/data/news.js`. The writer may only use facts from the collected articles, must
+   `public/data/news.js`. If the headlines have not changed since the last edition, nothing
+   is rewritten and nothing is spent. The writer may only use facts from the collected articles, must
    cite its sources on every story, and summarises in its own words. Every story on the
    Front Page links to the reports it came from. If an edition cannot be written, the
    previous one stays.
