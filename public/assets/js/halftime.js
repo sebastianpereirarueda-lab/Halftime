@@ -34,6 +34,16 @@ window.Halftime = (function () {
       '</svg>';
   }
 
+  // The shirt picture for a card or page: the drawing if there is one, else the flat SVG.
+  // pathToAssets is the relative path from the page to the assets folder, e.g. '../assets'.
+  function shirtArt(kit, label, size, pathToAssets) {
+    if (kit.illustration && kit.illustration.file) {
+      var s = size ? ' width="' + size + '"' : '';
+      return '<img class="kit-art" src="' + esc(pathToAssets) + '/kits/' + esc(kit.illustration.file) + '" alt="' + esc(label) + '"' + s + ' loading="lazy">';
+    }
+    return shirtSvg(kit.colours, label, size);
+  }
+
   function kits() { return window.HALFTIME_KITS || []; }
   function matches() { return window.HALFTIME_MATCHES || []; }
   function kitById(id) { return kits().find(function (k) { return k.id === id; }) || null; }
@@ -48,7 +58,7 @@ window.Halftime = (function () {
 
   function setTitle(t) { document.title = t + ' — Halftime'; }
 
-  return { esc: esc, param: param, shirtSvg: shirtSvg, kits: kits, matches: matches,
+  return { esc: esc, param: param, shirtSvg: shirtSvg, shirtArt: shirtArt, kits: kits, matches: matches,
            kitById: kitById, matchById: matchById, kitNumber: kitNumber,
            decadeOf: decadeOf, factOrTbr: factOrTbr, setTitle: setTitle };
 })();

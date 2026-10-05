@@ -22,7 +22,7 @@ Both now fill the Kit Room. Manufacturer, debut and design notes remain to be re
 | --- | --- | --- |
 | **openfootball** (`worldcup.json`, `euro.json`) | Every World Cup from 1930 and the last two Euros: fixtures, results, venues, scorers, lineups. Licence: CC0 (public domain). | **Yes. This is what the importer uses.** No colours or kit facts, though. |
 | **Wikipedia** articles about each final | Every article on a World Cup or Euro final carries both kits worn that day, drawn with the `Football kit` template: hex colours and pattern names. Licence: CC BY-SA 4.0 (free, must credit Wikipedia). | **Yes. This is where the colours come from.** The main national-team articles, by contrast, describe kits in prose and are of little use. |
-| **Wikimedia Commons** kit pattern pictures | The small pictures behind the pattern names (`_ita82`, `_esp26h`), each with its own licence (CC0, CC BY-SA). | **Yes, as a fallback.** When a kit template carries no hex colour, the importer reads the body colour from the middle of the picture and cites the picture and its licence. |
+| **Wikimedia Commons** kit pattern pictures | The small pictures behind the pattern names (`_ita82`, `_arg22H`): 38 by 59 pixels for the body, 31 by 59 for each sleeve, drawn by volunteers. Licences vary per file: CC BY-SA 4.0 and 3.0, CC BY 4.0, CC0, public domain. | **Yes.** They are the layers of every shirt drawing, and the fallback for a body colour when the template has none. Each drawing credits the pictures it used. |
 | **Football Kit Archive** (footballkitarchive.com) | The biggest archive: hundreds of thousands of kits with photos, brands and seasons. | **No.** Terms of use forbid scraping, and the photos are copyrighted. There is no official API or download. |
 | **FKApi** (GitHub, `sunr4y/fkapi`) | A hobby project that scrapes Football Kit Archive into a database. | **No.** It just copies the site above, no licence stated, "educational use only". |
 | **Historical Football Kits** (historicalkits.co.uk) | Hand-drawn British club and national kits from the 1800s on, with manufacturer and sponsor notes. | **No for copying.** Illustrations and text are the authors' copyright. Fine as a place for Sebas to *read* when researching a shirt. |
@@ -73,6 +73,20 @@ holds their look only as a picture. For those the importer fetches the picture f
 Wikimedia Commons (`tools/png.js` reads it), samples the middle of the shirt, and cites
 the picture and its licence alongside the article. A shirt whose picture cannot be read
 would keep the team's traditional colours and say so; at the moment none does.
+
+### The drawings
+
+Stage 3 of the importer draws each shirt exactly as Wikipedia's `Football kit` template
+does: the sleeve and body colours from the template, the pattern picture for each part
+laid over them, and the outline drawing (`tools/base/`, public domain) on top. The white
+area the pictures leave outside the shirt is cut away so the drawing sits on the paper.
+Drawings are saved at four times the template's size (400 by 236 pixels) under
+`public/assets/kits/`, one per shirt, and each shirt's `illustration.credit` lists every
+picture used with its licence and author. The pictures are pixel art, so the drawings
+keep that look; it suits a printed catalogue.
+
+Where a pattern picture is missing on Commons (England's Euro 2020 sleeves, for instance)
+the part is drawn in its plain colour and the importer says so when it runs.
 
 Scorer names follow the source's spelling. The openfootball files write some names
 without accents (Puskas, Mueller, Voeller); correct them by hand in `matches.js` if wanted.

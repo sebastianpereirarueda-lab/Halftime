@@ -35,11 +35,15 @@
 const fs = require('fs');
 const path = require('path');
 
-const { decodePng, mainColours } = require('./png.js');
+const { decodePng, encodePng, mainColours, scaleUp } = require('./png.js');
+const { drawShirt, PARTS } = require('./kit-art.js');
 
 const ROOT = path.join(__dirname, '..');
 const CACHE = path.join(__dirname, '.cache');
 const KITS_FILE = path.join(ROOT, 'public', 'data', 'kits.js');
+const ART_DIR = path.join(ROOT, 'public', 'assets', 'kits');     // one drawing per shirt
+const BASE_DIR = path.join(__dirname, 'base');                   // outline drawings, rasterised
+const ART_SCALE = 4;                                             // drawings are saved at 4x (400 by 236 pixels)
 const MATCHES_FILE = path.join(ROOT, 'public', 'data', 'matches.js');
 const OFFLINE = process.argv.includes('--offline');
 
@@ -453,6 +457,8 @@ function canRefreshColours(kit) {
   return !kit.coloursSource || /^Wikipedia/.test(kit.coloursSource);
 }
 
+const wikiKits = new Map();   // kit id -> { tpl, page }, for the drawing stage
+
 // Read the final's article and colour both shirts from it.
 async function colourFromWikipedia(match, kitById) {
   const title = wikiPageFor(match.id);
@@ -468,6 +474,7 @@ async function colourFromWikipedia(match, kitById) {
     if (!tpl) { console.warn('  No kit for ' + kit.team + ' in "' + page.title + '"'); continue; }
     if (!canRefreshColours(kit)) { notes.push(kit.team + ' in ' + (kit.description || '').toLowerCase().replace(/[.].*$/, '')); continue; }
     const look = await applyWikiKit(kit, tpl, page, match);
+    wikiKits.set(kit.id, { tpl: tpl, page: page });
     notes.push(kit.team + ' in ' + look);
     if (match[side].colour !== undefined) {
       // Timeline dot: the body colour, or the trim when the body is pale.
@@ -483,6 +490,88 @@ async function colourFromWikipedia(match, kitById) {
   if (notes.length === 2 && (!match.kitsNote || /to be researched/i.test(match.kitsNote) || /^Source: Wikipedia/m.test(match.kitsNote) || /\(Wikipedia/.test(match.kitsNote))) {
     match.kitsNote = notes.join('. ') + '. (Wikipedia, "' + page.title + '".)';
   }
+}
+
+// ---------- Stage 3: a drawing of each shirt ----------
+
+// A pattern picture from Commons ("Kit body arg22H.png"), decoded, with its credit line.
+// Returns null when Commons has no such picture.
+async function patternPicture(part, patternName) {
+  const file = part.file + patternName.replace(/_/g, ' ') + '.png';
+  const safe = file.replace(/[^A-Za-z0-9.]+/g, '_');
+  const metaFile = path.join(CACHE, 'commons__' + safe + '.json');
+  const pngFile = path.join(CACHE, 'commons__' + safe);
+  let meta;
+  if (fs.existsSync(metaFile)) meta = JSON.parse(fs.readFileSync(metaFile, 'utf8'));
+  else {
+    if (OFFLINE) return null;
+    const url = 'https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url|mime|extmetadata&format=json&formatversion=2&titles=' + encodeURIComponent('File:' + file);
+    const data = await fetchJsonRetry(url);
+    const page = data.query && data.query.pages && data.query.pages[0];
+    if (!page || page.missing || !page.imageinfo) meta = { missing: true };
+    else {
+      const ii = page.imageinfo[0], em = ii.extmetadata || {};
+      meta = { url: ii.url.split('?')[0], mime: ii.mime, licence: (em.LicenseShortName || {}).value || 'licence not stated',
+               artist: ((em.Artist || {}).value || '').replace(/<[^>]+>/g, '').trim(), file: file };
+    }
+    fs.mkdirSync(CACHE, { recursive: true });
+    fs.writeFileSync(metaFile, JSON.stringify(meta));
+  }
+  if (meta.missing || meta.mime !== 'image/png') return null;
+  if (!fs.existsSync(pngFile)) {
+    if (OFFLINE) return null;
+    fs.writeFileSync(pngFile, await fetchBytesRetry(meta.url));
+  }
+  try {
+    const img = decodePng(fs.readFileSync(pngFile));
+    if (img.width !== part.width || img.height !== 59) { console.warn('  Unexpected size for ' + file); return null; }
+    return { img: img, credit: file + ' (' + meta.licence + (meta.artist ? ', ' + meta.artist : '') + ')' };
+  } catch (e) { console.warn('  Could not read ' + file + ': ' + e.message); return null; }
+}
+
+let baseImages = null;
+function loadBases() {
+  if (baseImages) return baseImages;
+  baseImages = {};
+  for (const part of PARTS) {
+    const file = path.join(BASE_DIR, part.file.replace(/ /g, '_') + '@' + ART_SCALE + 'x.png');
+    if (!fs.existsSync(file)) throw new Error('Missing outline drawing ' + file);
+    baseImages[part.key] = decodePng(fs.readFileSync(file));
+  }
+  return baseImages;
+}
+
+// Draw one shirt from its Wikipedia kit template and save it under public/assets/kits/.
+async function drawKit(kit, tpl, page) {
+  const bases = loadBases();
+  const parts = {}, credits = [];
+  const bodyHex = hexOk(tpl.body) ? tpl.body : null;
+  for (const part of PARTS) {
+    const key = { la: 'leftarm', b: 'body', ra: 'rightarm' }[part.key];
+    const hex = hexOk(tpl[key]) ? tpl[key] : bodyHex;
+    const name = (tpl['pattern_' + part.key] || '').trim();
+    let pattern = null;
+    if (name) {
+      pattern = await patternPicture(part, name);
+      if (!pattern) {
+        // Wikipedia sometimes has only one spelling of a pattern's sleeves.
+        const alt = name.replace(/[A-Z]$/, c => c.toLowerCase());
+        if (alt !== name) pattern = await patternPicture(part, alt);
+      }
+      if (!pattern) console.warn('  No picture for ' + part.file + name + ' (' + kit.id + ')');
+      else credits.push(pattern.credit);
+    }
+    parts[part.key] = { colour: hex ? '#' + hex : (pattern ? null : '#' + kit.colours.body.slice(1)), pattern: pattern && pattern.img };
+  }
+  const img = drawShirt(parts, bases, ART_SCALE);
+  fs.mkdirSync(ART_DIR, { recursive: true });
+  fs.writeFileSync(path.join(ART_DIR, kit.id + '.png'), encodePng(img));
+  kit.illustration = {
+    file: kit.id + '.png',
+    credit: 'Drawn after the kit shown in Wikipedia\u2019s "' + page.title + '" article. ' +
+      (credits.length ? 'Pattern pictures from Wikimedia Commons: ' + credits.join('; ') + '.' : 'Plain colours, no pattern picture needed.') +
+      ' Outline: Wikimedia Commons kit template drawings.'
+  };
 }
 
 // ---------- build one tournament ----------
@@ -602,6 +691,15 @@ async function main() {
     }
   }
 
+  // Stage 3: a drawing of every shirt that has a Wikipedia kit on record.
+  let drawn = 0;
+  for (const kit of kitsData.items) {
+    const w = wikiKits.get(kit.id);
+    if (!w || kit.illustration === 'hand') continue;
+    try { await drawKit(kit, w.tpl, w.page); drawn++; }
+    catch (e) { console.warn('  Drawing skipped for ' + kit.id + ': ' + e.message); }
+  }
+
   // Shirts in year order, then by team; matches in date order.
   kitsData.items.sort((a, b) => a.year - b.year || a.team.localeCompare(b.team));
   matchData.items.sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -612,6 +710,7 @@ async function main() {
   console.log('Shirts:  ' + kitsData.items.length + ' in catalogue (' + addedKits + ' added, ' + linked + ' existing linked to a match).');
   console.log('Matches: ' + matchData.items.length + ' cards (' + addedMatches + ' added).');
   console.log('Colours: ' + coloured + ' finals read from Wikipedia.');
+  console.log('Drawings: ' + drawn + ' shirts drawn into public/assets/kits/.');
 }
 
 main().catch(err => { console.error(err.message || err); process.exit(1); });

@@ -38,8 +38,10 @@
   root.innerHTML =
     '<div class="kit-detail">' +
       '<figure class="kit-detail__figure">' +
-        '<div class="shirt-stage">' + H.shirtSvg(kit.colours, label) + '</div>' +
-        '<figcaption>Illustration &mdash; ' + H.esc(kit.description || '') + '</figcaption>' +
+        '<div class="shirt-stage">' + H.shirtArt(kit, label, null, '../assets') + '</div>' +
+        '<figcaption>Illustration &mdash; ' + H.esc(kit.description || '') +
+          (kit.illustration && kit.illustration.credit ? '<br><span class="credit">' + H.esc(kit.illustration.credit) + '</span>' : '') +
+        '</figcaption>' +
       '</figure>' +
       '<div class="kit-detail__body">' +
         '<div class="label label--accent">' + H.esc(H.kitNumber(kit)) + ' &middot; ' + H.esc(kit.year) + '</div>' +

@@ -14,16 +14,8 @@
 //    score       { home, away } final score (numbers)
 //    scoreNote   optional line under the score, e.g. "After extra time." or null
 //    extraTime   true if the match went to extra time (the timeline then runs to 120')
-//    scoreNote   optional line under the score, e.g. "After extra time." or null
-//    extraTime   true if the match went to extra time (the timeline then runs to 120')
-//    scoreNote   optional line under the score, e.g. "After extra time." or null
-//    extraTime   true if the match went to extra time (the timeline then runs to 120')
 //    goals       list of { minute, scorer, team: "home" or "away" }
 //    stats       null until a stats source is chosen
-//    source      where the entry came from, e.g. "openfootball worldcup.json 1970 (CC0)",
-//                or leave it out for entries written by hand
-//    source      where the entry came from, e.g. "openfootball worldcup.json 1970 (CC0)",
-//                or leave it out for entries written by hand
 //    source      where the entry came from, e.g. "openfootball worldcup.json 1970 (CC0)",
 //                or leave it out for entries written by hand
 //

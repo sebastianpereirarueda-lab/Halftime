@@ -14,13 +14,14 @@ styled like an old newspaper or match programme.
 | `public/kits/` | The Kit Room: the shirt catalogue with search and filters, plus one page per shirt. |
 | `public/matches/` | Match cards: the list of matches, plus one card per match, minute by minute. |
 | `public/data/kits.js` | **The list of shirts.** Edit this to add or change a kit. |
+| `public/assets/kits/` | One drawing per shirt, made by the importer from Wikipedia's kit pictures. |
 | `public/data/matches.js` | **The list of matches.** Edit this to add or change a match card. |
 | `public/assets/css/halftime.css` | All the colours, fonts and layout, in one file. |
 | `public/assets/fonts/` | The three typefaces, stored locally so the site works offline. |
 | `public/assets/js/dateline.js` | Tiny script that writes today's date at the top of the page. |
 | `public/404.html` | The "page not found" page Cloudflare shows for a wrong address. |
 | `tools/import-kits.js` | A small script that fills the two lists from free tournament data and Wikipedia. See below. |
-| `tools/png.js` | Helper for the script above: reads the small kit pictures from Wikimedia Commons. |
+| `tools/png.js`, `tools/kit-art.js`, `tools/base/` | Helpers for the script above: read and write the small kit pictures, and draw a shirt from them. |
 | `docs/HANDOFF.md` | The project brief: design system, plan and open decisions. |
 | `docs/KIT-DATA-SOURCES.md` | Research note: which kit databases exist, which may be used, and what fills the Kit Room today. |
 | `docs/design-reference/` | The original design mock-ups. Reference only, not part of the site. |
@@ -95,10 +96,16 @@ used.
 
 The colour of each shirt comes from the Wikipedia article about that final, which records
 the kit both teams wore that day (free to reuse with credit, CC BY-SA 4.0). Each shirt's
-page links to the exact article revision it was taken from. Two shirts, Italy 1982 and
-Spain 2026, have their colour only in a small picture on Wikimedia Commons, which the
-importer reads as well. Manufacturer, debut and design notes show "To be researched"
-until someone fills them in.
+page links to the exact article revision it was taken from.
+
+Each shirt also has a **drawing**, built the same way Wikipedia draws kits: a block of
+colour for each sleeve and the body, with the small pattern pictures from Wikimedia Commons
+laid over it (collars, stripes, badges, sashes), then the outline on top. Those pictures
+are drawn by Wikipedia's volunteers and published under free licences (CC BY-SA, CC BY,
+CC0 or public domain) that ask for credit. The credit for every picture used appears
+under the drawing on the shirt's page, and the drawings themselves are shared under the
+same terms. Manufacturer, debut and design notes show "To be researched" until someone
+fills them in.
 
 ### Running the importer again (optional)
 
@@ -111,7 +118,8 @@ If a new tournament is added to the openfootball data and you want it in the Kit
 
 It adds what is new and keeps every existing entry. The one thing it refreshes is a
 shirt's colours from Wikipedia; to keep colours you typed yourself, add
-`coloursSource: "hand"` to that shirt. A team it does not know stops the script with a
+`coloursSource: "hand"` to that shirt, and `illustration: "hand"` to keep a drawing of
+your own. A team it does not know stops the script with a
 message asking for the team's colours to be added to the table at the top of the script.
 Wikipedia limits how fast it answers, so a full run can take a few minutes.
 

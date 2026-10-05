@@ -18,10 +18,10 @@
 //                Leave it out if the colours are only the team's usual ones. Write "hand" to stop
 //                tools/import-kits.js from changing colours you have set yourself.
 //    coloursUrl  link to that source, shown on the shirt's page
-//    coloursSource  where the colours come from, e.g. 'Wikipedia, "1966 FIFA World Cup final" (revision ...)'.
-//                Leave it out if the colours are only the team's usual ones. Write "hand" to stop
-//                tools/import-kits.js from changing colours you have set yourself.
-//    coloursUrl  link to that source, shown on the shirt's page
+//    illustration { file, credit }: a drawing of the shirt in assets/kits/, made by
+//                tools/import-kits.js from Wikipedia's kit pictures, with the credit line
+//                the pictures' licences ask for. Leave it out to show the flat drawing
+//                made from "colours" instead. Write "hand" to keep a drawing you made yourself.
 //
 //  Do not write a fact you have not checked. null shows as "to be researched".
 // ============================================================

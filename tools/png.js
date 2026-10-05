@@ -93,4 +93,53 @@ function mainColours(img) {
   };
 }
 
-module.exports = { decodePng, mainColours };
+// Write an RGBA picture as a PNG file (8-bit, non-interlaced).
+function encodePng(img) {
+  const stride = img.width * 4;
+  const raw = Buffer.alloc((stride + 1) * img.height);
+  for (let y = 0; y < img.height; y++) {
+    raw[y * (stride + 1)] = 0;
+    img.rgba.copy(raw, y * (stride + 1) + 1, y * stride, (y + 1) * stride);
+  }
+  const chunks = [];
+  const chunk = (name, data) => {
+    const len = Buffer.alloc(4); len.writeUInt32BE(data.length);
+    const body = Buffer.concat([Buffer.from(name, 'ascii'), data]);
+    const crc = Buffer.alloc(4); crc.writeUInt32BE(crc32(body));
+    chunks.push(len, body, crc);
+  };
+  const ihdr = Buffer.alloc(13);
+  ihdr.writeUInt32BE(img.width, 0); ihdr.writeUInt32BE(img.height, 4);
+  ihdr[8] = 8; ihdr[9] = 6; ihdr[10] = 0; ihdr[11] = 0; ihdr[12] = 0;
+  chunk('IHDR', ihdr);
+  chunk('IDAT', zlib.deflateSync(raw, { level: 9 }));
+  chunk('IEND', Buffer.alloc(0));
+  return Buffer.concat([Buffer.from([137, 80, 78, 71, 13, 10, 26, 10])].concat(chunks));
+}
+
+let crcTable = null;
+function crc32(buf) {
+  if (!crcTable) {
+    crcTable = new Int32Array(256);
+    for (let n = 0; n < 256; n++) {
+      let c = n;
+      for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1;
+      crcTable[n] = c;
+    }
+  }
+  let c = -1;
+  for (let i = 0; i < buf.length; i++) c = crcTable[(c ^ buf[i]) & 255] ^ (c >>> 8);
+  return (c ^ -1) >>> 0;
+}
+
+// Scale a picture up by a whole number, keeping every pixel sharp.
+function scaleUp(img, k) {
+  const w = img.width * k, h = img.height * k, rgba = Buffer.alloc(w * h * 4);
+  for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+    const s = ((Math.floor(y / k) * img.width) + Math.floor(x / k)) * 4, d = (y * w + x) * 4;
+    rgba[d] = img.rgba[s]; rgba[d + 1] = img.rgba[s + 1]; rgba[d + 2] = img.rgba[s + 2]; rgba[d + 3] = img.rgba[s + 3];
+  }
+  return { width: w, height: h, rgba };
+}
+
+module.exports = { decodePng, encodePng, mainColours, scaleUp };
