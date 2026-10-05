@@ -11,14 +11,22 @@
 //    - one match card (date, venue, score, scorers), and
 //    - one shirt per finalist (team, year, competition, result).
 //
-//  What it does NOT know: the colours of the shirt actually worn.
-//  No free database provides that. Each generated shirt is drawn in the
-//  team's traditional home colours (table below) and says so in its
-//  description. Manufacturer, debut and design notes stay null, which the
-//  site prints as "To be researched".
+//  Stage 2, colours. The Wikipedia article about each final records the
+//  kit both teams wore that day (the "Football kit" template, with hex
+//  colours), under the CC BY-SA 4.0 licence. The importer reads those
+//  articles through the Wikipedia API and writes the shirt colour, a
+//  description, and a citation (article and revision) into each shirt.
+//  A shirt whose colour Wikipedia only holds as a picture keeps the team's
+//  traditional colours (table below) and says so.
 //
-//  Entries already in kits.js / matches.js are kept exactly as they are
-//  (matched by id). Only new ids are added, so hand edits are safe.
+//  Manufacturer, debut and design notes stay null, which the site prints
+//  as "To be researched".
+//
+//  Entries already in kits.js / matches.js are kept (matched by id). The
+//  only thing the importer refreshes on an existing shirt is its colours,
+//  and only when the shirt has no coloursSource or one that starts with
+//  "Wikipedia". To lock colours you set by hand, write
+//  coloursSource: "hand" on that shirt.
 //
 //  Run from the project folder:   node tools/import-kits.js
 //  Options:  --offline   use files already in tools/.cache, do not download
@@ -69,6 +77,30 @@ const TEAM = {
   'Uruguay':        { short: 'URU', body: '#6FA9DC', trim: '#1B1A17', stripes: [], desc: 'light blue with black trim' },
   'West Germany':   { short: 'FRG', body: '#F4F1E6', trim: '#1B1A17', stripes: [], desc: 'white with black trim' }
 };
+
+// Wikipedia article that documents each final, keyed by match id.
+const WIKI_PAGE = {
+  '1950-world-cup-final': 'Uruguay v Brazil (1950 FIFA World Cup)',
+  '2020-euro-final': 'UEFA Euro 2020 final',
+  '2024-euro-final': 'UEFA Euro 2024 final'
+};
+function wikiPageFor(matchId) {
+  if (WIKI_PAGE[matchId]) return WIKI_PAGE[matchId];
+  const m = matchId.match(/^(\d{4})-world-cup-final$/);
+  return m ? m[1] + ' FIFA World Cup final' : null;
+}
+// Wikipedia asks automated clients to say who they are.
+const USER_AGENT = 'HalftimeKitImporter/1.0 (https://github.com/sebastianpereirarueda-lab/Halftime)';
+
+// Names for describing a sourced hex colour in words.
+const COLOUR_NAMES = [
+  ['white', 'FFFFFF'], ['black', '000000'], ['red', 'DD0000'], ['dark red', '8B0000'],
+  ['orange', 'FF6000'], ['yellow', 'FFDD33'], ['gold', 'E3C16F'], ['green', '008000'],
+  ['dark green', '006400'], ['sky blue', '99CCFF'], ['light blue', '75AADB'], ['blue', '2050C0'],
+  ['royal blue', '0000C0'], ['dark blue', '112855'], ['navy', '001363'], ['grey', '999999']
+];
+const COLOUR_WORDS = { white: 'FFFFFF', black: '000000', green: '008000', red: 'DD0000', blue: '2050C0',
+  yellow: 'FFDD33', navy: '001363', sky: '99CCFF', orange: 'FF6000', gold: 'E3C16F' };
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
   'August', 'September', 'October', 'November', 'December'];
@@ -195,6 +227,192 @@ function writeDataFile(file, header, globalName, items) {
   fs.writeFileSync(file, header + 'window.' + globalName + ' = [\n' + body + '\n];\n');
 }
 
+// ---------- Wikipedia: the kits worn in each final ----------
+
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+// Fetch an article's wikitext (cached). Retries politely on rate limiting.
+async function fetchWiki(title) {
+  const file = path.join(CACHE, 'wiki__' + title.replace(/[^A-Za-z0-9]+/g, '_') + '.json');
+  if (fs.existsSync(file)) return JSON.parse(fs.readFileSync(file, 'utf8'));
+  if (OFFLINE) throw new Error('Not in cache and --offline given: ' + title);
+  const url = 'https://en.wikipedia.org/w/api.php?action=parse&prop=wikitext|revid|title&redirects=1&format=json&formatversion=2&page=' + encodeURIComponent(title);
+  for (let attempt = 1; attempt <= 6; attempt++) {
+    const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
+    if (res.status === 429 || res.status >= 500) { await sleep(attempt * 4000); continue; }
+    if (!res.ok) throw new Error('Wikipedia answered ' + res.status + ' for ' + title);
+    const data = await res.json();
+    if (!data.parse) throw new Error('Wikipedia has no article called "' + title + '"');
+    fs.mkdirSync(CACHE, { recursive: true });
+    fs.writeFileSync(file, JSON.stringify(data));
+    await sleep(1500);
+    return data;
+  }
+  throw new Error('Wikipedia kept rate-limiting requests for ' + title + '. Try again later.');
+}
+
+// Strip refs, footnotes, templates and links from a title value: "England<ref .../>" -> "England".
+function cleanTitle(t) {
+  return t.replace(/<ref[^>]*\/>/g, '').replace(/<ref[\s\S]*?<\/ref>/g, '').replace(/<ref[\s\S]*$/, '')
+    .replace(/\{\{nowrap\|/g, '').replace(/\{\{[^{}]*\}\}/g, '').replace(/\{\{[\s\S]*$/, '')
+    .replace(/\[\[([^\]|]*\|)?([^\]]*)\]\]/g, '$2').replace(/[{}]/g, '').trim();
+}
+
+// All "Football kit" templates in an article, as { title, body, leftarm, pattern_b, ... }.
+// Walks the braces so that templates and refs nested inside a value do not cut it short.
+function kitTemplates(wikitext) {
+  const out = [];
+  const re = /\{\{[Ff]ootball kit(?: box)?\b/g;
+  let m;
+  while ((m = re.exec(wikitext))) {
+    let i = m.index + 2, depth = 1;
+    while (i < wikitext.length && depth > 0) {
+      if (wikitext.startsWith('{{', i)) { depth++; i += 2; }
+      else if (wikitext.startsWith('}}', i)) { depth--; i += 2; }
+      else i++;
+    }
+    const inner = wikitext.slice(m.index + m[0].length, i - 2);
+    // Split on "|" only at the top level (outside nested templates, links and refs).
+    const parts = []; let cur = '', d = 0, link = 0, inRef = false;
+    for (let j = 0; j < inner.length; j++) {
+      const two = inner.substr(j, 2);
+      if (!inRef && /^<ref\b/.test(inner.slice(j, j + 5)) && !/\/>/.test(inner.slice(j, inner.indexOf('>', j) + 1))) inRef = true;
+      if (inRef && inner.startsWith('</ref>', j)) { inRef = false; cur += '</ref>'; j += 5; continue; }
+      if (two === '{{') { d++; cur += two; j++; continue; }
+      if (two === '}}') { d--; cur += two; j++; continue; }
+      if (two === '[[') { link++; cur += two; j++; continue; }
+      if (two === ']]') { link--; cur += two; j++; continue; }
+      if (inner[j] === '|' && d === 0 && link === 0 && !inRef) { parts.push(cur); cur = ''; continue; }
+      cur += inner[j];
+    }
+    parts.push(cur);
+    const fields = {};
+    parts.forEach(part => {
+      const kv = part.match(/^\s*([a-z_]+)\s*=\s*([\s\S]*)$/);
+      if (kv) fields[kv[1]] = kv[2].trim();
+    });
+    if (fields.title) fields.title = cleanTitle(fields.title);
+    out.push(fields);
+  }
+  return out;
+}
+
+function hexOk(h) { return /^[0-9a-fA-F]{6}$/.test(h || ''); }
+
+// Nudge a sourced colour a little toward the paper tone so it sits with the site's palette.
+function toPalette(hex) {
+  const paper = [0xF7, 0xF1, 0xE1];
+  const rgb = [0, 2, 4].map(i => parseInt(hex.slice(i, i + 2), 16));
+  const mixed = rgb.map((c, i) => Math.round(c * 0.9 + paper[i] * 0.1));
+  return '#' + mixed.map(c => c.toString(16).padStart(2, '0').toUpperCase()).join('');
+}
+
+function colourName(hex) {
+  const rgb = [0, 2, 4].map(i => parseInt(hex.slice(i, i + 2), 16));
+  let best = null, bestD = Infinity;
+  COLOUR_NAMES.forEach(([name, ref]) => {
+    const r = [0, 2, 4].map(i => parseInt(ref.slice(i, i + 2), 16));
+    const d = rgb.reduce((acc, c, i) => acc + (c - r[i]) * (c - r[i]), 0);
+    if (d < bestD) { bestD = d; best = name; }
+  });
+  return best;
+}
+
+function luminance(hex) {
+  const rgb = [0, 2, 4].map(i => parseInt(hex.slice(i, i + 2), 16));
+  return (rgb[0] * 299 + rgb[1] * 587 + rgb[2] * 114) / 1000;
+}
+function isLight(hex) { return luminance(hex) > 150; }
+function isNearWhite(hex) {
+  const rgb = [0, 2, 4].map(i => parseInt(hex.slice(i, i + 2), 16));
+  return Math.min.apply(null, rgb) > 220;
+}
+
+// Colour for a team's dot on the match timeline: the shirt, unless it is white.
+function dotColour(colours) {
+  if (!isNearWhite(colours.body.slice(1))) return colours.body;
+  return isNearWhite(colours.trim.slice(1)) ? '#1B1A17' : colours.trim;
+}
+
+// Trim colour: a colour word in the collar/sleeve pattern name if there is one,
+// otherwise a dark or light line that contrasts with the body.
+function trimFor(tpl, bodyHex) {
+  const names = [tpl.pattern_b, tpl.pattern_la, tpl.pattern_ra].join(' ').toLowerCase();
+  for (const word of Object.keys(COLOUR_WORDS)) {
+    if (names.indexOf(word) !== -1 && COLOUR_WORDS[word] !== bodyHex.toUpperCase()) return toPalette(COLOUR_WORDS[word]);
+  }
+  return isLight(bodyHex) ? '#1B1A17' : '#F4F1E6';
+}
+
+// Apply the sourced kit to a shirt. Returns a short phrase like "yellow" for the match note.
+function applyWikiKit(kit, tpl, page, match) {
+  const wornIn = /final$/i.test(page.title) ? page.title.replace(/^UEFA /, '') : match.competition + ', ' + match.stage.toLowerCase();
+  const team = TEAM[kit.team];
+  const link = 'https://en.wikipedia.org/w/index.php?title=' + encodeURIComponent(page.title.replace(/ /g, '_')) + '&oldid=' + page.revid;
+  const source = 'Wikipedia, "' + page.title + '" (revision ' + page.revid + '), CC BY-SA 4.0';
+  if (!hexOk(tpl.body)) {
+    // Wikipedia holds this shirt's colour only inside a pattern picture.
+    kit.colours = { body: team.body, trim: team.trim, stripes: team.stripes };
+    kit.description = 'Drawn in ' + kit.team + '\u2019s traditional home colours, ' + team.desc + '. Wikipedia records the shirt worn in the final only as a picture (pattern "' + (tpl.pattern_b || '?') + '"), so the exact colour is to be confirmed.';
+    kit.coloursSource = source + ' (pattern only)';
+    kit.coloursUrl = link;
+    return team.desc.split(' with ')[0];
+  }
+  const body = tpl.body.toUpperCase();
+  const name = colourName(body);
+  const trim = trimFor(tpl, body);
+  // Argentina's home shirt is sky blue and white stripes; the template's single body
+  // colour is one of the two when that shirt was worn. Any other colour is a change kit.
+  let stripes = [];
+  let look = name + ' shirt';
+  if (team.stripes.length && (name === 'sky blue' || name === 'light blue' || name === 'white')) {
+    const sky = name === 'white' ? team.stripes[0] : toPalette(body);
+    stripes = [sky, '#F4F1E6', sky, '#F4F1E6', sky];
+    look = 'sky blue and white striped shirt';
+  }
+  kit.colours = { body: toPalette(body), trim: trim, stripes: stripes };
+  kit.description = look.charAt(0).toUpperCase() + look.slice(1) + ', as worn in the ' + wornIn + '.';
+  kit.coloursSource = source;
+  kit.coloursUrl = link;
+  return look.replace(/ shirt$/, '');
+}
+
+function canRefreshColours(kit) {
+  return !kit.coloursSource || /^Wikipedia/.test(kit.coloursSource);
+}
+
+// Read the final's article and colour both shirts from it.
+async function colourFromWikipedia(match, kitById) {
+  const title = wikiPageFor(match.id);
+  if (!title) return;
+  const data = await fetchWiki(title);
+  const page = { title: data.parse.title, revid: data.parse.revid };
+  const templates = kitTemplates(data.parse.wikitext);
+  const notes = [];
+  for (const side of ['home', 'away']) {
+    const kit = kitById.get(match[side].kit);
+    if (!kit) continue;
+    const tpl = templates.find(t => t.title === kit.team);
+    if (!tpl) { console.warn('  No kit for ' + kit.team + ' in "' + page.title + '"'); continue; }
+    if (!canRefreshColours(kit)) { notes.push(kit.team + ' in ' + (kit.description || '').toLowerCase().replace(/[.].*$/, '')); continue; }
+    const look = applyWikiKit(kit, tpl, page, match);
+    notes.push(kit.team + ' in ' + look);
+    if (match[side].colour !== undefined) {
+      // Timeline dot: the body colour, or the trim when the body is pale.
+      match[side].colour = dotColour(kit.colours);
+    }
+  }
+  // Two teams in the same colour (1930: both in sky blue) need different timeline dots.
+  if (match.home.colour === match.away.colour) {
+    const awayKit = kitById.get(match.away.kit);
+    match.away.colour = awayKit && !isNearWhite(awayKit.colours.trim.slice(1)) ? awayKit.colours.trim : '#1B1A17';
+    if (match.away.colour === match.home.colour) match.away.colour = '#1B1A17';
+  }
+  if (notes.length === 2 && (!match.kitsNote || /to be researched/i.test(match.kitsNote) || /^Source: Wikipedia/m.test(match.kitsNote) || /\(Wikipedia/.test(match.kitsNote))) {
+    match.kitsNote = notes.join('. ') + '. (Wikipedia, "' + page.title + '".)';
+  }
+}
+
 // ---------- build one tournament ----------
 
 function buildFinal(opts) {
@@ -210,8 +428,8 @@ function buildFinal(opts) {
     stage: stage,
     date: prettyDate(final.date),
     venue: final.ground,
-    home: { name: final.team1, short: home.short, colour: home.body === '#F4F1E6' ? home.trim : home.body, label: score.winner === 'home' ? winLabel : loseLabel, kit: kitId(final.team1) },
-    away: { name: final.team2, short: away.short, colour: away.body === '#F4F1E6' ? away.trim : away.body, label: score.winner === 'away' ? winLabel : loseLabel, kit: kitId(final.team2) },
+    home: { name: final.team1, short: home.short, colour: dotColour(home), label: score.winner === 'home' ? winLabel : loseLabel, kit: kitId(final.team1) },
+    away: { name: final.team2, short: away.short, colour: dotColour(away), label: score.winner === 'away' ? winLabel : loseLabel, kit: kitId(final.team2) },
     score: { home: score.home, away: score.away },
     scoreNote: score.note,
     extraTime: score.extraTime,
@@ -301,6 +519,17 @@ async function main() {
     }
   }
 
+  // Stage 2: colours, from the Wikipedia article about each final.
+  let coloured = 0;
+  for (const m of matchData.items) {
+    try {
+      await colourFromWikipedia(m, kitById);
+      coloured++;
+    } catch (e) {
+      console.warn('  Colours skipped for ' + m.id + ': ' + e.message);
+    }
+  }
+
   // Shirts in year order, then by team; matches in date order.
   kitsData.items.sort((a, b) => a.year - b.year || a.team.localeCompare(b.team));
   matchData.items.sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -310,6 +539,7 @@ async function main() {
 
   console.log('Shirts:  ' + kitsData.items.length + ' in catalogue (' + addedKits + ' added, ' + linked + ' existing linked to a match).');
   console.log('Matches: ' + matchData.items.length + ' cards (' + addedMatches + ' added).');
+  console.log('Colours: ' + coloured + ' finals read from Wikipedia.');
 }
 
 main().catch(err => { console.error(err.message || err); process.exit(1); });

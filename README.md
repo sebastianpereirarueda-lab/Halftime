@@ -92,11 +92,11 @@ venues, scores, scorers) comes from the openfootball project, which publishes it
 domain. `docs/KIT-DATA-SOURCES.md` explains what else was looked at and why it could not be
 used.
 
-What the data does **not** include is the look of each shirt. Those shirts are drawn in the
-team's traditional home colours and say so in their description. The shirt actually worn
-in a final is sometimes a change kit (England wore red in 1966, for example), so each one
-still needs checking against a kit history, after which the colours and description can
-be corrected in `kits.js` by hand. Manufacturer, debut and design notes show
+The colour of each shirt comes from the Wikipedia article about that final, which records
+the kit both teams wore that day (free to reuse with credit, CC BY-SA 4.0). Each shirt's
+page links to the exact article revision it was taken from. Two shirts, Italy 1982 and
+Spain 2026, have their colour only in a picture on Wikipedia and are drawn in the team's
+usual colours until that is checked. Manufacturer, debut and design notes show
 "To be researched" until someone fills them in.
 
 ### Running the importer again (optional)
@@ -108,9 +108,11 @@ If a new tournament is added to the openfootball data and you want it in the Kit
 2. In File Explorer, open the project folder, click in the address bar, type `cmd` and press Enter.
 3. Type `node tools\import-kits.js` and press Enter.
 
-It adds what is new and leaves every existing entry exactly as it is, so hand edits are
-safe. Shirts for a team it does not know will stop with a message asking for the team's
-colours to be added to the table at the top of the script.
+It adds what is new and keeps every existing entry. The one thing it refreshes is a
+shirt's colours from Wikipedia; to keep colours you typed yourself, add
+`coloursSource: "hand"` to that shirt. A team it does not know stops the script with a
+message asking for the team's colours to be added to the table at the top of the script.
+Wikipedia limits how fast it answers, so a full run can take a few minutes.
 
 Two rules that matter:
 

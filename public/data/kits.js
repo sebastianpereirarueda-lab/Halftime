@@ -14,6 +14,10 @@
 //    description one sentence about the shirt's look
 //    facts       research fields. Leave a field as null until it is verified.
 //    matches     ids of match cards this shirt appears in (see matches.js)
+//    coloursSource  where the colours come from, e.g. 'Wikipedia, "1966 FIFA World Cup final" (revision ...)'.
+//                Leave it out if the colours are only the team's usual ones. Write "hand" to stop
+//                tools/import-kits.js from changing colours you have set yourself.
+//    coloursUrl  link to that source, shown on the shirt's page
 //
 //  Do not write a fact you have not checked. null shows as "to be researched".
 // ============================================================
@@ -25,10 +29,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1930, Uruguay",
     result: "World Cup runners-up",
-    colours: { body: "#7DB8E0", trim: "#1B1A17", stripes: ["#7DB8E0", "#F4F1E6", "#7DB8E0", "#F4F1E6", "#7DB8E0"] },
-    description: "Drawn in Argentina’s traditional home colours, sky blue and white vertical stripes. The shirt worn in the final is to be researched.",
+    colours: { body: "#A2D0FC", trim: "#FEFEFC", stripes: ["#A2D0FC", "#F4F1E6", "#A2D0FC", "#F4F1E6", "#A2D0FC"] },
+    description: "Sky blue and white striped shirt, as worn in the 1930 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1930-world-cup-final"]
+    matches: ["1930-world-cup-final"],
+    coloursSource: "Wikipedia, \"1930 FIFA World Cup final\" (revision 1370476710), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1930_FIFA_World_Cup_final&oldid=1370476710"
   },
   {
     id: "uruguay-1930",
@@ -37,10 +43,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1930, Uruguay",
     result: "World Cup winners",
-    colours: { body: "#6FA9DC", trim: "#1B1A17", stripes: [] },
-    description: "Drawn in Uruguay’s traditional home colours, light blue with black trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#A2D0FC", trim: "#FEFEFC", stripes: [] },
+    description: "Sky blue shirt, as worn in the 1930 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1930-world-cup-final"]
+    matches: ["1930-world-cup-final"],
+    coloursSource: "Wikipedia, \"1930 FIFA World Cup final\" (revision 1370476710), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1930_FIFA_World_Cup_final&oldid=1370476710"
   },
   {
     id: "czechoslovakia-1934",
@@ -49,10 +57,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1934, Italy",
     result: "World Cup runners-up",
-    colours: { body: "#B3261E", trim: "#F4F1E6", stripes: [] },
-    description: "Drawn in Czechoslovakia’s traditional home colours, red with white trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#DE1822", trim: "#F4F1E6", stripes: [] },
+    description: "Red shirt, as worn in the 1934 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1934-world-cup-final"]
+    matches: ["1934-world-cup-final"],
+    coloursSource: "Wikipedia, \"1934 FIFA World Cup final\" (revision 1370476727), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1934_FIFA_World_Cup_final&oldid=1370476727"
   },
   {
     id: "italy-1934",
@@ -61,10 +71,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1934, Italy",
     result: "World Cup winners",
-    colours: { body: "#1F4E9C", trim: "#F4F1E6", stripes: [] },
-    description: "Drawn in Italy’s traditional home colours, blue with white trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#547AAB", trim: "#F4F1E6", stripes: [] },
+    description: "Blue shirt, as worn in the 1934 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1934-world-cup-final"]
+    matches: ["1934-world-cup-final"],
+    coloursSource: "Wikipedia, \"1934 FIFA World Cup final\" (revision 1370476727), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1934_FIFA_World_Cup_final&oldid=1370476727"
   },
   {
     id: "hungary-1938",
@@ -73,10 +85,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1938, France",
     result: "World Cup runners-up",
-    colours: { body: "#B3261E", trim: "#F4F1E6", stripes: [] },
-    description: "Drawn in Hungary’s traditional home colours, red with white trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#DE1822", trim: "#F4F1E6", stripes: [] },
+    description: "Red shirt, as worn in the 1938 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1938-world-cup-final"]
+    matches: ["1938-world-cup-final"],
+    coloursSource: "Wikipedia, \"1938 FIFA World Cup final\" (revision 1370476759), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1938_FIFA_World_Cup_final&oldid=1370476759"
   },
   {
     id: "italy-1938",
@@ -85,10 +99,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1938, France",
     result: "World Cup winners",
-    colours: { body: "#1F4E9C", trim: "#F4F1E6", stripes: [] },
-    description: "Drawn in Italy’s traditional home colours, blue with white trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#547AAB", trim: "#F4F1E6", stripes: [] },
+    description: "Blue shirt, as worn in the 1938 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1938-world-cup-final"]
+    matches: ["1938-world-cup-final"],
+    coloursSource: "Wikipedia, \"1938 FIFA World Cup final\" (revision 1370476759), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1938_FIFA_World_Cup_final&oldid=1370476759"
   },
   {
     id: "brazil-1950",
@@ -97,10 +113,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1950, Brazil",
     result: "World Cup runners-up",
-    colours: { body: "#E8C32A", trim: "#1F6B3A", stripes: [] },
-    description: "Drawn in Brazil’s traditional home colours, yellow with green trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEFEFC", trim: "#1B1A17", stripes: [] },
+    description: "White shirt, as worn in the FIFA World Cup 1950, final round, deciding match.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1950-world-cup-final"]
+    matches: ["1950-world-cup-final"],
+    coloursSource: "Wikipedia, \"Uruguay v Brazil (1950 FIFA World Cup)\" (revision 1370476799), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=Uruguay_v_Brazil_(1950_FIFA_World_Cup)&oldid=1370476799"
   },
   {
     id: "uruguay-1950",
@@ -109,10 +127,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1950, Brazil",
     result: "World Cup winners",
-    colours: { body: "#6FA9DC", trim: "#1B1A17", stripes: [] },
-    description: "Light blue shirt with black trim.",
+    colours: { body: "#A2D0FC", trim: "#FEFEFC", stripes: [] },
+    description: "Sky blue shirt, as worn in the FIFA World Cup 1950, final round, deciding match.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1950-world-cup-final"]
+    matches: ["1950-world-cup-final"],
+    coloursSource: "Wikipedia, \"Uruguay v Brazil (1950 FIFA World Cup)\" (revision 1370476799), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=Uruguay_v_Brazil_(1950_FIFA_World_Cup)&oldid=1370476799"
   },
   {
     id: "hungary-1954",
@@ -121,10 +141,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1954, Switzerland",
     result: "World Cup runners-up",
-    colours: { body: "#B3261E", trim: "#F4F1E6", stripes: [] },
-    description: "Drawn in Hungary’s traditional home colours, red with white trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#D01817", trim: "#F4F1E6", stripes: [] },
+    description: "Red shirt, as worn in the 1954 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1954-world-cup-final"]
+    matches: ["1954-world-cup-final"],
+    coloursSource: "Wikipedia, \"1954 FIFA World Cup final\" (revision 1373704546), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1954_FIFA_World_Cup_final&oldid=1373704546"
   },
   {
     id: "west-germany-1954",
@@ -133,10 +155,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1954, Switzerland",
     result: "World Cup winners",
-    colours: { body: "#F4F1E6", trim: "#1B1A17", stripes: [] },
-    description: "Drawn in West Germany’s traditional home colours, white with black trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEFEFC", trim: "#191817", stripes: [] },
+    description: "White shirt, as worn in the 1954 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1954-world-cup-final"]
+    matches: ["1954-world-cup-final"],
+    coloursSource: "Wikipedia, \"1954 FIFA World Cup final\" (revision 1373704546), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1954_FIFA_World_Cup_final&oldid=1373704546"
   },
   {
     id: "brazil-1958",
@@ -145,10 +169,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1958, Sweden",
     result: "World Cup winners",
-    colours: { body: "#E8C32A", trim: "#1F6B3A", stripes: [] },
-    description: "Drawn in Brazil’s traditional home colours, yellow with green trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#3939A2", trim: "#F4F1E6", stripes: [] },
+    description: "Blue shirt, as worn in the 1958 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1958-world-cup-final"]
+    matches: ["1958-world-cup-final"],
+    coloursSource: "Wikipedia, \"1958 FIFA World Cup final\" (revision 1370476889), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1958_FIFA_World_Cup_final&oldid=1370476889"
   },
   {
     id: "sweden-1958",
@@ -157,10 +183,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1958, Sweden",
     result: "World Cup runners-up",
-    colours: { body: "#E8C32A", trim: "#1F4E9C", stripes: [] },
-    description: "Drawn in Sweden’s traditional home colours, yellow with blue trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEDF44", trim: "#1B1A17", stripes: [] },
+    description: "Yellow shirt, as worn in the 1958 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1958-world-cup-final"]
+    matches: ["1958-world-cup-final"],
+    coloursSource: "Wikipedia, \"1958 FIFA World Cup final\" (revision 1370476889), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1958_FIFA_World_Cup_final&oldid=1370476889"
   },
   {
     id: "brazil-1962",
@@ -169,10 +197,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1962, Chile",
     result: "World Cup winners",
-    colours: { body: "#E8C32A", trim: "#1F6B3A", stripes: [] },
-    description: "Drawn in Brazil’s traditional home colours, yellow with green trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEF030", trim: "#198B17", stripes: [] },
+    description: "Yellow shirt, as worn in the 1962 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1962-world-cup-final"]
+    matches: ["1962-world-cup-final"],
+    coloursSource: "Wikipedia, \"1962 FIFA World Cup final\" (revision 1370476934), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1962_FIFA_World_Cup_final&oldid=1370476934"
   },
   {
     id: "czechoslovakia-1962",
@@ -181,10 +211,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1962, Chile",
     result: "World Cup runners-up",
-    colours: { body: "#B3261E", trim: "#F4F1E6", stripes: [] },
-    description: "Drawn in Czechoslovakia’s traditional home colours, red with white trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEFEFC", trim: "#1B1A17", stripes: [] },
+    description: "White shirt, as worn in the 1962 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1962-world-cup-final"]
+    matches: ["1962-world-cup-final"],
+    coloursSource: "Wikipedia, \"1962 FIFA World Cup final\" (revision 1370476934), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1962_FIFA_World_Cup_final&oldid=1370476934"
   },
   {
     id: "england-1966",
@@ -193,10 +225,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1966, England",
     result: "World Cup winners",
-    colours: { body: "#B3261E", trim: "#F4F1E6", stripes: [] },
-    description: "Red shirt with white trim, worn in the final.",
+    colours: { body: "#E01817", trim: "#F4F1E6", stripes: [] },
+    description: "Red shirt, as worn in the 1966 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1966-world-cup-final"]
+    matches: ["1966-world-cup-final"],
+    coloursSource: "Wikipedia, \"1966 FIFA World Cup final\" (revision 1377003359), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1966_FIFA_World_Cup_final&oldid=1377003359"
   },
   {
     id: "west-germany-1966",
@@ -205,10 +239,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1966, England",
     result: "World Cup runners-up",
-    colours: { body: "#F4F1E6", trim: "#1B1A17", stripes: [] },
-    description: "Drawn in West Germany’s traditional home colours, white with black trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEFEFC", trim: "#191817", stripes: [] },
+    description: "White shirt, as worn in the 1966 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1966-world-cup-final"]
+    matches: ["1966-world-cup-final"],
+    coloursSource: "Wikipedia, \"1966 FIFA World Cup final\" (revision 1377003359), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1966_FIFA_World_Cup_final&oldid=1377003359"
   },
   {
     id: "brazil-1970",
@@ -217,10 +253,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1970, Mexico",
     result: "World Cup winners",
-    colours: { body: "#E8C32A", trim: "#1F6B3A", stripes: [] },
-    description: "Yellow shirt with green trim at the collar and cuffs.",
+    colours: { body: "#FCEA25", trim: "#198B17", stripes: [] },
+    description: "Yellow shirt, as worn in the 1970 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1970-world-cup-final"]
+    matches: ["1970-world-cup-final"],
+    coloursSource: "Wikipedia, \"1970 FIFA World Cup final\" (revision 1378370769), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1970_FIFA_World_Cup_final&oldid=1378370769"
   },
   {
     id: "italy-1970",
@@ -229,10 +267,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1970, Mexico",
     result: "World Cup runners-up",
-    colours: { body: "#1F4E9C", trim: "#F4F1E6", stripes: [] },
-    description: "Blue shirt with white trim.",
+    colours: { body: "#4535CE", trim: "#F4F1E6", stripes: [] },
+    description: "Blue shirt, as worn in the 1970 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1970-world-cup-final"]
+    matches: ["1970-world-cup-final"],
+    coloursSource: "Wikipedia, \"1970 FIFA World Cup final\" (revision 1378370769), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1970_FIFA_World_Cup_final&oldid=1378370769"
   },
   {
     id: "netherlands-1974",
@@ -241,10 +281,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1974, West Germany",
     result: "World Cup runners-up",
-    colours: { body: "#E86F1C", trim: "#1B1A17", stripes: [] },
-    description: "Orange shirt with black trim.",
+    colours: { body: "#FE6F17", trim: "#F4F1E6", stripes: [] },
+    description: "Orange shirt, as worn in the 1974 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1974-world-cup-final"]
+    matches: ["1974-world-cup-final"],
+    coloursSource: "Wikipedia, \"1974 FIFA World Cup final\" (revision 1376222563), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1974_FIFA_World_Cup_final&oldid=1376222563"
   },
   {
     id: "west-germany-1974",
@@ -253,10 +295,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1974, West Germany",
     result: "World Cup winners",
-    colours: { body: "#F4F1E6", trim: "#1B1A17", stripes: [] },
-    description: "Drawn in West Germany’s traditional home colours, white with black trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEFEFC", trim: "#191817", stripes: [] },
+    description: "White shirt, as worn in the 1974 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1974-world-cup-final"]
+    matches: ["1974-world-cup-final"],
+    coloursSource: "Wikipedia, \"1974 FIFA World Cup final\" (revision 1376222563), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1974_FIFA_World_Cup_final&oldid=1376222563"
   },
   {
     id: "argentina-1978",
@@ -265,10 +309,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1978, Argentina",
     result: "World Cup winners",
-    colours: { body: "#7DB8E0", trim: "#1B1A17", stripes: ["#7DB8E0", "#F4F1E6", "#7DB8E0", "#F4F1E6", "#7DB8E0"] },
-    description: "Drawn in Argentina’s traditional home colours, sky blue and white vertical stripes. The shirt worn in the final is to be researched.",
+    colours: { body: "#82B1DC", trim: "#1B1A17", stripes: ["#82B1DC", "#F4F1E6", "#82B1DC", "#F4F1E6", "#82B1DC"] },
+    description: "Sky blue and white striped shirt, as worn in the 1978 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1978-world-cup-final"]
+    matches: ["1978-world-cup-final"],
+    coloursSource: "Wikipedia, \"1978 FIFA World Cup final\" (revision 1376299383), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1978_FIFA_World_Cup_final&oldid=1376299383"
   },
   {
     id: "netherlands-1978",
@@ -277,10 +323,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1978, Argentina",
     result: "World Cup runners-up",
-    colours: { body: "#E86F1C", trim: "#1B1A17", stripes: [] },
-    description: "Drawn in Netherlands’s traditional home colours, orange with black trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FE6F17", trim: "#F4F1E6", stripes: [] },
+    description: "Orange shirt, as worn in the 1978 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1978-world-cup-final"]
+    matches: ["1978-world-cup-final"],
+    coloursSource: "Wikipedia, \"1978 FIFA World Cup final\" (revision 1376299383), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1978_FIFA_World_Cup_final&oldid=1376299383"
   },
   {
     id: "italy-1982",
@@ -290,9 +338,11 @@ window.HALFTIME_KITS = [
     competition: "FIFA World Cup 1982, Spain",
     result: "World Cup winners",
     colours: { body: "#1F4E9C", trim: "#F4F1E6", stripes: [] },
-    description: "Blue shirt with white trim.",
+    description: "Drawn in Italy’s traditional home colours, blue with white trim. Wikipedia records the shirt worn in the final only as a picture (pattern \"_ita82\"), so the exact colour is to be confirmed.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1982-world-cup-final"]
+    matches: ["1982-world-cup-final"],
+    coloursSource: "Wikipedia, \"1982 FIFA World Cup final\" (revision 1376321424), CC BY-SA 4.0 (pattern only)",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1982_FIFA_World_Cup_final&oldid=1376321424"
   },
   {
     id: "west-germany-1982",
@@ -301,10 +351,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1982, Spain",
     result: "World Cup runners-up",
-    colours: { body: "#F4F1E6", trim: "#1B1A17", stripes: [] },
-    description: "Drawn in West Germany’s traditional home colours, white with black trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEFEFC", trim: "#1B1A17", stripes: [] },
+    description: "White shirt, as worn in the 1982 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1982-world-cup-final"]
+    matches: ["1982-world-cup-final"],
+    coloursSource: "Wikipedia, \"1982 FIFA World Cup final\" (revision 1376321424), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1982_FIFA_World_Cup_final&oldid=1376321424"
   },
   {
     id: "argentina-1986",
@@ -313,10 +365,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1986, Mexico",
     result: "World Cup winners",
-    colours: { body: "#7DB8E0", trim: "#1B1A17", stripes: ["#7DB8E0", "#F4F1E6", "#7DB8E0", "#F4F1E6", "#7DB8E0"] },
-    description: "Sky blue and white vertical stripes.",
+    colours: { body: "#A8D2FC", trim: "#1B1A17", stripes: ["#A8D2FC", "#F4F1E6", "#A8D2FC", "#F4F1E6", "#A8D2FC"] },
+    description: "Sky blue and white striped shirt, as worn in the 1986 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1986-world-cup-final"]
+    matches: ["1986-world-cup-final"],
+    coloursSource: "Wikipedia, \"1986 FIFA World Cup final\" (revision 1378321402), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1986_FIFA_World_Cup_final&oldid=1378321402"
   },
   {
     id: "west-germany-1986",
@@ -325,10 +379,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1986, Mexico",
     result: "World Cup runners-up",
-    colours: { body: "#F4F1E6", trim: "#1B1A17", stripes: [] },
-    description: "Drawn in West Germany’s traditional home colours, white with black trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#198B17", trim: "#FEFEFC", stripes: [] },
+    description: "Green shirt, as worn in the 1986 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1986-world-cup-final"]
+    matches: ["1986-world-cup-final"],
+    coloursSource: "Wikipedia, \"1986 FIFA World Cup final\" (revision 1378321402), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1986_FIFA_World_Cup_final&oldid=1378321402"
   },
   {
     id: "argentina-1990",
@@ -337,10 +393,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1990, Italy",
     result: "World Cup runners-up",
-    colours: { body: "#7DB8E0", trim: "#1B1A17", stripes: ["#7DB8E0", "#F4F1E6", "#7DB8E0", "#F4F1E6", "#7DB8E0"] },
-    description: "Drawn in Argentina’s traditional home colours, sky blue and white vertical stripes. The shirt worn in the final is to be researched.",
+    colours: { body: "#1918C3", trim: "#F4F1E6", stripes: [] },
+    description: "Royal blue shirt, as worn in the 1990 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1990-world-cup-final"]
+    matches: ["1990-world-cup-final"],
+    coloursSource: "Wikipedia, \"1990 FIFA World Cup final\" (revision 1376676631), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1990_FIFA_World_Cup_final&oldid=1376676631"
   },
   {
     id: "west-germany-1990",
@@ -349,10 +407,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1990, Italy",
     result: "World Cup winners",
-    colours: { body: "#F4F1E6", trim: "#1B1A17", stripes: [] },
-    description: "Drawn in West Germany’s traditional home colours, white with black trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEFEFC", trim: "#1B1A17", stripes: [] },
+    description: "White shirt, as worn in the 1990 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1990-world-cup-final"]
+    matches: ["1990-world-cup-final"],
+    coloursSource: "Wikipedia, \"1990 FIFA World Cup final\" (revision 1376676631), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1990_FIFA_World_Cup_final&oldid=1376676631"
   },
   {
     id: "brazil-1994",
@@ -361,10 +421,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1994, United States",
     result: "World Cup winners",
-    colours: { body: "#E8C32A", trim: "#1F6B3A", stripes: [] },
-    description: "Drawn in Brazil’s traditional home colours, yellow with green trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEFE17", trim: "#1B1A17", stripes: [] },
+    description: "Yellow shirt, as worn in the 1994 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1994-world-cup-final"]
+    matches: ["1994-world-cup-final"],
+    coloursSource: "Wikipedia, \"1994 FIFA World Cup final\" (revision 1370814532), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1994_FIFA_World_Cup_final&oldid=1370814532"
   },
   {
     id: "italy-1994",
@@ -373,10 +435,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1994, United States",
     result: "World Cup runners-up",
-    colours: { body: "#1F4E9C", trim: "#F4F1E6", stripes: [] },
-    description: "Drawn in Italy’s traditional home colours, blue with white trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#1918C2", trim: "#F4F1E6", stripes: [] },
+    description: "Royal blue shirt, as worn in the 1994 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1994-world-cup-final"]
+    matches: ["1994-world-cup-final"],
+    coloursSource: "Wikipedia, \"1994 FIFA World Cup final\" (revision 1370814532), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1994_FIFA_World_Cup_final&oldid=1370814532"
   },
   {
     id: "brazil-1998",
@@ -385,10 +449,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1998, France",
     result: "World Cup runners-up",
-    colours: { body: "#E8C32A", trim: "#1F6B3A", stripes: [] },
-    description: "Drawn in Brazil’s traditional home colours, yellow with green trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FED017", trim: "#1B1A17", stripes: [] },
+    description: "Yellow shirt, as worn in the 1998 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1998-world-cup-final"]
+    matches: ["1998-world-cup-final"],
+    coloursSource: "Wikipedia, \"1998 FIFA World Cup final\" (revision 1370477312), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1998_FIFA_World_Cup_final&oldid=1370477312"
   },
   {
     id: "france-1998",
@@ -397,10 +463,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 1998, France",
     result: "World Cup winners",
-    colours: { body: "#1F4E9C", trim: "#F4F1E6", stripes: [] },
-    description: "Drawn in France’s traditional home colours, blue with white trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#1918C3", trim: "#F4F1E6", stripes: [] },
+    description: "Royal blue shirt, as worn in the 1998 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["1998-world-cup-final"]
+    matches: ["1998-world-cup-final"],
+    coloursSource: "Wikipedia, \"1998 FIFA World Cup final\" (revision 1370477312), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1998_FIFA_World_Cup_final&oldid=1370477312"
   },
   {
     id: "brazil-2002",
@@ -409,10 +477,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 2002, South Korea and Japan",
     result: "World Cup winners",
-    colours: { body: "#E8C32A", trim: "#1F6B3A", stripes: [] },
-    description: "Drawn in Brazil’s traditional home colours, yellow with green trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEFE17", trim: "#1B1A17", stripes: [] },
+    description: "Yellow shirt, as worn in the 2002 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2002-world-cup-final"]
+    matches: ["2002-world-cup-final"],
+    coloursSource: "Wikipedia, \"2002 FIFA World Cup final\" (revision 1375281798), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2002_FIFA_World_Cup_final&oldid=1375281798"
   },
   {
     id: "germany-2002",
@@ -421,10 +491,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 2002, South Korea and Japan",
     result: "World Cup runners-up",
-    colours: { body: "#F4F1E6", trim: "#1B1A17", stripes: [] },
-    description: "Drawn in Germany’s traditional home colours, white with black trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEFEFC", trim: "#1B1A17", stripes: [] },
+    description: "White shirt, as worn in the 2002 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2002-world-cup-final"]
+    matches: ["2002-world-cup-final"],
+    coloursSource: "Wikipedia, \"2002 FIFA World Cup final\" (revision 1375281798), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2002_FIFA_World_Cup_final&oldid=1375281798"
   },
   {
     id: "france-2006",
@@ -433,10 +505,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 2006, Germany",
     result: "World Cup runners-up",
-    colours: { body: "#1F4E9C", trim: "#F4F1E6", stripes: [] },
-    description: "Drawn in France’s traditional home colours, blue with white trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEFEFC", trim: "#1B1A17", stripes: [] },
+    description: "White shirt, as worn in the 2006 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2006-world-cup-final"]
+    matches: ["2006-world-cup-final"],
+    coloursSource: "Wikipedia, \"2006 FIFA World Cup final\" (revision 1376632237), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2006_FIFA_World_Cup_final&oldid=1376632237"
   },
   {
     id: "italy-2006",
@@ -445,10 +519,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 2006, Germany",
     result: "World Cup winners",
-    colours: { body: "#1F4E9C", trim: "#F4F1E6", stripes: [] },
-    description: "Drawn in Italy’s traditional home colours, blue with white trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#3660C3", trim: "#F4F1E6", stripes: [] },
+    description: "Blue shirt, as worn in the 2006 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2006-world-cup-final"]
+    matches: ["2006-world-cup-final"],
+    coloursSource: "Wikipedia, \"2006 FIFA World Cup final\" (revision 1376632237), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2006_FIFA_World_Cup_final&oldid=1376632237"
   },
   {
     id: "netherlands-2010",
@@ -457,10 +533,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 2010, South Africa",
     result: "World Cup runners-up",
-    colours: { body: "#E86F1C", trim: "#1B1A17", stripes: [] },
-    description: "Drawn in Netherlands’s traditional home colours, orange with black trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FE6E17", trim: "#F4F1E6", stripes: [] },
+    description: "Orange shirt, as worn in the 2010 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2010-world-cup-final"]
+    matches: ["2010-world-cup-final"],
+    coloursSource: "Wikipedia, \"2010 FIFA World Cup final\" (revision 1370477459), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2010_FIFA_World_Cup_final&oldid=1370477459"
   },
   {
     id: "spain-2010",
@@ -469,10 +547,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 2010, South Africa",
     result: "World Cup winners",
-    colours: { body: "#B3261E", trim: "#E8C32A", stripes: [] },
-    description: "Drawn in Spain’s traditional home colours, red with yellow trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#194672", trim: "#F4F1E6", stripes: [] },
+    description: "Dark blue shirt, as worn in the 2010 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2010-world-cup-final"]
+    matches: ["2010-world-cup-final"],
+    coloursSource: "Wikipedia, \"2010 FIFA World Cup final\" (revision 1370477459), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2010_FIFA_World_Cup_final&oldid=1370477459"
   },
   {
     id: "argentina-2014",
@@ -481,10 +561,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 2014, Brazil",
     result: "World Cup runners-up",
-    colours: { body: "#7DB8E0", trim: "#1B1A17", stripes: ["#7DB8E0", "#F4F1E6", "#7DB8E0", "#F4F1E6", "#7DB8E0"] },
-    description: "Drawn in Argentina’s traditional home colours, sky blue and white vertical stripes. The shirt worn in the final is to be researched.",
+    colours: { body: "#192970", trim: "#F4F1E6", stripes: [] },
+    description: "Navy shirt, as worn in the 2014 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2014-world-cup-final"]
+    matches: ["2014-world-cup-final"],
+    coloursSource: "Wikipedia, \"2014 FIFA World Cup final\" (revision 1370477527), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2014_FIFA_World_Cup_final&oldid=1370477527"
   },
   {
     id: "germany-2014",
@@ -493,10 +575,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 2014, Brazil",
     result: "World Cup winners",
-    colours: { body: "#F4F1E6", trim: "#1B1A17", stripes: [] },
-    description: "Drawn in Germany’s traditional home colours, white with black trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEFEFC", trim: "#1B1A17", stripes: [] },
+    description: "White shirt, as worn in the 2014 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2014-world-cup-final"]
+    matches: ["2014-world-cup-final"],
+    coloursSource: "Wikipedia, \"2014 FIFA World Cup final\" (revision 1370477527), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2014_FIFA_World_Cup_final&oldid=1370477527"
   },
   {
     id: "croatia-2018",
@@ -505,10 +589,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 2018, Russia",
     result: "World Cup runners-up",
-    colours: { body: "#B3261E", trim: "#F4F1E6", stripes: [] },
-    description: "Drawn in Croatia’s traditional home colours, red and white; the chequered pattern is not drawn. The shirt worn in the final is to be researched.",
+    colours: { body: "#F41817", trim: "#F4F1E6", stripes: [] },
+    description: "Red shirt, as worn in the 2018 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2018-world-cup-final"]
+    matches: ["2018-world-cup-final"],
+    coloursSource: "Wikipedia, \"2018 FIFA World Cup final\" (revision 1375926597), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2018_FIFA_World_Cup_final&oldid=1375926597"
   },
   {
     id: "france-2018",
@@ -517,10 +603,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 2018, Russia",
     result: "World Cup winners",
-    colours: { body: "#1F4E9C", trim: "#F4F1E6", stripes: [] },
-    description: "Drawn in France’s traditional home colours, blue with white trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#283C63", trim: "#F4F1E6", stripes: [] },
+    description: "Dark blue shirt, as worn in the 2018 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2018-world-cup-final"]
+    matches: ["2018-world-cup-final"],
+    coloursSource: "Wikipedia, \"2018 FIFA World Cup final\" (revision 1375926597), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2018_FIFA_World_Cup_final&oldid=1375926597"
   },
   {
     id: "england-2021",
@@ -529,10 +617,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "UEFA Euro 2020, held across Europe",
     result: "European Championship runners-up",
-    colours: { body: "#F4F1E6", trim: "#1F2F5C", stripes: [] },
-    description: "Drawn in England’s traditional home colours, white with navy trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEFEFC", trim: "#1B1A17", stripes: [] },
+    description: "White shirt, as worn in the Euro 2020 final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2020-euro-final"]
+    matches: ["2020-euro-final"],
+    coloursSource: "Wikipedia, \"UEFA Euro 2020 final\" (revision 1375202157), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_2020_final&oldid=1375202157"
   },
   {
     id: "italy-2021",
@@ -541,10 +631,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "UEFA Euro 2020, held across Europe",
     result: "European Championship winners",
-    colours: { body: "#1F4E9C", trim: "#F4F1E6", stripes: [] },
-    description: "Drawn in Italy’s traditional home colours, blue with white trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#2850D8", trim: "#F4F1E6", stripes: [] },
+    description: "Blue shirt, as worn in the Euro 2020 final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2020-euro-final"]
+    matches: ["2020-euro-final"],
+    coloursSource: "Wikipedia, \"UEFA Euro 2020 final\" (revision 1375202157), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_2020_final&oldid=1375202157"
   },
   {
     id: "argentina-2022",
@@ -553,10 +645,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 2022, Qatar",
     result: "World Cup winners",
-    colours: { body: "#7DB8E0", trim: "#1B1A17", stripes: ["#7DB8E0", "#F4F1E6", "#7DB8E0", "#F4F1E6", "#7DB8E0"] },
-    description: "Drawn in Argentina’s traditional home colours, sky blue and white vertical stripes. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEFEFC", trim: "#1B1A17", stripes: ["#7DB8E0", "#F4F1E6", "#7DB8E0", "#F4F1E6", "#7DB8E0"] },
+    description: "Sky blue and white striped shirt, as worn in the 2022 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2022-world-cup-final"]
+    matches: ["2022-world-cup-final"],
+    coloursSource: "Wikipedia, \"2022 FIFA World Cup final\" (revision 1377947686), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2022_FIFA_World_Cup_final&oldid=1377947686"
   },
   {
     id: "france-2022",
@@ -565,10 +659,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 2022, Qatar",
     result: "World Cup runners-up",
-    colours: { body: "#1F4E9C", trim: "#F4F1E6", stripes: [] },
-    description: "Drawn in France’s traditional home colours, blue with white trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#37345D", trim: "#F4F1E6", stripes: [] },
+    description: "Dark blue shirt, as worn in the 2022 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2022-world-cup-final"]
+    matches: ["2022-world-cup-final"],
+    coloursSource: "Wikipedia, \"2022 FIFA World Cup final\" (revision 1377947686), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2022_FIFA_World_Cup_final&oldid=1377947686"
   },
   {
     id: "england-2024",
@@ -577,10 +673,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "UEFA Euro 2024, Germany",
     result: "European Championship runners-up",
-    colours: { body: "#F4F1E6", trim: "#1F2F5C", stripes: [] },
-    description: "Drawn in England’s traditional home colours, white with navy trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEFEFC", trim: "#1B1A17", stripes: [] },
+    description: "White shirt, as worn in the Euro 2024 final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2024-euro-final"]
+    matches: ["2024-euro-final"],
+    coloursSource: "Wikipedia, \"UEFA Euro 2024 final\" (revision 1374029048), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_2024_final&oldid=1374029048"
   },
   {
     id: "spain-2024",
@@ -589,10 +687,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "UEFA Euro 2024, Germany",
     result: "European Championship winners",
-    colours: { body: "#B3261E", trim: "#E8C32A", stripes: [] },
-    description: "Drawn in Spain’s traditional home colours, red with yellow trim. The shirt worn in the final is to be researched.",
+    colours: { body: "#FE1817", trim: "#F4F1E6", stripes: [] },
+    description: "Red shirt, as worn in the Euro 2024 final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2024-euro-final"]
+    matches: ["2024-euro-final"],
+    coloursSource: "Wikipedia, \"UEFA Euro 2024 final\" (revision 1374029048), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_2024_final&oldid=1374029048"
   },
   {
     id: "argentina-2026",
@@ -601,10 +701,12 @@ window.HALFTIME_KITS = [
     kind: "nation",
     competition: "FIFA World Cup 2026, Canada, Mexico and United States",
     result: "World Cup runners-up",
-    colours: { body: "#7DB8E0", trim: "#1B1A17", stripes: ["#7DB8E0", "#F4F1E6", "#7DB8E0", "#F4F1E6", "#7DB8E0"] },
-    description: "Drawn in Argentina’s traditional home colours, sky blue and white vertical stripes. The shirt worn in the final is to be researched.",
+    colours: { body: "#FEFEFC", trim: "#1B1A17", stripes: ["#7DB8E0", "#F4F1E6", "#7DB8E0", "#F4F1E6", "#7DB8E0"] },
+    description: "Sky blue and white striped shirt, as worn in the 2026 FIFA World Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2026-world-cup-final"]
+    matches: ["2026-world-cup-final"],
+    coloursSource: "Wikipedia, \"2026 FIFA World Cup final\" (revision 1377897277), CC BY-SA 4.0",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2026_FIFA_World_Cup_final&oldid=1377897277"
   },
   {
     id: "spain-2026",
@@ -614,8 +716,10 @@ window.HALFTIME_KITS = [
     competition: "FIFA World Cup 2026, Canada, Mexico and United States",
     result: "World Cup winners",
     colours: { body: "#B3261E", trim: "#E8C32A", stripes: [] },
-    description: "Drawn in Spain’s traditional home colours, red with yellow trim. The shirt worn in the final is to be researched.",
+    description: "Drawn in Spain’s traditional home colours, red with yellow trim. Wikipedia records the shirt worn in the final only as a picture (pattern \"_esp26h\"), so the exact colour is to be confirmed.",
     facts: { manufacturer: null, debut: null, story: null },
-    matches: ["2026-world-cup-final"]
+    matches: ["2026-world-cup-final"],
+    coloursSource: "Wikipedia, \"2026 FIFA World Cup final\" (revision 1377897277), CC BY-SA 4.0 (pattern only)",
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2026_FIFA_World_Cup_final&oldid=1377897277"
   }
 ];
