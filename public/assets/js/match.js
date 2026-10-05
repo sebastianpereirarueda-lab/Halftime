@@ -17,18 +17,24 @@
 
   H.setTitle(m.home.name + ' ' + m.score.home + '–' + m.score.away + ' ' + m.away.name + ', ' + m.competition + ' ' + m.stage);
 
-  var FULL = 90;
+  // The timeline runs to 90 minutes, or 120 when the match went to extra time.
+  var FULL = m.extraTime ? 120 : 90;
   var pct = function (min) { return (Math.min(min, FULL) / FULL * 100).toFixed(1) + '%'; };
   var goals = (m.goals || []).slice().sort(function (a, b) { return a.minute - b.minute; });
 
-  // Goals close together get a taller stem so their labels don't overlap.
-  var raised = [];
+  // Goals close together get a taller stem so their labels don't overlap:
+  // each goal takes the lowest level not used by a goal just before it.
+  var NEAR = FULL / 8;
+  var level = [];
   goals.forEach(function (g, i) {
-    var prev = goals[i - 1];
-    raised[i] = prev && (g.minute - prev.minute) < 10 && !raised[i - 1];
+    var used = [];
+    for (var j = i - 1; j >= 0 && (g.minute - goals[j].minute) < NEAR; j--) used[level[j]] = true;
+    level[i] = 0;
+    while (used[level[i]]) level[i]++;
   });
+  var maxLevel = level.reduce(function (a, b) { return Math.max(a, b); }, 0);
 
-  var ticks = [0, 45, 90].map(function (t) {
+  var ticks = (m.extraTime ? [0, 45, 90, 120] : [0, 45, 90]).map(function (t) {
     return '<div class="timeline__tick" style="left:' + pct(t) + '">' + t + '&prime;</div>';
   }).join('');
 
@@ -36,7 +42,7 @@
     var side = g.team === 'home' ? m.home : m.away;
     return '<div class="timeline__goal" style="left:' + pct(g.minute) + '">' +
       '<div class="timeline__goal-label"><span class="nm">' + H.esc(g.scorer) + ' </span>' + g.minute + '&prime;</div>' +
-      '<div class="timeline__stem" style="height:' + (raised[i] ? 30 : 0) + 'px"></div>' +
+      '<div class="timeline__stem" style="height:' + (level[i] * 30) + 'px"></div>' +
       '<div class="timeline__dot" style="background:' + H.esc(side.colour) + '" title="' + H.esc(side.name) + '"></div>' +
     '</div>';
   }).join('');
@@ -63,9 +69,10 @@
         '<div class="scoreline__team"><div class="scoreline__name">' + H.esc(m.away.name) + '</div>' +
           '<div class="scoreline__label' + (awayWin ? ' scoreline__label--win' : '') + '">' + H.esc(m.away.label || '') + '</div></div>' +
       '</div>' +
+      (m.scoreNote ? '<div class="scoreline__note">' + H.esc(m.scoreNote) + '</div>' : '') +
       '<div class="card__venue">' + H.esc(m.venue) + '</div>' +
       '<div class="timeline-wrap">' +
-        '<div class="section-title">Minute by Minute</div>' +
+        '<div class="section-title" style="margin-bottom:' + (60 + maxLevel * 30) + 'px">Minute by Minute</div>' +
         '<div class="timeline">' + ticks + markers + '</div>' +
         '<div class="legend">' +
           '<span><span class="legend__dot" style="background:' + H.esc(m.home.colour) + '"></span>' + H.esc(m.home.name) + ' goal</span>' +

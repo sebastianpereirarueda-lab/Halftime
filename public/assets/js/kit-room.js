@@ -5,6 +5,24 @@
   var grid = document.getElementById('kit-grid');
   var count = document.getElementById('kit-count');
   var search = document.getElementById('q');
+
+  // One button per decade that actually has a shirt, so the filters grow with the catalogue.
+  var decadesBox = document.getElementById('decades');
+  var decades = [];
+  H.kits().forEach(function (k) {
+    var d = H.decadeOf(k.year);
+    if (decades.indexOf(d) === -1) decades.push(d);
+  });
+  decades.sort(function (a, b) { return a - b; }).forEach(function (d) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'chip';
+    b.setAttribute('data-decade', String(d));
+    b.setAttribute('aria-pressed', 'false');
+    b.textContent = d + 's';
+    decadesBox.appendChild(b);
+  });
+
   var decadeButtons = Array.prototype.slice.call(document.querySelectorAll('[data-decade]'));
   var kindButtons = Array.prototype.slice.call(document.querySelectorAll('[data-kind]'));
 

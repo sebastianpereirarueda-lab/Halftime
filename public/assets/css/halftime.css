@@ -692,6 +692,14 @@ img, svg { max-width: 100%; }
   margin-top: 6px;
 }
 .scoreline__label--win { color: var(--oxblood); font-weight: 700; }
+.scoreline__note {
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-top: -8px;
+  margin-bottom: 12px;
+}
 .scoreline__score {
   font-family: var(--display);
   font-size: clamp(72px, 18vw, 120px);

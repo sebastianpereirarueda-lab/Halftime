@@ -9,3 +9,6 @@ desktop.ini
 
 # Node (only if tooling is added later)
 node_modules/
+
+# Downloaded source data for tools/import-kits.js (re-downloaded on demand)
+tools/.cache/
