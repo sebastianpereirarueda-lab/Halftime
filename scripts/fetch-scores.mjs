@@ -144,6 +144,7 @@ async function main() {
     days.push(day.toISOString().slice(0, 10));
   }
   const seen = new Map();
+  const seenLeagues = new Map();   // id -> { name, country, count }, for the probe
   let allowed = null;   // date window the plan permits, learned from its first refusal
   for (const day of days) {
     if (allowed && (day < allowed.from || day > allowed.to)) continue;
@@ -160,12 +161,22 @@ async function main() {
     }
     let kept = 0;
     for (const fx of all) {
+      if (PROBE && fx.league) {
+        const e = seenLeagues.get(fx.league.id) || { name: fx.league.name, country: fx.league.country, count: 0 };
+        e.count++; seenLeagues.set(fx.league.id, e);
+      }
       const league = fx.league && leagueById.get(fx.league.id);
       if (!league || seen.has(fx.fixture.id)) continue;
       seen.set(fx.fixture.id, { fx, league });
       kept++;
     }
     log(`${day}: ${all.length} fixtures worldwide, ${kept} in followed competitions`);
+  }
+  if (PROBE) {
+    const top = [...seenLeagues.entries()].sort((a, b) => b[1].count - a[1].count).slice(0, 40);
+    console.log("\n===== PROBE: competitions returned in this window (id | name | country | fixtures) =====");
+    for (const [id, e] of top) console.log(`  ${id} | ${e.name} | ${e.country} | ${e.count}`);
+    console.log("");
   }
   for (const l of LEAGUES) {
     const got = [...seen.values()].filter(v => v.league.id === l.id);

@@ -14,6 +14,7 @@ export const LEAGUES = [
   { id: 78,  name: "Bundesliga",       short: "BL"  },
   { id: 61,  name: "Ligue 1",          short: "L1"  },
   { id: 2,   name: "Champions League", short: "UCL" },
+  { id: 5,   name: "UEFA Nations League", short: "UNL" },
 ];
 
 // The pipeline asks the provider for one calendar day at a time (all
@@ -39,7 +40,8 @@ export const NEWS_FEEDS = [
   { outlet: "BBC Sport",    url: "https://feeds.bbci.co.uk/sport/football/rss.xml" },
   { outlet: "The Guardian", url: "https://www.theguardian.com/football/rss" },
   { outlet: "Sky Sports",   url: "https://www.skysports.com/rss/12040" },
-  { outlet: "ESPN",         url: "https://www.espn.com/espn/rss/soccer/news" },
+  // ESPN answers feed requests with a bot-check page (HTTP 202, empty), so it is left out.
+  { outlet: "The Independent", url: "https://www.independent.co.uk/sport/football/rss" },
 ];
 
 // How far back a news item may be to count as "recent".

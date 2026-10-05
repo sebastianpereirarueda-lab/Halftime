@@ -16,6 +16,8 @@
 //    node scripts/write-news.mjs --dry-run   print the prompt, make no API call
 // ============================================================
 import path from "node:path";
+import fs from "node:fs";
+import { createHash } from "node:crypto";
 import OpenAI from "openai";
 import { zodTextFormat } from "openai/helpers/zod";
 import { z } from "zod";
@@ -63,6 +65,14 @@ Hard rules:
 7. No opinion, no speculation, no hype words. If the day's coverage is thin, say so in the notes field and keep the stories short.
 8. Write for the reader, not for the editor. Never mention the wire copy, "the supplied reports", "the articles", what the sources did or did not include, or your own process in a headline, standfirst, paragraph or summary. If something is unknown, simply leave it out; any caveat for the editor goes in the notes field only. Attributing a fact to an outlet in passing ("BBC Sport reported") is fine.`;
 
+function readNewsFile(file) {
+  try {
+    const text = fs.readFileSync(file, "utf8");
+    const i = text.indexOf("= ");
+    return i === -1 ? null : JSON.parse(text.slice(i + 2).replace(/;\s*$/, ""));
+  } catch { return null; }
+}
+
 function validate(edition, known) {
   const problems = [];
   if (!edition.lead || edition.lead.paragraphs.length < 2 || edition.lead.paragraphs.length > 4) problems.push("lead must have 2 to 4 paragraphs");
@@ -80,6 +90,14 @@ async function main() {
   const data = readJson(CANDIDATES);
   const items = (data && data.items) || [];
   if (items.length < 4) { log(`Only ${items.length} candidate articles; not enough to write an edition. Keeping the previous news.`); return; }
+
+  // Same headlines as last time means the same edition: do not pay to rewrite it.
+  const candidatesHash = createHash("sha256").update(items.map(i => i.link).sort().join("\n")).digest("hex").slice(0, 16);
+  const previous = readNewsFile(OUT_FILE);
+  if (!DRY && previous && previous.candidatesHash === candidatesHash && !process.env.FORCE_NEWS) {
+    log(`The ${items.length} candidate articles are unchanged since the last edition (${previous.updated}); keeping it.`);
+    return;
+  }
 
   const wire = items.slice(0, 60).map((it, i) =>
     `[${i + 1}] ${it.outlet} — ${it.title}\n    ${it.published || ""}\n    ${it.link}\n    ${it.summary || "(no summary)"}`).join("\n\n");
@@ -123,6 +141,7 @@ async function main() {
     updated: new Date().toISOString(),
     model: MODEL,
     articlesConsidered: items.length,
+    candidatesHash,
     ...edition,
   }, "Front Page news written by " + MODEL + " from the sources listed in each story.");
   const u = response.usage || {};

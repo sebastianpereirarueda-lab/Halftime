@@ -25,6 +25,7 @@ function tag(block, name) {
 // Handles both RSS 2.0 (<item>) and Atom (<entry>).
 export function parseFeed(xml, outlet) {
   const items = [];
+  parseFeed.lastRawItem = null;
   const blocks = xml.match(/<item[\s>][\s\S]*?<\/item>/gi) || xml.match(/<entry[\s>][\s\S]*?<\/entry>/gi) || [];
   for (const b of blocks) {
     const title = decode(tag(b, "title"));
@@ -34,6 +35,7 @@ export function parseFeed(xml, outlet) {
     const dateRaw = tag(b, "pubDate") || tag(b, "published") || tag(b, "updated") || tag(b, "dc:date");
     const date = dateRaw ? new Date(decode(dateRaw)) : null;
     if (!title || !link) continue;
+    if (!parseFeed.lastRawItem) parseFeed.lastRawItem = b.slice(0, 400);
     items.push({ outlet, title, link, summary: summary.slice(0, 600), published: date && !isNaN(date) ? date.toISOString() : null });
   }
   return items;
@@ -53,6 +55,7 @@ async function main() {
         // Help diagnose a stale or oddly formatted feed from the run log alone.
         const first = items[0];
         log(`  ${feed.outlet} detail: HTTP ${res.status}, ${xml.length} chars, first item: ${first ? JSON.stringify({ title: first.title.slice(0, 60), published: first.published }) : "none parsed"}; starts with ${JSON.stringify(xml.slice(0, 80))}`);
+        if (first && !first.published) log(`  ${feed.outlet} raw first item: ${JSON.stringify(parseFeed.lastRawItem)}`);
       }
       all.push(...recent);
     } catch (e) {
