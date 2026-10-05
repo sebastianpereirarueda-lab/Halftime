@@ -1,0 +1,39 @@
+{
+ "response": [
+  {
+   "fixture": {
+    "id": 1050,
+    "date": "2026-10-06T02:08:17+00:00",
+    "status": {
+     "short": "NS",
+     "long": "Not Started"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 39,
+    "name": "Premier League",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 10501,
+     "name": "Model City 1",
+     "logo": null
+    },
+    "away": {
+     "id": 10502,
+     "name": "Placeholder FC 1",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": null,
+    "away": null
+   }
+  }
+ ]
+}

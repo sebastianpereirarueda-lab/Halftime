@@ -781,3 +781,46 @@ img, svg { max-width: 100%; }
   .filters__search { flex-basis: 100%; }
   .match-list .teams { font-size: 18px; }
 }
+
+/* =========================================================
+   Live data: news sources, results links, lineups
+   ========================================================= */
+.sources {
+  margin-top: 10px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.sources a { display: inline-block; padding: 13px 0; margin: -8px 0; } /* 44px tap height, same visual spacing */
+.results__updated {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 6px 0 0;
+  color: #5A5750;
+}
+.results__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  width: 100%;
+  min-height: 44px;
+  text-decoration: none;
+}
+.results__link .home, .results__link .away { min-width: 0; overflow-wrap: anywhere; }
+.results__row .away { text-align: right; }
+.match-list__head { padding: 18px 0 0; border: 0; }
+.match-list__head .section-title { display: block; margin: 0; }
+.card__source { font-size: 11px; letter-spacing: 1px; color: #5A5750; }
+.lineups { display: flex; flex-wrap: wrap; gap: 16px 24px; padding-top: 10px; }
+.lineup { flex: 1 1 140px; min-width: 0; font-size: 13px; }
+.lineup__team { font-weight: 700; padding-bottom: 6px; border-bottom: 1px dotted var(--ink); }
+.lineup__formation { font-weight: 400; color: var(--oxblood); }
+.lineup__xi { list-style: none; margin: 0; padding: 6px 0 0; }
+.lineup__xi li { display: flex; gap: 8px; padding: 3px 0; }
+.lineup__no { flex: 0 0 24px; text-align: right; color: #5A5750; }
+.lineup__coach { padding-top: 8px; font-style: italic; }

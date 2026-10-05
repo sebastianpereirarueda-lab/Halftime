@@ -35,7 +35,15 @@ window.Halftime = (function () {
   }
 
   function kits() { return window.HALFTIME_KITS || []; }
-  function matches() { return window.HALFTIME_MATCHES || []; }
+  // Hand-written archive matches plus the recent ones from the data pipeline.
+  function matches() {
+    var archive = window.HALFTIME_MATCHES || [];
+    var r = window.HALFTIME_RESULTS;
+    var recent = (r && !r.sample && r.matches) || [];
+    return archive.concat(recent);
+  }
+  function recentMatches() { var r = window.HALFTIME_RESULTS; return (r && !r.sample && r.matches) || []; }
+  function archiveMatches() { return window.HALFTIME_MATCHES || []; }
   function kitById(id) { return kits().find(function (k) { return k.id === id; }) || null; }
   function matchById(id) { return matches().find(function (m) { return m.id === id; }) || null; }
   function kitNumber(kit) { return 'No. ' + pad3(kits().indexOf(kit) + 1); }
@@ -49,6 +57,6 @@ window.Halftime = (function () {
   function setTitle(t) { document.title = t + ' — Halftime'; }
 
   return { esc: esc, param: param, shirtSvg: shirtSvg, kits: kits, matches: matches,
-           kitById: kitById, matchById: matchById, kitNumber: kitNumber,
+           kitById: kitById, matchById: matchById, recentMatches: recentMatches, archiveMatches: archiveMatches, kitNumber: kitNumber,
            decadeOf: decadeOf, factOrTbr: factOrTbr, setTitle: setTitle };
 })();

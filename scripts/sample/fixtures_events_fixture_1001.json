@@ -1,0 +1,52 @@
+{
+ "response": [
+  {
+   "time": {
+    "elapsed": 20,
+    "extra": null
+   },
+   "team": {
+    "id": 10011,
+    "name": "Sample Town 2"
+   },
+   "player": {
+    "id": 1,
+    "name": "H. Scorer 1"
+   },
+   "type": "Goal",
+   "detail": "Normal Goal"
+  },
+  {
+   "time": {
+    "elapsed": 90,
+    "extra": 3
+   },
+   "team": {
+    "id": 10012,
+    "name": "Example United 2"
+   },
+   "player": {
+    "id": 2,
+    "name": "A. Latecomer"
+   },
+   "type": "Goal",
+   "detail": "Penalty"
+  },
+  {
+   "time": {
+    "elapsed": 55,
+    "extra": null
+   },
+   "team": {
+    "id": 10011,
+    "name": "Sample Town 2"
+   },
+   "player": {
+    "id": 3,
+    "name": "Y. Card"
+   },
+   "type": "Card",
+   "detail": "Yellow Card"
+  }
+ ]
+}

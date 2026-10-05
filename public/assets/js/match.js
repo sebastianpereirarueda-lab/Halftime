@@ -35,16 +35,28 @@
   var markers = goals.map(function (g, i) {
     var side = g.team === 'home' ? m.home : m.away;
     return '<div class="timeline__goal" style="left:' + pct(g.minute) + '">' +
-      '<div class="timeline__goal-label"><span class="nm">' + H.esc(g.scorer) + ' </span>' + g.minute + '&prime;</div>' +
+      '<div class="timeline__goal-label"><span class="nm">' + H.esc(g.scorer) + ' </span>' + g.minute + (g.extra ? '+' + g.extra : '') + '&prime;</div>' +
       '<div class="timeline__stem" style="height:' + (raised[i] ? 30 : 0) + 'px"></div>' +
       '<div class="timeline__dot" style="background:' + H.esc(side.colour) + '" title="' + H.esc(side.name) + '"></div>' +
     '</div>';
   }).join('');
 
+  var minuteText = function (g) { return g.minute + (g.extra ? '+' + g.extra : '') + '&prime;'; };
+  var kindText = function (g) { return g.kind === 'og' ? ' (og)' : g.kind === 'pen' ? ' (pen)' : ''; };
   var scorers = goals.length ? goals.map(function (g) {
     var side = g.team === 'home' ? m.home : m.away;
-    return '<li><span>' + g.minute + '&prime;</span><span class="name">' + H.esc(g.scorer) + '</span><span class="team">' + H.esc(side.short) + '</span></li>';
-  }).join('') : '<li><span class="tbr">No goals recorded.</span></li>';
+    return '<li><span>' + minuteText(g) + '</span><span class="name">' + H.esc(g.scorer) + kindText(g) + '</span><span class="team">' + H.esc(side.short) + '</span></li>';
+  }).join('') : '<li><span class="tbr">' + ((m.score.home + m.score.away) === 0 ? 'No goals.' : m.status === 'finished' && m.source ? 'Goal details not available yet.' : 'No goals recorded.') + '</span></li>';
+
+  var lineupsHtml = '';
+  if (m.lineups && m.lineups.length) {
+    lineupsHtml = m.lineups.map(function (l) {
+      var side = l.team === 'home' ? m.home : m.away;
+      return '<div class="lineup"><div class="lineup__team">' + H.esc(side.name) + (l.formation ? ' <span class="lineup__formation">' + H.esc(l.formation) + '</span>' : '') + '</div>' +
+        '<ol class="lineup__xi">' + l.startXI.map(function (p) { return '<li><span class="lineup__no">' + H.esc(p.number == null ? '' : p.number) + '</span>' + H.esc(p.name) + '</li>'; }).join('') + '</ol>' +
+        (l.coach ? '<div class="lineup__coach">Coach: ' + H.esc(l.coach) + '</div>' : '') + '</div>';
+    }).join('');
+  }
 
   var kitLinks = [m.home, m.away].map(function (side) {
     var k = side.kit ? H.kitById(side.kit) : null;
@@ -63,7 +75,7 @@
         '<div class="scoreline__team"><div class="scoreline__name">' + H.esc(m.away.name) + '</div>' +
           '<div class="scoreline__label' + (awayWin ? ' scoreline__label--win' : '') + '">' + H.esc(m.away.label || '') + '</div></div>' +
       '</div>' +
-      '<div class="card__venue">' + H.esc(m.venue) + '</div>' +
+      '<div class="card__venue">' + H.esc(m.venue || '') + (m.source ? ' <span class="card__source">&middot; data: ' + H.esc(m.source) + '</span>' : '') + '</div>' +
       '<div class="timeline-wrap">' +
         '<div class="section-title">Minute by Minute</div>' +
         '<div class="timeline">' + ticks + markers + '</div>' +
@@ -75,10 +87,11 @@
       '<div class="card__cols">' +
         '<div class="card__col"><div class="section-title">Scorers</div><ul class="scorers">' + scorers + '</ul></div>' +
         '<div class="card__col"><div class="section-title">Kits Worn</div>' +
-          '<div class="card__text">' + H.esc(m.kitsNote || '') + '</div>' + kitLinks +
+          '<div class="card__text">' + (m.kitsNote ? H.esc(m.kitsNote) : '<span class="tbr">The shirts from this match are not catalogued yet.</span>') + '</div>' + kitLinks +
           '<div style="margin-top:12px"><a class="btn btn--oxblood" href="../kits/">See the shirts</a></div></div>' +
-        '<div class="card__col"><div class="section-title">Full Stats</div>' +
-          '<div class="card__text">' + (m.stats ? H.esc(m.stats) : '<span class="tbr">Possession, shots, lineups, subs and cards will sit here once a stats source is chosen.</span>') + '</div></div>' +
+        '<div class="card__col"><div class="section-title">' + (lineupsHtml ? 'Lineups' : 'Full Stats') + '</div>' +
+          (lineupsHtml ? '<div class="lineups">' + lineupsHtml + '</div>' :
+          '<div class="card__text">' + (m.stats ? H.esc(m.stats) : '<span class="tbr">Possession, shots, lineups, subs and cards will sit here once a stats source is chosen.</span>') + '</div>') + '</div>' +
       '</div>' +
     '</div>';
 })();

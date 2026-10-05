@@ -1,0 +1,74 @@
+{
+ "response": [
+  {
+   "fixture": {
+    "id": 1400,
+    "date": "2026-10-04T16:08:17+00:00",
+    "status": {
+     "short": "FT",
+     "long": "Match Finished"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 61,
+    "name": "Ligue 1",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 14001,
+     "name": "Sample Town 1",
+     "logo": null
+    },
+    "away": {
+     "id": 14002,
+     "name": "Example United 1",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": 0,
+    "away": 0
+   }
+  },
+  {
+   "fixture": {
+    "id": 1401,
+    "date": "2026-10-03T20:08:17+00:00",
+    "status": {
+     "short": "FT",
+     "long": "Match Finished"
+    },
+    "venue": {
+     "name": "Sample Park",
+     "city": "Exampleton"
+    }
+   },
+   "league": {
+    "id": 61,
+    "name": "Ligue 1",
+    "round": "Regular Season - 7"
+   },
+   "teams": {
+    "home": {
+     "id": 14011,
+     "name": "Sample Town 2",
+     "logo": null
+    },
+    "away": {
+     "id": 14012,
+     "name": "Example United 2",
+     "logo": null
+    }
+   },
+   "goals": {
+    "home": 1,
+    "away": 1
+   }
+  }
+ ]
+}
