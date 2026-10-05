@@ -11,8 +11,10 @@ styled like an old newspaper or match programme.
 | --- | --- |
 | `public/` | The website itself. Everything in here is what gets published. |
 | `public/index.html` | The Front Page. Open this one to see the site. |
-| `public/kits/` | The Kit Room (jersey catalogue). Placeholder page for now. |
-| `public/matches/` | Match cards (stats view). Placeholder page for now. |
+| `public/kits/` | The Kit Room: the shirt catalogue with search and filters, plus one page per shirt. |
+| `public/matches/` | Match cards: the list of matches, plus one card per match, minute by minute. |
+| `public/data/kits.js` | **The list of shirts.** Edit this to add or change a kit. |
+| `public/data/matches.js` | **The list of matches.** Edit this to add or change a match card. |
 | `public/assets/css/halftime.css` | All the colours, fonts and layout, in one file. |
 | `public/assets/fonts/` | The three typefaces, stored locally so the site works offline. |
 | `public/assets/js/dateline.js` | Tiny script that writes today's date at the top of the page. |
@@ -62,3 +64,27 @@ is placeholder text waiting for real content. Open the file in Notepad, change t
 words between the tags, save, and refresh the browser.
 
 Colours and fonts live at the top of `public/assets/css/halftime.css` under `:root`.
+
+## Adding a shirt or a match
+
+The shirts and matches are not typed into the pages. They live in two lists:
+
+- `public/data/kits.js` holds one entry per shirt.
+- `public/data/matches.js` holds one entry per match.
+
+To add a shirt, open `kits.js` in Notepad, copy one existing entry from its opening `{`
+to its closing `},`, paste it at the end of the list, and change the words. The comment at
+the top of the file explains every field. Save, refresh the browser, and the new card appears
+in the Kit Room with the next catalogue number. Every shirt gets its own page automatically,
+at `kits/kit.html?id=` followed by its `id`.
+
+Matches work the same way in `matches.js`. A match card appears in the Match Cards list and
+gets its own page at `matches/match.html?id=` followed by its `id`. To link a shirt to a match,
+put the match's `id` in the shirt's `matches` list and the shirt's `id` in the match's `kit` field.
+
+Two rules that matter:
+
+- Keep the commas and quotes exactly as in the other entries. One missing comma stops the
+  whole list from loading, and the page shows nothing. If that happens, undo the last edit.
+- Do not write a fact you have not checked. Leave a research field as `null` and the page
+  prints "To be researched" instead.
