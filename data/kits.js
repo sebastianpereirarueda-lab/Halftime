@@ -38,7 +38,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1930-world-cup-final"],
     coloursSource: "Wikipedia, \"1930 FIFA World Cup final\" (revision 1370476710), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1930_FIFA_World_Cup_final&oldid=1370476710"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1930_FIFA_World_Cup_final&oldid=1370476710",
+    illustration: { file: "argentina-1930.png", credit: "Drawn after the kit shown in Wikipedia’s \"1930 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm white stripes.png (CC BY-SA 3.0); Kit body 3stripesonwhite.png (CC BY-SA 3.0); Kit right arm white stripes.png (CC BY-SA 3.0). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "uruguay-1930",
@@ -52,7 +53,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1930-world-cup-final"],
     coloursSource: "Wikipedia, \"1930 FIFA World Cup final\" (revision 1370476710), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1930_FIFA_World_Cup_final&oldid=1370476710"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1930_FIFA_World_Cup_final&oldid=1370476710",
+    illustration: { file: "uruguay-1930.png", credit: "Drawn after the kit shown in Wikipedia’s \"1930 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm whiteborder.png (CC BY-SA 3.0); Kit body collarwhite laced.png (CC BY-SA 4.0, Fma12); Kit right arm whiteborder.png (CC BY-SA 3.0). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "czechoslovakia-1934",
@@ -66,7 +68,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1934-world-cup-final"],
     coloursSource: "Wikipedia, \"1934 FIFA World Cup final\" (revision 1370476727), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1934_FIFA_World_Cup_final&oldid=1370476727"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1934_FIFA_World_Cup_final&oldid=1370476727",
+    illustration: { file: "czechoslovakia-1934.png", credit: "Drawn after the kit shown in Wikipedia’s \"1934 FIFA World Cup final\" article. Plain colours, no pattern picture needed. Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "italy-1934",
@@ -80,7 +83,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1934-world-cup-final"],
     coloursSource: "Wikipedia, \"1934 FIFA World Cup final\" (revision 1370476727), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1934_FIFA_World_Cup_final&oldid=1370476727"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1934_FIFA_World_Cup_final&oldid=1370476727",
+    illustration: { file: "italy-1934.png", credit: "Drawn after the kit shown in Wikipedia’s \"1934 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm Italia1927-1943h.png (CC BY-SA 4.0, Romano1979); Kit body colour vneck.png (CC0, KoreanDragon); Kit right arm Italia1927-1943h.png (CC BY-SA 4.0, Romano1979). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "hungary-1938",
@@ -94,7 +98,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1938-world-cup-final"],
     coloursSource: "Wikipedia, \"1938 FIFA World Cup final\" (revision 1370476759), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1938_FIFA_World_Cup_final&oldid=1370476759"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1938_FIFA_World_Cup_final&oldid=1370476759",
+    illustration: { file: "hungary-1938.png", credit: "Drawn after the kit shown in Wikipedia’s \"1938 FIFA World Cup final\" article. Plain colours, no pattern picture needed. Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "italy-1938",
@@ -108,7 +113,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1938-world-cup-final"],
     coloursSource: "Wikipedia, \"1938 FIFA World Cup final\" (revision 1370476759), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1938_FIFA_World_Cup_final&oldid=1370476759"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1938_FIFA_World_Cup_final&oldid=1370476759",
+    illustration: { file: "italy-1938.png", credit: "Drawn after the kit shown in Wikipedia’s \"1938 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm Italia1927-1943h.png (CC BY-SA 4.0, Romano1979); Kit body colour vneck.png (CC0, KoreanDragon); Kit right arm Italia1927-1943h.png (CC BY-SA 4.0, Romano1979). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "brazil-1950",
@@ -122,7 +128,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1950-world-cup-final"],
     coloursSource: "Wikipedia, \"Uruguay v Brazil (1950 FIFA World Cup)\" (revision 1370476799), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=Uruguay_v_Brazil_(1950_FIFA_World_Cup)&oldid=1370476799"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=Uruguay_v_Brazil_(1950_FIFA_World_Cup)&oldid=1370476799",
+    illustration: { file: "brazil-1950.png", credit: "Drawn after the kit shown in Wikipedia’s \"Uruguay v Brazil (1950 FIFA World Cup)\" article. Pattern pictures from Wikimedia Commons: Kit left arm borderonwhite.png (CC BY-SA 3.0); Kit body bra1949h.png (CC BY-SA 4.0, N); Kit right arm borderonwhite.png (CC BY-SA 3.0). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "uruguay-1950",
@@ -136,7 +143,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1950-world-cup-final"],
     coloursSource: "Wikipedia, \"Uruguay v Brazil (1950 FIFA World Cup)\" (revision 1370476799), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=Uruguay_v_Brazil_(1950_FIFA_World_Cup)&oldid=1370476799"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=Uruguay_v_Brazil_(1950_FIFA_World_Cup)&oldid=1370476799",
+    illustration: { file: "uruguay-1950.png", credit: "Drawn after the kit shown in Wikipedia’s \"Uruguay v Brazil (1950 FIFA World Cup)\" article. Pattern pictures from Wikimedia Commons: Kit left arm whiteborder.png (CC BY-SA 3.0); Kit body vneckwhite.png (Public domain, No machine-readable author provided.); Kit right arm whiteborder.png (CC BY-SA 3.0). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "hungary-1954",
@@ -150,7 +158,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1954-world-cup-final"],
     coloursSource: "Wikipedia, \"1954 FIFA World Cup final\" (revision 1373704546), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1954_FIFA_World_Cup_final&oldid=1373704546"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1954_FIFA_World_Cup_final&oldid=1373704546",
+    illustration: { file: "hungary-1954.png", credit: "Drawn after the kit shown in Wikipedia’s \"1954 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body hun 1949 1956 home.png (CC BY-SA 3.0, Brgesto). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "west-germany-1954",
@@ -164,7 +173,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1954-world-cup-final"],
     coloursSource: "Wikipedia, \"1954 FIFA World Cup final\" (revision 1373704546), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1954_FIFA_World_Cup_final&oldid=1373704546"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1954_FIFA_World_Cup_final&oldid=1373704546",
+    illustration: { file: "west-germany-1954.png", credit: "Drawn after the kit shown in Wikipedia’s \"1954 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm blackborder.png (Public domain, No machine-readable author provided.); Kit body ger54h.png (CC BY-SA 4.0, KoreanDragon); Kit right arm blackborder.png (Public domain, No machine-readable author provided.). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "brazil-1958",
@@ -178,7 +188,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1958-world-cup-final"],
     coloursSource: "Wikipedia, \"1958 FIFA World Cup final\" (revision 1370476889), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1958_FIFA_World_Cup_final&oldid=1370476889"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1958_FIFA_World_Cup_final&oldid=1370476889",
+    illustration: { file: "brazil-1958.png", credit: "Drawn after the kit shown in Wikipedia’s \"1958 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body collar.png (Public domain, VEO15). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "sweden-1958",
@@ -192,7 +203,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1958-world-cup-final"],
     coloursSource: "Wikipedia, \"1958 FIFA World Cup final\" (revision 1370476889), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1958_FIFA_World_Cup_final&oldid=1370476889"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1958_FIFA_World_Cup_final&oldid=1370476889",
+    illustration: { file: "sweden-1958.png", credit: "Drawn after the kit shown in Wikipedia’s \"1958 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body swe58h.png (CC0, KoreanDragon). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "brazil-1962",
@@ -206,7 +218,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1962-world-cup-final"],
     coloursSource: "Wikipedia, \"1962 FIFA World Cup final\" (revision 1370476934), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1962_FIFA_World_Cup_final&oldid=1370476934"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1962_FIFA_World_Cup_final&oldid=1370476934",
+    illustration: { file: "brazil-1962.png", credit: "Drawn after the kit shown in Wikipedia’s \"1962 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm greenborder.png (CC BY-SA 3.0, No machine-readable author provided.); Kit body collargreen.png (Public domain, Dre.comandante); Kit right arm greenborder.png (CC BY-SA 3.0, No machine-readable author provided.). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "czechoslovakia-1962",
@@ -220,7 +233,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1962-world-cup-final"],
     coloursSource: "Wikipedia, \"1962 FIFA World Cup final\" (revision 1370476934), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1962_FIFA_World_Cup_final&oldid=1370476934"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1962_FIFA_World_Cup_final&oldid=1370476934",
+    illustration: { file: "czechoslovakia-1962.png", credit: "Drawn after the kit shown in Wikipedia’s \"1962 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body vneck.png (CC BY-SA 3.0, Commissaris_pr). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "england-1966",
@@ -234,7 +248,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1966-world-cup-final"],
     coloursSource: "Wikipedia, \"1966 FIFA World Cup final\" (revision 1377003359), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1966_FIFA_World_Cup_final&oldid=1377003359"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1966_FIFA_World_Cup_final&oldid=1377003359",
+    illustration: { file: "england-1966.png", credit: "Drawn after the kit shown in Wikipedia’s \"1966 FIFA World Cup final\" article. Plain colours, no pattern picture needed. Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "west-germany-1966",
@@ -248,7 +263,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1966-world-cup-final"],
     coloursSource: "Wikipedia, \"1966 FIFA World Cup final\" (revision 1377003359), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1966_FIFA_World_Cup_final&oldid=1377003359"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1966_FIFA_World_Cup_final&oldid=1377003359",
+    illustration: { file: "west-germany-1966.png", credit: "Drawn after the kit shown in Wikipedia’s \"1966 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm blackborder.png (Public domain, No machine-readable author provided.); Kit body vneckblack.png (CC BY-SA 3.0, Rolando); Kit right arm blackborder.png (Public domain, No machine-readable author provided.). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "brazil-1970",
@@ -262,7 +278,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1970-world-cup-final"],
     coloursSource: "Wikipedia, \"1970 FIFA World Cup final\" (revision 1378370769), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1970_FIFA_World_Cup_final&oldid=1378370769"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1970_FIFA_World_Cup_final&oldid=1378370769",
+    illustration: { file: "brazil-1970.png", credit: "Drawn after the kit shown in Wikipedia’s \"1970 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm greenborder.png (CC BY-SA 3.0, No machine-readable author provided.); Kit body greencollar.png (Public domain, VEO15); Kit right arm greenborder.png (CC BY-SA 3.0, No machine-readable author provided.). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "italy-1970",
@@ -276,7 +293,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1970-world-cup-final"],
     coloursSource: "Wikipedia, \"1970 FIFA World Cup final\" (revision 1378370769), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1970_FIFA_World_Cup_final&oldid=1378370769"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1970_FIFA_World_Cup_final&oldid=1378370769",
+    illustration: { file: "italy-1970.png", credit: "Drawn after the kit shown in Wikipedia’s \"1970 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body ita70h.png (CC0, KoreanDragon). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "netherlands-1974",
@@ -290,7 +308,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1974-world-cup-final"],
     coloursSource: "Wikipedia, \"1974 FIFA World Cup final\" (revision 1376222563), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1974_FIFA_World_Cup_final&oldid=1376222563"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1974_FIFA_World_Cup_final&oldid=1376222563",
+    illustration: { file: "netherlands-1974.png", credit: "Drawn after the kit shown in Wikipedia’s \"1974 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm netherlands80h.png (CC BY-SA 4.0, Zotteteen1); Kit body ned74h.png (CC0, KoreanDragon); Kit right arm netherlands80h.png (CC BY-SA 4.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "west-germany-1974",
@@ -304,7 +323,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1974-world-cup-final"],
     coloursSource: "Wikipedia, \"1974 FIFA World Cup final\" (revision 1376222563), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1974_FIFA_World_Cup_final&oldid=1376222563"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1974_FIFA_World_Cup_final&oldid=1376222563",
+    illustration: { file: "west-germany-1974.png", credit: "Drawn after the kit shown in Wikipedia’s \"1974 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm blackborder.png (Public domain, No machine-readable author provided.); Kit body blackcollar.png (Public domain, Odinsblot); Kit right arm blackborder.png (Public domain, No machine-readable author provided.). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "argentina-1978",
@@ -318,7 +338,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1978-world-cup-final"],
     coloursSource: "Wikipedia, \"1978 FIFA World Cup final\" (revision 1376299383), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1978_FIFA_World_Cup_final&oldid=1376299383"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1978_FIFA_World_Cup_final&oldid=1376299383",
+    illustration: { file: "argentina-1978.png", credit: "Drawn after the kit shown in Wikipedia’s \"1978 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm arg7879h.png (CC BY-SA 4.0, Lucas.st); Kit body arg7879h.png (CC BY-SA 4.0, Lucas.st); Kit right arm arg7879h.png (CC BY-SA 4.0, Lucas.st). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "netherlands-1978",
@@ -332,7 +353,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1978-world-cup-final"],
     coloursSource: "Wikipedia, \"1978 FIFA World Cup final\" (revision 1376299383), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1978_FIFA_World_Cup_final&oldid=1376299383"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1978_FIFA_World_Cup_final&oldid=1376299383",
+    illustration: { file: "netherlands-1978.png", credit: "Drawn after the kit shown in Wikipedia’s \"1978 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm netherlands80h.png (CC BY-SA 4.0, Zotteteen1); Kit body netherlands80h.png (CC BY-SA 4.0, Zotteteen1); Kit right arm netherlands80h.png (CC BY-SA 4.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "italy-1982",
@@ -346,7 +368,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1982-world-cup-final"],
     coloursSource: "Wikipedia, \"1982 FIFA World Cup final\" (revision 1376321424), CC BY-SA 4.0; colour read from the Commons picture \"Kit body ita82.png\" (CC BY-SA 3.0)",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1982_FIFA_World_Cup_final&oldid=1376321424"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1982_FIFA_World_Cup_final&oldid=1376321424",
+    illustration: { file: "italy-1982.png", credit: "Drawn after the kit shown in Wikipedia’s \"1982 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm italy1982-90.png (CC BY-SA 3.0, Radis2); Kit body ita82.png (CC BY-SA 3.0, KoreanDragon); Kit right arm italy1982-90.png (CC BY-SA 3.0, Radis2). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "west-germany-1982",
@@ -360,7 +383,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1982-world-cup-final"],
     coloursSource: "Wikipedia, \"1982 FIFA World Cup final\" (revision 1376321424), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1982_FIFA_World_Cup_final&oldid=1376321424"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1982_FIFA_World_Cup_final&oldid=1376321424",
+    illustration: { file: "west-germany-1982.png", credit: "Drawn after the kit shown in Wikipedia’s \"1982 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm westgermany1980.png (CC BY-SA 3.0, Zotteteen1); Kit body westgermany1980.png (CC BY-SA 3.0, Zotteteen1); Kit right arm westgermany1980.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "argentina-1986",
@@ -374,7 +398,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1986-world-cup-final"],
     coloursSource: "Wikipedia, \"1986 FIFA World Cup final\" (revision 1378321402), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1986_FIFA_World_Cup_final&oldid=1378321402"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1986_FIFA_World_Cup_final&oldid=1378321402",
+    illustration: { file: "argentina-1986.png", credit: "Drawn after the kit shown in Wikipedia’s \"1986 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm argentina1986.png (CC BY-SA 3.0, Zotteteen1); Kit body argentina1986.png (CC BY-SA 3.0, Zotteteen1); Kit right arm argentina1986.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "west-germany-1986",
@@ -388,7 +413,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1986-world-cup-final"],
     coloursSource: "Wikipedia, \"1986 FIFA World Cup final\" (revision 1378321402), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1986_FIFA_World_Cup_final&oldid=1378321402"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1986_FIFA_World_Cup_final&oldid=1378321402",
+    illustration: { file: "west-germany-1986.png", credit: "Drawn after the kit shown in Wikipedia’s \"1986 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm shoulder stripes white stripes.png (Public domain, Chandler); Kit body westgermany1986.png (CC BY-SA 3.0, Zotteteen1); Kit right arm shoulder stripes white stripes.png (Public domain, Chandler). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "argentina-1990",
@@ -402,7 +428,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1990-world-cup-final"],
     coloursSource: "Wikipedia, \"1990 FIFA World Cup final\" (revision 1376676631), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1990_FIFA_World_Cup_final&oldid=1376676631"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1990_FIFA_World_Cup_final&oldid=1376676631",
+    illustration: { file: "argentina-1990.png", credit: "Drawn after the kit shown in Wikipedia’s \"1990 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm argentina1990a.png (CC BY-SA 3.0, Zotteteen1); Kit body argentina1990a.png (CC BY-SA 3.0, Zotteteen1); Kit right arm argentina1990a.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "west-germany-1990",
@@ -416,7 +443,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1990-world-cup-final"],
     coloursSource: "Wikipedia, \"1990 FIFA World Cup final\" (revision 1376676631), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1990_FIFA_World_Cup_final&oldid=1376676631"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1990_FIFA_World_Cup_final&oldid=1376676631",
+    illustration: { file: "west-germany-1990.png", credit: "Drawn after the kit shown in Wikipedia’s \"1990 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm ger90h.png (CC BY-SA 4.0, Quenombre123); Kit body westgermany1990.png (CC BY-SA 4.0, Quenombre123); Kit right arm ger90h.png (CC BY-SA 4.0, Quenombre123). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "brazil-1994",
@@ -430,7 +458,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1994-world-cup-final"],
     coloursSource: "Wikipedia, \"1994 FIFA World Cup final\" (revision 1370814532), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1994_FIFA_World_Cup_final&oldid=1370814532"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1994_FIFA_World_Cup_final&oldid=1370814532",
+    illustration: { file: "brazil-1994.png", credit: "Drawn after the kit shown in Wikipedia’s \"1994 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body bra94h.png (CC BY-SA 4.0, Bru); Kit right arm bra94h.png (CC0, Irypi). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "italy-1994",
@@ -444,7 +473,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1994-world-cup-final"],
     coloursSource: "Wikipedia, \"1994 FIFA World Cup final\" (revision 1370814532), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1994_FIFA_World_Cup_final&oldid=1370814532"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1994_FIFA_World_Cup_final&oldid=1370814532",
+    illustration: { file: "italy-1994.png", credit: "Drawn after the kit shown in Wikipedia’s \"1994 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm ita94h1.png (CC BY-SA 4.0, Hurfer); Kit body ita94h1.png (CC BY-SA 4.0, Hurfer); Kit right arm ita94h1.png (CC BY-SA 4.0, Hurfer). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "brazil-1998",
@@ -458,7 +488,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1998-world-cup-final"],
     coloursSource: "Wikipedia, \"1998 FIFA World Cup final\" (revision 1370477312), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1998_FIFA_World_Cup_final&oldid=1370477312"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1998_FIFA_World_Cup_final&oldid=1370477312",
+    illustration: { file: "brazil-1998.png", credit: "Drawn after the kit shown in Wikipedia’s \"1998 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm bra98h.png (Public domain, Bruno-ban); Kit body bra98h.png (Public domain, Bruno-ban); Kit right arm bra98h.png (Public domain, Bruno-ban). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "france-1998",
@@ -472,7 +503,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1998-world-cup-final"],
     coloursSource: "Wikipedia, \"1998 FIFA World Cup final\" (revision 1370477312), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1998_FIFA_World_Cup_final&oldid=1370477312"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=1998_FIFA_World_Cup_final&oldid=1370477312",
+    illustration: { file: "france-1998.png", credit: "Drawn after the kit shown in Wikipedia’s \"1998 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm france1998h.png (CC BY-SA 4.0, Zotteteen1); Kit body france1998h.png (CC BY-SA 4.0, Zotteteen1); Kit right arm france1998h.png (CC BY-SA 4.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "brazil-2002",
@@ -486,7 +518,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2002-world-cup-final"],
     coloursSource: "Wikipedia, \"2002 FIFA World Cup final\" (revision 1375281798), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2002_FIFA_World_Cup_final&oldid=1375281798"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2002_FIFA_World_Cup_final&oldid=1375281798",
+    illustration: { file: "brazil-2002.png", credit: "Drawn after the kit shown in Wikipedia’s \"2002 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm bra02h.png (CC0, Irypi); Kit body bra02h.png (Public domain, Bruno-ban); Kit right arm bra02h.png (CC0, Irypi). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "germany-2002",
@@ -500,7 +533,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2002-world-cup-final"],
     coloursSource: "Wikipedia, \"2002 FIFA World Cup final\" (revision 1375281798), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2002_FIFA_World_Cup_final&oldid=1375281798"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2002_FIFA_World_Cup_final&oldid=1375281798",
+    illustration: { file: "germany-2002.png", credit: "Drawn after the kit shown in Wikipedia’s \"2002 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm ger02h.png (CC BY-SA 4.0, Bru); Kit body ger02h.png (CC BY-SA 4.0, Bru); Kit right arm ger02h.png (CC BY-SA 4.0, Bru). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "france-2006",
@@ -514,7 +548,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2006-world-cup-final"],
     coloursSource: "Wikipedia, \"2006 FIFA World Cup final\" (revision 1376632237), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2006_FIFA_World_Cup_final&oldid=1376632237"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2006_FIFA_World_Cup_final&oldid=1376632237",
+    illustration: { file: "france-2006.png", credit: "Drawn after the kit shown in Wikipedia’s \"2006 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm fra06A.png (CC BY-SA 4.0, Hurfer); Kit body fra06A.png (CC BY-SA 4.0, Hurfer); Kit right arm fra06A.png (CC BY-SA 4.0, Hurfer). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "italy-2006",
@@ -528,7 +563,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2006-world-cup-final"],
     coloursSource: "Wikipedia, \"2006 FIFA World Cup final\" (revision 1376632237), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2006_FIFA_World_Cup_final&oldid=1376632237"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2006_FIFA_World_Cup_final&oldid=1376632237",
+    illustration: { file: "italy-2006.png", credit: "Drawn after the kit shown in Wikipedia’s \"2006 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm ita06h2.png (CC BY-SA 4.0, Hurfer); Kit body ita06h2.png (CC BY-SA 4.0, Hurfer); Kit right arm ita06h2.png (CC BY-SA 4.0, Hurfer). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "netherlands-2010",
@@ -542,7 +578,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2010-world-cup-final"],
     coloursSource: "Wikipedia, \"2010 FIFA World Cup final\" (revision 1370477459), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2010_FIFA_World_Cup_final&oldid=1370477459"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2010_FIFA_World_Cup_final&oldid=1370477459",
+    illustration: { file: "netherlands-2010.png", credit: "Drawn after the kit shown in Wikipedia’s \"2010 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm ned10h.png (CC BY-SA 3.0, Bruno-ban); Kit body ned10H.png (CC BY-SA 3.0, Bruno-ban); Kit right arm ned10h.png (CC BY-SA 3.0, Bruno-ban). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "spain-2010",
@@ -556,7 +593,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2010-world-cup-final"],
     coloursSource: "Wikipedia, \"2010 FIFA World Cup final\" (revision 1370477459), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2010_FIFA_World_Cup_final&oldid=1370477459"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2010_FIFA_World_Cup_final&oldid=1370477459",
+    illustration: { file: "spain-2010.png", credit: "Drawn after the kit shown in Wikipedia’s \"2010 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm esp10a1.png (CC BY-SA 4.0, Hurfer); Kit body esp10a1.png (CC BY-SA 4.0, Hurfer); Kit right arm esp10a1.png (CC BY-SA 4.0, Hurfer). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "argentina-2014",
@@ -570,7 +608,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2014-world-cup-final"],
     coloursSource: "Wikipedia, \"2014 FIFA World Cup final\" (revision 1370477527), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2014_FIFA_World_Cup_final&oldid=1370477527"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2014_FIFA_World_Cup_final&oldid=1370477527",
+    illustration: { file: "argentina-2014.png", credit: "Drawn after the kit shown in Wikipedia’s \"2014 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm arg2014a.png (CC BY-SA 3.0, Sal); Kit body arg2014a.png (CC BY-SA 3.0, Sal); Kit right arm arg2014a.png (CC BY-SA 3.0, Sal). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "germany-2014",
@@ -584,7 +623,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2014-world-cup-final"],
     coloursSource: "Wikipedia, \"2014 FIFA World Cup final\" (revision 1370477527), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2014_FIFA_World_Cup_final&oldid=1370477527"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2014_FIFA_World_Cup_final&oldid=1370477527",
+    illustration: { file: "germany-2014.png", credit: "Drawn after the kit shown in Wikipedia’s \"2014 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm deutschland14h.png (CC0, Spiraal); Kit body deutschland14h.png (CC0, Spiraal); Kit right arm deutschland14h.png (CC0, Spiraal). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "croatia-2018",
@@ -598,7 +638,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2018-world-cup-final"],
     coloursSource: "Wikipedia, \"2018 FIFA World Cup final\" (revision 1375926597), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2018_FIFA_World_Cup_final&oldid=1375926597"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2018_FIFA_World_Cup_final&oldid=1375926597",
+    illustration: { file: "croatia-2018.png", credit: "Drawn after the kit shown in Wikipedia’s \"2018 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm cro18H.png (CC BY-SA 4.0, Zotteteen1); Kit body cro18ho.png (CC BY-SA 4.0, S); Kit right arm cro18H.png (CC BY-SA 4.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "france-2018",
@@ -612,7 +653,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2018-world-cup-final"],
     coloursSource: "Wikipedia, \"2018 FIFA World Cup final\" (revision 1375926597), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2018_FIFA_World_Cup_final&oldid=1375926597"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2018_FIFA_World_Cup_final&oldid=1375926597",
+    illustration: { file: "france-2018.png", credit: "Drawn after the kit shown in Wikipedia’s \"2018 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm frank18h.png (CC BY-SA 4.0, Zotteteen1); Kit body fra18ho.png (CC BY-SA 4.0, Zotteteen1); Kit right arm frank18h.png (CC BY-SA 4.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "england-2021",
@@ -626,7 +668,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2020-euro-final"],
     coloursSource: "Wikipedia, \"UEFA Euro 2020 final\" (revision 1375202157), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_2020_final&oldid=1375202157"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_2020_final&oldid=1375202157",
+    illustration: { file: "england-2021.png", credit: "Drawn after the kit shown in Wikipedia’s \"UEFA Euro 2020 final\" article. Pattern pictures from Wikimedia Commons: Kit body eng20H.png (CC BY-SA 4.0, Eduzs). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "italy-2021",
@@ -640,7 +683,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2020-euro-final"],
     coloursSource: "Wikipedia, \"UEFA Euro 2020 final\" (revision 1375202157), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_2020_final&oldid=1375202157"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_2020_final&oldid=1375202157",
+    illustration: { file: "italy-2021.png", credit: "Drawn after the kit shown in Wikipedia’s \"UEFA Euro 2020 final\" article. Pattern pictures from Wikimedia Commons: Kit left arm italy20h.png (CC BY-SA 4.0, Luca M); Kit body ita20h.png (CC BY-SA 4.0, Luca M); Kit right arm italy20h.png (CC BY-SA 4.0, Luca M). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "argentina-2022",
@@ -654,7 +698,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2022-world-cup-final"],
     coloursSource: "Wikipedia, \"2022 FIFA World Cup final\" (revision 1377947686), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2022_FIFA_World_Cup_final&oldid=1377947686"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2022_FIFA_World_Cup_final&oldid=1377947686",
+    illustration: { file: "argentina-2022.png", credit: "Drawn after the kit shown in Wikipedia’s \"2022 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm arg22h.png (CC BY-SA 4.0, Mat); Kit body arg22H.png (CC BY-SA 4.0, Mat); Kit right arm arg22h.png (CC BY-SA 4.0, Mat). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "france-2022",
@@ -668,7 +713,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2022-world-cup-final"],
     coloursSource: "Wikipedia, \"2022 FIFA World Cup final\" (revision 1377947686), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2022_FIFA_World_Cup_final&oldid=1377947686"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2022_FIFA_World_Cup_final&oldid=1377947686",
+    illustration: { file: "france-2022.png", credit: "Drawn after the kit shown in Wikipedia’s \"2022 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm fra22h.png (CC BY-SA 4.0, Mat); Kit body fra22H.png (CC BY-SA 4.0, Mat); Kit right arm fra22h.png (CC BY-SA 4.0, Mat). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "england-2024",
@@ -682,7 +728,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2024-euro-final"],
     coloursSource: "Wikipedia, \"UEFA Euro 2024 final\" (revision 1374029048), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_2024_final&oldid=1374029048"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_2024_final&oldid=1374029048",
+    illustration: { file: "england-2024.png", credit: "Drawn after the kit shown in Wikipedia’s \"UEFA Euro 2024 final\" article. Pattern pictures from Wikimedia Commons: Kit left arm eng24h.png (CC BY 4.0, Mat); Kit body eng24h.png (CC BY 4.0, Mat); Kit right arm eng24h.png (CC BY 4.0, Mat). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "spain-2024",
@@ -696,7 +743,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2024-euro-final"],
     coloursSource: "Wikipedia, \"UEFA Euro 2024 final\" (revision 1374029048), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_2024_final&oldid=1374029048"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_2024_final&oldid=1374029048",
+    illustration: { file: "spain-2024.png", credit: "Drawn after the kit shown in Wikipedia’s \"UEFA Euro 2024 final\" article. Pattern pictures from Wikimedia Commons: Kit left arm esp24h.png (CC BY 4.0, Mat); Kit body esp24h.png (CC BY 4.0, Mat); Kit right arm esp24h.png (CC BY 4.0, Mat). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "argentina-2026",
@@ -710,7 +758,8 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2026-world-cup-final"],
     coloursSource: "Wikipedia, \"2026 FIFA World Cup final\" (revision 1377897277), CC BY-SA 4.0",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2026_FIFA_World_Cup_final&oldid=1377897277"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2026_FIFA_World_Cup_final&oldid=1377897277",
+    illustration: { file: "argentina-2026.png", credit: "Drawn after the kit shown in Wikipedia’s \"2026 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm arg26h.png (CC BY-SA 4.0, User34790); Kit body arg26h wc.png (CC BY-SA 4.0, User34790); Kit right arm arg26h.png (CC BY-SA 4.0, User34790). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "spain-2026",
@@ -724,6 +773,7 @@ window.HALFTIME_KITS = [
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["2026-world-cup-final"],
     coloursSource: "Wikipedia, \"2026 FIFA World Cup final\" (revision 1377897277), CC BY-SA 4.0; colour read from the Commons picture \"Kit body esp26h.png\" (CC0)",
-    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2026_FIFA_World_Cup_final&oldid=1377897277"
+    coloursUrl: "https://en.wikipedia.org/w/index.php?title=2026_FIFA_World_Cup_final&oldid=1377897277",
+    illustration: { file: "spain-2026.png", credit: "Drawn after the kit shown in Wikipedia’s \"2026 FIFA World Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm esp26h.png (CC0, WikipedyjniAK); Kit body esp26h.png (CC0, WikipedyjniAK); Kit right arm esp26h.png (CC0, WikipedyjniAK). Outline: Wikimedia Commons kit template drawings." }
   }
 ];

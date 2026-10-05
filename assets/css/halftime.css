@@ -503,7 +503,7 @@ img, svg { max-width: 100%; }
 }
 .shirt-stage svg { width: 190px; height: 190px; }
 /* Drawn shirts are 100 by 59 units; sit them in the same box as the flat ones. */
-.shirt-stage img.kit-art { width: 190px; height: auto; margin: 28px 0; image-rendering: auto; }
+.shirt-stage img.kit-art { width: 240px; max-width: 100%; height: auto; margin: 22px 0; image-rendering: auto; }
 .kit-card__team {
   font-family: var(--display);
   font-size: 30px;
