@@ -3,7 +3,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
-import { parseFeed } from "./fetch-news.mjs";
+import { parseFeed, parseDate } from "./fetch-news.mjs";
 import { currentSeason, slug } from "./lib/util.mjs";
 
 let failed = 0;
@@ -38,6 +38,10 @@ ok(r.length === 1 && r[0].title === "Striker & co sign" && r[0].summary === "Sum
 const atom = `<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Atom story</title><link rel="alternate" href="https://example.org/b"/><summary>S</summary><updated>2026-10-05T09:00:00Z</updated></entry></feed>`;
 const a = parseFeed(atom, "Test");
 ok(a.length === 1 && a[0].link === "https://example.org/b", "Atom entry parsed with href link");
+
+ok(parseDate("Sun, 05 Oct 2026 00:19:00 BST").toISOString() === "2026-10-04T23:19:00.000Z", "BST feed dates parse as UTC+1");
+ok(parseDate("Sun, 05 Oct 2026 00:19:00 GMT").toISOString() === "2026-10-05T00:19:00.000Z", "GMT feed dates still parse");
+ok(parseDate("not a date") === null, "unparseable dates give null");
 
 // 4. news writer dry run
 const cand = path.join(tmp, "cand.json");

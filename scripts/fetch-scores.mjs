@@ -17,7 +17,7 @@
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { LEAGUES, DAYS_BACK, DAYS_AHEAD, KEEP_DAYS, DETAIL_WINDOW_HOURS, MAX_REQUESTS_PER_RUN } from "./config.mjs";
+import { LEAGUES, DAYS_BACK, DAYS_AHEAD, KEEP_DAYS, DETAIL_WINDOW_HOURS, MAX_REQUESTS_PER_RUN, MIN_REQUEST_GAP_MS } from "./config.mjs";
 import { ROOT, PUBLIC_DATA, CACHE, readJson, writeJson, writeDataFile, log, hoursAgo, currentSeason, slug, formatDate } from "./lib/util.mjs";
 
 const args = new Set(process.argv.slice(2));
@@ -36,11 +36,24 @@ if (!SAMPLE && !KEY) {
 }
 
 let requests = 0;
-async function api(pathAndQuery) {
+let lastRequestAt = 0;
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+// The free plan allows 10 requests a minute, so requests are spaced out, and a
+// 429 (too many requests) is answered by a pause and one retry.
+async function api(pathAndQuery, retried) {
   if (SAMPLE) return sample(pathAndQuery);
   if (requests >= MAX_REQUESTS_PER_RUN) throw new Error("Request ceiling reached (" + MAX_REQUESTS_PER_RUN + ")");
+  const wait = lastRequestAt + MIN_REQUEST_GAP_MS - Date.now();
+  if (wait > 0) await sleep(wait);
   requests++;
+  lastRequestAt = Date.now();
   const res = await fetch(BASE + pathAndQuery, { headers: { "x-apisports-key": KEY } });
+  if (res.status === 429 && !retried) {
+    log("Rate limit hit; pausing 65 seconds before retrying " + pathAndQuery);
+    await sleep(65000);
+    return api(pathAndQuery, true);
+  }
   if (!res.ok) throw new Error("API-Football " + res.status + " for " + pathAndQuery);
   const body = await res.json();
   if (body.errors && Object.keys(body.errors).length) {
@@ -131,6 +144,7 @@ async function main() {
   const cache = readJson(cacheFile, {});
   const results = [], upcoming = [], matches = [];
   let probed = false;
+  let detailsStopped = false;
 
   // One request per calendar day covers every competition at once, which the
   // free plan allows (it refuses the per-league "last" and "next" parameters).
@@ -194,12 +208,22 @@ async function main() {
     const id = String(fx.fixture.id);
     let detail = cache[id];
     const fresh = hoursAgo(fx.fixture.date) <= DETAIL_WINDOW_HOURS || TEST_SEASON;
-    if (!detail && fresh && requests + 2 <= MAX_REQUESTS_PER_RUN) {
-      const events = await api(`/fixtures/events?fixture=${id}`);
-      const lineups = await api(`/fixtures/lineups?fixture=${id}`);
-      detail = { events, lineups, fetched: new Date().toISOString() };
-      cache[id] = detail;
-      if (PROBE && !probed) {
+    if (!detail && fresh && !detailsStopped && requests + 2 <= MAX_REQUESTS_PER_RUN) {
+      let events, lineups;
+      try {
+        events = await api(`/fixtures/events?fixture=${id}`);
+        lineups = await api(`/fixtures/lineups?fixture=${id}`);
+      } catch (e) {
+        // Keep the scoreline; the goals and lineups will be picked up on a later run.
+        log(`Details for fixture ${id} skipped (${e.message}); continuing without them.`);
+        if (/429|ceiling/.test(e.message)) { detailsStopped = true; log("No more detail requests this run."); }
+        events = null;
+      }
+      if (events) {
+        detail = { events, lineups, fetched: new Date().toISOString() };
+        cache[id] = detail;
+      }
+      if (PROBE && !probed && events) {
         probed = true;
         console.log("\n===== PROBE: raw fixture =====\n" + JSON.stringify(fx, null, 2));
         console.log("\n===== PROBE: raw events (first 3) =====\n" + JSON.stringify(events.slice(0, 3), null, 2));

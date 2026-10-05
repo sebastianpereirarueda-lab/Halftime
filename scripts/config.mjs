@@ -31,8 +31,12 @@ export const KEEP_DAYS = 7;
 export const DETAIL_WINDOW_HOURS = 72;
 
 // Hard ceiling on API-Football requests in one run. The free plan allows
-// 100 per day, and the schedule runs a few times a day.
-export const MAX_REQUESTS_PER_RUN = 40;
+// 100 per day and the schedule runs four times a day, so 24 keeps a margin.
+export const MAX_REQUESTS_PER_RUN = 24;
+
+// Gap between requests. The free plan allows 10 a minute; 6.5 seconds keeps
+// a run under that even with the retry.
+export const MIN_REQUEST_GAP_MS = 6500;
 
 // News sources: public RSS feeds from established football desks.
 // Only these feeds are read; the writer may not use anything else.

@@ -22,6 +22,16 @@ function tag(block, name) {
   return m ? m[1] : "";
 }
 
+// JavaScript's Date does not know zone names like BST; swap them for offsets.
+const ZONES = { BST: "+0100", IST: "+0100", CET: "+0100", CEST: "+0200", WET: "+0000", WEST: "+0100",
+                EET: "+0200", EEST: "+0300", EST: "-0500", EDT: "-0400", CST: "-0600", CDT: "-0500",
+                MST: "-0700", MDT: "-0600", PST: "-0800", PDT: "-0700" };
+export function parseDate(text) {
+  const fixed = String(text).trim().replace(/\s([A-Z]{3,4})$/, (m, z) => ZONES[z] ? " " + ZONES[z] : m);
+  const d = new Date(fixed);
+  return isNaN(d) ? null : d;
+}
+
 // Handles both RSS 2.0 (<item>) and Atom (<entry>).
 export function parseFeed(xml, outlet) {
   const items = [];
@@ -33,10 +43,10 @@ export function parseFeed(xml, outlet) {
     if (!link) { const m = b.match(/<link[^>]*href="([^"]+)"/i); link = m ? m[1] : ""; }
     const summary = decode(tag(b, "description") || tag(b, "summary") || tag(b, "content"));
     const dateRaw = tag(b, "pubDate") || tag(b, "published") || tag(b, "updated") || tag(b, "dc:date");
-    const date = dateRaw ? new Date(decode(dateRaw)) : null;
+    const date = dateRaw ? parseDate(decode(dateRaw)) : null;
     if (!title || !link) continue;
     if (!parseFeed.lastRawItem) parseFeed.lastRawItem = b.slice(0, 400);
-    items.push({ outlet, title, link, summary: summary.slice(0, 600), published: date && !isNaN(date) ? date.toISOString() : null });
+    items.push({ outlet, title, link, summary: summary.slice(0, 600), published: date ? date.toISOString() : null });
   }
   return items;
 }
