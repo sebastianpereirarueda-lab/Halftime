@@ -1,17 +1,17 @@
 // GENERATED FILE — do not edit by hand. Front Page news written by gpt-5.5 from the sources listed in each story.
-// Written 2026-10-05T05:06:26.582Z by the Halftime data pipeline.
+// Written 2026-10-05T05:09:12.120Z by the Halftime data pipeline.
 window.HALFTIME_NEWS = {
-  "updated": "2026-10-05T05:06:26.582Z",
+  "updated": "2026-10-05T05:09:12.120Z",
   "model": "gpt-5.5",
   "articlesConsidered": 35,
   "lead": {
     "tag": "International",
-    "headline": "Hallgrimsson asks Uefa to separate Ireland and Israel",
-    "standfirst": "After another fraught Nations League meeting, Ireland’s manager wants future draws to spare his squad this pairing.",
+    "headline": "Hallgrímsson asks Uefa to separate Ireland and Israel",
+    "standfirst": "The Republic manager wants future draws kept apart after a tense Nations League meeting marked by allegations of spitting.",
     "paragraphs": [
-      "Heimir Hallgrimsson has urged Uefa not to put Republic of Ireland and Israel together in coming draws after a Nations League draw that was described as tetchy and played without fans at TSC Arena in Backa Topola, Serbia. The Ireland manager said the two fixtures had been hard on those involved, and BBC Sport reported he was relieved that a demanding international spell had finished.",
-      "The flashpoint around half-time has become the centre of the aftermath. The Guardian reported an allegation that a member of Hallgrimsson's backroom staff was spat at by an Israeli player, while Hallgrimsson said such matters were for a disciplinary committee. BBC Sport also reported his view that Israel had been trying to unsettle Ireland amid the spitting row. No outcome from that process was included in the supplied reports.",
-      "Hallgrimsson's language after the window was measured but weary. In separate BBC coverage, he said he was glad the spell was over and that he hoped no other national side would face the same strain. The reports supplied no disciplinary outcome, so for now the public record is the complaint, the manager's request to Uefa, and the conclusion of Ireland's window."
+      "Heimir Hallgrímsson has urged Uefa to avoid pairing the Republic of Ireland with Israel in future draws after a difficult run of Nations League fixtures. Ireland were pegged back in Sunday’s draw at the TSC Arena in Backa Topola, Serbia, where the match was played without supporters and the mood again turned fraught.",
+      "The Ireland head coach declined to give detail on a half-time confrontation, saying the matter was for a disciplinary committee. It is understood a member of his staff alleged he had been spat at by an Israel player, while Hallgrímsson also said he felt Israel had tried to intimidate his side.",
+      "Hallgrímsson said he was glad the international window had ended and hoped no other national side would have to endure a similar fortnight. His comments closed a strained sequence of fixtures in which the football was repeatedly overshadowed by events around the games."
     ],
     "sources": [
       {
@@ -34,8 +34,8 @@ window.HALFTIME_NEWS = {
   "stories": [
     {
       "tag": "Women's Game",
-      "headline": "City comeback leaves Arsenal under early pressure",
-      "summary": "Manchester City twice recovered from falling behind to beat Arsenal 4-2 at the Etihad Stadium, keeping their perfect Women’s Super League start intact. BBC Sport said Arsenal are already 10 points off the leaders after five matches, with Renee Slegers facing growing scrutiny.",
+      "headline": "City comeback deepens Arsenal worries",
+      "summary": "Manchester City twice recovered from behind to beat Arsenal 4-2 at the Etihad Stadium and preserve their perfect start to the WSL season. After five matches, Arsenal are 10 points off leaders City, with scrutiny increasing on manager Renée Slegers.",
       "sources": [
         {
           "outlet": "BBC Sport",
@@ -55,26 +55,9 @@ window.HALFTIME_NEWS = {
       ]
     },
     {
-      "tag": "Europe",
-      "headline": "Portugal progress as Haaland limps off",
-      "summary": "Portugal beat Norway 2-1 at the Estádio Do Dragão to preserve their 100% Nations League record and book a place in the March quarter-finals. The Guardian reported Erling Haaland limped off for Norway, while BBC Sport said Jorge Jesus believes Cristiano Ronaldo could still return for Portugal.",
-      "sources": [
-        {
-          "outlet": "The Guardian",
-          "title": "Nations League roundup: Haaland limps off in Norway’s loss to Portugal",
-          "url": "https://www.theguardian.com/football/2026/oct/04/nations-league-roundup-haaland-limps-off-in-norways-loss-to-portugal"
-        },
-        {
-          "outlet": "BBC Sport",
-          "title": "Portugal boss says door open for Ronaldo return",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c3dxwry8vydvo?at_medium=RSS&at_campaign=rss"
-        }
-      ]
-    },
-    {
-      "tag": "Wales",
+      "tag": "Nations League",
       "headline": "Bellamy questions window after Denmark defeat",
-      "summary": "Craig Bellamy suggested the new four-match international window worked against Wales after their Nations League defeat by Denmark. The Guardian reported Portugal’s comeback against Norway meant Wales would spend the next six weeks in third rather than bottom of Nations League A4.",
+      "summary": "Craig Bellamy suggested the new four-match international window worked against Wales after their Nations League defeat by Denmark. Rasmus Højlund punished a Danny Ward error, though Portugal’s comeback against Norway left Wales third, rather than bottom, in Group A4.",
       "sources": [
         {
           "outlet": "BBC Sport",
@@ -87,7 +70,19 @@ window.HALFTIME_NEWS = {
           "url": "https://www.theguardian.com/football/2026/oct/04/wales-denmark-nations-league-match-report"
         }
       ]
+    },
+    {
+      "tag": "Europe",
+      "headline": "Pina fires Barcelona to Clásico rout",
+      "summary": "Clàudia Pina scored four times as Barcelona beat Real Madrid 7-0 in Liga F, stretching their lead over their rivals at the top to five points. More than 40,000 watched at the Camp Nou after the match was delayed by torrential rain in Catalonia.",
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "Clàudia Pina hits four as Barcelona score seven goals to demolish Real Madrid",
+          "url": "https://www.theguardian.com/football/2026/oct/04/claudia-pina-hits-four-as-barcelona-demolish-real-madrid"
+        }
+      ]
     }
   ],
-  "notes": "Detail is limited for a few BBC video entries, but the lead and selected secondary stories are supported by more than one outlet where possible."
+  "notes": "The Barcelona item is single-source; no conflicting accounts were used."
 };
