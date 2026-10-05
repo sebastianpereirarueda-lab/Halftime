@@ -71,7 +71,7 @@ Four times a day GitHub runs the pipeline in `scripts/`:
    The free plan allows 100 requests a day; a run uses between 12 and 40.
 2. **Headlines** are collected from the public RSS feeds of established football desks
    (BBC Sport, The Guardian, Sky Sports, ESPN). No key needed.
-3. **The news edition** is written by Claude from those headlines and saved to
+3. **The news edition** is written by an OpenAI model from those headlines and saved to
    `public/data/news.js`. The writer may only use facts from the collected articles, must
    cite its sources on every story, and summarises in its own words. Every story on the
    Front Page links to the reports it came from. If an edition cannot be written, the
@@ -85,11 +85,13 @@ site or in the code.
 
 1. **API-Football key.** Sign up at dashboard.api-football.com (free plan), then copy the
    key from the dashboard.
-2. **Claude API key.** Sign in at console.anthropic.com, open **API keys**, and create one.
-   The news writer costs a few cents per edition at four editions a day.
+2. **OpenAI API key.** Sign in at platform.openai.com, open **API keys**, and create one.
+   The news writer costs a few cents per edition at four editions a day. The default model
+   is `gpt-5.5`; to use another, add a repository **variable** (not a secret) named
+   `OPENAI_MODEL` on the same settings page, under the **Variables** tab.
 3. On github.com open this repository, click **Settings**, then **Secrets and variables**,
    then **Actions**, then **New repository secret**. Add one named `API_FOOTBALL_KEY` and one
-   named `ANTHROPIC_API_KEY`, pasting the matching key as the value.
+   named `OPENAI_API_KEY`, pasting the matching key as the value.
 4. To run it straight away instead of waiting for the schedule: click **Actions**, choose
    **Update data** in the left list, click **Run workflow**, tick **probe** the first time,
    and click the green **Run workflow** button. The probe prints one raw match from the

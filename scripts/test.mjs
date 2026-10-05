@@ -47,8 +47,8 @@ ok(dry.includes("Dry run: no API call made") && dry.includes("[5] Test — Story
 ok(!fs.existsSync(path.join(tmp, "news.js")), "dry run writes nothing");
 
 // 5. without a key, the writer skips cleanly
-const skip = execFileSync("node", ["scripts/write-news.mjs"], { env: { ...process.env, ANTHROPIC_API_KEY: "", HALFTIME_NEWS_CANDIDATES: cand, HALFTIME_NEWS_OUT: path.join(tmp, "news.js") }, encoding: "utf8" });
-ok(skip.includes("ANTHROPIC_API_KEY is not set"), "news writer skips without a key");
+const skip = execFileSync("node", ["scripts/write-news.mjs"], { env: { ...process.env, OPENAI_API_KEY: "", HALFTIME_NEWS_CANDIDATES: cand, HALFTIME_NEWS_OUT: path.join(tmp, "news.js") }, encoding: "utf8" });
+ok(skip.includes("OPENAI_API_KEY is not set"), "news writer skips without a key");
 const skip2 = execFileSync("node", ["scripts/fetch-scores.mjs"], { env: { ...process.env, API_FOOTBALL_KEY: "", HALFTIME_OUT: path.join(tmp, "x.js") }, encoding: "utf8" });
 ok(skip2.includes("API_FOOTBALL_KEY is not set"), "scores fetcher skips without a key");
 

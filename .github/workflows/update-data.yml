@@ -3,7 +3,8 @@
 #
 # Needs two repository secrets (Settings > Secrets and variables > Actions):
 #   API_FOOTBALL_KEY   from https://dashboard.api-football.com (free plan)
-#   ANTHROPIC_API_KEY  from https://console.anthropic.com
+#   OPENAI_API_KEY     from https://platform.openai.com/api-keys
+# Optional repository variable OPENAI_MODEL (default gpt-5.5).
 # Without a secret, that step is skipped and the previous data is kept.
 name: Update data
 
@@ -51,7 +52,8 @@ jobs:
 
       - name: Write the news edition
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
         run: node scripts/write-news.mjs
 
       - name: Commit the generated data to main
