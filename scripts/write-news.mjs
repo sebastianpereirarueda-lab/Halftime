@@ -35,11 +35,16 @@ const Source = z.object({
   title: z.string(),
   url: z.string(),
 });
+const Picture = z.object({
+  scene: z.string().describe("A picture to illustrate the story, 15 to 40 words: a generic football scene, mood and setting. No names, no faces of real people, no club or national badges, no flags, no words or numbers."),
+  alt: z.string().describe("Plain description of that picture for screen readers, under 20 words"),
+});
 const Story = z.object({
   tag: z.string().describe("Section word, e.g. Transfers, Tactics, Women's Game, Europe, International"),
   headline: z.string().describe("Up to 12 words, newspaper style, no clickbait"),
   summary: z.string().describe("Two sentences, 35 to 60 words"),
   sources: z.array(Source).describe("At least one"),
+  picture: Picture,
 });
 const Edition = z.object({
   lead: z.object({
@@ -48,6 +53,7 @@ const Edition = z.object({
     standfirst: z.string().describe("One sentence that sells the story, 15 to 30 words"),
     paragraphs: z.array(z.string()).describe("Two to four paragraphs of 60 to 110 words each, original wording"),
     sources: z.array(Source).describe("At least one"),
+    picture: Picture,
   }),
   stories: z.array(Story).describe("Exactly three"),
   notes: z.string().describe("Anything the editor should know: thin coverage, conflicting reports, or an empty string"),
@@ -63,7 +69,8 @@ Hard rules:
 5. Choose a lead story of broad interest, then exactly three secondary stories on different topics. Give each a short section tag.
 6. The lead has two to four paragraphs. Each secondary story has one summary of two sentences.
 7. No opinion, no speculation, no hype words. If the day's coverage is thin, say so in the notes field and keep the stories short.
-8. Write for the reader, not for the editor. Never mention the wire copy, "the supplied reports", "the articles", what the sources did or did not include, or your own process in a headline, standfirst, paragraph or summary. If something is unknown, simply leave it out; any caveat for the editor goes in the notes field only. Attributing a fact to an outlet in passing ("BBC Sport reported") is fine.`;
+8. For each story describe a picture to illustrate it: a generic football scene that fits the mood (a packed terrace under floodlights, a goalkeeper stretching for a ball, a manager alone on the touchline). It will be drawn as a vintage illustration, not a photograph, so never describe a real person, a face, a badge, a flag, a kit's exact colours, or any writing.
+9. Write for the reader, not for the editor. Never mention the wire copy, "the supplied reports", "the articles", what the sources did or did not include, or your own process in a headline, standfirst, paragraph or summary. If something is unknown, simply leave it out; any caveat for the editor goes in the notes field only. Attributing a fact to an outlet in passing ("BBC Sport reported") is fine.`;
 
 function readNewsFile(file) {
   try {
