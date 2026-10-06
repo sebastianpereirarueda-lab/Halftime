@@ -1,5 +1,5 @@
 // GENERATED FILE — do not edit by hand. Front Page news written by gpt-5.5 from the sources listed in each story; illustrations by gpt-image-2.
-// Written 2026-10-06T16:37:28.641Z by the Halftime data pipeline.
+// Written 2026-10-06T16:41:52.334Z by the Halftime data pipeline.
 window.HALFTIME_NEWS = {
   "updated": "2026-10-06T16:36:17.061Z",
   "model": "gpt-5.5",
