@@ -57,3 +57,39 @@ show them side by side, including circle-cropped and tiny sizes.
 
 To change or add designs, edit `make-variations.py` and run `python3 brand/make-variations.py`
 (needs `pip install fonttools brotli`).
+
+## Football-first set (`football/`)
+
+A second direction, made after the first set read as too collegiate (crimson, serif H, shields,
+laurels, Roman numerals). This one takes its look from the game itself: objects from the ground,
+sporty period lettering, and football colours (pitch green, navy, mustard, tangerine, leather
+brown) with no crimson. 20 designs, each as `NN-name-H` and `NN-name-HT` (HT is also how a
+scoreboard marks half-time). SVG and 1024 PNG for all 40; `football/sheet-1.png` and
+`sheet-2.png` show them side by side.
+
+| No. | Design | Lettering |
+| --- | --- | --- |
+| 01 | Half-time orange slices | Alfa Slab One |
+| 02 | TV score graphic: HT 45:00 | Bebas Neue |
+| 03 | Vintage shirt with the letters as the number | Alfa Slab One |
+| 04 | Knitted bar scarf | Bebas Neue |
+| 05 | Supporter's rosette | Bowlby One SC |
+| 06 | Referee's whistle | Alfa Slab One |
+| 07 | Enamel "Football Ground" sign | Anton |
+| 08 | Wood-type match poster | Rye |
+| 09 | 70s stripes | Shrikhand |
+| 10 | Terrace block stencil | Saira Stencil One |
+| 11 | Match programme cover, 6d | Anton |
+| 12 | Leather laced ball | Alfa Slab One |
+| 13 | Goal and net | Alfa Slab One |
+| 14 | Corner flag | Alfa Slab One |
+| 15 | Blackletter roundel | UnifrakturCook |
+| 16 | Script signature | Yellowtail |
+| 17 | Floodlights | Anton |
+| 18 | Chequered roundel | Bowlby One SC |
+| 19 | Hoops | Alfa Slab One |
+| 20 | Tactics board | Bebas Neue |
+
+The typefaces are free and open-licensed (SIL Open Font License, Yellowtail under Apache 2.0);
+copies and their licences are in `fonts/`. In the logo files the letters are shapes, so the
+fonts are not needed to use them. Regenerate with `python3 brand/make-football-set.py`.

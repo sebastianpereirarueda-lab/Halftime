@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1024" height="1024">
+  <title>Halftime: tactics board</title>
+  <rect width="512" height="512" fill="#2E3B33"/>
+  <rect x="18" y="18" width="476" height="476" rx="10" fill="#2E3B33" stroke="#5C3A21" stroke-width="16"/>
+  <circle cx="92" cy="120" r="15" fill="none" stroke="#F4F1E6" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="150" cy="420" r="15" fill="none" stroke="#F4F1E6" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="420" cy="112" r="15" fill="none" stroke="#F4F1E6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M407,407 L433,433 M433,407 L407,433" fill="none" stroke="#F4F1E6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M83,287 L109,313 M109,287 L83,313" fill="none" stroke="#F4F1E6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M112,132 C170,190 150,250 118,284" fill="none" stroke="#F4F1E6" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 9"/>
+  <path d="M150,400 C230,440 330,450 396,428" fill="none" stroke="#F4F1E6" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 9"/>
+  <path d="M386,420 L398,428 L384,436" fill="none" stroke="#F4F1E6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M30,256 H482" stroke="#F4F1E6" stroke-width="3" opacity="0.5"/>
+  <path d="M214.95714285714286 171.0H241.67142857142858V240.21428571428572H270.3285714285714V171.0H297.04285714285714V341.0H270.3285714285714V264.5H241.67142857142858V341.0H214.95714285714286Z" fill="#F4F1E6" stroke="#2E3B33" stroke-width="16" stroke-linejoin="round" paint-order="stroke"/>
+</svg>
