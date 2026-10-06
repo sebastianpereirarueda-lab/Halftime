@@ -1119,7 +1119,7 @@ window.HALFTIME_KITS = [
     matches: ["1976-european-cup-final"],
     coloursSource: "Wikipedia, \"1976 European Cup final\" (revision 1341421817), CC BY-SA 4.0; colour read from the Commons picture \"Kit body asse_saint_etienne_76.png\" (CC BY-SA 3.0)",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1976_European_Cup_final&oldid=1341421817",
-    illustration: { file: "saint-etienne-1976.png", credit: "Drawn after the kit shown in Wikipedia’s \"1976 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm asse saint etienne 76.png (CC BY-SA 3.0, Guiggz); Kit body asse saint etienne 76.png (CC BY-SA 3.0, Guiggz); Kit right arm asse saint etienne 76.png (CC BY-SA 3.0, Guiggz); Kit shorts asse saint etienne 76.png (CC BY-SA 3.0, Guiggz). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "saint-etienne-1976.png", credit: "Drawn after the kit shown in Wikipedia’s \"1976 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm asse saint etienne 76.png (CC BY-SA 3.0, Guiggz); Kit body asse saint etienne 76.png (CC BY-SA 3.0, Guiggz); Kit right arm asse saint etienne 76.png (CC BY-SA 3.0, Guiggz); Kit shorts asse saint etienne 76.png (CC BY-SA 3.0, Guiggz); Kit socks asse saint etienne 76.png (CC BY-SA 3.0, Guiggz). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "west-germany-1976",
