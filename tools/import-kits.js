@@ -30,6 +30,7 @@
 //
 //  Run from the project folder:   node tools/import-kits.js
 //  Options:  --offline   use files already in tools/.cache, do not download
+//            --no-draw   update the lists but leave the drawings as they are
 // ============================================================
 'use strict';
 const fs = require('fs');
@@ -46,6 +47,7 @@ const BASE_DIR = path.join(__dirname, 'base');                   // outline draw
 const ART_SCALE = 4;                                             // drawings are saved at 4x (400 by 236 pixels)
 const MATCHES_FILE = path.join(ROOT, 'public', 'data', 'matches.js');
 const OFFLINE = process.argv.includes('--offline');
+const NO_DRAW = process.argv.includes('--no-draw');   // skip the drawings (stage 3)
 
 const RAW = 'https://raw.githubusercontent.com/openfootball/';
 
@@ -382,7 +384,7 @@ function parseWikiFinal(wikitext) {
   const teams = [plainText(info.team1), plainText(info.team2)];
   const legs = [];
   let from = 0, box;
-  while ((box = templateBlock(wikitext, '[Ff]ootball ?box', from))) {
+  while ((box = templateBlock(wikitext, '(?:#invoke:)?[Ff]ootball ?box(?:\\|main)?', from))) {
     from = box.end;
     const f = templateFields(box.inner);
     const t1 = plainText(f.team1), t2 = plainText(f.team2);
@@ -390,16 +392,18 @@ function parseWikiFinal(wikitext) {
     let home = 0;
     if (t1 && teams[1] && (t1 === teams[1] || teams[1].toUpperCase().startsWith(t1.toUpperCase().slice(0, 3)) && !teams[0].toUpperCase().startsWith(t1.toUpperCase().slice(0, 3)))) home = 1;
     if (t1 === teams[0]) home = 0;
+    // The score may sit inside a {{score link|...|3–1|...}} template: read it from the raw text.
+    const scoreRaw = String(f.score || '').replace(/<ref[^>]*\/>/g, '').replace(/<ref[\s\S]*?<\/ref>/g, '');
     const scoreText = plainText(f.score);
-    const sc = scoreText.match(/(\d+)\s*[–-]\s*(\d+)/);
+    const sc = scoreRaw.match(/(\d+)\s*[–-]\s*(\d+)/);
     if (!sc) continue;
-    const pens = plainText(f.penaltyscore || '').match(/(\d+)\s*[–-]\s*(\d+)/);
+    const pens = plainText(f.penaltyscore || info.penaltyscore || '').match(/(\d+)\s*[–-]\s*(\d+)/);
     legs.push({
       date: isoDate(f.date || info.date),
       venue: plainText(f.stadium || ((info.stadium || '') + ', ' + (info.city || ''))),
       home: home, away: 1 - home,
       score: { home: Number(sc[1]), away: Number(sc[2]) },
-      aet: /a\.?e\.?t/i.test(scoreText) || /\{\{\s*aet/i.test(f.score || '') || /yes/i.test(info.aet || ''),
+      aet: /a\.?e\.?t/i.test(scoreRaw) || /yes/i.test(f.aet || '') || /yes/i.test(info.aet || ''),
       pens: pens ? { home: Number(pens[1]), away: Number(pens[2]) } : null,
       goals: parseGoals(f.goals1, 'home').concat(parseGoals(f.goals2, 'away')).sort((a, b) => a.minute - b.minute)
     });
@@ -524,7 +528,7 @@ async function fetchBytesRetry(url) {
 // Apply the sourced kit to a shirt. Returns a short phrase like "yellow" for the match note.
 async function applyWikiKit(kit, tpl, page, match) {
   const wornIn = /final$/i.test(page.title) ? page.title.replace(/^UEFA /, '') : match.competition + ', ' + match.stage.toLowerCase();
-  const team = TEAM[kit.team];
+  const team = teamInfo(kit.team);
   const link = 'https://en.wikipedia.org/w/index.php?title=' + encodeURIComponent(page.title.replace(/ /g, '_')) + '&oldid=' + page.revid;
   let source = 'Wikipedia, "' + page.title + '" (revision ' + page.revid + '), CC BY-SA 4.0';
   let body = hexOk(tpl.body) ? tpl.body.toUpperCase() : null;
@@ -727,8 +731,12 @@ async function buildWikiFinal(key, title) {
   const last = parsed.legs[parsed.legs.length - 1];
   let winner = total[0] > total[1] ? 0 : total[1] > total[0] ? 1 : null;
   if (winner === null && last.pens) winner = last.pens.home > last.pens.away ? last.home : last.away;
-  const legNames = parsed.legs.length === 1 ? [''] : parsed.legs.length === 2 ? ['first-leg', 'second-leg'] : ['first-leg', 'second-leg', 'play-off'];
-  const stages = parsed.legs.length === 1 ? ['Final'] : parsed.legs.length === 2 ? ['Final, first leg', 'Final, second leg'] : ['Final, first leg', 'Final, second leg', 'Final, play-off'];
+  // Several matches in one article: two-legged Copa América finals (with a play-off in
+  // 1975 and 1979), or a final that was replayed (Euro 1968, European Cup 1974).
+  const twoLegged = kind === 'copa';
+  const n = parsed.legs.length;
+  const legNames = n === 1 ? [''] : twoLegged ? ['first-leg', 'second-leg', 'play-off'] : ['', 'replay'];
+  const stages = n === 1 ? ['Final'] : twoLegged ? ['Final, first leg', 'Final, second leg', 'Final, play-off'] : ['Final', 'Final, replay'];
   const kitId = name => slug(name) + '-' + year;
   const out = [];
   parsed.legs.forEach((leg, i) => {
@@ -737,7 +745,11 @@ async function buildWikiFinal(key, title) {
     const homeName = teams[leg.home], awayName = teams[leg.away];
     const home = teamInfo(homeName), away = teamInfo(awayName);
     let note = null;
-    if (leg.pens) note = (leg.aet ? 'After extra time. ' : '') + (leg.pens.home > leg.pens.away ? homeName : awayName) + ' won ' + leg.pens.home + '\u2013' + leg.pens.away + ' on penalties.';
+    if (leg.pens) {
+      const homeWon = leg.pens.home > leg.pens.away;
+      note = (leg.aet ? 'After extra time. ' : '') + (homeWon ? homeName : awayName) + ' won ' +
+        Math.max(leg.pens.home, leg.pens.away) + '\u2013' + Math.min(leg.pens.home, leg.pens.away) + ' on penalties.';
+    }
     else if (leg.aet) note = 'After extra time.';
     const match = {
       id: id, competition: meta.competition, stage: stages[i],
@@ -894,7 +906,7 @@ async function main() {
   let drawn = 0;
   for (const kit of kitsData.items) {
     const w = wikiKits.get(kit.id);
-    if (!w || kit.illustration === 'hand') continue;
+    if (NO_DRAW || !w || kit.illustration === 'hand') continue;
     try { await drawKit(kit, w.tpl, w.page); drawn++; }
     catch (e) { console.warn('  Drawing skipped for ' + kit.id + ': ' + e.message); }
   }
