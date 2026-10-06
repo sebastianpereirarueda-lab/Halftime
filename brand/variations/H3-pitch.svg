@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1024" height="1024">
+  <title>Halftime: pitch</title>
+  <rect width="512" height="512" fill="#1F4D3A"/>
+  <rect x="36" y="100" width="440" height="312" fill="none" stroke="#F7F1E1" stroke-width="6"/>
+  <path d="M256,100 V412" fill="none" stroke="#F7F1E1" stroke-width="6"/>
+  <circle cx="256" cy="256" r="98" fill="none" stroke="#F7F1E1" stroke-width="6"/>
+  <rect x="36" y="178" width="66" height="156" fill="none" stroke="#F7F1E1" stroke-width="6"/>
+  <rect x="410" y="178" width="66" height="156" fill="none" stroke="#F7F1E1" stroke-width="6"/>
+  <rect x="36" y="220" width="24" height="72" fill="none" stroke="#F7F1E1" stroke-width="6"/>
+  <rect x="452" y="220" width="24" height="72" fill="none" stroke="#F7F1E1" stroke-width="6"/>
+  <path d="M102,226 A34,34 0 0 1 102,286 M410,226 A34,34 0 0 0 410,286" fill="none" stroke="#F7F1E1" stroke-width="6"/>
+  <rect x="189.3" y="194.0" width="133.3" height="124.0" fill="#1F4D3A"/>
+  <path d="M301.3142857142857 211.6987012987013V300.16623376623374L312.65974025974026 303.0025974025974V308.0H266.60259740259744V303.0025974025974L278.0831168831169 300.16623376623374V256.94545454545454H234.05194805194805V300.16623376623374L245.39740259740262 303.0025974025974V308.0H199.34025974025974V303.0025974025974L210.82077922077923 300.16623376623374V211.6987012987013L199.34025974025974 208.9974025974026V204.0H245.39740259740262V208.9974025974026L234.05194805194805 211.6987012987013V249.24675324675326H278.0831168831169V211.6987012987013L266.60259740259744 208.9974025974026V204.0H312.65974025974026V208.9974025974026Z" fill="#E3C16F"/>
+</svg>
