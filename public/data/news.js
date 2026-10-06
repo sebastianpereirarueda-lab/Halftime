@@ -1,139 +1,139 @@
 // GENERATED FILE — do not edit by hand. Front Page news written by gpt-5.5 from the sources listed in each story; illustrations by gpt-image-2.
-// Written 2026-10-06T12:07:05.086Z by the Halftime data pipeline.
+// Written 2026-10-06T16:37:28.641Z by the Halftime data pipeline.
 window.HALFTIME_NEWS = {
-  "updated": "2026-10-06T12:05:57.643Z",
+  "updated": "2026-10-06T16:36:17.061Z",
   "model": "gpt-5.5",
-  "articlesConsidered": 84,
-  "candidatesHash": "056e078521e77595",
+  "articlesConsidered": 95,
+  "candidatesHash": "98d676e993bf5e8e",
   "lead": {
-    "tag": "International",
-    "headline": "Messi reaches his Argentina farewell",
-    "standfirst": "A final friendly in Buenos Aires brings the curtain down on Lionel Messi’s long international career with Argentina.",
+    "tag": "Premier League",
+    "headline": "Clubs press for City sanctions as Uefa watches",
+    "standfirst": "Rival Premier League clubs want punishment to look both backwards and forwards while City pursue their appeal.",
     "paragraphs": [
-      "Lionel Messi is set for his last appearance for Argentina in a friendly against Benin in Buenos Aires, closing an international career that has stretched to 208 caps and included a World Cup triumph. The occasion is being framed less as a burden than a celebration, with the Guardian noting the sense of completion around a player who has returned to the national side more than once across a long and demanding career.",
-      "Benin, too, have a place in the evening. BBC Sport casts the visitors as a small African nation stepping briefly into a much wider spotlight, with their trip to Argentina tied to one of football’s great farewells. For Messi, now 39, BBC Sport has also turned attention to what follows as his Argentina chapter ends.",
-      "The Independent presents the timing of his international retirement as one of grace, contrasting it with Cristiano Ronaldo’s continuing story with Portugal. The wider note is simple enough: Messi’s final bow arrives after the prize that once looked distant was won, allowing Argentina’s supporters to mark an ending rather than wonder what might have been."
+      "Manchester City’s disciplinary case has moved into a wider argument over consequences, with a number of Premier League rivals wanting sanctions that cover past and future seasons. The push follows an independent commission verdict that found City guilty of breaking Premier League rules, a decision the club has appealed. The detail of any punishment remains outside the current reports, but the pressure around the case is plainly growing.",
+      "Uefa is also keeping watch on events, though Sky Sports says the European governing body will wait for the Premier League process to finish before deciding whether it should act. That leaves the domestic appeal as the next key staging post, with clubs seeking clarity not only on what has happened, but on how any confirmed breach should shape the seasons ahead.",
+      "The case now sits at the meeting point of domestic discipline, club rivalry and European oversight. For supporters, the practical question is simple enough: whether a guilty verdict, if upheld, brings penalties that affect the record book, the future campaign, or both."
     ],
     "sources": [
       {
-        "outlet": "The Guardian",
-        "title": "Lionel Messi has completed football and can bid Argentina farewell with pride",
-        "url": "https://www.theguardian.com/football/2026/oct/06/lionel-messi-completed-football-argentina-farewell-world-cup-glory"
+        "outlet": "BBC Sport",
+        "title": "Rival clubs want retrospective and future punishments for Man City",
+        "url": "https://www.bbc.co.uk/sport/football/articles/c623d8707k5lo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "outlet": "BBC Sport",
-        "title": "The small African nation ready for Messi's big night",
-        "url": "https://www.bbc.co.uk/sport/football/articles/cqly0lx461m8o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "outlet": "BBC Sport",
-        "title": "Owner, businessman & player: Messi has big plans as a golden era ends",
-        "url": "https://www.bbc.co.uk/sport/football/articles/cwly3lpmyye9o?at_medium=RSS&at_campaign=rss"
+        "outlet": "Sky Sports",
+        "title": "UEFA monitoring Man City case as it considers potential action",
+        "url": "https://www.skysports.com/football/news/12040/13595795/man-city-charges-uefa-monitoring-premier-league-clubs-case-as-it-considers-potential-action"
       },
       {
         "outlet": "The Independent",
-        "title": "Lionel Messi is leaving international football with grace. Cristiano Ronaldo could never",
-        "url": "https://www.independent.co.uk/sport/football/lionel-messi-argentina-retirement-match-cristiano-ronaldo-b3061505.html"
+        "title": "Jamie Carragher demands multi-year punishment for Man City after guilty verdict",
+        "url": "https://www.independent.co.uk/sport/football/jamie-carragher-man-city-premier-league-charges-guilty-b3061993.html"
       }
     ],
     "picture": {
-      "scene": "A packed evening stadium under soft floodlights, one player standing near the centre circle as team-mates wait quietly in the distance.",
-      "alt": "A lone player stands in a floodlit stadium."
+      "scene": "A floodlit stadium seen from high in the stand, officials gathered near the centre circle, with tense spectators blurred in the background.",
+      "alt": "Officials gather on a floodlit pitch."
     },
     "image": {
-      "file": "images/news/27919f3b6938.jpg",
-      "alt": "A lone player stands in a floodlit stadium.",
+      "file": "images/news/b791e3ae685d.jpg",
+      "alt": "Officials gather on a floodlit pitch.",
       "kind": "illustration",
       "model": "gpt-image-2"
     }
   },
   "stories": [
     {
-      "tag": "Discipline",
-      "headline": "Uefa opens inquiry after spitting accusation",
-      "summary": "Uefa is investigating an alleged half-time incident during the Nations League match between Republic of Ireland and Israel. The Guardian says the Israeli FA denies anyone spat towards the coach, while BBC Sport also says the inquiry follows an accusation of spitting.",
+      "tag": "Europe",
+      "headline": "Uefa investigates Ireland-Israel spitting allegation",
+      "summary": "Uefa has opened an investigation into a half-time incident during the Republic of Ireland’s Nations League match with Israel. The Guardian reports an allegation around the tunnel area and says the Israeli FA denies anyone spat towards the Ireland coach.",
       "sources": [
+        {
+          "outlet": "BBC Sport",
+          "title": "Uefa investigating Republic of Ireland-Israel row after spitting accusation",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cm3wvqxjdxn5o?at_medium=RSS&at_campaign=rss"
+        },
         {
           "outlet": "The Guardian",
           "title": "Uefa investigating allegation Israel player spat at Ireland coach",
           "url": "https://www.theguardian.com/football/2026/oct/06/uefa-investigating-allegation-israel-player-spat-at-ireland-coach"
         },
         {
-          "outlet": "BBC Sport",
-          "title": "Uefa investigating Republic of Ireland-Israel row after spitting accusation",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cm3wvqxjdxn5o?at_medium=RSS&at_campaign=rss"
+          "outlet": "The Independent",
+          "title": "Uefa to investigate Ireland-Israel half-time incident after spitting allegations",
+          "url": "https://www.independent.co.uk/sport/football/ireland-israel-spitting-nations-league-uefa-b3062229.html"
         }
       ],
       "picture": {
-        "scene": "A tense tunnel entrance beside the pitch, with officials and staff gathered under stark stadium lighting after a heated first half.",
-        "alt": "Officials gather near a tense stadium tunnel."
+        "scene": "A narrow stadium tunnel at half-time, match officials standing between two groups of players, the floodlit pitch glowing beyond.",
+        "alt": "Officials stand in a stadium tunnel."
       },
       "image": {
-        "file": "images/news/67457690bd21.jpg",
-        "alt": "Officials gather near a tense stadium tunnel.",
+        "file": "images/news/01409d6b67cc.jpg",
+        "alt": "Officials stand in a stadium tunnel.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     },
     {
-      "tag": "England",
-      "headline": "Tuchel’s England lean towards youth and fluidity",
-      "summary": "The Independent says Thomas Tuchel’s willingness to use younger players points to a new England direction, with Alex Scott presented as a challenger for Declan Rice’s role after his debut against Croatia. The Guardian says England’s more flexible structure is helping to unlock Jude Bellingham’s attacking influence.",
+      "tag": "Championship",
+      "headline": "Bielik banned after Portsmouth crowd incident",
+      "summary": "Cardiff City defender Krystian Bielik has been banned for two matches and fined £10,000 after admitting misconduct involving a Portsmouth fan. The case followed an incident as he went to retrieve the ball from the crowd during Cardiff’s match with Portsmouth.",
       "sources": [
+        {
+          "outlet": "BBC Sport",
+          "title": "Cardiff's Bielik banned over Portsmouth incident",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cw99zr4edjrzo?at_medium=RSS&at_campaign=rss"
+        },
         {
           "outlet": "The Independent",
-          "title": "Thomas Tuchel’s appetite for youth shows England’s exciting new direction",
-          "url": "https://www.independent.co.uk/sport/football/thomas-tuchel-alex-scott-england-czech-republic-b3061468.html"
-        },
-        {
-          "outlet": "The Guardian",
-          "title": "Jude awakening: how a more fluid England are ‘unlocking’ Bellingham’s full potential",
-          "url": "https://www.theguardian.com/football/2026/oct/05/jude-awakening-how-a-more-fluid-england-are-unlocking-bellinghams-full-potential"
+          "title": "Cardiff’s Krystian Bielik handed two-match ban and fined for altercation with fan",
+          "url": "https://www.independent.co.uk/sport/football/krystian-bielik-ban-cardiff-fa-b3062270.html"
         }
       ],
       "picture": {
-        "scene": "A training ground at dusk, young players moving through passing drills while a coach watches from the touchline.",
-        "alt": "Players practise passing drills at dusk."
+        "scene": "A player reaching for a ball beside a crowded terrace, stewards nearby, with a cold afternoon light over the touchline.",
+        "alt": "A player retrieves a ball near spectators."
       },
       "image": {
-        "file": "images/news/040b43cb7726.jpg",
-        "alt": "Players practise passing drills at dusk.",
+        "file": "images/news/4c43ccd46b78.jpg",
+        "alt": "A player retrieves a ball near spectators.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     },
     {
-      "tag": "Nations League",
-      "headline": "Northern Ireland’s progress checked by Georgia stalemate",
-      "summary": "Northern Ireland ended the extended window with a goalless Nations League draw against Georgia at Windsor Park, with BBC Sport noting progress across four games. The Guardian described frustration after a late penalty miss, while also pointing to raised standards under Michael O’Neill.",
+      "tag": "International",
+      "headline": "Messi farewell brings Benin into spotlight",
+      "summary": "Lionel Messi’s Argentina career is set to end in a friendly against Benin, bringing his international chapter to its close. The Guardian says he departs with 208 caps and a World Cup, while BBC Sport frames the occasion as a notable night for Benin too.",
       "sources": [
         {
           "outlet": "BBC Sport",
-          "title": "NI make huge strides despite Georgia frustration",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cmvg9lp24p1po?at_medium=RSS&at_campaign=rss"
+          "title": "The small African nation ready for Messi's big night",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cqly0lx461m8o?at_medium=RSS&at_campaign=rss"
         },
         {
           "outlet": "BBC Sport",
-          "title": "Highlights: Northern Ireland frustrated by Georgia",
-          "url": "https://www.bbc.co.uk/sport/football/videos/ck5ynp3ej7m8o?at_medium=RSS&at_campaign=rss"
+          "title": "Owner, businessman & player: Messi has big plans as a golden era ends",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cwly3lpmyye9o?at_medium=RSS&at_campaign=rss"
         },
         {
           "outlet": "The Guardian",
-          "title": "Mamardashvili saves penalty as Georgia hold Northern Ireland in Nations League",
-          "url": "https://www.theguardian.com/football/2026/oct/05/northern-ireland-georgia-nations-league-league-b-group-2-match-report"
+          "title": "Lionel Messi has completed football and can bid Argentina farewell with pride",
+          "url": "https://www.theguardian.com/football/2026/oct/06/lionel-messi-completed-football-argentina-farewell-world-cup-glory"
         }
       ],
       "picture": {
-        "scene": "A goalkeeper diving low across a damp penalty area as the crowd behind the goal rises in anticipation.",
-        "alt": "A goalkeeper dives across the penalty area."
+        "scene": "A veteran forward standing alone near the halfway line after a night match, crowd scarves raised in a softly lit stadium.",
+        "alt": "A lone player stands after a night match."
       },
       "image": {
-        "file": "images/news/f253b58dece8.jpg",
-        "alt": "A goalkeeper dives across the penalty area.",
+        "file": "images/news/93a1720ee8ad.jpg",
+        "alt": "A lone player stands after a night match.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     }
   ],
-  "notes": "Coverage beyond the Messi farewell and the Uefa investigation is comparatively thin, with several topics carried by a single outlet."
+  "notes": "Non-football items excluded. Some football items were podcasts, videos, quizzes or single-outlet features, so the edition favours the better-covered news lines."
 };
