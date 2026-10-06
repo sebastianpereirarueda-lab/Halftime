@@ -1,18 +1,18 @@
 // GENERATED FILE — do not edit by hand. Front Page news written by gpt-5.5 from the sources listed in each story; illustrations by gpt-image-2.
-// Written 2026-10-05T23:05:27.018Z by the Halftime data pipeline.
+// Written 2026-10-06T06:06:56.038Z by the Halftime data pipeline.
 window.HALFTIME_NEWS = {
-  "updated": "2026-10-05T23:04:22.865Z",
+  "updated": "2026-10-06T06:05:50.073Z",
   "model": "gpt-5.5",
-  "articlesConsidered": 85,
-  "candidatesHash": "85b6db73f2b8c6d7",
+  "articlesConsidered": 88,
+  "candidatesHash": "494c2d56b79be26d",
   "lead": {
     "tag": "Governance",
-    "headline": "City case moves to appeal stage",
-    "standfirst": "Manchester City deny wrongdoing and have appealed after a commission decision that has left rivals awaiting the outcome.",
+    "headline": "City appeal casts long shadow",
+    "standfirst": "A published decision, a club denial and an appeal have left the Premier League waiting for clarity.",
     "paragraphs": [
-      "Manchester City’s financial case has entered its appeal phase after an independent commission found the club guilty of the Premier League’s financial charges. Sky Sports said rival clubs believe a failed appeal would leave City outside the Premier League next season. City deny wrongdoing, and Sky also reported that the club have launched an appeal. The stakes in the process are therefore plain.",
-      "The decision has left the rest of the division waiting for the appeal process, with Sky Sports describing sympathy among other clubs as limited after a ruling it said covered rule breaking across nine seasons. At the Legends of Football awards, Jamie Carragher called for the matter to be settled quickly, adding another public voice to a case already dominating the domestic game.",
-      "Around the case, attention has spread beyond the hearing itself. The Independent examined anger, denial and conspiracy theories among supporters faced with a club’s wrongdoing. The Guardian treated the City affair as an example of online fandom hardening into defence of a nation state’s regime. BBC Sport used the scandal to contrast owner money put into City with frustration among Manchester United supporters over funds taken out of their club."
+      "Manchester City’s case has moved into the appeal stage, with the Premier League waiting for an outcome that has drawn attention across the division. Sky Sports said rival clubs do not expect City to be in the league next season if the appeal fails, after an independent commission’s decision was published last week. City deny wrongdoing and have launched an appeal, leaving the matter unsettled.",
+      "The decision, described by Sky Sports as setting out rule breaking across nine seasons, has left sympathy from other clubs in short supply. The Independent reported that City were found guilty of all financial charges brought against them. Against that, the club’s own stance remains firm denial, and the formal process continues through appeal rather than any settled final consequence for the Premier League and its member clubs.",
+      "Jamie Carragher, speaking at the Legends of Football awards, urged a quick resolution, according to Sky Sports. The wider discussion has also moved into supporter culture, with The Guardian examining how the case has stirred fierce online defence of the club. For now, the appeal is the hinge on which the next chapter rests, and the immediate picture remains one of dispute rather than closure."
     ],
     "sources": [
       {
@@ -34,39 +34,39 @@ window.HALFTIME_NEWS = {
         "outlet": "The Guardian",
         "title": "How did some City fans become aggressive defenders of a nation state’s regime? | Sean Ingle",
         "url": "https://www.theguardian.com/football/2026/oct/05/how-do-sports-fans-end-up-as-aggressive-defenders-of-a-nation-states-regime"
-      },
-      {
-        "outlet": "BBC Sport",
-        "title": "£800m in, £800m out - Why Man City scandal shines light on Man Utd finances",
-        "url": "https://www.bbc.co.uk/sport/football/articles/ckg5j87jy3zmo?at_medium=RSS&at_campaign=rss"
       }
     ],
     "picture": {
-      "scene": "An empty stadium tunnel under heavy floodlights, officials’ silhouettes at a doorway, wet concrete gleaming, tense evening atmosphere.",
-      "alt": "Empty floodlit stadium tunnel with distant silhouettes."
+      "scene": "A floodlit stadium exterior with supporters gathered in shadow, a boardroom window glowing above a quiet pitch, tense evening atmosphere.",
+      "alt": "Floodlit stadium with supporters and a glowing boardroom window."
     },
     "image": {
-      "file": "images/news/916573ec2065.jpg",
-      "alt": "Empty floodlit stadium tunnel with distant silhouettes.",
+      "file": "images/news/d18a60cedf0e.jpg",
+      "alt": "Floodlit stadium with supporters and a glowing boardroom window.",
       "kind": "illustration",
       "model": "gpt-image-2"
     }
   },
   "stories": [
     {
-      "tag": "Nations League",
-      "headline": "Northern Ireland held after late penalty drama",
-      "summary": "At Windsor Park, Northern Ireland finished the longer international window with a goalless Nations League draw against Georgia. Isaac Price’s late spot-kick was kept out by Giorgi Mamardashvili, but the point still leaves Michael O’Neill’s side top of their group.",
+      "tag": "International",
+      "headline": "Northern Ireland held after late penalty save",
+      "summary": "Northern Ireland were held to a goalless Nations League draw by Georgia at Windsor Park, with Isaac Price denied from the spot late on by Giorgi Mamardashvili. Michael O’Neill’s side remain top of their group, and BBC Sport framed the window as evidence of progress after eight points from four games.",
       "sources": [
+        {
+          "outlet": "Sky Sports",
+          "title": "Mamardashvili's late penalty save denies Northern Ireland win vs Georgia",
+          "url": "https://www.skysports.com/football/northern-ireland-vs-georgia/report/554072"
+        },
         {
           "outlet": "The Guardian",
           "title": "Mamardashvili saves penalty as Georgia hold Northern Ireland in Nations League",
           "url": "https://www.theguardian.com/football/2026/oct/05/northern-ireland-georgia-nations-league-league-b-group-2-match-report"
         },
         {
-          "outlet": "Sky Sports",
-          "title": "Mamardashvili's late penalty save denies Northern Ireland win vs Georgia",
-          "url": "https://www.skysports.com/football/northern-ireland-vs-georgia/report/554072"
+          "outlet": "BBC Sport",
+          "title": "NI make huge strides despite Georgia frustration",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cmvg9lp24p1po?at_medium=RSS&at_campaign=rss"
         },
         {
           "outlet": "BBC Sport",
@@ -75,20 +75,20 @@ window.HALFTIME_NEWS = {
         }
       ],
       "picture": {
-        "scene": "A goalkeeper diving low across a floodlit penalty area as a ball skids towards the corner, packed terrace blurred behind.",
-        "alt": "Goalkeeper dives to save a penalty."
+        "scene": "A goalkeeper diving low across a rain-slick penalty area, the ball pushed away as players wait beneath cold floodlights.",
+        "alt": "Goalkeeper saves a penalty on a wet pitch."
       },
       "image": {
-        "file": "images/news/5e603ca04a68.jpg",
-        "alt": "Goalkeeper dives to save a penalty.",
+        "file": "images/news/b87237420800.jpg",
+        "alt": "Goalkeeper saves a penalty on a wet pitch.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     },
     {
       "tag": "England",
-      "headline": "Scott injury leaves Bournemouth unhappy",
-      "summary": "Bournemouth are unhappy with how England handled Alex Scott’s injury, with BBC Sport saying he could be out for up to eight weeks and The Independent saying the midfielder may miss two months. Thomas Tuchel defended the handling of what he called a strange injury, while Scott and Ezri Konsa withdrew before the Czech Republic match.",
+      "headline": "Bournemouth unhappy over Scott injury handling",
+      "summary": "Bournemouth are unhappy with how they believe England dealt with Alex Scott’s injury, with BBC Sport saying the midfielder could be sidelined for up to eight weeks. The Independent reported that Thomas Tuchel defended England’s handling, while also noting Scott and Ezri Konsa had both withdrawn before the Czech Republic match.",
       "sources": [
         {
           "outlet": "BBC Sport",
@@ -107,20 +107,20 @@ window.HALFTIME_NEWS = {
         }
       ],
       "picture": {
-        "scene": "A lone player stretching beside a training pitch at dusk, medical bag near the touchline, cones scattered on damp grass.",
-        "alt": "Player stretches beside a quiet training pitch."
+        "scene": "A young midfielder sitting on the turf while medical staff approach, substitutes watching from a distant touchline under overcast skies.",
+        "alt": "Injured player waits for medical help on the pitch."
       },
       "image": {
-        "file": "images/news/47de8815e362.jpg",
-        "alt": "Player stretches beside a quiet training pitch.",
+        "file": "images/news/86bb907c6cac.jpg",
+        "alt": "Injured player waits for medical help on the pitch.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     },
     {
       "tag": "Women's Game",
-      "headline": "WSL pause brings Arsenal scrutiny",
-      "summary": "The Women’s Super League has paused for two weeks after an opening spell that BBC Sport described through London City gelling and Manchester City flying. Arsenal’s form is under sharper scrutiny, with The Guardian citing one win in six in all competitions and Sky Sports arguing Renée Slegers cannot lean on fine margins.",
+      "headline": "WSL pauses with Arsenal under scrutiny",
+      "summary": "The Women’s Super League pauses for two weeks after a busy opening stretch, with BBC Sport pointing to London City’s progress and Manchester City’s strong start. Arsenal’s form drew scrutiny across coverage: The Guardian noted one win in six in all competitions, while Sky Sports assessed their faltering league season.",
       "sources": [
         {
           "outlet": "BBC Sport",
@@ -139,16 +139,16 @@ window.HALFTIME_NEWS = {
         }
       ],
       "picture": {
-        "scene": "A crowded league match under pale afternoon light, midfielders contesting a loose ball, benches tense along the touchline.",
-        "alt": "Players contest the ball in a busy league match."
+        "scene": "A busy women’s match in a compact stadium, midfield runners chasing a loose ball as autumn light falls across packed stands.",
+        "alt": "Women’s footballers chase the ball in a compact stadium."
       },
       "image": {
-        "file": "images/news/90e9eef883d1.jpg",
-        "alt": "Players contest the ball in a busy league match.",
+        "file": "images/news/34d496105a67.jpg",
+        "alt": "Women’s footballers chase the ball in a compact stadium.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     }
   ],
-  "notes": "Several items were video, opinion or gossip-led, so match and club stories with clearer reported facts were preferred."
+  "notes": "Coverage of the Manchester City case is substantial but not uniform in framing; legal detail is limited in the available summaries."
 };
