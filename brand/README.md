@@ -93,3 +93,18 @@ scoreboard marks half-time). SVG and 1024 PNG for all 40; `football/sheet-1.png`
 The typefaces are free and open-licensed (SIL Open Font License, Yellowtail under Apache 2.0);
 copies and their licences are in `fonts/`. In the logo files the letters are shapes, so the
 fonts are not needed to use them. Regenerate with `python3 brand/make-football-set.py`.
+
+## Shortlist: Hoops and Tactics Board (`picks/`)
+
+The two favourites from the football set, with elegant vintage lettering in place of the sports
+type. Four typefaces, each in H and HT for both designs: 16 logos, SVG and 1024 PNG.
+`picks/sheet.png` shows them all.
+
+| Letter | Typeface | Files |
+| --- | --- | --- |
+| A | Abril Fatface (the site's masthead) | `*-abril-H`, `*-abril-HT` |
+| B | Playfair Display Black | `*-playfair-H`, `*-playfair-HT` |
+| C | DM Serif Display | `*-dmserif-H`, `*-dmserif-HT` |
+| D | Libre Caslon Bold | `*-caslon-H`, `*-caslon-HT` |
+
+Regenerate with `python3 brand/make-picks.py`.

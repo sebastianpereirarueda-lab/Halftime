@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1024" height="1024">
+  <title>Halftime: tactics board</title>
+  <rect width="512" height="512" fill="#2E3B33"/>
+  <rect x="18" y="18" width="476" height="476" rx="10" fill="#2E3B33" stroke="#5C3A21" stroke-width="16"/>
+  <circle cx="92" cy="120" r="15" fill="none" stroke="#F4F1E6" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="150" cy="420" r="15" fill="none" stroke="#F4F1E6" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="420" cy="112" r="15" fill="none" stroke="#F4F1E6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M407,407 L433,433 M433,407 L407,433" fill="none" stroke="#F4F1E6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M83,287 L109,313 M109,287 L83,313" fill="none" stroke="#F4F1E6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M112,132 C170,190 150,250 118,284" fill="none" stroke="#F4F1E6" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 9"/>
+  <path d="M150,400 C230,440 330,450 396,428" fill="none" stroke="#F4F1E6" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 9"/>
+  <path d="M386,420 L398,428 L384,436" fill="none" stroke="#F4F1E6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M30,256 H482" stroke="#F4F1E6" stroke-width="3" opacity="0.5"/>
+  <path d="M330.07142857142856 185.58441558441555V330.1948051948052L348.6168831168831 334.83116883116884V343.0H273.33116883116884V334.83116883116884L292.0974025974026 330.1948051948052V259.5454545454545H220.1233766233766V330.1948051948052L238.66883116883116 334.83116883116884V343.0H163.38311688311686V334.83116883116884L182.14935064935062 330.1948051948052V185.58441558441555L163.38311688311686 181.16883116883113V172.99999999999997H238.66883116883116V181.16883116883113L220.1233766233766 185.58441558441555V246.96103896103892H292.0974025974026V185.58441558441555L273.33116883116884 181.16883116883113V172.99999999999997H348.6168831168831V181.16883116883113Z" fill="#F4F1E6" stroke="#2E3B33" stroke-width="18" stroke-linejoin="round" paint-order="stroke"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1024" height="1024">
+  <title>Halftime: hoops</title>
+  <rect width="512" height="512" fill="#F4F1E6"/>
+  <rect x="0" y="0" width="512" height="44" fill="#1F4D3A"/>
+  <rect x="0" y="88" width="512" height="44" fill="#1F4D3A"/>
+  <rect x="0" y="176" width="512" height="44" fill="#1F4D3A"/>
+  <rect x="0" y="264" width="512" height="44" fill="#1F4D3A"/>
+  <rect x="0" y="352" width="512" height="44" fill="#1F4D3A"/>
+  <rect x="0" y="440" width="512" height="44" fill="#1F4D3A"/>
+  <circle cx="256" cy="256" r="160" fill="#1F4D3A" stroke="#F4F1E6" stroke-width="12"/>
+  <circle cx="256" cy="256" r="142" fill="none" stroke="#F4F1E6" stroke-width="3"/>
+  <path d="M180.25 183.0H247.10714285714283V187.07142857142858H234.67857142857142V253.5H277.32142857142856V187.07142857142858H264.67857142857144V183.0H331.75V187.07142857142858H319.1071428571429V328.92857142857144H331.75V333.0H264.67857142857144V328.92857142857144H277.32142857142856V259.07142857142856H234.67857142857142V328.92857142857144H247.10714285714283V333.0H180.25V328.92857142857144H192.89285714285714V187.07142857142858H180.25Z" fill="#F4F1E6" />
+</svg>
