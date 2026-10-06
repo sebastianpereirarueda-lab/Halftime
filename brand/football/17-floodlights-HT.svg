@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1024" height="1024">
+  <title>Halftime: floodlights</title>
+  <rect width="512" height="512" fill="#1C2D4A"/>
+  <polygon points="76,96 286,430 196,430" fill="#2C4268"/>
+  <polygon points="436,96 226,430 316,430" fill="#2C4268"/>
+  <path d="M58,470 L72,140 M94,470 L80,140 M60,420 L90,360 M92,420 L62,360 M63,330 L87,260 M89,330 L65,260 M66,240 L84,170 M86,240 L68,170" stroke="#F4F1E6" stroke-width="4"/>
+  <rect x="36" y="84" width="80" height="58" rx="4" fill="#F4F1E6"/>
+  <circle cx="52" cy="100" r="6" fill="#D9A928"/>
+  <circle cx="52" cy="122" r="6" fill="#D9A928"/>
+  <circle cx="68" cy="100" r="6" fill="#D9A928"/>
+  <circle cx="68" cy="122" r="6" fill="#D9A928"/>
+  <circle cx="84" cy="100" r="6" fill="#D9A928"/>
+  <circle cx="84" cy="122" r="6" fill="#D9A928"/>
+  <circle cx="100" cy="100" r="6" fill="#D9A928"/>
+  <circle cx="100" cy="122" r="6" fill="#D9A928"/>
+  <path d="M418,470 L432,140 M454,470 L440,140 M420,420 L450,360 M452,420 L422,360 M423,330 L447,260 M449,330 L425,260 M426,240 L444,170 M446,240 L428,170" stroke="#F4F1E6" stroke-width="4"/>
+  <rect x="396" y="84" width="80" height="58" rx="4" fill="#F4F1E6"/>
+  <circle cx="412" cy="100" r="6" fill="#D9A928"/>
+  <circle cx="412" cy="122" r="6" fill="#D9A928"/>
+  <circle cx="428" cy="100" r="6" fill="#D9A928"/>
+  <circle cx="428" cy="122" r="6" fill="#D9A928"/>
+  <circle cx="444" cy="100" r="6" fill="#D9A928"/>
+  <circle cx="444" cy="122" r="6" fill="#D9A928"/>
+  <circle cx="460" cy="100" r="6" fill="#D9A928"/>
+  <circle cx="460" cy="122" r="6" fill="#D9A928"/>
+  <path d="M168.8556818181818 415.0V245.0H202.6625V305.7556818181818H218.6965909090909V245.0H252.5034090909091V415.0H218.6965909090909V337.92045454545456H202.6625V415.0Z M288.95681818181816 415.0V277.64772727272725H268.76931818181816V245.0H343.14431818181816V277.64772727272725H322.95681818181816V415.0Z" fill="#F4F1E6" />
+</svg>

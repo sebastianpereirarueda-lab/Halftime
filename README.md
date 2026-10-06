@@ -143,8 +143,9 @@ manager).
 
 **Switching it on (once):**
 
-1. Choose a passphrase of at least 12 characters. Four or five unrelated words work well,
-   for example `lantern pickle orbit marmalade`. Do not reuse a password from elsewhere.
+1. Choose a passphrase. Any length works, but longer is much harder to guess, since the
+   scrambled files are public: four or five unrelated words are a good choice. Do not reuse
+   a password from elsewhere.
 2. On github.com open this repository, then **Settings**, **Secrets and variables**,
    **Actions**, **New repository secret**. Name it `OWNER_PASSPHRASE` and paste the passphrase.
 3. The next run makes the first posts. Open the Studio, type the passphrase, tap **Unlock**.

@@ -11,7 +11,7 @@
 //  with PBKDF2-SHA256 (600,000 rounds). Unencrypted cards only ever exist
 //  in a temporary folder during the run.
 //
-//  Needs OWNER_PASSPHRASE (12+ characters). Without it nothing is made.
+//  Needs OWNER_PASSPHRASE (any length; 12+ characters is safer). Without it nothing is made.
 //  Uses OPENAI_API_KEY for captions; without it, captions are built from
 //  the story summary.
 // ============================================================
@@ -32,7 +32,7 @@ const RESULTS_FILE = path.join(PUBLIC, "data", "results.js");
 const MODEL = process.env.OPENAI_MODEL || "gpt-5.5";
 const ITERATIONS = 600000;
 const KEEP_POSTS = 40;
-const MIN_PASSPHRASE = 12;
+const SUGGESTED_PASSPHRASE = 12;
 
 // ---------- encryption (format: 12-byte IV | ciphertext | 16-byte tag) ----------
 export function deriveKey(passphrase, salt, iterations = ITERATIONS) {
@@ -192,7 +192,8 @@ function resultsCaption(results) {
 async function main() {
   const pass = process.env.OWNER_PASSPHRASE || "";
   if (!pass) { log("OWNER_PASSPHRASE is not set. No Instagram posts made: they are only made when they can be locked."); return; }
-  if (pass.length < MIN_PASSPHRASE) { log(`OWNER_PASSPHRASE is shorter than ${MIN_PASSPHRASE} characters. No Instagram posts made; choose a longer passphrase.`); return; }
+  // The owner chose to allow short passphrases; keep a reminder in the log.
+  if (pass.length < SUGGESTED_PASSPHRASE) log(`Note: OWNER_PASSPHRASE is shorter than ${SUGGESTED_PASSPHRASE} characters, which is easier to guess. Continuing as the owner chose.`);
 
   fs.mkdirSync(STUDIO, { recursive: true });
   const infoFile = path.join(STUDIO, "keyinfo.json");

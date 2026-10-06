@@ -77,8 +77,9 @@ ok(wrongKeyFails, "a wrong passphrase cannot decrypt");
 const pub = path.join(tmp, "pub");
 const noPass = execFileSync("node", ["scripts/make-social.mjs"], { env: { ...process.env, OWNER_PASSPHRASE: "", HALFTIME_PUBLIC: pub }, encoding: "utf8" });
 ok(noPass.includes("OWNER_PASSPHRASE is not set") && !fs.existsSync(path.join(pub, "studio")), "no passphrase: nothing is made");
+fs.mkdirSync(path.join(pub, "data"), { recursive: true });
 const shortPass = execFileSync("node", ["scripts/make-social.mjs"], { env: { ...process.env, OWNER_PASSPHRASE: "short", HALFTIME_PUBLIC: pub }, encoding: "utf8" });
-ok(shortPass.includes("shorter than 12") && !fs.existsSync(path.join(pub, "studio")), "short passphrase: nothing is made");
+ok(shortPass.includes("shorter than 12") && shortPass.includes("Continuing") && fs.existsSync(path.join(pub, "studio", "data", "keyinfo.json")), "short passphrase: allowed, with a warning, and the Studio is locked with it");
 
 // 5. without a key, the writer skips cleanly
 const skip = execFileSync("node", ["scripts/write-news.mjs"], { env: { ...process.env, OPENAI_API_KEY: "", HALFTIME_NEWS_CANDIDATES: cand, HALFTIME_NEWS_OUT: path.join(tmp, "news.js") }, encoding: "utf8" });
