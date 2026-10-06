@@ -90,6 +90,9 @@ const WIKI_PAGE = {
   '2020-euro-final': 'UEFA Euro 2020 final',
   '2024-euro-final': 'UEFA Euro 2024 final'
 };
+// Finals documented only on Wikipedia (no openfootball data): key -> article title.
+const WIKI_FINALS = JSON.parse(fs.readFileSync(path.join(__dirname, 'finals.json'), 'utf8'));
+
 function wikiPageFor(matchId) {
   if (WIKI_PAGE[matchId]) return WIKI_PAGE[matchId];
   const m = matchId.match(/^(\d{4})-world-cup-final$/);
@@ -205,10 +208,13 @@ function findFinal(data, year) {
   return decider;
 }
 
+// Teams outside the TEAM table (most clubs) get an abbreviation made from their name and
+// grey placeholder colours, which only show if Wikipedia has no colour for the shirt.
 function teamInfo(name) {
-  const t = TEAM[name];
-  if (!t) throw new Error('No colour entry for "' + name + '". Add it to the TEAM table in tools/import-kits.js.');
-  return t;
+  if (TEAM[name]) return TEAM[name];
+  const words = name.replace(/[^A-Za-z0-9 ]/g, '').split(/\s+/).filter(w => !/^(fc|cf|sc|ac|afc|de|of|the|club)$/i.test(w));
+  const short = (words.length >= 2 ? words.map(w => w[0]).join('').slice(0, 3) : name.slice(0, 3)).toUpperCase();
+  return { short: short, body: '#9A9A9A', trim: '#1B1A17', stripes: [], desc: 'colours to be researched' };
 }
 
 // Writes a value as JavaScript in the same style as the hand-written files.
@@ -278,7 +284,31 @@ function kitTemplates(wikitext) {
       else i++;
     }
     const inner = wikitext.slice(m.index + m[0].length, i - 2);
-    // Split on "|" only at the top level (outside nested templates, links and refs).
+    const fields = templateFields(inner);
+    if (fields.title) fields.title = cleanTitle(fields.title);
+    out.push(fields);
+  }
+  return out;
+}
+
+// The block of a template that starts at "{{Name" (first occurrence), without the braces.
+function templateBlock(wikitext, name, from) {
+  const re = new RegExp('\\{\\{\\s*' + name + '\\b', 'i');
+  const m = re.exec(wikitext.slice(from || 0));
+  if (!m) return null;
+  const start = (from || 0) + m.index;
+  let i = start + 2, depth = 1;
+  while (i < wikitext.length && depth > 0) {
+    if (wikitext.startsWith('{{', i)) { depth++; i += 2; }
+    else if (wikitext.startsWith('}}', i)) { depth--; i += 2; }
+    else i++;
+  }
+  return { inner: wikitext.slice(start + m[0].length, i - 2), end: i };
+}
+
+// Split a template's parameters on "|" at the top level (outside nested templates, links and refs).
+function templateFields(inner) {
+  {
     const parts = []; let cur = '', d = 0, link = 0, inRef = false;
     for (let j = 0; j < inner.length; j++) {
       const two = inner.substr(j, 2);
@@ -294,13 +324,88 @@ function kitTemplates(wikitext) {
     parts.push(cur);
     const fields = {};
     parts.forEach(part => {
-      const kv = part.match(/^\s*([a-z_]+)\s*=\s*([\s\S]*)$/);
+      const kv = part.match(/^\s*([a-z_0-9]+)\s*=\s*([\s\S]*)$/);
       if (kv) fields[kv[1]] = kv[2].trim();
     });
-    if (fields.title) fields.title = cleanTitle(fields.title);
-    out.push(fields);
+    return fields;
+  }
+}
+
+// Plain text of a wikitext value: links become their label, templates and refs go.
+function plainText(v) {
+  return String(v || '')
+    .replace(/<ref[^>]*\/>/g, '').replace(/<ref[\s\S]*?<\/ref>/g, '').replace(/<[^>]+>/g, '')
+    .replace(/\{\{(?:fb-rt|fb|fbaicon|flagicon|flagdeco)\|([^|}]+)[^}]*\}\}/gi, '$1')
+    .replace(/\{\{[^{}]*\}\}/g, '').replace(/\[\[([^\]|]*\|)?([^\]]*)\]\]/g, '$2')
+    .replace(/'''?/g, '').replace(/\s+/g, ' ').trim();
+}
+
+// "18 May 1960", "{{Start date|2019|7|7|df=y}}" or "7 July 2019 (2019-07-07)" -> "2019-07-07".
+function isoDate(v) {
+  const sd = String(v).match(/\{\{\s*[Ss]tart date\|(\d{4})\|(\d{1,2})\|(\d{1,2})/);
+  if (sd) return sd[1] + '-' + sd[2].padStart(2, '0') + '-' + sd[3].padStart(2, '0');
+  const t = plainText(v);
+  const dmy = t.match(/(\d{1,2}) ([A-Z][a-z]+) (\d{4})/);
+  if (dmy && MONTHS.indexOf(dmy[2]) !== -1) return dmy[3] + '-' + String(MONTHS.indexOf(dmy[2]) + 1).padStart(2, '0') + '-' + dmy[1].padStart(2, '0');
+  const mdy = t.match(/([A-Z][a-z]+) (\d{1,2}), (\d{4})/);
+  if (mdy && MONTHS.indexOf(mdy[1]) !== -1) return mdy[3] + '-' + String(MONTHS.indexOf(mdy[1]) + 1).padStart(2, '0') + '-' + mdy[2].padStart(2, '0');
+  return null;
+}
+
+// Scorers of one side from a Football box "goals" value: "*[[Paolo Guerrero|Guerrero]] {{goal|44|pen.}}".
+function parseGoals(v, side) {
+  const out = [];
+  const re = /([^*\n]*?)\{\{\s*goal\s*\|([^}]*)\}\}/g;
+  let m;
+  while ((m = re.exec(String(v || '')))) {
+    const who = plainText(m[1]);
+    const args = m[2].split('|').map(a => a.trim());
+    for (let i = 0; i < args.length; i += 2) {
+      const minute = args[i].match(/^(\d+)(?:\+(\d+))?/);
+      if (!minute) continue;
+      const note = (args[i + 1] || '').toLowerCase();
+      let name = who || '?';
+      if (/o\.?g/.test(note)) name += ' (own goal)';
+      if (/pen/.test(note)) name += ' (pen.)';
+      out.push({ minute: Number(minute[1]) + (minute[2] ? Number(minute[2]) : 0), scorer: name, team: side });
+    }
   }
   return out;
+}
+
+// Read a final documented on Wikipedia: teams, legs, scores, scorers, venue.
+// Returns { teams: [a, b], legs: [{ date, venue, score: {home, away}, home: 0|1, away: 0|1, goals, aet, pens }] }.
+function parseWikiFinal(wikitext) {
+  const ib = templateBlock(wikitext, 'Infobox football match');
+  if (!ib) throw new Error('No match infobox');
+  const info = templateFields(ib.inner);
+  const teams = [plainText(info.team1), plainText(info.team2)];
+  const legs = [];
+  let from = 0, box;
+  while ((box = templateBlock(wikitext, '[Ff]ootball ?box', from))) {
+    from = box.end;
+    const f = templateFields(box.inner);
+    const t1 = plainText(f.team1), t2 = plainText(f.team2);
+    // Which infobox team is this box's team1? Match by name, else by code or order.
+    let home = 0;
+    if (t1 && teams[1] && (t1 === teams[1] || teams[1].toUpperCase().startsWith(t1.toUpperCase().slice(0, 3)) && !teams[0].toUpperCase().startsWith(t1.toUpperCase().slice(0, 3)))) home = 1;
+    if (t1 === teams[0]) home = 0;
+    const scoreText = plainText(f.score);
+    const sc = scoreText.match(/(\d+)\s*[–-]\s*(\d+)/);
+    if (!sc) continue;
+    const pens = plainText(f.penaltyscore || '').match(/(\d+)\s*[–-]\s*(\d+)/);
+    legs.push({
+      date: isoDate(f.date || info.date),
+      venue: plainText(f.stadium || ((info.stadium || '') + ', ' + (info.city || ''))),
+      home: home, away: 1 - home,
+      score: { home: Number(sc[1]), away: Number(sc[2]) },
+      aet: /a\.?e\.?t/i.test(scoreText) || /\{\{\s*aet/i.test(f.score || '') || /yes/i.test(info.aet || ''),
+      pens: pens ? { home: Number(pens[1]), away: Number(pens[2]) } : null,
+      goals: parseGoals(f.goals1, 'home').concat(parseGoals(f.goals2, 'away')).sort((a, b) => a.minute - b.minute)
+    });
+  }
+  if (!legs.length) throw new Error('No Football box with a score');
+  return { teams: teams, legs: legs };
 }
 
 function hexOk(h) { return /^[0-9a-fA-F]{6}$/.test(h || ''); }
@@ -470,7 +575,15 @@ async function colourFromWikipedia(match, kitById) {
   for (const side of ['home', 'away']) {
     const kit = kitById.get(match[side].kit);
     if (!kit) continue;
-    const tpl = templates.find(t => t.title === kit.team);
+    let tpl = templates.find(t => t.title === kit.team);
+    if (!tpl) {
+      // Clubs are often titled differently in the kit box ("Real Madrid CF"): take the
+      // template in the same position as the team in the article's infobox.
+      const parsed = parsedFinals.get(page.title);
+      const idx = parsed ? parsed.teams.indexOf(kit.team) : -1;
+      const named = templates.filter(t => t.title && !/Shortly/.test(t.title));
+      if (idx !== -1 && named[idx]) tpl = named[idx];
+    }
     if (!tpl) { console.warn('  No kit for ' + kit.team + ' in "' + page.title + '"'); continue; }
     if (!canRefreshColours(kit)) { notes.push(kit.team + ' in ' + (kit.description || '').toLowerCase().replace(/[.].*$/, '')); continue; }
     const look = await applyWikiKit(kit, tpl, page, match);
@@ -585,6 +698,76 @@ async function drawKit(kit, tpl, page) {
   };
 }
 
+// ---------- finals known only from Wikipedia ----------
+
+const parsedFinals = new Map();   // page title -> parseWikiFinal() result
+
+function competitionMeta(kind, year) {
+  const season = (year - 1) + '\u2013' + String(year).slice(2);
+  if (kind === 'ucl' && year < 1993) return { competition: 'European Cup ' + year, kitCompetition: 'European Cup ' + season + ', final', kind: 'club', win: 'European Cup winners', lose: 'European Cup runners-up', id: year + '-european-cup-final' };
+  if (kind === 'ucl') return { competition: 'UEFA Champions League ' + year, kitCompetition: 'UEFA Champions League ' + season + ', final', kind: 'club', win: 'Champions League winners', lose: 'Champions League runners-up', id: year + '-champions-league-final' };
+  if (kind === 'euro') return { competition: 'UEFA Euro ' + year, kitCompetition: 'UEFA Euro ' + year + ', final', kind: 'nation', win: 'European Championship winners', lose: 'European Championship runners-up', id: year + '-euro-final' };
+  if (kind === 'copa') return { competition: 'Copa Am\u00e9rica ' + year, kitCompetition: 'Copa Am\u00e9rica ' + year + ', final', kind: 'nation', win: 'Copa Am\u00e9rica winners', lose: 'Copa Am\u00e9rica runners-up', id: year + '-copa-america-final' };
+  throw new Error('Unknown competition ' + kind);
+}
+
+// Build the match card(s) and the two shirts of a final from its Wikipedia article.
+async function buildWikiFinal(key, title) {
+  const [kind, yearText] = key.split('-');
+  const year = Number(yearText);
+  const meta = competitionMeta(kind, year);
+  const data = await fetchWiki(title);
+  const page = { title: data.parse.title, revid: data.parse.revid };
+  const parsed = parseWikiFinal(data.parse.wikitext);
+  parsedFinals.set(page.title, parsed);
+  const teams = parsed.teams;
+  // Winner over all legs: goals in total, then the shoot-out of the last leg.
+  const total = [0, 0];
+  parsed.legs.forEach(l => { total[l.home] += l.score.home; total[l.away] += l.score.away; });
+  const last = parsed.legs[parsed.legs.length - 1];
+  let winner = total[0] > total[1] ? 0 : total[1] > total[0] ? 1 : null;
+  if (winner === null && last.pens) winner = last.pens.home > last.pens.away ? last.home : last.away;
+  const legNames = parsed.legs.length === 1 ? [''] : parsed.legs.length === 2 ? ['first-leg', 'second-leg'] : ['first-leg', 'second-leg', 'play-off'];
+  const stages = parsed.legs.length === 1 ? ['Final'] : parsed.legs.length === 2 ? ['Final, first leg', 'Final, second leg'] : ['Final, first leg', 'Final, second leg', 'Final, play-off'];
+  const kitId = name => slug(name) + '-' + year;
+  const out = [];
+  parsed.legs.forEach((leg, i) => {
+    const id = meta.id + (legNames[i] ? '-' + legNames[i] : '');
+    WIKI_PAGE[id] = page.title;
+    const homeName = teams[leg.home], awayName = teams[leg.away];
+    const home = teamInfo(homeName), away = teamInfo(awayName);
+    let note = null;
+    if (leg.pens) note = (leg.aet ? 'After extra time. ' : '') + (leg.pens.home > leg.pens.away ? homeName : awayName) + ' won ' + leg.pens.home + '\u2013' + leg.pens.away + ' on penalties.';
+    else if (leg.aet) note = 'After extra time.';
+    const match = {
+      id: id, competition: meta.competition, stage: stages[i],
+      date: leg.date ? prettyDate(leg.date) : 'Date to be researched',
+      venue: leg.venue || 'Venue to be researched',
+      home: { name: homeName, short: home.short, colour: dotColour(home), label: winner === null ? 'Finalists' : winner === leg.home ? 'Winners' : 'Runners-up', kit: kitId(homeName) },
+      away: { name: awayName, short: away.short, colour: dotColour(away), label: winner === null ? 'Finalists' : winner === leg.away ? 'Winners' : 'Runners-up', kit: kitId(awayName) },
+      score: { home: leg.score.home, away: leg.score.away },
+      scoreNote: note, extraTime: !!leg.aet,
+      goals: leg.goals,
+      kitsNote: 'Shirts worn in this match: to be researched.',
+      stats: null,
+      source: 'Wikipedia, "' + page.title + '" (revision ' + page.revid + '), CC BY-SA 4.0'
+    };
+    const kits = teams.map((name, ti) => {
+      const t = teamInfo(name);
+      return {
+        id: kitId(name), team: name, year: year, kind: meta.kind, competition: meta.kitCompetition,
+        result: winner === null ? 'Finalists' : winner === ti ? meta.win : meta.lose,
+        colours: { body: t.body, trim: t.trim, stripes: t.stripes },
+        description: 'Drawn in ' + name + '\u2019s traditional home colours, ' + t.desc + '. The shirt worn in the final is to be researched.',
+        facts: { manufacturer: null, debut: null, story: null },
+        matches: [id]
+      };
+    });
+    out.push({ match: match, kits: kits });
+  });
+  return out;
+}
+
 // ---------- build one tournament ----------
 
 function buildFinal(opts) {
@@ -677,6 +860,11 @@ async function main() {
       resultWin: 'European Championship winners', resultLose: 'European Championship runners-up',
       kitCompetition: e.name + ', ' + e.host
     }));
+  }
+
+  for (const [key, title] of Object.entries(WIKI_FINALS)) {
+    try { for (const b of await buildWikiFinal(key, title)) built.push(b); }
+    catch (e) { console.warn('  Skipped ' + key + ' (' + title + '): ' + e.message); }
   }
 
   let addedKits = 0, addedMatches = 0, linked = 0;
