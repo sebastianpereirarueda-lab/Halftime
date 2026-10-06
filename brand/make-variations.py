@@ -48,6 +48,10 @@ def mark(kind, cap, cx, cy, fill, gap_color=None, gap=0, second=None):
     st = style(fill, gap_color, gap)
     if kind == "H":
         items = [dict(font=CASLON, ch="H", cap=cap, x=0, base=0, style=st)]
+    elif kind in ("H-abril", "T-abril"):
+        items = [dict(font=ABRIL, ch=kind[0], cap=cap, x=0, base=0, style=st)]
+    elif kind == "H-italic":
+        items = [dict(font=ITALIC, ch="H", cap=cap, x=0, base=0, style=st)]
     elif kind == "HT-abril":            # side by side, in the masthead typeface
         f = ABRIL; sc = cap / f.cap
         items = [dict(font=f, ch="H", cap=cap, x=0, base=0, style=st),
@@ -223,23 +227,209 @@ def from_existing(src, kind, cap, cy, patch=False):
         p = 12; extra = f'<rect x="{bb[0] - p:.1f}" y="{bb[1] - p:.1f}" width="{bb[2] - bb[0] + 2 * p:.1f}" height="{bb[3] - bb[1] + 2 * p:.1f}" fill="{OX}"/>\n  '
     return svg(OX, body.strip() + "\n  " + extra + m, "ball" if patch else "crest")
 
-DESIGNS = [
-    ("H1-roundel",        lambda: roundel("H", 150, OX, CREAM, CREAM)),
-    ("H2-laurel",         lambda: laurel("H", 150, OX, CREAM)),
-    ("H3-pitch",          lambda: pitch("H", 104, CREAM, GOLD)),
-    ("H4-pennant",        lambda: pennant("H", 88, 190, OX, CREAM)),
-    ("H5-ticket",         lambda: ticket("H", 128)),
-    ("H6-diamond",        lambda: diamond("H", 150, INK, GOLD, CREAM)),
-    ("HT1-masthead-pair", lambda: plain("HT-abril", 190, OX, CREAM)),
-    ("HT2-ligature",      lambda: plain("HT-lig", 200, OX, CREAM)),
-    ("HT3-interlocked",   lambda: plain("HT-overlay", 176, INK, CREAM, second=GOLD, gap_color=INK)),
-    ("HT4-italic",        lambda: masthead("HT-italic", 196)),
-    ("HT5-roundel",       lambda: roundel("HT-abril", 118, GREEN, GOLD, CREAM)),
-    ("HT6-ball",          lambda: from_existing("brand/halftime-logo-ball.svg", "HT-abril", 124, 262, patch=True)),
-    ("HT7-crest",         lambda: from_existing("brand/halftime-logo-crest.svg", "HT-lig", 126, 270)),
+# ---------------- fitting ----------------
+DARK_OX, LIGHT_OX, TILE, BOARD, TAIL = "#6E2017", "#A8473A", "#3A3731", "#2A2824", "#D9CFB8"
+
+def fit(kind, box_w, box_h, cx, cy, fill, gap_color=None, gap=0, second=None):
+    """The letters (H or HT) scaled to fit inside box_w x box_h, centred on (cx, cy)."""
+    _, bb = mark(kind, 100, 0, 0, fill, second=second)
+    cap = 100 * min(box_w / (bb[2] - bb[0]), box_h / (bb[3] - bb[1]))
+    return mark(kind, cap, cx, cy, fill, gap_color, gap, second=second)
+
+def patch(bb, colour, pad=12):
+    return f'<rect x="{bb[0] - pad:.1f}" y="{bb[1] - pad:.1f}" width="{bb[2] - bb[0] + 2 * pad:.1f}" height="{bb[3] - bb[1] + 2 * pad:.1f}" fill="{colour}"/>'
+
+def ring(cx, cy, r, colour, width):
+    return f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{colour}" stroke-width="{width}"/>'
+
+# ---------------- frames: each takes the letter kind (an H kind or an HT kind) ----------------
+def f_plain(k):
+    m, _ = fit(k, 300, 240, 256, 256, CREAM); return svg(OX, m, "plain")
+
+def f_abril(k):
+    m, _ = fit(k, 330, 250, 256, 256, OX)
+    return svg(CREAM, f'<rect x="26" y="26" width="460" height="460" fill="none" stroke="{OX}" stroke-width="5"/><rect x="38" y="38" width="436" height="436" fill="none" stroke="{OX}" stroke-width="2"/>' + m, "masthead type")
+
+def f_roundel(k):
+    body = [ring(256, 256, 228, CREAM, 10), ring(256, 256, 213, CREAM, 3), ring(256, 256, 158, CREAM, 6),
+            arc_text(COURIER, "HALFTIME", 30, 256, 256, 172, -90, CREAM, True, 10),
+            arc_text(COURIER, "EST. MMXXVI", 24, 256, 256, 200, 90, CREAM, False, 7),
+            star(70, 256, 9, CREAM), star(442, 256, 9, CREAM)]
+    m, _ = fit(k, 210, 150, 256, 256, CREAM); return svg(OX, "\n  ".join(body + [m]), "roundel")
+
+def f_laurel(k):
+    s = laurel("H", 10, OX, CREAM); body = s[s.index("/>", s.index("<rect")) + 2: s.rindex("<path d=\"M", 0, s.rindex("</svg>"))]
+    m, _ = fit(k, 220, 150, 256, 276, CREAM); return svg(OX, body.strip() + "\n  " + m, "laurel")
+
+def f_pitch(k):
+    s = pitch("H", 10, CREAM, GOLD); body = s[s.index("/>", s.index("<rect")) + 2: s.index('<rect x="', s.index("A34,34"))]
+    m, bb = fit(k, 170, 104, 256, 256, GOLD); return svg(GREEN, body.strip() + "\n  " + patch(bb, GREEN, 10) + m, "pitch")
+
+def f_pennant(k):
+    s = pennant("H", 10, 190, OX, CREAM); body = s[s.index("/>", s.index("<rect")) + 2: s.rindex("<path d=\"M", 0, s.rindex("</svg>"))]
+    m, _ = fit(k, 150, 84, 196, 256, CREAM); return svg(OX, body.strip() + "\n  " + m, "pennant")
+
+def f_ticket(k):
+    s = ticket("H", 10); body = s[s.index("/>", s.index("<rect")) + 2: s.rindex("<path d=\"M", 0, s.rindex("</svg>"))]
+    m, _ = fit(k, 230, 118, 208, 260, OX); return svg(OX, body.strip() + "\n  " + m, "ticket")
+
+def f_diamond(k):
+    s = diamond("H", 10, INK, GOLD, CREAM); body = s[s.index("/>", s.index("<rect")) + 2: s.rindex("<path d=\"M", 0, s.rindex("</svg>"))]
+    m, _ = fit(k, 220, 160, 256, 256, CREAM, INK, 0, second=GOLD); return svg(INK, body.strip() + "\n  " + m, "diamond")
+
+def f_masthead(k):
+    s = masthead("H-italic", 10); body = s[s.index("/>", s.index("<rect")) + 2: s.rindex("<path d=\"M", 0, s.rindex("</svg>"))]
+    m, _ = fit(k, 340, 210, 256, 256, OX); return svg(CREAM, body.strip() + "\n  " + m, "italic masthead")
+
+def f_ball(k):
+    s = open("brand/halftime-logo-ball.svg").read()
+    body = s[s.index("/>", s.index("<rect")) + 2: s.index('<rect x=', s.index("/>", s.index("<rect")) + 2)]
+    m, bb = fit(k, 236, 186, 256, 264, CREAM); return svg(OX, body.strip() + "\n  " + patch(bb, OX) + m, "ball")
+
+def f_crest(k):
+    s = open("brand/halftime-logo-crest.svg").read()
+    body = s[s.index("/>", s.index("<rect")) + 2: s.rindex('<path d="', 0, s.rindex("</svg>"))]
+    m, _ = fit(k, 214, 168, 256, 270, CREAM); return svg(OX, body.strip() + "\n  " + m, "crest")
+
+def f_ribbon(k):
+    body = [ring(256, 232, 190, CREAM, 10), ring(256, 232, 176, CREAM, 3), star(256, 100, 12, CREAM),
+            f'<polygon points="40,352 122,352 122,414 40,414 62,383" fill="{TAIL}"/>',
+            f'<polygon points="472,352 390,352 390,414 472,414 450,383" fill="{TAIL}"/>',
+            f'<path d="M96,340 Q256,364 416,340 L416,400 Q256,424 96,400 Z" fill="{CREAM}"/>',
+            arc_text(COURIER, "HALFTIME", 26, 256, -686, 1079, 90, OX, False, 12)]
+    m, _ = fit(k, 200, 136, 256, 214, CREAM); return svg(OX, "\n  ".join(body + [m]), "ribbon badge")
+
+def f_hexagon(k):
+    def hexa(r):
+        return " ".join(f"{256 + r * math.cos(math.radians(-90 + 60 * i)):.1f},{256 + r * math.sin(math.radians(-90 + 60 * i)):.1f}" for i in range(6))
+    body = [f'<polygon points="{hexa(232)}" fill="none" stroke="{GOLD}" stroke-width="10" stroke-linejoin="round"/>',
+            f'<polygon points="{hexa(212)}" fill="none" stroke="{GOLD}" stroke-width="3" stroke-linejoin="round"/>',
+            star(256, 104, 10, GOLD), star(256, 408, 10, GOLD)]
+    m, _ = fit(k, 250, 160, 256, 256, CREAM); return svg(GREEN, "\n  ".join(body + [m]), "hexagon")
+
+def f_scoreboard(k):
+    letters = ["H"] if not k.startswith("HT") else ["H", "T"]
+    tw, th, gap = 150, 184, 22
+    total = len(letters) * tw + (len(letters) - 1) * gap; x0 = 256 - total / 2
+    body = [f'<rect x="52" y="96" width="408" height="320" rx="18" fill="{BOARD}" stroke="{GOLD}" stroke-width="6"/>',
+            line_text(COURIER, "HALF TIME", 22, 256, 150, GOLD, tracking=12)]
+    for i, ch in enumerate(letters):
+        x = x0 + i * (tw + gap)
+        body.append(f'<rect x="{x:.1f}" y="184" width="{tw}" height="{th}" rx="10" fill="{TILE}"/>')
+        # the flip-tile split sits behind the letter so the H keeps its crossbar
+        body.append(f'<rect x="{x:.1f}" y="{184 + th / 2 - 2.5:.1f}" width="{tw}" height="5" fill="{BOARD}"/>')
+        m, _ = fit(ch + "-abril", tw - 40, th - 46, x + tw / 2, 184 + th / 2, CREAM); body.append(m)
+        body += [f'<circle cx="{x + 7:.1f}" cy="{184 + th / 2:.1f}" r="4" fill="{GOLD}"/>', f'<circle cx="{x + tw - 7:.1f}" cy="{184 + th / 2:.1f}" r="4" fill="{GOLD}"/>']
+    return svg(INK, "\n  ".join(body), "scoreboard")
+
+def f_postmark(k):
+    cx = 206
+    body = [ring(cx, 256, 166, OX, 7), ring(cx, 256, 118, OX, 3),
+            arc_text(COURIER, "HALFTIME", 26, cx, 256, 128, -90, OX, True, 9),
+            arc_text(COURIER, "FOOTBALL", 22, cx, 256, 156, 90, OX, False, 9),
+            star(cx - 142, 256, 8, OX), star(cx + 142, 256, 8, OX)]
+    for i in range(5):
+        y = 186 + i * 35
+        body.append(f'<path d="M384,{y} q15,-13 30,0 t30,0 t30,0 t30,0" fill="none" stroke="{OX}" stroke-width="6" stroke-linecap="round"/>')
+    m, _ = fit(k, 150, 104, cx, 256, OX); return svg(CREAM, "\n  ".join(body + [m]), "postmark")
+
+def f_arch(k):
+    body = [arc_text(COURIER, "HALFTIME", 38, 256, 330, 210, -90, CREAM, True, 14),
+            star(92, 236, 10, CREAM), star(420, 236, 10, CREAM),
+            f'<path d="M108,370 H404 M108,382 H404" stroke="{CREAM}" stroke-width="4"/>',
+            line_text(COURIER, "EST. MMXXVI", 22, 256, 424, CREAM, tracking=10)]
+    m, _ = fit(k, 270, 150, 256, 272, CREAM); return svg(OX, "\n  ".join(body + [m]), "arched type")
+
+def f_varsity(k):
+    body = [f'<rect x="64" y="64" width="384" height="384" rx="70" fill="{GREEN}" stroke="{GOLD}" stroke-width="14"/>',
+            f'<rect x="90" y="90" width="332" height="332" rx="50" fill="none" stroke="{CREAM}" stroke-width="3" stroke-dasharray="10 8"/>']
+    m, _ = fit(k, 260, 200, 256, 256, CREAM, GOLD, 16); return svg(CREAM, "\n  ".join(body + [m]), "varsity patch")
+
+def f_trophy(k):
+    o = f'fill="none" stroke="{CREAM}" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"'
+    body = [f'<path d="M150,104 H362 V160 Q362,282 256,296 Q150,282 150,160 Z" {o}/>', f'<path d="M136,104 H376" stroke="{CREAM}" stroke-width="12" stroke-linecap="round"/>',
+            f'<path d="M150,132 C96,132 92,206 158,232 M362,132 C416,132 420,206 354,232" {o}/>',
+            f'<rect x="238" y="296" width="36" height="40" {o}/>', f'<rect x="196" y="336" width="120" height="22" {o}/>',
+            f'<rect x="172" y="358" width="168" height="34" fill="{CREAM}"/>', line_text(COURIER, "HALFTIME", 13, 256, 380, OX, tracking=4),
+            star(256, 440, 10, CREAM), star(216, 440, 7, CREAM), star(296, 440, 7, CREAM)]
+    m, _ = fit(k, 160, 100, 256, 196, CREAM); return svg(OX, "\n  ".join(body + [m]), "trophy")
+
+def f_sunburst(k):
+    rays = []
+    for i in range(0, 32, 2):
+        a0, a1 = math.radians(i * 11.25), math.radians((i + 1) * 11.25)
+        rays.append(f"M256,256 L{256 + 420 * math.cos(a0):.1f},{256 + 420 * math.sin(a0):.1f} L{256 + 420 * math.cos(a1):.1f},{256 + 420 * math.sin(a1):.1f} Z")
+    body = [f'<path d="{" ".join(rays)}" fill="{DARK_OX}"/>', f'<circle cx="256" cy="256" r="156" fill="{OX}" stroke="{CREAM}" stroke-width="10"/>',
+            ring(256, 256, 141, CREAM, 3)]
+    m, _ = fit(k, 200, 150, 256, 256, CREAM); return svg(OX, "\n  ".join(body + [m]), "sunburst")
+
+def f_oval(k):
+    body = [f'<ellipse cx="256" cy="256" rx="226" ry="150" fill="none" stroke="{CREAM}" stroke-width="9"/>',
+            f'<ellipse cx="256" cy="256" rx="208" ry="134" fill="none" stroke="{CREAM}" stroke-width="3"/>',
+            star(80, 256, 10, CREAM), star(432, 256, 10, CREAM)]
+    m, _ = fit(k, 250, 160, 256, 256, CREAM); return svg(GREEN, "\n  ".join(body + [m]), "oval cameo")
+
+def f_deco(k):
+    def notched(i, r):
+        a, b = 40 + i, 472 - i
+        return (f"M{a + r},{a} H{b - r} A{r},{r} 0 0 0 {b},{a + r} V{b - r} A{r},{r} 0 0 0 {b - r},{b} H{a + r} A{r},{r} 0 0 0 {a},{b - r} V{a + r} A{r},{r} 0 0 0 {a + r},{a} Z")
+    body = [f'<path d="{notched(0, 34)}" fill="none" stroke="{GOLD}" stroke-width="8"/>', f'<path d="{notched(18, 24)}" fill="none" stroke="{GOLD}" stroke-width="3"/>',
+            line_text(COURIER, "EST. MMXXVI", 16, 256, 104, GOLD, tracking=10), line_text(COURIER, "HALFTIME", 16, 256, 424, GOLD, tracking=14)]
+    kk = "HT-overlay" if k.startswith("HT") else k
+    m, _ = fit(kk, 270, 220, 256, 262, CREAM, INK, 0, second=GOLD); return svg(INK, "\n  ".join(body + [m]), "art deco")
+
+def f_stopwatch(k):
+    c = (256, 290); ticks = []
+    for i in range(60):
+        a = math.radians(-90 + i * 6); r0 = 140 if i % 5 == 0 else 150; r1 = 162
+        ticks.append(f"M{c[0] + r0 * math.cos(a):.1f},{c[1] + r0 * math.sin(a):.1f} L{c[0] + r1 * math.cos(a):.1f},{c[1] + r1 * math.sin(a):.1f}")
+    body = [f'<path d="M256,140 A150,150 0 0 1 256,440 Z" fill="{LIGHT_OX}"/>',
+            ring(c[0], c[1], 178, CREAM, 11), f'<path d="{" ".join(ticks)}" stroke="{CREAM}" stroke-width="3"/>',
+            f'<rect x="230" y="70" width="52" height="24" rx="5" fill="{CREAM}"/>', f'<rect x="246" y="94" width="20" height="16" fill="{CREAM}"/>',
+            f'<rect x="248" y="96" width="18" height="22" rx="3" fill="{CREAM}" transform="rotate(44 256 290)"/>']
+    m, _ = fit(k, 190, 124, 256, 290, CREAM); return svg(OX, "\n  ".join(body + [m]), "stopwatch")
+
+def f_split(k):
+    left, _ = fit(k, 340, 230, 256, 236, CREAM); right, _ = fit(k, 340, 230, 256, 236, OX)
+    body = [f'<rect width="256" height="512" fill="{OX}"/>', f'<rect x="256" width="256" height="512" fill="{CREAM}"/>',
+            '<clipPath id="L"><rect width="256" height="512"/></clipPath><clipPath id="R"><rect x="256" width="256" height="512"/></clipPath>',
+            f'<g clip-path="url(#L)">{left}</g>', f'<g clip-path="url(#R)">{right}</g>',
+            line_text(COURIER, "HALF", 24, 128, 440, CREAM, tracking=12), line_text(COURIER, "TIME", 24, 384, 440, OX, tracking=12)]
+    return svg(OX, "\n  ".join(body), "split half")
+
+def f_stamp(k):
+    body = [f'<rect x="86" y="58" width="340" height="396" fill="{CREAM}"/>']
+    for x in range(86, 427, 22):
+        body += [f'<circle cx="{x}" cy="58" r="8" fill="{OX}"/>', f'<circle cx="{x}" cy="454" r="8" fill="{OX}"/>']
+    for y in range(58, 455, 22):
+        body += [f'<circle cx="86" cy="{y}" r="8" fill="{OX}"/>', f'<circle cx="426" cy="{y}" r="8" fill="{OX}"/>']
+    body += [f'<rect x="112" y="84" width="288" height="344" fill="none" stroke="{OX}" stroke-width="4"/>',
+             f'<rect x="122" y="94" width="268" height="324" fill="none" stroke="{OX}" stroke-width="1.5"/>',
+             line_text(COURIER, "HALFTIME", 18, 256, 128, OX, tracking=10), line_text(COURIER, "POSTAGE", 14, 256, 404, OX, tracking=8),
+             line_text(ABRIL, "½", 30, 152, 402, OX), line_text(ABRIL, "½", 30, 360, 402, OX)]
+    m, _ = fit(k, 220, 190, 256, 258, OX); return svg(OX, "\n  ".join(body + [m]), "postage stamp")
+
+# The frames, with the H and HT letter style each one uses.
+FRAMES = [
+    ("01-plain", f_plain, "H", "HT-lig"), ("02-masthead-type", f_abril, "H-abril", "HT-abril"),
+    ("03-roundel", f_roundel, "H", "HT-abril"), ("04-laurel", f_laurel, "H", "HT-lig"),
+    ("05-pitch", f_pitch, "H", "HT-abril"), ("06-pennant", f_pennant, "H", "HT-abril"),
+    ("07-ticket", f_ticket, "H", "HT-lig"), ("08-diamond", f_diamond, "H", "HT-overlay"),
+    ("09-italic-masthead", f_masthead, "H-italic", "HT-italic"), ("10-ball", f_ball, "H", "HT-abril"),
+    ("11-crest", f_crest, "H", "HT-lig"), ("12-ribbon-badge", f_ribbon, "H", "HT-abril"),
+    ("13-hexagon", f_hexagon, "H", "HT-lig"), ("14-scoreboard", f_scoreboard, "H", "HT"),
+    ("15-postmark", f_postmark, "H", "HT-lig"), ("16-arched-type", f_arch, "H-abril", "HT-abril"),
+    ("17-varsity-patch", f_varsity, "H-abril", "HT-abril"), ("18-trophy", f_trophy, "H", "HT-lig"),
+    ("19-sunburst", f_sunburst, "H", "HT-abril"), ("20-oval-cameo", f_oval, "H", "HT-lig"),
+    ("21-art-deco", f_deco, "H", "HT"), ("22-stopwatch", f_stopwatch, "H", "HT-abril"),
+    ("23-split-half", f_split, "H-abril", "HT-abril"), ("24-postage-stamp", f_stamp, "H", "HT-lig"),
 ]
+
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
-    for name, make in DESIGNS:
-        open(OUT + name + ".svg", "w").write(make())
-    print(len(DESIGNS), "designs written to", OUT)
+    for f in os.listdir(OUT):
+        if f.endswith(".svg") or f.endswith(".png"): os.remove(OUT + f)
+    for name, frame, hk, htk in FRAMES:
+        open(f"{OUT}{name}-H.svg", "w").write(frame(hk))
+        open(f"{OUT}{name}-HT.svg", "w").write(frame(htk))
+    print(len(FRAMES) * 2, "logos written to", OUT)

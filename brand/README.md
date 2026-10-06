@@ -22,26 +22,38 @@ Colours: oxblood `#8C2A1F` background, cream `#F7F1E1` letter.
 Letter: Libre Caslon Text Bold (SIL Open Font License), converted to a shape so the file
 looks the same on every device without needing the font installed.
 
-## More variations (`variations/`)
+## All the options (`variations/`)
 
-`variations/all-variations.png` shows them all side by side, including tiny and circle-cropped sizes.
-Each design has an SVG master and a 1024 x 1024 PNG.
+24 designs, each in two versions: `NN-name-H` (the H) and `NN-name-HT` (the HT monogram).
+Every logo has an SVG master and a 1024 x 1024 PNG. `variations/sheet-1.png` to `sheet-3.png`
+show them side by side, including circle-cropped and tiny sizes.
 
 | No. | Design | Colours |
 | --- | --- | --- |
-| H1 | Roundel: double ring, "HALFTIME" and "EST. MMXXVI" around the H | cream on oxblood |
-| H2 | Laurel wreath with a star | cream on oxblood |
-| H3 | Pitch from above, H on the centre circle | gold and cream on pitch green |
-| H4 | Felt pennant with stitched border and stars | cream on oxblood |
-| H5 | Match ticket: "ADMIT ONE", "No. 001" | oxblood on a cream ticket |
-| H6 | Diamond with double line and stars | gold and cream on ink |
-| HT1 | HT side by side in the masthead typeface (Abril Fatface) | cream on oxblood |
-| HT2 | HT ligature: the T grows out of the H | cream on oxblood |
-| HT3 | Monogram: slim gold italic T across the bold H | cream and gold on ink |
-| HT4 | Italic HT between newspaper double rules | oxblood on cream |
-| HT5 | Roundel with HT | cream and gold on pitch green |
-| HT6 | HT on the vintage ball | cream on oxblood |
-| HT7 | HT in the crest | cream on oxblood |
+| 01 | Plain | cream on oxblood |
+| 02 | Masthead type, double border | oxblood on cream |
+| 03 | Roundel stamp: HALFTIME · EST. MMXXVI | cream on oxblood |
+| 04 | Laurel wreath with a star | cream on oxblood |
+| 05 | Pitch from above, letters on the centre circle | gold and cream on pitch green |
+| 06 | Felt pennant, stitched border, stars | cream on oxblood |
+| 07 | Match ticket: ADMIT ONE, No. 001 | oxblood on a cream ticket |
+| 08 | Diamond, double line (HT as a gold-and-cream monogram) | gold and cream on ink |
+| 09 | Italic between newspaper double rules | oxblood on cream |
+| 10 | Vintage laced ball | cream on oxblood |
+| 11 | Crest with three stars | cream on oxblood |
+| 12 | Circle badge with a HALFTIME ribbon | cream on oxblood |
+| 13 | Hexagon, double line | gold and cream on pitch green |
+| 14 | Scoreboard flip tiles: HALF TIME | cream and gold on ink |
+| 15 | Postmark with cancellation waves | oxblood on cream |
+| 16 | Arched HALFTIME over the letters, EST. MMXXVI below | cream on oxblood |
+| 17 | Varsity chenille patch, two-tone letters | cream, gold, green |
+| 18 | Trophy with HALFTIME plaque | cream on oxblood |
+| 19 | Sunburst poster with medallion | cream on oxblood |
+| 20 | Oval cameo | cream on pitch green |
+| 21 | Art-deco frame (HT as a gold-and-cream monogram) | gold and cream on ink |
+| 22 | Stopwatch, half the dial filled | cream on oxblood |
+| 23 | Split half: HALF / TIME | oxblood and cream |
+| 24 | Postage stamp, ½ POSTAGE | oxblood on cream |
 
 To change or add designs, edit `make-variations.py` and run `python3 brand/make-variations.py`
 (needs `pip install fonttools brotli`).
