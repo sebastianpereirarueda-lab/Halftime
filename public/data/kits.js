@@ -204,7 +204,7 @@ window.HALFTIME_KITS = [
     matches: ["1956-european-cup-final"],
     coloursSource: "Wikipedia, \"1956 European Cup final\" (revision 1338670202), CC BY-SA 4.0; colour read from the Commons picture \"Kit body stade_reims_56h.png\" (CC BY-SA 3.0)",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1956_European_Cup_final&oldid=1338670202",
-    illustration: { file: "reims-1956.png", credit: "Drawn after the kit shown in Wikipedia’s \"1956 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body stade reims 56h.png (CC BY-SA 3.0, Guiggz); Kit right arm stade reims 56.png (CC BY-SA 3.0, Guiggz); Kit socks stade reims 56.png (CC BY-SA 3.0, Guiggz). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "reims-1956.png", credit: "Drawn after the kit shown in Wikipedia’s \"1956 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm stade reims 56.png (CC BY-SA 3.0, Guiggz); Kit body stade reims 56h.png (CC BY-SA 3.0, Guiggz); Kit right arm stade reims 56.png (CC BY-SA 3.0, Guiggz); Kit socks stade reims 56.png (CC BY-SA 3.0, Guiggz). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "fiorentina-1957",
@@ -318,13 +318,13 @@ window.HALFTIME_KITS = [
     kind: "club",
     competition: "European Cup 1958–59, final",
     result: "European Cup runners-up",
-    colours: { body: "#9A9A9A", trim: "#1B1A17", stripes: [] },
-    description: "Drawn in Reims’s traditional home colours, colours to be researched. Wikipedia records the shirt worn in the final only as a picture (pattern \"_stade_reims_59\"), so the exact colour is to be confirmed.",
+    colours: { body: "#EE3137", trim: "#F4F1E6", stripes: [] },
+    description: "Red shirt, as worn in the 1959 European Cup final.",
     facts: { manufacturer: null, debut: null, story: null },
     matches: ["1959-european-cup-final"],
-    coloursSource: "Wikipedia, \"1959 European Cup final\" (revision 1341424316), CC BY-SA 4.0 (pattern only)",
+    coloursSource: "Wikipedia, \"1959 European Cup final\" (revision 1341424316), CC BY-SA 4.0; colour read from the Commons picture \"Kit body stade_reims_59.png\" (CC BY-SA 3.0)",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1959_European_Cup_final&oldid=1341424316",
-    illustration: { file: "reims-1959.png", credit: "Drawn after the kit shown in Wikipedia’s \"1959 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm stade reims 59.png (CC BY-SA 3.0, Guiggz); Kit shorts stade reims 5659.png (CC BY-SA 3.0, Guiggz); Kit socks stade reims 56.png (CC BY-SA 3.0, Guiggz). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "reims-1959.png", credit: "Drawn after the kit shown in Wikipedia’s \"1959 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm stade reims 59.png (CC BY-SA 3.0, Guiggz); Kit body stade reims 59.png (CC BY-SA 3.0, Guiggz); Kit right arm stade reims 59.png (CC BY-SA 3.0, Guiggz); Kit shorts stade reims 5659.png (CC BY-SA 3.0, Guiggz); Kit socks stade reims 56.png (CC BY-SA 3.0, Guiggz). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "eintracht-frankfurt-1960",
@@ -384,7 +384,7 @@ window.HALFTIME_KITS = [
     matches: ["1960-euro-final"],
     coloursSource: "Wikipedia, \"1960 European Nations' Cup final\" (revision 1362214755), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1960_European_Nations'_Cup_final&oldid=1362214755",
-    illustration: { file: "yugoslavia-1960.png", credit: "Drawn after the kit shown in Wikipedia’s \"1960 European Nations' Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body yugoslavia1962h.png (CC BY-SA 4.0, Mark_Ekimov). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "yugoslavia-1960.png", credit: "Drawn after the kit shown in Wikipedia’s \"1960 European Nations' Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body yugoslavia1962h.png (CC BY-SA 4.0, Mark_Ekimov); Kit socks yugoslavia60h.png (CC BY-SA 4.0, S.A._Julio). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "barcelona-1961",
@@ -519,7 +519,7 @@ window.HALFTIME_KITS = [
     matches: ["1964-european-cup-final"],
     coloursSource: "Wikipedia, \"1964 European Cup final\" (revision 1373073389), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1964_European_Cup_final&oldid=1373073389",
-    illustration: { file: "inter-milan-1964.png", credit: "Drawn after the kit shown in Wikipedia’s \"1964 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit socks top on black.png (Public domain, VEO15). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "inter-milan-1964.png", credit: "Drawn after the kit shown in Wikipedia’s \"1964 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm inter64.png (CC BY-SA 3.0, Zotteteen1); Kit body inter64.png (CC BY-SA 3.0, Zotteteen1); Kit right arm inter64.png (CC BY-SA 3.0, Zotteteen1); Kit socks top on black.png (Public domain, VEO15). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "real-madrid-1964",
@@ -624,7 +624,7 @@ window.HALFTIME_KITS = [
     matches: ["1966-european-cup-final"],
     coloursSource: "Wikipedia, \"1966 European Cup final\" (revision 1361274760), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1966_European_Cup_final&oldid=1361274760",
-    illustration: { file: "partizan-1966.png", credit: "Drawn after the kit shown in Wikipedia’s \"1966 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm black stripes.png (CC BY-SA 3.0); Kit right arm black stripes.png (CC BY-SA 3.0). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "partizan-1966.png", credit: "Drawn after the kit shown in Wikipedia’s \"1966 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm black stripes.png (CC BY-SA 3.0); Kit body fkpartizan66h.png (Public domain, Luca_M); Kit right arm black stripes.png (CC BY-SA 3.0). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "real-madrid-1966",
@@ -684,7 +684,7 @@ window.HALFTIME_KITS = [
     matches: ["1967-european-cup-final"],
     coloursSource: "Wikipedia, \"1967 European Cup final\" (revision 1376033357), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1967_European_Cup_final&oldid=1376033357",
-    illustration: { file: "inter-milan-1967.png", credit: "Drawn after the kit shown in Wikipedia’s \"1967 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body inter67.png (CC BY-SA 3.0, Zotteteen1); Kit socks top on black.png (Public domain, VEO15). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "inter-milan-1967.png", credit: "Drawn after the kit shown in Wikipedia’s \"1967 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm inter64.png (CC BY-SA 3.0, Zotteteen1); Kit body inter67.png (CC BY-SA 3.0, Zotteteen1); Kit right arm inter64.png (CC BY-SA 3.0, Zotteteen1); Kit socks top on black.png (Public domain, VEO15). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "benfica-1968",
@@ -744,7 +744,7 @@ window.HALFTIME_KITS = [
     matches: ["1968-euro-final", "1968-euro-final-replay"],
     coloursSource: "Wikipedia, \"UEFA Euro 1968 final\" (revision 1377003009), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_1968_final&oldid=1377003009",
-    illustration: { file: "yugoslavia-1968.png", credit: "Drawn after the kit shown in Wikipedia’s \"UEFA Euro 1968 final\" article. Pattern pictures from Wikimedia Commons: Kit body yugoslavia1962h.png (CC BY-SA 4.0, Mark_Ekimov). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "yugoslavia-1968.png", credit: "Drawn after the kit shown in Wikipedia’s \"UEFA Euro 1968 final\" article. Pattern pictures from Wikimedia Commons: Kit body yugoslavia1962h.png (CC BY-SA 4.0, Mark_Ekimov); Kit socks red and blue stripes.png (CC BY-SA 4.0, S.A._Julio). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "ajax-1969",
@@ -774,7 +774,7 @@ window.HALFTIME_KITS = [
     matches: ["1969-european-cup-final"],
     coloursSource: "Wikipedia, \"1969 European Cup final\" (revision 1361288619), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1969_European_Cup_final&oldid=1361288619",
-    illustration: { file: "milan-1969.png", credit: "Drawn after the kit shown in Wikipedia’s \"1969 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm milan100o.png (Public domain, Luca_M); Kit right arm milan100o.png (Public domain, Luca_M); Kit socks redtop.png (CC BY-SA 3.0, El_Pollo_Diablo). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "milan-1969.png", credit: "Drawn after the kit shown in Wikipedia’s \"1969 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm milan100o.png (Public domain, Luca_M); Kit body acmilan69h.png (Public domain, Luca_M); Kit right arm milan100o.png (Public domain, Luca_M); Kit socks redtop.png (CC BY-SA 3.0, El_Pollo_Diablo). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "brazil-1970",
@@ -939,7 +939,7 @@ window.HALFTIME_KITS = [
     matches: ["1973-european-cup-final"],
     coloursSource: "Wikipedia, \"1973 European Cup final\" (revision 1375419483), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1973_European_Cup_final&oldid=1375419483",
-    illustration: { file: "ajax-1973.png", credit: "Drawn after the kit shown in Wikipedia’s \"1973 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body ajax73away.png (CC BY-SA 3.0, Zotteteen1); Kit socks 2 stripes white.png (Public domain, Dicomedomodossola). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "ajax-1973.png", credit: "Drawn after the kit shown in Wikipedia’s \"1973 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body ajax73away.png (CC BY-SA 3.0, Zotteteen1); Kit shorts ajax73away.png (CC BY-SA 3.0, Zotteteen1); Kit socks 2 stripes white.png (Public domain, Dicomedomodossola). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "juventus-1973",
@@ -1074,7 +1074,7 @@ window.HALFTIME_KITS = [
     matches: ["1975-copa-america-final-first-leg", "1975-copa-america-final-second-leg", "1975-copa-america-final-play-off"],
     coloursSource: "Wikipedia, \"1975 Copa América final\" (revision 1364422315), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1975_Copa_Am%C3%A9rica_final&oldid=1364422315",
-    illustration: { file: "peru-1975.png", credit: "Drawn after the kit shown in Wikipedia’s \"1975 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit body redrightsash.png (CC BY-SA 3.0); Kit socks redstripe.png (Public domain, Luctor_IV). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "peru-1975.png", credit: "Drawn after the kit shown in Wikipedia’s \"1975 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit body redrightsash.png (CC BY-SA 3.0); Kit shorts redsides.png (CC BY-SA 3.0, Ryan2845); Kit socks redstripe.png (Public domain, Luctor_IV). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "bayern-munich-1976",
@@ -1119,7 +1119,7 @@ window.HALFTIME_KITS = [
     matches: ["1976-european-cup-final"],
     coloursSource: "Wikipedia, \"1976 European Cup final\" (revision 1341421817), CC BY-SA 4.0; colour read from the Commons picture \"Kit body asse_saint_etienne_76.png\" (CC BY-SA 3.0)",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1976_European_Cup_final&oldid=1341421817",
-    illustration: { file: "saint-etienne-1976.png", credit: "Drawn after the kit shown in Wikipedia’s \"1976 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body asse saint etienne 76.png (CC BY-SA 3.0, Guiggz); Kit shorts asse saint etienne 76.png (CC BY-SA 3.0, Guiggz). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "saint-etienne-1976.png", credit: "Drawn after the kit shown in Wikipedia’s \"1976 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm asse saint etienne 76.png (CC BY-SA 3.0, Guiggz); Kit body asse saint etienne 76.png (CC BY-SA 3.0, Guiggz); Kit shorts asse saint etienne 76.png (CC BY-SA 3.0, Guiggz). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "west-germany-1976",
@@ -1194,7 +1194,7 @@ window.HALFTIME_KITS = [
     matches: ["1978-european-cup-final"],
     coloursSource: "Wikipedia, \"1978 European Cup final\" (revision 1362371812), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1978_European_Cup_final&oldid=1362371812",
-    illustration: { file: "club-brugge-1978.png", credit: "Drawn after the kit shown in Wikipedia’s \"1978 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body fcb7778a.png (CC BY-SA 4.0, Zotteteen1); Kit right arm fcb7778a.png (CC BY-SA 4.0, Zotteteen1); Kit shorts fcb7778a.png (CC BY-SA 4.0, Zotteteen1); Kit socks fcb7778a.png (CC BY-SA 4.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "club-brugge-1978.png", credit: "Drawn after the kit shown in Wikipedia’s \"1978 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm fcb7778a.png (CC BY-SA 4.0, Zotteteen1); Kit body fcb7778a.png (CC BY-SA 4.0, Zotteteen1); Kit right arm fcb7778a.png (CC BY-SA 4.0, Zotteteen1); Kit shorts fcb7778a.png (CC BY-SA 4.0, Zotteteen1); Kit socks fcb7778a.png (CC BY-SA 4.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "liverpool-1978",
@@ -1299,7 +1299,7 @@ window.HALFTIME_KITS = [
     matches: ["1980-euro-final"],
     coloursSource: "Wikipedia, \"UEFA Euro 1980 final\" (revision 1314321703), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_1980_final&oldid=1314321703",
-    illustration: { file: "belgium-1980.png", credit: "Drawn after the kit shown in Wikipedia’s \"UEFA Euro 1980 final\" article. Pattern pictures from Wikimedia Commons: Kit left arm belgium1980.png (CC BY-SA 3.0, Zotteteen1); Kit body belgium1980.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "belgium-1980.png", credit: "Drawn after the kit shown in Wikipedia’s \"UEFA Euro 1980 final\" article. Pattern pictures from Wikimedia Commons: Kit left arm belgium1980.png (CC BY-SA 3.0, Zotteteen1); Kit body belgium1980.png (CC BY-SA 3.0, Zotteteen1); Kit right arm belgium1980.png (CC BY-SA 3.0, Zotteteen1); Kit shorts belgium1980.png (CC BY-SA 3.0, Zotteteen1); Kit socks belgium1980.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "hamburger-sv-1980",
@@ -1689,7 +1689,7 @@ window.HALFTIME_KITS = [
     matches: ["1987-european-cup-final"],
     coloursSource: "Wikipedia, \"1987 European Cup final\" (revision 1359890308), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1987_European_Cup_final&oldid=1359890308",
-    illustration: { file: "porto-1987.png", credit: "Drawn after the kit shown in Wikipedia’s \"1987 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body porto9091h.png (CC BY-SA 3.0, Alexgreene87); Kit right arm porto9091h.png (CC BY-SA 3.0, Alexgreene87); Kit shorts porto8788h.png (CC BY-SA 3.0, Alexgreene87); Kit socks 3bluestripes.png (CC BY-SA 3.0, Alexgreene87). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "porto-1987.png", credit: "Drawn after the kit shown in Wikipedia’s \"1987 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm porto9091h.png (CC BY-SA 3.0, Alexgreene87); Kit body porto9091h.png (CC BY-SA 3.0, Alexgreene87); Kit right arm porto9091h.png (CC BY-SA 3.0, Alexgreene87); Kit shorts porto8788h.png (CC BY-SA 3.0, Alexgreene87); Kit socks 3bluestripes.png (CC BY-SA 3.0, Alexgreene87). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "uruguay-1987",
@@ -1749,7 +1749,7 @@ window.HALFTIME_KITS = [
     matches: ["1988-european-cup-final"],
     coloursSource: "Wikipedia, \"1988 European Cup final\" (revision 1371246319), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1988_European_Cup_final&oldid=1371246319",
-    illustration: { file: "psv-eindhoven-1988.png", credit: "Drawn after the kit shown in Wikipedia’s \"1988 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm psv1988.png (CC BY-SA 3.0, Zotteteen1); Kit body psv1988.png (CC BY-SA 3.0, Zotteteen1); Kit socks psv1988.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "psv-eindhoven-1988.png", credit: "Drawn after the kit shown in Wikipedia’s \"1988 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm psv1988.png (CC BY-SA 3.0, Zotteteen1); Kit body psv1988.png (CC BY-SA 3.0, Zotteteen1); Kit right arm psv1988.png (CC BY-SA 3.0, Zotteteen1); Kit shorts psv1988.png (CC BY-SA 3.0, Zotteteen1); Kit socks psv1988.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "soviet-union-1988",
@@ -1779,7 +1779,7 @@ window.HALFTIME_KITS = [
     matches: ["1989-european-cup-final"],
     coloursSource: "Wikipedia, \"1989 European Cup final\" (revision 1377232760), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1989_European_Cup_final&oldid=1377232760",
-    illustration: { file: "milan-1989.png", credit: "Drawn after the kit shown in Wikipedia’s \"1989 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm acmilan8990away.png (CC BY-SA 3.0, Zotteteen1); Kit body acmilan8889away.png (CC BY-SA 3.0, Zotteteen1); Kit socks acmilan8990away.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "milan-1989.png", credit: "Drawn after the kit shown in Wikipedia’s \"1989 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm acmilan8990away.png (CC BY-SA 3.0, Zotteteen1); Kit body acmilan8889away.png (CC BY-SA 3.0, Zotteteen1); Kit right arm acmilan8990away.png (CC BY-SA 3.0, Zotteteen1); Kit socks acmilan8990away.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "steaua-bucuresti-1989",
@@ -1794,7 +1794,7 @@ window.HALFTIME_KITS = [
     matches: ["1989-european-cup-final"],
     coloursSource: "Wikipedia, \"1989 European Cup final\" (revision 1377232760), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1989_European_Cup_final&oldid=1377232760",
-    illustration: { file: "steaua-bucuresti-1989.png", credit: "Drawn after the kit shown in Wikipedia’s \"1989 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm steaua8889h.png (CC BY-SA 3.0, Zotteteen1); Kit body steaua8889h.png (CC BY-SA 3.0, Zotteteen1); Kit right arm steaua8889h.png (CC BY-SA 3.0, Zotteteen1); Kit socks steaua8889h.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "steaua-bucuresti-1989.png", credit: "Drawn after the kit shown in Wikipedia’s \"1989 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm steaua8889h.png (CC BY-SA 3.0, Zotteteen1); Kit body steaua8889h.png (CC BY-SA 3.0, Zotteteen1); Kit right arm steaua8889h.png (CC BY-SA 3.0, Zotteteen1); Kit shorts steaua8889h.png (CC BY-SA 3.0, Zotteteen1); Kit socks steaua8889h.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "argentina-1990",
@@ -1824,7 +1824,7 @@ window.HALFTIME_KITS = [
     matches: ["1990-european-cup-final"],
     coloursSource: "Wikipedia, \"1990 European Cup final\" (revision 1377406757), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1990_European_Cup_final&oldid=1377406757",
-    illustration: { file: "benfica-1990.png", credit: "Drawn after the kit shown in Wikipedia’s \"1990 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit body benfica8990h.png (CC BY-SA 3.0, Zotteteen1); Kit right arm benfica8990h.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "benfica-1990.png", credit: "Drawn after the kit shown in Wikipedia’s \"1990 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm benfica8990h.png (CC BY-SA 3.0, Zotteteen1); Kit body benfica8990h.png (CC BY-SA 3.0, Zotteteen1); Kit right arm benfica8990h.png (CC BY-SA 3.0, Zotteteen1); Kit shorts benfica8990h.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "milan-1990",
@@ -1839,7 +1839,7 @@ window.HALFTIME_KITS = [
     matches: ["1990-european-cup-final"],
     coloursSource: "Wikipedia, \"1990 European Cup final\" (revision 1377406757), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1990_European_Cup_final&oldid=1377406757",
-    illustration: { file: "milan-1990.png", credit: "Drawn after the kit shown in Wikipedia’s \"1990 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm acmilan8990away.png (CC BY-SA 3.0, Zotteteen1); Kit body acmilan8889away.png (CC BY-SA 3.0, Zotteteen1); Kit socks acmilan8990away.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "milan-1990.png", credit: "Drawn after the kit shown in Wikipedia’s \"1990 European Cup final\" article. Pattern pictures from Wikimedia Commons: Kit left arm acmilan8990away.png (CC BY-SA 3.0, Zotteteen1); Kit body acmilan8889away.png (CC BY-SA 3.0, Zotteteen1); Kit right arm acmilan8990away.png (CC BY-SA 3.0, Zotteteen1); Kit socks acmilan8990away.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "west-germany-1990",
@@ -1929,7 +1929,7 @@ window.HALFTIME_KITS = [
     matches: ["1992-euro-final"],
     coloursSource: "Wikipedia, \"UEFA Euro 1992 final\" (revision 1368657278), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_1992_final&oldid=1368657278",
-    illustration: { file: "germany-1992.png", credit: "Drawn after the kit shown in Wikipedia’s \"UEFA Euro 1992 final\" article. Pattern pictures from Wikimedia Commons: Kit body ger92.png (CC BY-SA 3.0, Faan72); Kit right arm ger92.png (CC BY-SA 3.0, Faan72); Kit socks color 3 stripes black.png (CC BY-SA 3.0, Bruno-ban). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "germany-1992.png", credit: "Drawn after the kit shown in Wikipedia’s \"UEFA Euro 1992 final\" article. Pattern pictures from Wikimedia Commons: Kit left arm ger92.png (CC BY-SA 3.0, Faan72); Kit body ger92.png (CC BY-SA 3.0, Faan72); Kit right arm ger92.png (CC BY-SA 3.0, Faan72); Kit socks color 3 stripes black.png (CC BY-SA 3.0, Bruno-ban). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "sampdoria-1992",
@@ -2064,7 +2064,7 @@ window.HALFTIME_KITS = [
     matches: ["1994-champions-league-final"],
     coloursSource: "Wikipedia, \"1994 UEFA Champions League final\" (revision 1375960154), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1994_UEFA_Champions_League_final&oldid=1375960154",
-    illustration: { file: "milan-1994.png", credit: "Drawn after the kit shown in Wikipedia’s \"1994 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit body acmilan9394away.png (CC BY-SA 3.0, Zotteteen1); Kit right arm acmilan9394away.png (CC BY-SA 3.0, IM-yb); Kit socks acmilan8990away.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "milan-1994.png", credit: "Drawn after the kit shown in Wikipedia’s \"1994 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm acmilan9394away.png (CC BY-SA 3.0, IM-yb); Kit body acmilan9394away.png (CC BY-SA 3.0, Zotteteen1); Kit right arm acmilan9394away.png (CC BY-SA 3.0, IM-yb); Kit socks acmilan8990away.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "ajax-1995",
@@ -2109,7 +2109,7 @@ window.HALFTIME_KITS = [
     matches: ["1995-champions-league-final"],
     coloursSource: "Wikipedia, \"1995 UEFA Champions League final\" (revision 1359481098), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1995_UEFA_Champions_League_final&oldid=1359481098",
-    illustration: { file: "milan-1995.png", credit: "Drawn after the kit shown in Wikipedia’s \"1995 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit body acmilan9394away.png (CC BY-SA 3.0, Zotteteen1); Kit right arm acmilan9394away.png (CC BY-SA 3.0, IM-yb); Kit socks acmilan8990away.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "milan-1995.png", credit: "Drawn after the kit shown in Wikipedia’s \"1995 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm acmilan9394away.png (CC BY-SA 3.0, IM-yb); Kit body acmilan9394away.png (CC BY-SA 3.0, Zotteteen1); Kit right arm acmilan9394away.png (CC BY-SA 3.0, IM-yb); Kit socks acmilan8990away.png (CC BY-SA 3.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "uruguay-1995",
@@ -2124,7 +2124,7 @@ window.HALFTIME_KITS = [
     matches: ["1995-copa-america-final"],
     coloursSource: "Wikipedia, \"1995 Copa América final\" (revision 1349684504), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1995_Copa_Am%C3%A9rica_final&oldid=1349684504",
-    illustration: { file: "uruguay-1995.png", credit: "Drawn after the kit shown in Wikipedia’s \"1995 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit left arm uruguay1995-96h.png (CC BY-SA 4.0, Manya_1996); Kit body uruguay1995-96h.png (CC BY-SA 4.0, Manya_1996); Kit right arm uruguay1995-96h.png (CC BY-SA 4.0, Manya_1996). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "uruguay-1995.png", credit: "Drawn after the kit shown in Wikipedia’s \"1995 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit left arm uruguay1995-96h.png (CC BY-SA 4.0, Manya_1996); Kit body uruguay1995-96h.png (CC BY-SA 4.0, Manya_1996); Kit right arm uruguay1995-96h.png (CC BY-SA 4.0, Manya_1996); Kit socks whitelinel.png (CC BY-SA 4.0, Eduzs). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "ajax-1996",
@@ -2229,7 +2229,7 @@ window.HALFTIME_KITS = [
     matches: ["1997-copa-america-final"],
     coloursSource: "Wikipedia, \"1997 Copa América final\" (revision 1342340450), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=1997_Copa_Am%C3%A9rica_final&oldid=1342340450",
-    illustration: { file: "brazil-1997.png", credit: "Drawn after the kit shown in Wikipedia’s \"1997 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit left arm bra96h.png (CC BY-SA 4.0, Bruno-ban); Kit body bra96h.png (CC0, Bruno-ban); Kit right arm bra96h.png (CC BY-SA 4.0, Bruno-ban). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "brazil-1997.png", credit: "Drawn after the kit shown in Wikipedia’s \"1997 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit left arm bra96h.png (CC BY-SA 4.0, Bruno-ban); Kit body bra96h.png (CC0, Bruno-ban); Kit right arm bra96h.png (CC BY-SA 4.0, Bruno-ban); Kit shorts whitestripes.png (CC BY-SA 4.0, Harvardton). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "juventus-1997",
@@ -2454,7 +2454,7 @@ window.HALFTIME_KITS = [
     matches: ["2001-copa-america-final"],
     coloursSource: "Wikipedia, \"2001 Copa América final\" (revision 1378647545), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2001_Copa_Am%C3%A9rica_final&oldid=1378647545",
-    illustration: { file: "colombia-2001.png", credit: "Drawn after the kit shown in Wikipedia’s \"2001 Copa América final\" article. Plain colours, no pattern picture needed. Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "colombia-2001.png", credit: "Drawn after the kit shown in Wikipedia’s \"2001 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit body colombia 01 03 H.png (CC BY-SA 4.0, Juliancames); Kit shorts colombia 01 03 H.png (CC BY-SA 4.0, Juliancames). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "mexico-2001",
@@ -2499,7 +2499,7 @@ window.HALFTIME_KITS = [
     matches: ["2002-champions-league-final"],
     coloursSource: "Wikipedia, \"2002 UEFA Champions League final\" (revision 1373626437), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2002_UEFA_Champions_League_final&oldid=1373626437",
-    illustration: { file: "bayer-leverkusen-2002.png", credit: "Drawn after the kit shown in Wikipedia’s \"2002 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm BAYER 0001h.png (CC BY-SA 3.0, Luxusfrosch); Kit body BAYER 0001h.png (CC BY-SA 3.0, Luxusfrosch); Kit shorts BAYER 0001h.png (CC BY-SA 3.0, Luxusfrosch); Kit socks 3 stripes white.png (Public domain, Dragases). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "bayer-leverkusen-2002.png", credit: "Drawn after the kit shown in Wikipedia’s \"2002 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm BAYER 0001h.png (CC BY-SA 3.0, Luxusfrosch); Kit body BAYER 0001h.png (CC BY-SA 3.0, Luxusfrosch); Kit right arm BAYER 0001h.png (CC BY-SA 3.0, Luxusfrosch); Kit shorts BAYER 0001h.png (CC BY-SA 3.0, Luxusfrosch); Kit socks 3 stripes white.png (Public domain, Dragases). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "brazil-2002",
@@ -2574,7 +2574,7 @@ window.HALFTIME_KITS = [
     matches: ["2003-champions-league-final"],
     coloursSource: "Wikipedia, \"2003 UEFA Champions League final\" (revision 1375054947), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2003_UEFA_Champions_League_final&oldid=1375054947",
-    illustration: { file: "milan-2003.png", credit: "Drawn after the kit shown in Wikipedia’s \"2003 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm acm away 0809.png (CC BY-SA 3.0, Bruno-ban); Kit body acmilan0203a.png (CC BY-SA 3.0, Rezart_Ta%C3%A7i); Kit shorts acm0203a.png (CC BY-SA 4.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "milan-2003.png", credit: "Drawn after the kit shown in Wikipedia’s \"2003 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm acm away 0809.png (CC BY-SA 3.0, Bruno-ban); Kit body acmilan0203a.png (CC BY-SA 3.0, Rezart_Ta%C3%A7i); Kit right arm acm away 0809.png (CC BY-SA 3.0, Bruno-ban); Kit shorts acm0203a.png (CC BY-SA 4.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "argentina-2004",
@@ -2649,7 +2649,7 @@ window.HALFTIME_KITS = [
     matches: ["2004-champions-league-final"],
     coloursSource: "Wikipedia, \"2004 UEFA Champions League final\" (revision 1377135619), CC BY-SA 4.0; colour read from the Commons picture \"Kit body porto0304h.png\" (CC BY-SA 3.0)",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2004_UEFA_Champions_League_final&oldid=1377135619",
-    illustration: { file: "porto-2004.png", credit: "Drawn after the kit shown in Wikipedia’s \"2004 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm porto0304h.png (CC BY-SA 3.0, Zotteteen1); Kit body porto0304h.png (CC BY-SA 3.0, Zotteteen1); Kit right arm porto0304h.png (CC BY-SA 3.0, Zotteteen1); Kit shorts porto0304home.png (CC BY-SA 4.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "porto-2004.png", credit: "Drawn after the kit shown in Wikipedia’s \"2004 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm porto0304h.png (CC BY-SA 3.0, Zotteteen1); Kit body porto0304h.png (CC BY-SA 3.0, Zotteteen1); Kit right arm porto0304h.png (CC BY-SA 3.0, Zotteteen1); Kit shorts porto0304home.png (CC BY-SA 4.0, Zotteteen1); Kit socks porto0304home.png (CC BY-SA 4.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "portugal-2004",
@@ -2709,7 +2709,7 @@ window.HALFTIME_KITS = [
     matches: ["2006-champions-league-final"],
     coloursSource: "Wikipedia, \"2006 UEFA Champions League final\" (revision 1374312188), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2006_UEFA_Champions_League_final&oldid=1374312188",
-    illustration: { file: "arsenal-2006.png", credit: "Drawn after the kit shown in Wikipedia’s \"2006 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm arsenala0507.png (Public domain, VEO15); Kit body arsenala0507.png (Public domain, VEO15). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "arsenal-2006.png", credit: "Drawn after the kit shown in Wikipedia’s \"2006 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm arsenala0507.png (Public domain, VEO15); Kit body arsenala0507.png (Public domain, VEO15); Kit right arm arsenala0507.png (Public domain, VEO15); Kit shorts arsenala0507.png (CC BY-SA 4.0, Rizky88); Kit socks arsenala0507.png (CC BY-SA 4.0, Rizky88). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "barcelona-2006",
@@ -2844,7 +2844,7 @@ window.HALFTIME_KITS = [
     matches: ["2008-euro-final"],
     coloursSource: "Wikipedia, \"UEFA Euro 2008 final\" (revision 1335641268), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_2008_final&oldid=1335641268",
-    illustration: { file: "germany-2008.png", credit: "Drawn after the kit shown in Wikipedia’s \"UEFA Euro 2008 final\" article. Pattern pictures from Wikimedia Commons: Kit body ger08h.png (CC BY-SA 4.0, Hurfer); Kit right arm ger08h.png (CC BY-SA 4.0, Hurfer); Kit shorts adidaswhite.png (Public domain, Kanchelskis); Kit socks color 3 stripes black.png (CC BY-SA 3.0, Bruno-ban). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "germany-2008.png", credit: "Drawn after the kit shown in Wikipedia’s \"UEFA Euro 2008 final\" article. Pattern pictures from Wikimedia Commons: Kit left arm ger08h.png (CC BY-SA 4.0, Hurfer); Kit body ger08h.png (CC BY-SA 4.0, Hurfer); Kit right arm ger08h.png (CC BY-SA 4.0, Hurfer); Kit shorts adidaswhite.png (Public domain, Kanchelskis); Kit socks color 3 stripes black.png (CC BY-SA 3.0, Bruno-ban). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "manchester-united-2008",
@@ -2874,7 +2874,7 @@ window.HALFTIME_KITS = [
     matches: ["2008-euro-final"],
     coloursSource: "Wikipedia, \"UEFA Euro 2008 final\" (revision 1335641268), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_2008_final&oldid=1335641268",
-    illustration: { file: "spain-2008.png", credit: "Drawn after the kit shown in Wikipedia’s \"UEFA Euro 2008 final\" article. Pattern pictures from Wikimedia Commons: Kit left arm esp08h.png (CC BY-SA 4.0, Abdul Qayyum Ahmad); Kit shorts esp08h2.png (CC BY-SA 4.0, Hurfer); Kit socks esp08h2.png (CC BY-SA 4.0, Hurfer). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "spain-2008.png", credit: "Drawn after the kit shown in Wikipedia’s \"UEFA Euro 2008 final\" article. Pattern pictures from Wikimedia Commons: Kit left arm esp08h.png (CC BY-SA 4.0, Abdul Qayyum Ahmad); Kit body esp08h1.png (CC BY-SA 4.0, OWL1999); Kit right arm esp08h.png (CC BY-SA 4.0, Abdul Qayyum Ahmad); Kit shorts esp08h2.png (CC BY-SA 4.0, Hurfer); Kit socks esp08h2.png (CC BY-SA 4.0, Hurfer). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "barcelona-2009",
@@ -2904,7 +2904,7 @@ window.HALFTIME_KITS = [
     matches: ["2009-champions-league-final"],
     coloursSource: "Wikipedia, \"2009 UEFA Champions League final\" (revision 1367164189), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2009_UEFA_Champions_League_final&oldid=1367164189",
-    illustration: { file: "manchester-united-2009.png", credit: "Drawn after the kit shown in Wikipedia’s \"2009 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit body manutdaway0810.png (CC BY-SA 3.0, Bruno-ban); Kit shorts manutda0810alt.png (CC BY-SA 3.0, VEO15). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "manchester-united-2009.png", credit: "Drawn after the kit shown in Wikipedia’s \"2009 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit body manutdaway0810.png (CC BY-SA 3.0, Bruno-ban); Kit shorts manutda0810alt.png (CC BY-SA 3.0, VEO15); Kit socks manutda0810.png (CC BY-SA 3.0, VEO15). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "bayern-munich-2010",
@@ -3009,7 +3009,7 @@ window.HALFTIME_KITS = [
     matches: ["2011-copa-america-final"],
     coloursSource: "Wikipedia, \"2011 Copa América final\" (revision 1376275436), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2011_Copa_Am%C3%A9rica_final&oldid=1376275436",
-    illustration: { file: "paraguay-2011.png", credit: "Drawn after the kit shown in Wikipedia’s \"2011 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit socks 3 stripes white.png (Public domain, Dragases). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "paraguay-2011.png", credit: "Drawn after the kit shown in Wikipedia’s \"2011 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit left arm par1012h.png (CC0, Bruno-ban); Kit body par1012h.png (CC0, Bruno-ban); Kit socks 3 stripes white.png (Public domain, Dragases). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "uruguay-2011",
@@ -3024,7 +3024,7 @@ window.HALFTIME_KITS = [
     matches: ["2011-copa-america-final"],
     coloursSource: "Wikipedia, \"2011 Copa América final\" (revision 1376275436), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2011_Copa_Am%C3%A9rica_final&oldid=1376275436",
-    illustration: { file: "uruguay-2011.png", credit: "Drawn after the kit shown in Wikipedia’s \"2011 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit left arm Uru 2010b.png (CC BY-SA 3.0, 11k-talanCHI); Kit right arm Uru 2010b.png (CC BY-SA 3.0, 11k-talanCHI); Kit shorts uru10h.png (CC BY-SA 4.0, Abdul Qayyum Ahmad); Kit socks puma 2010 skyblue.png (Public domain, VEO15). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "uruguay-2011.png", credit: "Drawn after the kit shown in Wikipedia’s \"2011 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit left arm Uru 2010b.png (CC BY-SA 3.0, 11k-talanCHI); Kit body uruguay 2010.png (CC BY-SA 3.0, 11k-talanCHI); Kit right arm Uru 2010b.png (CC BY-SA 3.0, 11k-talanCHI); Kit shorts uru10h.png (CC BY-SA 4.0, Abdul Qayyum Ahmad); Kit socks puma 2010 skyblue.png (Public domain, VEO15). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "bayern-munich-2012",
@@ -3039,7 +3039,7 @@ window.HALFTIME_KITS = [
     matches: ["2012-champions-league-final"],
     coloursSource: "Wikipedia, \"2012 UEFA Champions League final\" (revision 1371171265), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2012_UEFA_Champions_League_final&oldid=1371171265",
-    illustration: { file: "bayern-munich-2012.png", credit: "Drawn after the kit shown in Wikipedia’s \"2012 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit body FCBAYERN 1112h.png (CC BY 3.0, Luxusfrosch); Kit right arm FCBAYERN 1112h.png (CC BY-SA 3.0, Luxusfrosch); Kit shorts FCBAYERN 1112h.png (CC BY-SA 3.0, Luxusfrosch); Kit socks FCBAYERN 1112h.png (CC BY-SA 3.0, Luxusfrosch). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "bayern-munich-2012.png", credit: "Drawn after the kit shown in Wikipedia’s \"2012 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm FCBAYERN 1112h.png (CC BY-SA 3.0, Luxusfrosch); Kit body FCBAYERN 1112h.png (CC BY 3.0, Luxusfrosch); Kit right arm FCBAYERN 1112h.png (CC BY-SA 3.0, Luxusfrosch); Kit shorts FCBAYERN 1112h.png (CC BY-SA 3.0, Luxusfrosch); Kit socks FCBAYERN 1112h.png (CC BY-SA 3.0, Luxusfrosch). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "chelsea-2012",
@@ -3054,7 +3054,7 @@ window.HALFTIME_KITS = [
     matches: ["2012-champions-league-final"],
     coloursSource: "Wikipedia, \"2012 UEFA Champions League final\" (revision 1371171265), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2012_UEFA_Champions_League_final&oldid=1371171265",
-    illustration: { file: "chelsea-2012.png", credit: "Drawn after the kit shown in Wikipedia’s \"2012 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit body chelsea1112h.png (CC0, Bruno-ban); Kit right arm chelsea1112h.png (CC0, Bruno-ban); Kit shorts chelsea1112h.png (CC0, Bruno-ban); Kit socks grash0607h.png (CC0, Bruno-ban). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "chelsea-2012.png", credit: "Drawn after the kit shown in Wikipedia’s \"2012 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm chelsea1112h.png (CC0, Bruno-ban); Kit body chelsea1112h.png (CC0, Bruno-ban); Kit right arm chelsea1112h.png (CC0, Bruno-ban); Kit shorts chelsea1112h.png (CC0, Bruno-ban); Kit socks grash0607h.png (CC0, Bruno-ban). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "italy-2012",
@@ -3099,7 +3099,7 @@ window.HALFTIME_KITS = [
     matches: ["2013-champions-league-final"],
     coloursSource: "Wikipedia, \"2013 UEFA Champions League final\" (revision 1352352017), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2013_UEFA_Champions_League_final&oldid=1352352017",
-    illustration: { file: "bayern-munich-2013.png", credit: "Drawn after the kit shown in Wikipedia’s \"2013 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm FCBAYERN 1314h.png (CC BY-SA 3.0, Luxusfrosch); Kit body FCBAYERN 1314h.png (CC0, principal adjoint); Kit right arm FCBAYERN 1314h.png (CC BY-SA 3.0, Luxusfrosch). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "bayern-munich-2013.png", credit: "Drawn after the kit shown in Wikipedia’s \"2013 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm FCBAYERN 1314h.png (CC BY-SA 3.0, Luxusfrosch); Kit body FCBAYERN 1314h.png (CC0, principal adjoint); Kit right arm FCBAYERN 1314h.png (CC BY-SA 3.0, Luxusfrosch); Kit shorts FCBAYERN 1314h.png (CC BY-SA 3.0, Luxusfrosch); Kit socks FCBAYERN 1314h.png (CC BY-SA 3.0, Luxusfrosch). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "borussia-dortmund-2013",
@@ -3174,7 +3174,7 @@ window.HALFTIME_KITS = [
     matches: ["2014-champions-league-final"],
     coloursSource: "Wikipedia, \"2014 UEFA Champions League final\" (revision 1352009847), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2014_UEFA_Champions_League_final&oldid=1352009847",
-    illustration: { file: "real-madrid-2014.png", credit: "Drawn after the kit shown in Wikipedia’s \"2014 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm rmcf1314h.png (CC BY-SA 3.0, Jlms16); Kit right arm rmcf1314h.png (CC BY-SA 3.0, Jlms16); Kit shorts rmcf1314h.png (CC BY-SA 3.0, Jlms16); Kit socks rmcf1314h.png (CC BY-SA 3.0, Jlms16). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "real-madrid-2014.png", credit: "Drawn after the kit shown in Wikipedia’s \"2014 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm rmcf1314h.png (CC BY-SA 3.0, Jlms16); Kit body rmcf1314home.png (CC BY-SA 4.0, Juventusfans); Kit right arm rmcf1314h.png (CC BY-SA 3.0, Jlms16); Kit shorts rmcf1314h.png (CC BY-SA 3.0, Jlms16); Kit socks rmcf1314h.png (CC BY-SA 3.0, Jlms16). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "argentina-2015",
@@ -3189,7 +3189,7 @@ window.HALFTIME_KITS = [
     matches: ["2015-copa-america-final"],
     coloursSource: "Wikipedia, \"2015 Copa América final\" (revision 1372544145), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2015_Copa_Am%C3%A9rica_final&oldid=1372544145",
-    illustration: { file: "argentina-2015.png", credit: "Drawn after the kit shown in Wikipedia’s \"2015 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit body arg15h.png (CC BY-SA 4.0, Zoco35); Kit right arm arg15h.png (CC BY-SA 4.0, Zoco35); Kit shorts arg15H.png (CC BY-SA 4.0, Jonas_Faccio); Kit socks long arg15H.png (CC BY-SA 4.0, SPFCSeasons). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "argentina-2015.png", credit: "Drawn after the kit shown in Wikipedia’s \"2015 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit left arm arg15h.png (CC BY-SA 4.0, Zoco35); Kit body arg15h.png (CC BY-SA 4.0, Zoco35); Kit right arm arg15h.png (CC BY-SA 4.0, Zoco35); Kit shorts arg15H.png (CC BY-SA 4.0, Jonas_Faccio); Kit socks long arg15H.png (CC BY-SA 4.0, SPFCSeasons). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "barcelona-2015",
@@ -3219,7 +3219,7 @@ window.HALFTIME_KITS = [
     matches: ["2015-copa-america-final"],
     coloursSource: "Wikipedia, \"2015 Copa América final\" (revision 1372544145), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2015_Copa_Am%C3%A9rica_final&oldid=1372544145",
-    illustration: { file: "chile-2015.png", credit: "Drawn after the kit shown in Wikipedia’s \"2015 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit right arm chile14h.png (CC0, Spiraal); Kit socks chile14h.png (CC BY-SA 3.0, Jonas_Faccio). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "chile-2015.png", credit: "Drawn after the kit shown in Wikipedia’s \"2015 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit left arm chile14h.png (CC0, Spiraal); Kit body chile14H.png (CC BY-SA 4.0, Jonas_Faccio); Kit right arm chile14h.png (CC0, Spiraal); Kit socks chile14h.png (CC BY-SA 3.0, Jonas_Faccio). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "juventus-2015",
@@ -3249,7 +3249,7 @@ window.HALFTIME_KITS = [
     matches: ["2016-copa-america-final"],
     coloursSource: "Wikipedia, \"Copa América Centenario final\" (revision 1373519770), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=Copa_Am%C3%A9rica_Centenario_final&oldid=1373519770",
-    illustration: { file: "argentina-2016.png", credit: "Drawn after the kit shown in Wikipedia’s \"Copa América Centenario final\" article. Pattern pictures from Wikimedia Commons: Kit left arm arg16h1.png (CC BY-SA 4.0, Hurfer); Kit body arg16h1.png (CC BY-SA 4.0, Hurfer); Kit right arm arg16h1.png (CC BY-SA 4.0, Hurfer); Kit socks arg16h.png (CC BY-SA 3.0, Rezart_Ta%C3%A7i). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "argentina-2016.png", credit: "Drawn after the kit shown in Wikipedia’s \"Copa América Centenario final\" article. Pattern pictures from Wikimedia Commons: Kit left arm arg16h1.png (CC BY-SA 4.0, Hurfer); Kit body arg16h1.png (CC BY-SA 4.0, Hurfer); Kit right arm arg16h1.png (CC BY-SA 4.0, Hurfer); Kit shorts adidasblack.png (CC BY-SA 4.0, Lanzini); Kit socks arg16h.png (CC BY-SA 3.0, Rezart_Ta%C3%A7i). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "atletico-madrid-2016",
@@ -3264,7 +3264,7 @@ window.HALFTIME_KITS = [
     matches: ["2016-champions-league-final"],
     coloursSource: "Wikipedia, \"2016 UEFA Champions League final\" (revision 1373353713), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2016_UEFA_Champions_League_final&oldid=1373353713",
-    illustration: { file: "atletico-madrid-2016.png", credit: "Drawn after the kit shown in Wikipedia’s \"2016 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm am1516h.png (CC BY-SA 3.0, Rezart_Ta%C3%A7i); Kit body atleti1516h.png (CC BY-SA 4.0, Rezart_Ta%C3%A7i); Kit right arm am1516h.png (CC BY-SA 3.0, Rezart_Ta%C3%A7i); Kit shorts am1516h.png (CC BY-SA 3.0, Rezart_Ta%C3%A7i). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "atletico-madrid-2016.png", credit: "Drawn after the kit shown in Wikipedia’s \"2016 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm am1516h.png (CC BY-SA 3.0, Rezart_Ta%C3%A7i); Kit body atleti1516h.png (CC BY-SA 4.0, Rezart_Ta%C3%A7i); Kit right arm am1516h.png (CC BY-SA 3.0, Rezart_Ta%C3%A7i); Kit shorts am1516h.png (CC BY-SA 3.0, Rezart_Ta%C3%A7i); Kit socks am1516h.png (CC BY-SA 3.0, Rezart_Ta%C3%A7i). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "chile-2016",
@@ -3294,7 +3294,7 @@ window.HALFTIME_KITS = [
     matches: ["2016-euro-final"],
     coloursSource: "Wikipedia, \"UEFA Euro 2016 final\" (revision 1367354979), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=UEFA_Euro_2016_final&oldid=1367354979",
-    illustration: { file: "france-2016.png", credit: "Drawn after the kit shown in Wikipedia’s \"UEFA Euro 2016 final\" article. Pattern pictures from Wikimedia Commons: Kit left arm fra16h.png (CC BY-SA 4.0, Manya_1996); Kit body fra16H.png (CC BY-SA 3.0, Rezart_Ta%C3%A7i); Kit shorts fra16h.png (CC BY-SA 4.0, Manya_1996); Kit socks fra16h.png (CC BY-SA 4.0, Flix11). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "france-2016.png", credit: "Drawn after the kit shown in Wikipedia’s \"UEFA Euro 2016 final\" article. Pattern pictures from Wikimedia Commons: Kit left arm fra16h.png (CC BY-SA 4.0, Manya_1996); Kit body fra16H.png (CC BY-SA 3.0, Rezart_Ta%C3%A7i); Kit right arm fra16h.png (CC BY-SA 4.0, Manya_1996); Kit shorts fra16h.png (CC BY-SA 4.0, Manya_1996); Kit socks fra16h.png (CC BY-SA 4.0, Flix11). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "portugal-2016",
@@ -3339,7 +3339,7 @@ window.HALFTIME_KITS = [
     matches: ["2017-champions-league-final"],
     coloursSource: "Wikipedia, \"2017 UEFA Champions League final\" (revision 1373864667), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2017_UEFA_Champions_League_final&oldid=1373864667",
-    illustration: { file: "juventus-2017.png", credit: "Drawn after the kit shown in Wikipedia’s \"2017 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm juventus1617h.png (CC BY-SA 4.0, Manya_1996); Kit socks juventus1617t.png (CC BY-SA 4.0, Manya_1996). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "juventus-2017.png", credit: "Drawn after the kit shown in Wikipedia’s \"2017 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm juventus1617h.png (CC BY-SA 4.0, Manya_1996); Kit body juventus1617H.png (CC BY-SA 4.0, Secret_Agent_Julio_(alt)); Kit right arm juventus1617h.png (CC BY-SA 4.0, Manya_1996); Kit shorts adidasblack.png (CC BY-SA 4.0, Lanzini); Kit socks juventus1617t.png (CC BY-SA 4.0, Manya_1996). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "real-madrid-2017",
@@ -3354,7 +3354,7 @@ window.HALFTIME_KITS = [
     matches: ["2017-champions-league-final"],
     coloursSource: "Wikipedia, \"2017 UEFA Champions League final\" (revision 1373864667), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2017_UEFA_Champions_League_final&oldid=1373864667",
-    illustration: { file: "real-madrid-2017.png", credit: "Drawn after the kit shown in Wikipedia’s \"2017 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm rmcf1617away.png (CC BY-SA 4.0, Zotteteen1); Kit body rmcf1617away.png (CC BY-SA 4.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "real-madrid-2017.png", credit: "Drawn after the kit shown in Wikipedia’s \"2017 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm rmcf1617away.png (CC BY-SA 4.0, Zotteteen1); Kit body rmcf1617away.png (CC BY-SA 4.0, Zotteteen1); Kit right arm rmcf1617away.png (CC BY-SA 4.0, Zotteteen1); Kit socks rmcf1617away.png (CC BY-SA 4.0, Zotteteen1). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "croatia-2018",
@@ -3414,7 +3414,7 @@ window.HALFTIME_KITS = [
     matches: ["2018-champions-league-final"],
     coloursSource: "Wikipedia, \"2018 UEFA Champions League final\" (revision 1374334988), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2018_UEFA_Champions_League_final&oldid=1374334988",
-    illustration: { file: "real-madrid-2018.png", credit: "Drawn after the kit shown in Wikipedia’s \"2018 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm realmadrid1718h.png (CC BY-SA 4.0, ChiliPrun); Kit right arm realmadrid1718h.png (CC BY-SA 4.0, ChiliPrun); Kit shorts rmcf1718h.png (CC BY-SA 4.0, Zotteteen1); Kit socks realmadrid1718h.png (CC BY-SA 4.0, ChiliPrun). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "real-madrid-2018.png", credit: "Drawn after the kit shown in Wikipedia’s \"2018 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm realmadrid1718h.png (CC BY-SA 4.0, ChiliPrun); Kit body realmadrid1718H.png (CC BY-SA 4.0, ChiliPrun); Kit right arm realmadrid1718h.png (CC BY-SA 4.0, ChiliPrun); Kit shorts rmcf1718h.png (CC BY-SA 4.0, Zotteteen1); Kit socks realmadrid1718h.png (CC BY-SA 4.0, ChiliPrun). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "brazil-2019",
@@ -3474,7 +3474,7 @@ window.HALFTIME_KITS = [
     matches: ["2019-champions-league-final"],
     coloursSource: "Wikipedia, \"2019 UEFA Champions League final\" (revision 1376279481), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2019_UEFA_Champions_League_final&oldid=1376279481",
-    illustration: { file: "tottenham-hotspur-2019.png", credit: "Drawn after the kit shown in Wikipedia’s \"2019 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit body tottenham1819H.png (CC BY-SA 4.0, JonasBR); Kit right arm tottenham1819h.png (CC BY-SA 4.0, JonasBR); Kit shorts usa18h.png (CC BY-SA 4.0, Eduardo_Stosick). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "tottenham-hotspur-2019.png", credit: "Drawn after the kit shown in Wikipedia’s \"2019 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm tottenham1819h.png (CC BY-SA 4.0, JonasBR); Kit body tottenham1819H.png (CC BY-SA 4.0, JonasBR); Kit right arm tottenham1819h.png (CC BY-SA 4.0, JonasBR); Kit shorts usa18h.png (CC BY-SA 4.0, Eduardo_Stosick); Kit socks thfc1819h.png (CC BY-SA 4.0, JonasBR). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "bayern-munich-2020",
@@ -3534,7 +3534,7 @@ window.HALFTIME_KITS = [
     matches: ["2021-copa-america-final"],
     coloursSource: "Wikipedia, \"2021 Copa América final\" (revision 1367692900), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2021_Copa_Am%C3%A9rica_final&oldid=1367692900",
-    illustration: { file: "brazil-2021.png", credit: "Drawn after the kit shown in Wikipedia’s \"2021 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit body bra20H.png (CC BY-SA 4.0, LL2005); Kit right arm bra20H.png (CC BY-SA 4.0, LL2005); Kit shorts bra20H.png (CC BY-SA 4.0, Rosaelisil4); Kit socks bra20al.png (CC BY-SA 4.0, NeoRibeiro). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "brazil-2021.png", credit: "Drawn after the kit shown in Wikipedia’s \"2021 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit left arm bra20H.png (CC BY-SA 4.0, LL2005); Kit body bra20H.png (CC BY-SA 4.0, LL2005); Kit right arm bra20H.png (CC BY-SA 4.0, LL2005); Kit shorts bra20H.png (CC BY-SA 4.0, Rosaelisil4); Kit socks bra20al.png (CC BY-SA 4.0, NeoRibeiro). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "chelsea-2021",
@@ -3729,7 +3729,7 @@ window.HALFTIME_KITS = [
     matches: ["2024-copa-america-final"],
     coloursSource: "Wikipedia, \"2024 Copa América final\" (revision 1378330205), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2024_Copa_Am%C3%A9rica_final&oldid=1378330205",
-    illustration: { file: "colombia-2024.png", credit: "Drawn after the kit shown in Wikipedia’s \"2024 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit left arm col24h.png (CC BY 4.0, Mateo_sou); Kit body col24h.png (CC BY 4.0, Mateo_sou); Kit right arm col24h.png (CC BY 4.0, Mateo_sou). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "colombia-2024.png", credit: "Drawn after the kit shown in Wikipedia’s \"2024 Copa América final\" article. Pattern pictures from Wikimedia Commons: Kit left arm col24h.png (CC BY 4.0, Mateo_sou); Kit body col24h.png (CC BY 4.0, Mateo_sou); Kit right arm col24h.png (CC BY 4.0, Mateo_sou); Kit shorts col24h.png (CC0, Rosaelisil4); Kit socks col24hl.png (CC0, WikipedyjniAK). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "england-2024",
@@ -3759,7 +3759,7 @@ window.HALFTIME_KITS = [
     matches: ["2024-champions-league-final"],
     coloursSource: "Wikipedia, \"2024 UEFA Champions League final\" (revision 1370459237), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2024_UEFA_Champions_League_final&oldid=1370459237",
-    illustration: { file: "real-madrid-2024.png", credit: "Drawn after the kit shown in Wikipedia’s \"2024 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit body realmadridcf2324h.png (CC BY-SA 4.0, JonasBR); Kit right arm realmadridcf2324h.png (CC BY-SA 4.0, JonasBR); Kit shorts realmadridcf2324h.png (CC BY-SA 4.0, JonasBR); Kit socks realmadridcf2324hl.png (CC BY-SA 4.0, JonasBR). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "real-madrid-2024.png", credit: "Drawn after the kit shown in Wikipedia’s \"2024 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm realmadridcf2324h.png (CC BY-SA 4.0, JonasBR); Kit body realmadridcf2324h.png (CC BY-SA 4.0, JonasBR); Kit right arm realmadridcf2324h.png (CC BY-SA 4.0, JonasBR); Kit shorts realmadridcf2324h.png (CC BY-SA 4.0, JonasBR); Kit socks realmadridcf2324hl.png (CC BY-SA 4.0, JonasBR). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "spain-2024",
@@ -3834,7 +3834,7 @@ window.HALFTIME_KITS = [
     matches: ["2026-champions-league-final"],
     coloursSource: "Wikipedia, \"2026 UEFA Champions League final\" (revision 1378634258), CC BY-SA 4.0",
     coloursUrl: "https://en.wikipedia.org/w/index.php?title=2026_UEFA_Champions_League_final&oldid=1378634258",
-    illustration: { file: "arsenal-2026.png", credit: "Drawn after the kit shown in Wikipedia’s \"2026 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm arsenal2526h.png (CC0, WikipedyjniAK); Kit right arm arsenal2526h.png (CC0, WikipedyjniAK); Kit shorts arsenal2526h.png (CC0, WikipedyjniAK); Kit socks arsenal2526hl.png (CC0, WikipedyjniAK). Outline: Wikimedia Commons kit template drawings." }
+    illustration: { file: "arsenal-2026.png", credit: "Drawn after the kit shown in Wikipedia’s \"2026 UEFA Champions League final\" article. Pattern pictures from Wikimedia Commons: Kit left arm arsenal2526h.png (CC0, WikipedyjniAK); Kit body arsenal2526H.png (CC0, WikipedyjniAK); Kit right arm arsenal2526h.png (CC0, WikipedyjniAK); Kit shorts arsenal2526h.png (CC0, WikipedyjniAK); Kit socks arsenal2526hl.png (CC0, WikipedyjniAK). Outline: Wikimedia Commons kit template drawings." }
   },
   {
     id: "paris-saint-germain-2026",

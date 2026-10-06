@@ -226,7 +226,7 @@ window.HALFTIME_MATCHES = [
     date: "3 June 1959",
     venue: "Neckarstadion, Stuttgart",
     home: { name: "Real Madrid", short: "RM", colour: "#1B1A17", label: "Winners", kit: "real-madrid-1959" },
-    away: { name: "Reims", short: "REI", colour: "#9A9A9A", label: "Runners-up", kit: "reims-1959" },
+    away: { name: "Reims", short: "REI", colour: "#EE3137", label: "Runners-up", kit: "reims-1959" },
     score: { home: 2, away: 0 },
     scoreNote: null,
     extraTime: false,
@@ -234,7 +234,7 @@ window.HALFTIME_MATCHES = [
       { minute: 1, scorer: "Mateos", team: "home" },
       { minute: 47, scorer: "Di Stéfano", team: "home" }
     ],
-    kitsNote: "Real Madrid in white. Reims in colours to be researched. (Wikipedia, \"1959 European Cup final\".)",
+    kitsNote: "Real Madrid in white. Reims in red. (Wikipedia, \"1959 European Cup final\".)",
     stats: null,
     source: "Wikipedia, \"1959 European Cup final\" (revision 1341424316), CC BY-SA 4.0"
   },
