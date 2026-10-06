@@ -1,138 +1,153 @@
 // GENERATED FILE — do not edit by hand. Front Page news written by gpt-5.5 from the sources listed in each story; illustrations by gpt-image-2.
-// Written 2026-10-06T18:06:12.503Z by the Halftime data pipeline.
+// Written 2026-10-06T23:04:57.883Z by the Halftime data pipeline.
 window.HALFTIME_NEWS = {
-  "updated": "2026-10-06T18:05:06.114Z",
+  "updated": "2026-10-06T23:03:54.435Z",
   "model": "gpt-5.5",
-  "articlesConsidered": 99,
-  "candidatesHash": "9d2e3ac76e1b35d8",
+  "articlesConsidered": 103,
+  "candidatesHash": "c69971410214441f",
   "lead": {
     "tag": "International",
-    "headline": "Kane Draws Level As England Face Czech Test",
-    "standfirst": "A Nations League night brings Harry Kane level with Peter Shilton, with Alexander-Arnold also in England’s starting side.",
+    "headline": "Kane joins Shilton at England summit",
+    "standfirst": "Harry Kane marked his record-equalling England appearance with two goals as Czech Republic were beaten in the Nations League at Wembley.",
     "paragraphs": [
-      "England’s Nations League evening against the Czech Republic carries a place in the record book for Harry Kane. Named in the starting side, he moves alongside Peter Shilton on 125 England caps, matching the country’s leading appearance mark. The Guardian’s live coverage listed the kick-off at 7.45pm BST, while The Independent noted that Alexander-Arnold is also in the side as England return from a strong outing against Croatia.",
-      "The milestone sits within a busy Nations League programme, with Scotland v Slovenia and Croatia v Spain among the other fixtures followed on the same evening. For England, the task is narrower: meet Czechia at home, begin with Kane and Alexander-Arnold in the line-up, and carry their previous Croatia performance into another competitive test. The record point gives the evening its wider frame."
+      "The night was framed by Harry Kane’s 125th England cap, taking him level with Peter Shilton at the top of the country’s appearance list. He did not let the occasion sit quietly in the background. Against Czech Republic at Wembley, Kane scored in each half as England won 3-0 in the Nations League, the milestone becoming part of another centre-forward’s shift rather than a ceremony standing apart from the match.",
+      "Reports across the evening returned to the same balance between landmark and performance. The Guardian noted the goals came one in each half, while Sky Sports set the display within a wider question of how far his England career can still travel. BBC Sport had already placed the record alongside his rise from a childhood goalkeeper to a senior international fixture."
     ],
     "sources": [
       {
+        "outlet": "The Guardian",
+        "title": "Harry Kane doubles up on landmark night as England cruise past Czechia",
+        "url": "https://www.theguardian.com/football/2026/oct/06/england-czechia-nations-league-match-report"
+      },
+      {
+        "outlet": "Sky Sports",
+        "title": "King Kane marks milestone match with star display as England beat Czech Republic",
+        "url": "https://www.skysports.com/football/england-vs-czech-republic/report/554078"
+      },
+      {
         "outlet": "The Independent",
-        "title": "England v Czech Republic LIVE: Alexander-Arnold starts as Kane equals record for most-capped player",
-        "url": "https://www.independent.co.uk/sport/football/england-czech-republic-live-score-result-nations-league-b3062222.html"
+        "title": "Harry Kane scores best goal of the Tuchel era to show what England were missing at the World Cup",
+        "url": "https://www.independent.co.uk/sport/football/kane-goal-england-result-score-nations-league-b3062365.html"
       },
       {
-        "outlet": "The Guardian",
-        "title": "Scotland v Slovenia, Croatia v Spain, and more: Nations League football – live",
-        "url": "https://www.theguardian.com/football/live/2026/oct/06/scotland-slovenia-croatia-spain-nations-league-football-live-score-updates"
-      },
-      {
-        "outlet": "The Guardian",
-        "title": "England v Czechia: Nations League football – live",
-        "url": "https://www.theguardian.com/football/live/2026/oct/06/england-v-czechia-nations-league-football-live"
+        "outlet": "BBC Sport",
+        "title": "Kane's rise from childhood keeper to equalling England cap record",
+        "url": "https://www.bbc.co.uk/sport/football/articles/cx2ln5n7yqdo?at_medium=RSS&at_campaign=rss"
       }
     ],
     "picture": {
-      "scene": "A floodlit stadium with players lining up before kick-off, mist over the pitch and packed terraces in a calm evening mood.",
-      "alt": "Players line up before a floodlit football match."
+      "scene": "A packed stadium under evening floodlights, a lone striker wheeling away after scoring, teammates distant in soft focus, scarves raised in celebration.",
+      "alt": "Striker celebrates under floodlights before a packed stand."
     },
     "image": {
-      "file": "images/news/cfdc5a8815bb.jpg",
-      "alt": "Players line up before a floodlit football match.",
+      "file": "images/news/91e9786b0f95.jpg",
+      "alt": "Striker celebrates under floodlights before a packed stand.",
       "kind": "illustration",
       "model": "gpt-image-2"
     }
   },
   "stories": [
     {
-      "tag": "Club",
-      "headline": "O’Neill Stays On At Celtic",
-      "summary": "Martin O'Neill has confirmed he will remain Celtic manager after taking time to think during the international break. BBC Sport says he remains determined to lead the club, while Sky Sports presents the decision as made following that period of reflection.",
+      "tag": "Scotland",
+      "headline": "Slovenia deepen Scotland’s Hampden unease",
+      "summary": "Scotland let a lead slip at Hampden as Slovenia came from behind to win 2-1 in the Nations League. BBC Sport carried Andy Robertson’s view that the side were “outfought” and “not good enough”, while Sky noted Sebastien Pocognoli is still waiting for a home win.",
       "sources": [
         {
-          "outlet": "Sky Sports",
-          "title": "O'Neill confirms decision to stay on as Celtic boss",
-          "url": "https://www.skysports.com/football/news/12040/13595897/celtic-boss-martin-oneill-confirms-decision-to-stay-after-reflecting-on-future-over-international-break"
+          "outlet": "BBC Sport",
+          "title": "'Outfought' and 'not good enough' - Robertson on Scotland defeat",
+          "url": "https://www.bbc.co.uk/sport/football/articles/crz98xv1e8nlo?at_medium=RSS&at_campaign=rss"
         },
         {
-          "outlet": "BBC Sport",
-          "title": "O'Neill 'just as determined' to lead Celtic",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c620rnv0rpdno?at_medium=RSS&at_campaign=rss"
+          "outlet": "Sky Sports",
+          "title": "Slovenia come from behind to beat Scotland in Nations League",
+          "url": "https://www.skysports.com/football/scotland-vs-slovenia/report/554082"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Sturm warning rocks Pocognoli as abject Scotland turned over by Slovenia",
+          "url": "https://www.theguardian.com/football/2026/oct/06/scotland-slovenia-nations-league-match-report"
+        },
+        {
+          "outlet": "The Independent",
+          "title": "Scotland slump to damaging Nations League defeat as Spain survive scare against 10-man Croatia",
+          "url": "https://www.independent.co.uk/sport/football/scotland-slovenia-nations-league-billy-gilmour-sebastien-pocognoli-b3062414.html"
         }
       ],
       "picture": {
-        "scene": "A lone manager’s figure on the touchline beside a dugout, scarf lifted by wind, empty technical area and bright floodlights.",
-        "alt": "A manager stands alone beside a dugout."
+        "scene": "A subdued home touchline under damp floodlights, substitutes watching from the bench as players trudge back towards the centre circle.",
+        "alt": "Dejected players return to halfway under floodlights."
       },
       "image": {
-        "file": "images/news/44afb12ea073.jpg",
-        "alt": "A manager stands alone beside a dugout.",
+        "file": "images/news/52dfa646b1e2.jpg",
+        "alt": "Dejected players return to halfway under floodlights.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     },
     {
-      "tag": "Discipline",
-      "headline": "Uefa Opens Ireland-Israel Incident Inquiry",
-      "summary": "Uefa is investigating a half-time incident during Republic of Ireland against Israel after a spitting accusation against an Israel player. The Guardian says the matter involved the tunnel area and that the Israeli FA denied anyone spat towards the coach; The Independent said Ireland fitness coach Damien Doyle is understood to have made the allegation.",
+      "tag": "Portugal",
+      "headline": "Ronaldo says Portugal career is not over",
+      "summary": "Cristiano Ronaldo said he is not retiring from international football after leaving the Portugal squad, while accepting that punishment should follow. He accused head coach Jorge Jesus of breaking promises, with the Guardian reporting that he still intends to be available once any sanction has passed.",
       "sources": [
         {
-          "outlet": "The Independent",
-          "title": "Uefa to investigate Ireland-Israel half-time incident after spitting allegations",
-          "url": "https://www.independent.co.uk/sport/football/ireland-israel-spitting-nations-league-uefa-b3062229.html"
+          "outlet": "BBC Sport",
+          "title": "Ronaldo wants Portugal 'punishment' but not retiring",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cmd7qn48q13lo?at_medium=RSS&at_campaign=rss"
         },
         {
           "outlet": "The Guardian",
-          "title": "Uefa investigating allegation Israel player spat at Ireland coach",
-          "url": "https://www.theguardian.com/football/2026/oct/06/uefa-investigating-allegation-israel-player-spat-at-ireland-coach"
+          "title": "Cristiano Ronaldo accuses Portugal coach Jorge Jesus of broken promises",
+          "url": "https://www.theguardian.com/football/2026/oct/06/cristiano-ronaldo-accuses-portugal-coach-jorge-jesus-of-broken-promises"
         },
         {
-          "outlet": "BBC Sport",
-          "title": "Uefa investigating Republic of Ireland-Israel row after spitting accusation",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cm3wvqxjdxn5o?at_medium=RSS&at_campaign=rss"
+          "outlet": "Sky Sports",
+          "title": "Ronaldo breaks silence over Portugal walkout in extraordinary statement",
+          "url": "https://www.skysports.com/football/news/12040/13595921/cristiano-ronaldo-portugal-star-breaks-silence-over-national-team-walkout-in-statement"
+        },
+        {
+          "outlet": "The Independent",
+          "title": "Cristiano Ronaldo breaks silence with bombshell statement after walking out on Portugal squad",
+          "url": "https://www.independent.co.uk/sport/football/cristiano-ronaldo-statement-portugal-jorge-jesus-b3062390.html"
         }
       ],
       "picture": {
-        "scene": "A dim stadium tunnel opening on to a lit pitch, scattered boots by the wall and tense figures seen only in silhouette.",
-        "alt": "A tense stadium tunnel beside the pitch."
+        "scene": "A veteran forward sits alone near the touchline at dusk, boots planted on the grass, an empty dugout behind him.",
+        "alt": "A solitary footballer sits beside an empty dugout."
       },
       "image": {
-        "file": "images/news/27b1eca48252.jpg",
-        "alt": "A tense stadium tunnel beside the pitch.",
+        "file": "images/news/d0a94d1c0450.jpg",
+        "alt": "A solitary footballer sits beside an empty dugout.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     },
     {
       "tag": "Governance",
-      "headline": "Pressure Builds Around Manchester City Case",
-      "summary": "Manchester City’s case has drawn fresh pressure after an independent commission found the club guilty of breaking Premier League rules, a verdict they have appealed. BBC Sport says several Premier League clubs want retrospective and future sanctions, while Sky Sports says Uefa is monitoring before considering any action.",
+      "headline": "Eligibility questions follow DR Congo World Cup place",
+      "summary": "Fifa is reported to have allowed DR Congo to play at the World Cup despite reports suggesting an internal investigation found an ineligible player had appeared in qualifying. The Guardian said Nigeria had complained after a playoff, while The Independent reported that questions were raised over goalkeeper Lionel Mpasi, who later faced England.",
       "sources": [
         {
-          "outlet": "BBC Sport",
-          "title": "Rival clubs want retrospective and future punishments for Man City",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c623d8707k5lo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Sky Sports",
-          "title": "UEFA monitoring Man City case as it considers potential action",
-          "url": "https://www.skysports.com/football/news/12040/13595795/man-city-charges-uefa-monitoring-premier-league-clubs-case-as-it-considers-potential-action"
+          "outlet": "The Guardian",
+          "title": "Fifa reportedly allowed DR Congo into World Cup despite ineligible player in qualifying",
+          "url": "https://www.theguardian.com/football/2026/oct/06/fifa-reportedly-allowed-dr-congo-into-world-cup-despite-ineligible-player-in-qualifying"
         },
         {
           "outlet": "The Independent",
-          "title": "Jamie Carragher demands multi-year punishment for Man City after guilty verdict",
-          "url": "https://www.independent.co.uk/sport/football/jamie-carragher-man-city-premier-league-charges-guilty-b3061993.html"
+          "title": "Gianni Infantino faces fresh World Cup eligibility scandal over goalkeeper who played against England",
+          "url": "https://www.independent.co.uk/sport/football/gianni-infantino-lionel-mpasi-dr-congo-fifa-world-cup-england-b3062079.html"
         }
       ],
       "picture": {
-        "scene": "A deserted stadium after dusk, floodlights glowing over an untouched pitch, stewards’ shadows at the gates and a subdued mood.",
-        "alt": "An empty stadium under floodlights."
+        "scene": "Match officials and administrators stand beside a quiet pitch with folders under their arms, floodlights glowing over empty rows of seats.",
+        "alt": "Officials gather beside an empty football pitch."
       },
       "image": {
-        "file": "images/news/48b4aeecccc7.jpg",
-        "alt": "An empty stadium under floodlights.",
+        "file": "images/news/fef14bab9f1e.jpg",
+        "alt": "Officials gather beside an empty football pitch.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     }
   ],
-  "notes": "Several Nations League items were live at publication and may develop after kick-off."
+  "notes": ""
 };
