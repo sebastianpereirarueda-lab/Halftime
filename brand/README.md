@@ -1,6 +1,12 @@
 # Halftime logo
 
-The square "H" mark used as the website's browser-tab icon.
+Three versions of the square "H" mark (see `logo-options.png` for all three side by side):
+
+- **Plain** (`halftime-logo*`): the website's browser-tab icon. Best at tiny sizes.
+- **Ball** (`halftime-logo-ball*`): the H in front of an old 18-panel laced leather ball.
+- **Crest** (`halftime-logo-crest*`): the H inside a double-lined shield with three stars.
+
+Each comes as an SVG master, a 1024 PNG, a 512 PNG and a 1080 profile-picture PNG.
 
 | File | Use it for |
 | --- | --- |
