@@ -196,11 +196,19 @@ put the match's `id` in the shirt's `matches` list and the shirt's `id` in the m
 
 ## Where the shirts came from
 
-The catalogue holds one shirt for each team in every World Cup final from 1930 to 2026, and
-the Euro 2020 and 2024 finals, with a match card for each final. That data (teams, dates,
-venues, scores, scorers) comes from the openfootball project, which publishes it as public
-domain. `docs/KIT-DATA-SOURCES.md` explains what else was looked at and why it could not be
-used.
+The catalogue holds one shirt for each team in every final of four competitions, with a
+match card for each final (and for each leg or replay where there was one):
+
+- the FIFA World Cup, 1930 to 2026;
+- the European Championship, 1960 to 2024;
+- the European Cup and UEFA Champions League, 1956 to 2026;
+- the Copa América, every edition decided by a final match, 1975 to 2024.
+
+For the World Cup and the last two Euros the match facts (teams, dates, venues, scores,
+scorers) come from the openfootball project, which publishes them as public domain. For
+the other finals they come from each final's Wikipedia article (CC BY-SA 4.0), which every
+match card cites. `docs/KIT-DATA-SOURCES.md` explains what else was looked at and why it
+could not be used.
 
 The colour of each shirt comes from the Wikipedia article about that final, which records
 the kit both teams wore that day (free to reuse with credit, CC BY-SA 4.0). Each shirt's

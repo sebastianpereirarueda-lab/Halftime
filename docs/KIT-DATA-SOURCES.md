@@ -32,12 +32,16 @@ Both now fill the Kit Room. Manufacturer, debut and design notes remain to be re
 
 ## What was done with it
 
-`tools/import-kits.js` downloads the openfootball data and adds to `kits.js` and
-`matches.js`:
+`tools/import-kits.js` adds to `kits.js` and `matches.js`:
 
 - one match card for every World Cup final from 1930 to 2026 (and the 1950 deciding match,
   since that tournament had a final group instead of a final), plus the Euro 2020 and
-  Euro 2024 finals;
+  Euro 2024 finals, from the openfootball data;
+- one match card for every European Cup and Champions League final (1956 to 2026), every
+  earlier European Championship final (1960 to 2016) and every Copa América final (1975 to
+  2024), read from each final's Wikipedia article: teams, score, date and venue from the
+  match infobox, scorers from the match box. A replayed final or a two-legged one gives
+  one card per match. The list of articles is `tools/finals.json`;
 - two shirts per final, one for each team, with year, competition and result filled in
   from the data.
 
@@ -98,8 +102,14 @@ colours are refreshed, and only while `coloursSource` is absent or starts with
 
 ## Clubs
 
-Nothing free and public domain was found for club kits either. The openfootball project
-has Champions League fixtures from the 2010s in a text format, which could give club
-finalists for recent years the same way, and Wikipedia's articles on Champions League
-finals carry kit templates just like the World Cup ones. Club shirts are the natural next
-batch, which is also why the Kit Room's "Clubs" filter is empty for now.
+Club shirts come from the European Cup and Champions League finals, whose Wikipedia
+articles carry the same kit boxes as the national-team finals. Clubs are not in the
+importer's colour table, so their abbreviation on the match card is made from the name
+(Real Madrid becomes RM) and their placeholder colour is grey; both only matter when
+Wikipedia has nothing for the shirt, which at the moment never happens.
+
+## Growing further
+
+The same pipeline works for any final with a Wikipedia article that has a match box and
+kit boxes: add its key and title to `tools/finals.json` and run the importer. Domestic cup
+finals and the Europa League are the obvious candidates.

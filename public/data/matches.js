@@ -137,7 +137,7 @@ window.HALFTIME_MATCHES = [
     date: "13 June 1956",
     venue: "Parc des Princes, Paris",
     home: { name: "Real Madrid", short: "RM", colour: "#1B1A17", label: "Winners", kit: "real-madrid-1956" },
-    away: { name: "Reims", short: "REI", colour: "#9A9A9A", label: "Runners-up", kit: "reims-1956" },
+    away: { name: "Reims", short: "REI", colour: "#F03134", label: "Runners-up", kit: "reims-1956" },
     score: { home: 4, away: 3 },
     scoreNote: null,
     extraTime: false,
@@ -150,7 +150,7 @@ window.HALFTIME_MATCHES = [
       { minute: 67, scorer: "Marquitos", team: "home" },
       { minute: 79, scorer: "Rial", team: "home" }
     ],
-    kitsNote: "Real Madrid in white. Reims in colours to be researched. (Wikipedia, \"1956 European Cup final\".)",
+    kitsNote: "Real Madrid in white. Reims in red. (Wikipedia, \"1956 European Cup final\".)",
     stats: null,
     source: "Wikipedia, \"1956 European Cup final\" (revision 1338670202), CC BY-SA 4.0"
   },
@@ -271,7 +271,7 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "10 July 1960",
     venue: "Parc des Princes, Paris",
-    home: { name: "Soviet Union", short: "SU", colour: "#9A9A9A", label: "Winners", kit: "soviet-union-1960" },
+    home: { name: "Soviet Union", short: "SU", colour: "#FE1817", label: "Winners", kit: "soviet-union-1960" },
     away: { name: "Yugoslavia", short: "YUG", colour: "#1918FC", label: "Runners-up", kit: "yugoslavia-1960" },
     score: { home: 2, away: 1 },
     scoreNote: "After extra time.",
@@ -281,7 +281,7 @@ window.HALFTIME_MATCHES = [
       { minute: 49, scorer: "Metreveli", team: "home" },
       { minute: 113, scorer: "Ponedelnik", team: "home" }
     ],
-    kitsNote: "Soviet Union in colours to be researched. Yugoslavia in royal blue. (Wikipedia, \"1960 European Nations' Cup final\".)",
+    kitsNote: "Soviet Union in red. Yugoslavia in royal blue. (Wikipedia, \"1960 European Nations' Cup final\".)",
     stats: null,
     source: "Wikipedia, \"1960 European Nations' Cup final\" (revision 1362214755), CC BY-SA 4.0"
   },
@@ -832,15 +832,15 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "12 May 1976",
     venue: "Hampden Park, Glasgow",
-    home: { name: "Bayern Munich", short: "BM", colour: "#9A9A9A", label: "Winners", kit: "bayern-munich-1976" },
-    away: { name: "Saint-Étienne", short: "SAI", colour: "#1B1A17", label: "Runners-up", kit: "saint-etienne-1976" },
+    home: { name: "Bayern Munich", short: "BM", colour: "#1B1A17", label: "Winners", kit: "bayern-munich-1976" },
+    away: { name: "Saint-Étienne", short: "SAI", colour: "#198B17", label: "Runners-up", kit: "saint-etienne-1976" },
     score: { home: 1, away: 0 },
     scoreNote: null,
     extraTime: false,
     goals: [
       { minute: 57, scorer: "Roth", team: "home" }
     ],
-    kitsNote: "Bayern Munich in colours to be researched. Saint-Étienne in colours to be researched. (Wikipedia, \"1976 European Cup final\".)",
+    kitsNote: "Bayern Munich in white. Saint-Étienne in green. (Wikipedia, \"1976 European Cup final\".)",
     stats: null,
     source: "Wikipedia, \"1976 European Cup final\" (revision 1341421817), CC BY-SA 4.0"
   },
@@ -1004,14 +1004,14 @@ window.HALFTIME_MATCHES = [
     date: "28 May 1980",
     venue: "Santiago Bernabéu Stadium, Madrid",
     home: { name: "Nottingham Forest", short: "NF", colour: "#E01817", label: "Winners", kit: "nottingham-forest-1980" },
-    away: { name: "Hamburger SV", short: "HS", colour: "#9A9A9A", label: "Runners-up", kit: "hamburger-sv-1980" },
+    away: { name: "Hamburger SV", short: "HS", colour: "#1B1A17", label: "Runners-up", kit: "hamburger-sv-1980" },
     score: { home: 1, away: 0 },
     scoreNote: null,
     extraTime: false,
     goals: [
       { minute: 20, scorer: "Robertson", team: "home" }
     ],
-    kitsNote: "Nottingham Forest in red. Hamburger SV in colours to be researched. (Wikipedia, \"1980 European Cup final\".)",
+    kitsNote: "Nottingham Forest in red. Hamburger SV in white. (Wikipedia, \"1980 European Cup final\".)",
     stats: null,
     source: "Wikipedia, \"1980 European Cup final\" (revision 1375793285), CC BY-SA 4.0"
   },
@@ -1449,7 +1449,7 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "4 July 1993",
     venue: "Estadio Monumental, Guayaquil",
-    home: { name: "Argentina", short: "ARG", colour: "#7DB8E0", label: "Winners", kit: "argentina-1993" },
+    home: { name: "Argentina", short: "ARG", colour: "#1B1A17", label: "Winners", kit: "argentina-1993" },
     away: { name: "Mexico", short: "MEX", colour: "#198B17", label: "Runners-up", kit: "mexico-1993" },
     score: { home: 2, away: 1 },
     scoreNote: null,
@@ -1459,7 +1459,7 @@ window.HALFTIME_MATCHES = [
       { minute: 67, scorer: "Galindo (pen.)", team: "away" },
       { minute: 74, scorer: "Batistuta", team: "home" }
     ],
-    kitsNote: "Argentina in sky blue and white vertical stripes. Mexico in green. (Wikipedia, \"1993 Copa América final\".)",
+    kitsNote: "Argentina in sky blue and white striped. Mexico in green. (Wikipedia, \"1993 Copa América final\".)",
     stats: null,
     source: "Wikipedia, \"1993 Copa América final\" (revision 1367408900), CC BY-SA 4.0"
   },
@@ -1833,7 +1833,7 @@ window.HALFTIME_MATCHES = [
     date: "26 May 2004",
     venue: "Arena AufSchalke, Gelsenkirchen",
     home: { name: "Monaco", short: "MON", colour: "#FE1817", label: "Runners-up", kit: "monaco-2004" },
-    away: { name: "Porto", short: "POR", colour: "#9A9A9A", label: "Winners", kit: "porto-2004" },
+    away: { name: "Porto", short: "POR", colour: "#1918FC", label: "Winners", kit: "porto-2004" },
     score: { home: 0, away: 3 },
     scoreNote: null,
     extraTime: false,
@@ -1842,7 +1842,7 @@ window.HALFTIME_MATCHES = [
       { minute: 71, scorer: "Deco", team: "away" },
       { minute: 75, scorer: "Alenichev", team: "away" }
     ],
-    kitsNote: "Monaco in red. Porto in colours to be researched. (Wikipedia, \"2004 UEFA Champions League final\".)",
+    kitsNote: "Monaco in red. Porto in royal blue. (Wikipedia, \"2004 UEFA Champions League final\".)",
     stats: null,
     source: "Wikipedia, \"2004 UEFA Champions League final\" (revision 1377135619), CC BY-SA 4.0"
   },
@@ -2264,7 +2264,7 @@ window.HALFTIME_MATCHES = [
     stage: "Final",
     date: "28 May 2016",
     venue: "Stadio San Siro, Milan",
-    home: { name: "Real Madrid", short: "RM", colour: "#9A9A9A", label: "Winners", kit: "real-madrid-2016" },
+    home: { name: "Real Madrid", short: "RM", colour: "#1B1A17", label: "Winners", kit: "real-madrid-2016" },
     away: { name: "Atlético Madrid", short: "AM", colour: "#1B1A17", label: "Runners-up", kit: "atletico-madrid-2016" },
     score: { home: 1, away: 1 },
     scoreNote: "After extra time. Real Madrid won 5–3 on penalties.",
@@ -2273,7 +2273,7 @@ window.HALFTIME_MATCHES = [
       { minute: 15, scorer: "Ramos", team: "home" },
       { minute: 79, scorer: "Carrasco", team: "away" }
     ],
-    kitsNote: "Real Madrid in colours to be researched. Atlético Madrid in white. (Wikipedia, \"2016 UEFA Champions League final\".)",
+    kitsNote: "Real Madrid in white. Atlético Madrid in white. (Wikipedia, \"2016 UEFA Champions League final\".)",
     stats: null,
     source: "Wikipedia, \"2016 UEFA Champions League final\" (revision 1373353713), CC BY-SA 4.0"
   },
