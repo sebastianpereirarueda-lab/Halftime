@@ -1,67 +1,130 @@
 // GENERATED FILE — do not edit by hand. Front Page news written by gpt-5.5 from the sources listed in each story; illustrations by gpt-image-2.
-// Written 2026-10-07T06:06:28.568Z by the Halftime data pipeline.
+// Written 2026-10-07T12:08:26.172Z by the Halftime data pipeline.
 window.HALFTIME_NEWS = {
-  "updated": "2026-10-07T06:05:23.561Z",
+  "updated": "2026-10-07T12:07:21.287Z",
   "model": "gpt-5.5",
-  "articlesConsidered": 92,
-  "candidatesHash": "85b3494ca4b72aae",
+  "articlesConsidered": 104,
+  "candidatesHash": "66400773b3715a2e",
   "lead": {
-    "tag": "England",
-    "headline": "Kane marks England milestone with Wembley double",
-    "standfirst": "The striker drew level with Peter Shilton’s England appearance record and scored twice in a comfortable Nations League win.",
+    "tag": "Arsenal",
+    "headline": "Arteta Extends Arsenal Stay to 2030",
+    "standfirst": "Arsenal’s title-winning manager has agreed improved terms, setting the champions on course for another long spell under familiar command.",
     "paragraphs": [
-      "Harry Kane’s latest England landmark arrived with the familiar sound of the net. On his 125th appearance, drawing him alongside Peter Shilton at the top of the country’s caps list, the forward scored twice as England beat Czech Republic 3-0 at Wembley in the Nations League. The night was framed by history, but it was also a straightforward England performance, with Kane again central to the business of deciding a match.",
-      "The Independent reported that Kane also supplied an assist, while its match coverage noted that Vladimir Coufal scored an own goal. Sky Sports described Kane’s display as the leading act of the evening, and The Guardian’s report set the performance in the long line of England nights shaped by his finishing. BBC Sport also marked the cap milestone, tracing his rise to one of the national side’s defining records.",
-      "Thomas Tuchel praised Kane after the double, according to The Independent, on a night that added another firm entry to the striker’s England record. Around him, the wider international window continued to be assessed, with BBC Sport examining England’s midfield options and attacking shape, and Sky Sports looking at who had strengthened their place in the manager’s plans."
+      "Mikel Arteta has signed a new long-term Arsenal contract, with BBC Sport and the Guardian saying the agreement runs until 2030. The Independent says the improved deal leaves the Premier League’s longest-serving manager in place to guide the club into its next phase. Arsenal enter that period as Premier League champions, a change in standing from the last time Sky Sports says he renewed in September 2024, when the hunt for major silverware was still continuing.",
+      "The new terms also turn attention to how Arsenal follow a title. Sky Sports framed the question around converting champions into serial winners and seeking Champions League success, while its analysis asked whether this marks another step in Arteta’s project. The tone from the manager was forward-looking rather than reflective, with his message that the work at Arsenal remains unfinished."
     ],
     "sources": [
       {
-        "outlet": "The Guardian",
-        "title": "Harry Kane doubles up on landmark night as England cruise past Czechia",
-        "url": "https://www.theguardian.com/football/2026/oct/06/england-czechia-nations-league-match-report"
-      },
-      {
-        "outlet": "Sky Sports",
-        "title": "King Kane marks milestone match with star display as England beat Czech Republic",
-        "url": "https://www.skysports.com/football/england-vs-czech-republic/report/554078"
-      },
-      {
         "outlet": "The Independent",
-        "title": "Harry Kane equals Peter Shilton record as most-capped England player",
-        "url": "https://www.independent.co.uk/sport/football/harry-kane-england-cap-record-peter-shilton-b3062349.html"
+        "title": "Mikel Arteta signs improved contract to lead Arsenal into new era",
+        "url": "https://www.independent.co.uk/sport/football/mikel-arteta-arsenal-contract-length-b3054305.html"
+      },
+      {
+        "outlet": "The Guardian",
+        "title": "‘This is only the beginning,’ vows Mikel Arteta after signing new Arsenal deal",
+        "url": "https://www.theguardian.com/football/2026/oct/07/mikel-arteta-signs-new-arsenal-deal-only-the-beginning"
       },
       {
         "outlet": "BBC Sport",
-        "title": "Kane's rise from childhood keeper to equalling England cap record",
-        "url": "https://www.bbc.co.uk/sport/football/articles/cx2ln5n7yqdo?at_medium=RSS&at_campaign=rss"
+        "title": "Arteta signs new contract with champions Arsenal",
+        "url": "https://www.bbc.co.uk/sport/football/articles/crz65j5p8l57o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "outlet": "Sky Sports",
+        "title": "'We want a winning era' - Arteta signs new Arsenal contract",
+        "url": "https://www.skysports.com/football/news/12040/13590915/mikel-arteta-contract-arsenal-boss-signs-new-deal-to-extend-stay-at-premier-league-champions"
       }
     ],
     "picture": {
-      "scene": "A crowded stadium under evening floodlights, a striker wheeling away after scoring while team-mates raise arms in the distance.",
-      "alt": "A striker celebrates a goal under floodlights."
+      "scene": "A manager seen from behind on a floodlit touchline, substitutes warming nearby, packed stands softened by evening mist and a sense of expectation.",
+      "alt": "Manager on a floodlit touchline before a packed stand."
     },
     "image": {
-      "file": "images/news/c3a4b6d8f9b9.jpg",
-      "alt": "A striker celebrates a goal under floodlights.",
+      "file": "images/news/2ce76b9d5ce0.jpg",
+      "alt": "Manager on a floodlit touchline before a packed stand.",
       "kind": "illustration",
       "model": "gpt-image-2"
     }
   },
   "stories": [
     {
-      "tag": "International",
-      "headline": "Messi signs off with Argentina goal",
-      "summary": "Lionel Messi ended his Argentina career by scoring against Benin as Argentina won 3-0 in Buenos Aires. The Guardian reported a 10th-minute applause and said he also made two assists, while BBC Sport marked his retirement by collecting his World Cup goals.",
+      "tag": "Governance",
+      "headline": "City Case Raises Champions League Concern",
+      "summary": "Manchester City’s appeal against the guilty verdict in their Premier League financial breaches case is now central to one of English football’s largest governance questions. BBC Sport says senior figures fear City could still be in next season’s Champions League even if relegated, while Kyle Walker has said players’ memories of past trophy-winning years remain.",
       "sources": [
+        {
+          "outlet": "BBC Sport",
+          "title": "Senior figures worried about Man City being in next season's Champions League",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c9p8gxgm71zzo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "The Independent",
+          "title": "The major problems with the Man City appeal and the ‘magic bullet’ they need",
+          "url": "https://www.independent.co.uk/sport/football/man-city-appeal-charges-premier-league-what-next-b3062691.html"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Manchester City’s glory cannot be taken away from the players, says Kyle Walker",
+          "url": "https://www.theguardian.com/football/2026/oct/07/manchester-city-glory-cannot-be-taken-away-from-players-kyle-walker"
+        }
+      ],
+      "picture": {
+        "scene": "A formal football boardroom table under low light, with an empty chair, a match ball, and a stadium visible through rain-streaked glass.",
+        "alt": "Empty football boardroom overlooking a rainy stadium."
+      },
+      "image": {
+        "file": "images/news/31970a1c6b48.jpg",
+        "alt": "Empty football boardroom overlooking a rainy stadium.",
+        "kind": "illustration",
+        "model": "gpt-image-2"
+      }
+    },
+    {
+      "tag": "England",
+      "headline": "Kane Draws Level as England Reboot Continues",
+      "summary": "Harry Kane scored twice against Czech Republic as he matched Peter Shilton’s England appearance mark of 125 caps, with The Independent reporting a 3-0 Nations League win. BBC Sport says Thomas Tuchel has adjusted both tactics and personnel since the World Cup, refining rather than rebuilding his England plan.",
+      "sources": [
+        {
+          "outlet": "The Independent",
+          "title": "Harry Kane scores best goal of the Tuchel era to show what England were missing at the World Cup",
+          "url": "https://www.independent.co.uk/sport/football/kane-goal-england-result-score-nations-league-b3062365.html"
+        },
+        {
+          "outlet": "The Independent",
+          "title": "Harry Kane equals Peter Shilton record as most-capped England player",
+          "url": "https://www.independent.co.uk/sport/football/harry-kane-england-cap-record-peter-shilton-b3062349.html"
+        },
+        {
+          "outlet": "BBC Sport",
+          "title": "Tuchel's England 2.0: what has changed?",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cvp8gex8wzneo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "picture": {
+        "scene": "A centre-forward strikes beneath high floodlights as defenders turn, with a full stadium rising behind and no markings visible on the shirts.",
+        "alt": "Forward shooting under floodlights in a crowded stadium."
+      },
+      "image": {
+        "file": "images/news/d04ccd0d440a.jpg",
+        "alt": "Forward shooting under floodlights in a crowded stadium.",
+        "kind": "illustration",
+        "model": "gpt-image-2"
+      }
+    },
+    {
+      "tag": "Argentina",
+      "headline": "Messi Ends Argentina Career in Tears",
+      "summary": "Lionel Messi brought his Argentina career to a close against Benin, scoring in a 3-0 win and addressing the crowd afterwards. The Guardian reported he called the departure his saddest football day, while The Independent said he signed off with a goal.",
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "Lionel Messi describes ending Argentina career as his ‘saddest day’ in football",
+          "url": "https://www.theguardian.com/football/2026/oct/07/lionel-messi-ends-argentina-career-saddest-day"
+        },
         {
           "outlet": "The Independent",
           "title": "Lionel Messi bids tearful farewell to Argentina: ‘The most wonderful thing’",
           "url": "https://www.independent.co.uk/sport/football/lionel-messi-retirement-argentina-b3062510.html"
-        },
-        {
-          "outlet": "The Guardian",
-          "title": "Lionel Messi bids a tearful farewell to Argentina after 3-0 win over Benin",
-          "url": "https://www.theguardian.com/football/2026/oct/06/lionel-messi-argentina-benin-international-retirement"
         },
         {
           "outlet": "BBC Sport",
@@ -70,76 +133,12 @@ window.HALFTIME_NEWS = {
         }
       ],
       "picture": {
-        "scene": "A veteran forward standing near the centre circle under warm floodlights, applauding a full terrace in a quiet farewell mood.",
-        "alt": "A player applauds supporters at night."
+        "scene": "A lone forward seen from behind applauds a vast evening crowd, with teammates at a distance and confetti drifting across the pitch.",
+        "alt": "A forward applauds supporters as confetti falls."
       },
       "image": {
-        "file": "images/news/1d6a24322a98.jpg",
-        "alt": "A player applauds supporters at night.",
-        "kind": "illustration",
-        "model": "gpt-image-2"
-      }
-    },
-    {
-      "tag": "Scotland",
-      "headline": "Scotland slip as Slovenia rally at Hampden",
-      "summary": "Scotland lost 2-1 to Slovenia in the Nations League after letting a lead go at Hampden. BBC Sport carried Andy Robertson’s view that the side were outfought, while Sky Sports noted Sebastien Pocognoli is still without a home win as Scotland head coach.",
-      "sources": [
-        {
-          "outlet": "BBC Sport",
-          "title": "'Outfought' and 'not good enough' - Robertson on Scotland defeat",
-          "url": "https://www.bbc.co.uk/sport/football/articles/crz98xv1e8nlo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Sky Sports",
-          "title": "Slovenia come from behind to beat Scotland in Nations League",
-          "url": "https://www.skysports.com/football/scotland-vs-slovenia/report/554082"
-        },
-        {
-          "outlet": "The Independent",
-          "title": "Scotland slump to damaging Nations League defeat as Spain survive scare against 10-man Croatia",
-          "url": "https://www.independent.co.uk/sport/football/scotland-slovenia-nations-league-billy-gilmour-sebastien-pocognoli-b3062414.html"
-        },
-        {
-          "outlet": "The Guardian",
-          "title": "Sturm warning rocks Pocognoli as abject Scotland turned over by Slovenia",
-          "url": "https://www.theguardian.com/football/2026/oct/06/scotland-slovenia-nations-league-match-report"
-        }
-      ],
-      "picture": {
-        "scene": "A damp night stadium with a dejected back line retreating as visiting players celebrate near the corner, floodlights cutting through mist.",
-        "alt": "Players react after a goal on a wet night."
-      },
-      "image": {
-        "file": "images/news/24d4fb79df4e.jpg",
-        "alt": "Players react after a goal on a wet night.",
-        "kind": "illustration",
-        "model": "gpt-image-2"
-      }
-    },
-    {
-      "tag": "Governance",
-      "headline": "Uefa watches Manchester City case",
-      "summary": "Manchester City remain under attention beyond the Premier League process, with Uefa monitoring developments before deciding whether to take possible action. BBC Sport reported that several Premier League clubs want both retrospective punishments and future sanctions imposed on the club.",
-      "sources": [
-        {
-          "outlet": "Sky Sports",
-          "title": "UEFA monitoring Man City case as it considers potential action",
-          "url": "https://www.skysports.com/football/news/12040/13595795/man-city-charges-uefa-monitoring-premier-league-clubs-case-as-it-considers-potential-action"
-        },
-        {
-          "outlet": "BBC Sport",
-          "title": "Rival clubs want retrospective and future punishments for Man City",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c623d8707k5lo?at_medium=RSS&at_campaign=rss"
-        }
-      ],
-      "picture": {
-        "scene": "An empty boardroom overlooking a floodlit pitch, papers spread across a polished table while the stands sit silent below.",
-        "alt": "A boardroom overlooks an empty stadium."
-      },
-      "image": {
-        "file": "images/news/ee0758d706ca.jpg",
-        "alt": "A boardroom overlooks an empty stadium.",
+        "file": "images/news/35bd4a2dc4cf.jpg",
+        "alt": "A forward applauds supporters as confetti falls.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
