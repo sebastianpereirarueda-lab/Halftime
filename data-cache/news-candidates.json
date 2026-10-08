@@ -1,12 +1,348 @@
 {
-  "fetched": "2026-10-08T06:06:09.917Z",
+  "fetched": "2026-10-08T12:06:23.228Z",
   "items": [
     {
+      "outlet": "BBC Sport",
+      "title": "Rangers boss McInnes 'not a fan' of extended break",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm3vqrz41l2vo?at_medium=RSS&at_campaign=rss",
+      "summary": "Rangers manager Derek McInnes says he is \"not a fan\" of the extended international break which he considers \"too long\".",
+      "published": "2026-10-08T11:48:50.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "Gianni Infantino’s first presidential rival emerges with former Spurs defender set to stand in Fifa election",
+      "link": "https://www.independent.co.uk/sport/football/gianni-infantino-ramon-vega-fifa-president-elections-b3063001.html",
+      "summary": "Former Tottenham defender Ramon Vega intends to challenge Infantino for the Fifa presidency",
+      "published": "2026-10-08T11:33:12.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "Cristiano Ronaldo pays tribute to Lionel Messi after playing last Argentina game",
+      "link": "https://www.independent.co.uk/sport/football/lionel-messi-argentina-last-game-cristiano-ronaldo-b3063433.html",
+      "summary": "Messi retired from international football on Tuesday while Ronaldo’s dispute with Portugal raged on",
+      "published": "2026-10-08T11:26:06.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "‘¡Qué Horror!’: Mexico’s World Cup honeymoon is over but is Rafa Márquez really to blame?",
+      "link": "https://www.theguardian.com/football/2026/oct/08/mexico-soccer-team-rafael-marquez",
+      "summary": "<p>A series of dispiriting friendly results have El Tri reeling. But the problems run much deeper than the team’s new coach</p><p>When a new coach ascends to lead Mexico’s national team, fans say he is sitting in “la silla mas caliente” – the hottest seat in town; one that can also burn.</p><p>Usually the coach arrives with a new idea, a new vocabulary, a new promise. For a while, everyone agrees that something has changed. Then comes the first bad night. The mood changes. The new idea becomes a failed experiment; the promise, another deception; the coach becomes just another name on a long li",
+      "published": "2026-10-08T11:22:24.000Z"
+    },
+    {
       "outlet": "Sky Sports",
-      "title": "Has MVG lost the hunger? Does Wade take his Premier League spot for 2027?",
-      "link": "https://www.skysports.com/darts/news/12040/13596260/has-michael-van-gerwen-lost-the-hunger-does-james-wade-take-his-premier-league-spot-for-2027",
-      "summary": "Michael van Gerwen has been out of form over recent months, leading to questions over if he has lost his \"hunger\".",
-      "published": "2026-10-08T06:00:00.000Z"
+      "title": "Fury vs Joshua key questions: What we know and what we don't",
+      "link": "https://www.skysports.com/boxing/news/12040/13596460/fury-vs-joshua-the-key-questions-ahead-of-december-11-all-british-showdown-between-tyson-fury-and-anthony-joshua",
+      "summary": "Sky Sports considers the key questions ahead of the Tyson Fury vs Anthony Joshua mega-fight.",
+      "published": "2026-10-08T11:21:00.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "Liverpool and Manchester City drove each other to new heights – their Premier League rivalry does not need rewriting",
+      "link": "https://www.independent.co.uk/sport/football/liverpool-man-city-premier-league-pep-guardiola-jurgen-klopp-b3063398.html",
+      "summary": "Regardless of the Premier League’s verdict on Man City’s charges, Richard Jolly argues there is limited need to question what each club achieved under Jurgen Klopp and Pep Guardiola",
+      "published": "2026-10-08T11:18:14.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "Gary Lineker calls on Man City to ‘own it’ and accept punishment after guilty verdict",
+      "link": "https://www.independent.co.uk/sport/football/man-city-guilty-verdict-gary-lineker-b3063425.html",
+      "summary": "Lineker has urged the club to accept their fate for ‘the good of the game’",
+      "published": "2026-10-08T11:14:23.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "Andoni Iraola sweating over fitness of key Liverpool duo ahead of Man City clash",
+      "link": "https://www.independent.co.uk/sport/football/liverpool-isak-gakpo-injury-update-man-city-b3063420.html",
+      "summary": "Iraola says both Alexander Isak and Cody Gakpo are currently injured after picking up problems during the international break",
+      "published": "2026-10-08T11:05:33.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "Are Brighton genuine contenders to qualify for the Champions League?",
+      "link": "https://www.theguardian.com/football/2026/oct/08/brighton-contenders-qualify-champions-league",
+      "summary": "<p>They are the top scorers in the league, they have the best goal difference and they demolished the champions</p><p>By <a href=\"https://www.whoscored.com/\">WhoScored</a></p><p>Wingerless, without Danny Welbeck and third in the Premier League. Brighton spent the summer losing some of their best players; they are dealing with a growing injury list; and their outstanding player this season has been a 35-year-old they signed in January for £1.7m. In spite of that, five games into the new Premier League season, they have scored more goals than any other team (16), they have the best goal differen",
+      "published": "2026-10-08T11:00:17.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "James: England must keep looking forward in quest for World Cup place",
+      "link": "https://www.skysports.com/football/news/12040/13595901/england-lauren-james-says-sarina-wiegmans-side-must-have-no-regrets-as-greece-world-cup-play-off-awaits",
+      "summary": "Lauren James says England cannot do anything about the situation they find themselves in and just need to beat Greece in their play-off double-header in an effort to secure their place at next summer&#8217;s World Cup.",
+      "published": "2026-10-08T11:00:00.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "Scott McTominay returns to Napoli training after heart procedure",
+      "link": "https://www.independent.co.uk/sport/football/scott-mctominay-heart-napoli-scotland-b3063408.html",
+      "summary": "McTominay was diagnosed with a mild, benign arrhythmia in September",
+      "published": "2026-10-08T10:52:48.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Guardiola set to attend Man City's first home game since guilty verdict",
+      "link": "https://www.skysports.com/football/news/12040/13596452/pep-guardiola-set-to-attend-man-citys-first-home-game-since-guilty-verdict",
+      "summary": "Former Manchester City manager Pep Guardiola is expected to attend next week's Champions League match against Paris Saint-Germain, marking his first appearance at the Etihad Stadium since departing last summer.",
+      "published": "2026-10-08T10:44:00.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "Gary Lineker backs ‘deserving’ Harry Kane to win the Ballon d’Or",
+      "link": "https://www.independent.co.uk/sport/football/harry-kane-gary-lineker-ballon-dor-b3062978.html",
+      "summary": "Kane matched Peter Shilton’s 125-cap England record against Czechia and scored twice in a 3-0 Nations League win at Wembley",
+      "published": "2026-10-08T10:43:53.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "Ella Toone handed late England call-up for World Cup play-off after Sarina Wiegman snub",
+      "link": "https://www.independent.co.uk/sport/football/ella-toone-england-sarina-wiegman-world-cup-b3063397.html",
+      "summary": "Toone joins up with the squad after a minor injury to Lucy Bronze",
+      "published": "2026-10-08T10:38:00.000Z"
+    },
+    {
+      "outlet": "BBC Sport",
+      "title": "'Nothing impossible' as NI begin long road to Brazil",
+      "link": "https://www.bbc.co.uk/sport/articles/c6y8lyrpyv85o?at_medium=RSS&at_campaign=rss",
+      "summary": "Northern Ireland defenders Nat Johnson and Rebecca Holloway tell BBC Sport NI of their dream of reaching a first ever Women's World Cup as NI go through the play-offs.",
+      "published": "2026-10-08T10:37:42.000Z"
+    },
+    {
+      "outlet": "BBC Sport",
+      "title": "How Brighton attract and develop the best young players ahead of their rivals",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm0e35gzgdqeo?at_medium=RSS&at_campaign=rss",
+      "summary": "Brighton sporting director Mike Cave discusses Brighton's transfer policy and how the club signs and nurtures the best young talent in the game.",
+      "published": "2026-10-08T10:37:14.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "'Void of leaders' - The problems for bottom-side Spurs after winless start",
+      "link": "https://www.skysports.com/football/news/12040/13596052/tottenham-sky-sports-special-podcast-tim-sherwood-and-michael-bridge-assess-spurs-problems-after-winless-start",
+      "summary": "When Aston Villa went 1-0 up in north London, it felt inevitable that Tottenham would head into the international break winless in the Premier League.",
+      "published": "2026-10-08T10:05:00.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Scot Prem latest: McInnes and Makhanya land Rangers awards double",
+      "link": "https://www.skysports.com/football/live-blog/12040/13176154/scottish-premiership-news-transfers-rumours-gossip-and-more",
+      "summary": "",
+      "published": "2026-10-08T10:00:00.000Z"
+    },
+    {
+      "outlet": "BBC Sport",
+      "title": "Afcon final to play out in court - when will Morocco or Senegal be crowned champions?",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ckjw5jj2l26lo?at_medium=RSS&at_campaign=rss",
+      "summary": "The Court of Arbitration for Sport is set to rule on the decision to strip Senegal of their Afcon 2025 title. But fans should not expect an immediate verdict.",
+      "published": "2026-10-08T09:53:33.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "FIA introducing measures to avoid ‘software bug’ chaos repeat",
+      "link": "https://www.skysports.com/f1/news/12040/13596390/fia-reveals-bahrain-gp-software-bug-findings-and-planned-changes-after-glitch-caused-issues-before-rain-hit-malaysia-race",
+      "summary": "The FIA will introduce further changes to wet-weather engine software from the United States Grand Prix after completing a review into the \"software bug\" that further delayed the start of last week's rain-hit race in Malaysia.",
+      "published": "2026-10-08T09:50:00.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "Mikel Arteta’s new contract reflects where the power now lies at Arsenal | Ed Aarons",
+      "link": "https://www.theguardian.com/football/2026/oct/08/mikel-arteta-arsenal-contract",
+      "summary": "<p>From transfers to stadium works and even the training-ground dog, there is no doubting the Spaniard’s influence at the club</p><p>If anyone doubts Mikel Arteta’s status as No 1 at Arsenal in the week he <a href=\"https://www.theguardian.com/football/2026/oct/07/mikel-arteta-signs-new-arsenal-deal-only-the-beginning\">committed his future to the club until 2030</a>, just ask Win the dog. The chocolate labrador who played a starring role in the celebrations when Arsenal were crowned Premier League champions in May has become part of the family at the training ground in Hertfordshire since being",
+      "published": "2026-10-08T09:49:56.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "'A little bit selfish' - Merse says Ronaldo may regret his actions with Portugal national team",
+      "link": "https://www.skysports.com/watch/video/13596436/paul-merson-cristiano-ronaldo-may-regret-his-actions-with-portugal-national-team",
+      "summary": "Sky Sports pundit Paul Merson says Cristiano Ronaldo may regret his recent actions with regard to the Portuguese national team.",
+      "published": "2026-10-08T09:47:00.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Pettersen bounces back on LET return as England's Humphreys moves second",
+      "link": "https://www.skysports.com/golf/news/12040/13596437/aramco-korea-championship-suzann-pettersen-shoots-even-par-in-first-round-on-ladies-european-tour-after-four-years",
+      "summary": "Suzann Pettersen marked her first round on the Ladies European Tour in four years with an even-par 72 at the Aramco Korea Championship as England's Lily May Humphreys earned a share of second place.",
+      "published": "2026-10-08T09:45:00.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "Women’s Super League faces wait until 2029 for full-time referees despite funding boost",
+      "link": "https://www.theguardian.com/football/2026/oct/08/womens-super-league-wait-2029-full-time-referees-funding-boost-football",
+      "summary": "<ul><li><p>Extra investment agreed at latest WSL board meeting</p></li><li><p>Calls for fully professional match officials have grown</p></li></ul><p>Women’s Super League clubs have agreed to a major funding increase for match officials but the wait for full-time referees in the English top tier is set to continue until 2029, the Guardian has learned.</p><p>The extra investment, decided at the latest WSL Football board meeting, will focus on enhancing officials’ education, analysis and physical performance, it is understood.</p> <a href=\"https://www.theguardian.com/football/2026/oct/08/womens-",
+      "published": "2026-10-08T09:34:05.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Arsenal latest: Arteta deserves new deal, he's done an unbelievable job, says Merse",
+      "link": "https://www.skysports.com/football/live-blog/12040/13025486/arsenal-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "summary": "",
+      "published": "2026-10-08T09:21:00.000Z"
+    },
+    {
+      "outlet": "BBC Sport",
+      "title": "Clubs fear political interference in Man City appeal",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6y93qq5175wo?at_medium=RSS&at_campaign=rss",
+      "summary": "Premier League clubs are \"concerned\" about political interference in Manchester City's appeal after Prime Minister Andy Burnham's comments.",
+      "published": "2026-10-08T09:16:56.000Z"
+    },
+    {
+      "outlet": "BBC Sport",
+      "title": "Toone comes into England squad as Bronze withdraws",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c962yzlgln8po?at_medium=RSS&at_campaign=rss",
+      "summary": "Manchester United midfielder Ella Toone receives a late England call-up for this month's World Cup play-off games against Greece.",
+      "published": "2026-10-08T09:04:00.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Liverpool latest: Man City game must-not-lose for Iraola, says Merson",
+      "link": "https://www.skysports.com/football/live-blog/12040/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "summary": "",
+      "published": "2026-10-08T09:00:00.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Scot Prem returns! O'Neill under pressure, Rangers eye top spot & Hibs' new era",
+      "link": "https://www.skysports.com/football/news/12040/13595855/scottish-premiership-martin-oneills-celtic-on-sky-rangers-eye-top-spot-as-hibs-begin-marink-reedijk-era",
+      "summary": "The Scottish Premiership is back after a three-week break, and that means so are a host of fascinating subplots across the top flight.",
+      "published": "2026-10-08T09:00:00.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "England to host Netball World Cup in 2031",
+      "link": "https://www.skysports.com/netball/news/12040/13596394/england-to-host-netball-world-cup-in-2031-as-tournament-heads-to-manchester",
+      "summary": "Manchester will stage the Netball World Cup in 2031 after England was awarded hosting rights for the fourth time.",
+      "published": "2026-10-08T09:00:00.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Wakefield catapult to top of 'optional' 2026 Grading rankings after Grand Final triumph",
+      "link": "https://www.skysports.com/rugby-league/news/12040/13596103/super-league-club-gradings-wakefield-trinity-catapult-to-top-of-2026-rankings-after-stunning-grand-final-triumph",
+      "summary": "Wakefield Trinity's historic on-field success in the 2026 season has shot them to the top of Super League's Club Grading rankings.&#160;",
+      "published": "2026-10-08T09:00:00.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "CAS: Final decision on 2025 AFCON winner will be made 'as soon as possible'",
+      "link": "https://www.skysports.com/football/live-blog/12040/12507208/football-latest-news-gossip",
+      "summary": "",
+      "published": "2026-10-08T09:00:00.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "Havertz, Isak, Dorgu … spate of injuries with national teams leaves sour taste for top clubs",
+      "link": "https://www.theguardian.com/football/2026/oct/08/premier-league-injuries-kai-havertz-alexander-isak-patrick-dorgu",
+      "summary": "<p>Premier League clubs, and their European rivals, left with a long list of absentees after a gruelling international break</p><p>A four-match international break has presented a stress test. “The intensity of the squad, the athleticism of it, really, I think it’s designed for the elite,” said the Wales head coach, Craig Bellamy, on the completion of four matches in 11 days. Elite club coaches would disagree. The Nations League and the wider set of international games staged across the globe have been accompanied by a daily list of casualties, club officials viewing matches through their fing",
+      "published": "2026-10-08T08:50:14.000Z"
+    },
+    {
+      "outlet": "BBC Sport",
+      "title": "'Are you accusing me of receiving money?' - what Guardiola has said about charges",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cq2d6l0p6ry0o?at_medium=RSS&at_campaign=rss",
+      "summary": "BBC Sport examines Pep Guardiola's comments about the Manchester City financial rule-breaking case during his time managing the club.",
+      "published": "2026-10-08T08:20:13.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "MLS boss urges Harry Kane to follow Messi and Beckham before NFL dream",
+      "link": "https://www.independent.co.uk/sport/football/news/hary-kane-mls-messi-beckham-b3063281.html",
+      "summary": "Harry Kane shows no signs of slowing down after he marked his record-equalling England appearance with two goals",
+      "published": "2026-10-08T08:12:25.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "Football Q&A: ask Ed Aarons your questions as the Premier League returns",
+      "link": "https://www.theguardian.com/sport/live/2026/oct/08/football-qa-ask-ed-aarons-your-questions-as-the-premier-league-returns",
+      "summary": "<p>After a lengthy international break dominated by the Manchester City verdict, the Premier League is back on Saturday. Football writer Ed Aarons will be online at 3pm BST to take your questions</p><p><a href=\"https://profile.theguardian.com/signin?\">Sign in or sign up to take part</a></p><p>It’s been an incredibly busy few weeks for our football reporters, but there’s only so much you can write about <a href=\"https://www.theguardian.com/football/2026/sep/29/czechia-england-nations-league-match-report\">England’s 2-0 win in Prague</a> …</p><p>Football writer Ed Aarons will be online at 3pm BST",
+      "published": "2026-10-08T08:08:27.000Z"
+    },
+    {
+      "outlet": "BBC Sport",
+      "title": "SPFL pays out close to £50m in record year",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm93z85ggy79o?at_medium=RSS&at_campaign=rss",
+      "summary": "The Scottish Professional Football League (SPFL) pays clubs a record £49.6m in the past year.",
+      "published": "2026-10-08T08:00:06.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "PL returns! Man City in spotlight, big Old Trafford showdown and Gyokeres' chance",
+      "link": "https://www.skysports.com/football/news/12040/13595301/premier-league-talking-points-man-city-in-spotlight-with-trip-to-liverpool-man-utd-and-spurs-desperate-for-win-and-viktor-gyokeres-arsenal-chance",
+      "summary": "",
+      "published": "2026-10-08T08:00:00.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "How the Kop’s chants propelled Andy Burnham to fight for Hillsborough justice",
+      "link": "https://www.theguardian.com/football/2026/oct/08/how-the-kops-chants-propelled-andy-burnham-to-fight-for-hillsborough-justice",
+      "summary": "<p>A speech at Anfield in 2009 was met with boos but it led to a change in tack by Labour government and an apology from David Cameron</p><p>Since dawn, visitors from as far afield as Australia had been laying flowers, scarves and messages underneath Anfield’s Eternal Flame. These Hillsborough memorial anniversary services were usually subdued and respectful affairs, with 10,000 mourners sitting on the Kop to give themselves and the families support on the most difficult of days.</p><p>But on the afternoon of 15 April 2009, the 20th anniversary of the disaster, it felt different. There was an ",
+      "published": "2026-10-08T07:32:11.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "Pep Guardiola to make Manchester City return amid financial rules breach fallout",
+      "link": "https://www.independent.co.uk/sport/football/pep-guardiola-manchester-city-return-premier-league-financial-rules-breaches-b3063065.html",
+      "summary": "The former manager will watch the Champions League game against Paris Saint-Germain on Wednesday",
+      "published": "2026-10-08T07:15:12.000Z"
+    },
+    {
+      "outlet": "BBC Sport",
+      "title": "Working with Iraola, car clauses and hope - the Liverpool academy approach",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmx2z9z10wezo?at_medium=RSS&at_campaign=rss",
+      "summary": "Liverpool academy director Alex Inglethorpe talks to BBC Sport about the value and future of Liverpool's academy.",
+      "published": "2026-10-08T07:04:50.000Z"
+    },
+    {
+      "outlet": "BBC Sport",
+      "title": "How can home nations reach Women's World Cup?",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqzrdmjp5162o?at_medium=RSS&at_campaign=rss",
+      "summary": "England, Wales, Northern Ireland, Scotland and the Republic of Ireland are among those hoping to qualify for next year's Women's World Cup. What awaits them in the play-offs?",
+      "published": "2026-10-08T07:01:10.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "‘Those memories are ours and no verdict changes that’: Manchester City fans’ views",
+      "link": "https://www.theguardian.com/football/2026/oct/08/manchester-city-verdict-fans-views",
+      "summary": "<p>While most supporters seem to want to get behind the club, some fear actions of the owners will divide fanbase</p><p><strong>Nicola Schofield, City fan for more than 40 years: </strong>One of my (million) concerns, as someone who feels angry with the owners, is if the owners’ strategy causes a split in the fanbase. I think everyone wants to get behind the club and team, but this is different to the experience of a relegation of the type I experienced in the 90s. We all shared that, and we stood by the club down to League One and as we came back up. This threatens to be messier, with those w",
+      "published": "2026-10-08T07:00:13.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "Laos footballer arrested in connection with alleged match-fixing for betting syndicate",
+      "link": "https://www.theguardian.com/football/2026/oct/08/laos-international-arrested-in-connection-alleged-match-fixing-football",
+      "summary": "<ul><li><p>National FA refers Soukphachan Lueanthala to police</p></li><li><p>Accused of helping group during summer tournament</p></li></ul><p>A Laos international has been arrested in connection with allegations of match-fixing during the 2026 Asean Championship after the country’s football federation referred suspected bribery, illegal gambling and match manipulation to the authorities.</p><p>Soukphachan Lueanthala, a winger who featured for Laos during the tournament and plays in his homeland for Salavan United, is understood to have been accused of helping to organise the alleged operatio",
+      "published": "2026-10-08T07:00:12.000Z"
+    },
+    {
+      "outlet": "BBC Sport",
+      "title": "Previously on the SPFL... your Premiership crib sheet",
+      "link": "https://www.bbc.co.uk/sounds/play/p0pflcdp?at_medium=RSS&at_campaign=rss",
+      "summary": "It's back to the day job and back to the SPFL: your guide to the season so far.",
+      "published": "2026-10-08T07:00:00.000Z"
+    },
+    {
+      "outlet": "BBC Sport",
+      "title": "How early-season data signals Scottish Premiership style shift",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwnv0j499jrgo?at_medium=RSS&at_campaign=rss",
+      "summary": "Underlying numbers from the start of the Scottish Premiership season suggest a refreshed approach could be taking hold across the league.",
+      "published": "2026-10-08T06:52:49.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "England's Smith starts well at Baycurrent Classic as Bridgeman leads",
+      "link": "https://www.skysports.com/golf/news/12040/13596364/pga-tour-englands-jordan-smith-starts-well-at-baycurrent-classic-as-jacob-bridgeman-leads-in-japan",
+      "summary": "England's Jordan Smith enjoyed a strong start to the Baycurrent Classic with a bogey-free, seven-under 64 leaving him one shot behind first-round leader Jacob Bridgeman in Japan.",
+      "published": "2026-10-08T06:45:00.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "'What a night it's going to be!' - Timings for Fury vs Joshua revealed",
+      "link": "https://www.skysports.com/watch/video/13596368/fury-vs-joshua-timings-revealed-for-fight-in-cardiff-in-december",
+      "summary": "Sky Sports' Michael Bridge has more on the timing for Tyson Fury and Anthony Joshua's fight at Cardiff's Principality Stadium on Friday 11 December - with the ringwalk expected to place at 1am in the early hours of Saturday.",
+      "published": "2026-10-08T06:27:00.000Z"
+    },
+    {
+      "outlet": "BBC Sport",
+      "title": "Who am I? Guess Premier League star No 80",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmd7qnqrzdg1o?at_medium=RSS&at_campaign=rss",
+      "summary": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
+      "published": "2026-10-08T06:05:33.000Z"
     },
     {
       "outlet": "BBC Sport",
@@ -30,20 +366,6 @@
       "published": "2026-10-08T05:00:00.000Z"
     },
     {
-      "outlet": "Sky Sports",
-      "title": "Why Bears genius has become one of NFL's most important figures",
-      "link": "https://www.skysports.com/nfl/news/12040/13596088/ben-johnson-why-chicago-bears-mastermind-has-become-one-of-the-most-important-figures-in-the-nfl",
-      "summary": "The NFL needs the Ben Johnsons of the world. The genius and the belligerence. The brainiac and the maniac.&#160;",
-      "published": "2026-10-08T05:00:00.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "Sky Sports and Guinness launch new accessibility services across PL coverage",
-      "link": "https://www.skysports.com/football/news/12040/13595862/sky-sports-and-guinness-launch-new-accessibility-services-across-premier-league-coverage",
-      "summary": "Live Subtitles to be available across all Sky Sports Premier League matches, while Live Descriptive Audio Commentary will be introduced on selected fixtures throughout the season.",
-      "published": "2026-10-08T05:00:00.000Z"
-    },
-    {
       "outlet": "BBC Sport",
       "title": "Rice close to agreeing new Arsenal deal",
       "link": "https://www.bbc.co.uk/sport/football/articles/c9gkvx74je7do?at_medium=RSS&at_campaign=rss",
@@ -54,7 +376,7 @@
       "outlet": "BBC Sport",
       "title": "Euro Leagues: Ronaldo's fallout with Jorge Jesus & is Zidane making his mark?",
       "link": "https://www.bbc.co.uk/sounds/play/p0pfk3y1?at_medium=RSS&at_campaign=rss",
-      "summary": "Is Ronaldo's behaviour a surprise? And what've we learnt from Zidane's start?",
+      "summary": "As Messi says farewell to international football, is Ronaldo's time coming?",
       "published": "2026-10-07T21:49:00.000Z"
     },
     {
@@ -100,25 +422,11 @@
       "published": "2026-10-07T20:00:04.000Z"
     },
     {
-      "outlet": "The Independent",
-      "title": "Pep Guardiola to make Manchester City return amid financial rules breach fallout",
-      "link": "https://www.independent.co.uk/sport/football/pep-guardiola-manchester-city-return-premier-league-financial-rules-breaches-b3063065.html",
-      "summary": "The former manager will watch the Champions League game against Paris Saint-Germain on Wednesday",
-      "published": "2026-10-07T19:52:02.000Z"
-    },
-    {
       "outlet": "BBC Sport",
       "title": "All done deals in September & October 2026",
       "link": "https://www.bbc.co.uk/sport/football/articles/cvgyxyxplkvo?at_medium=RSS&at_campaign=rss",
       "summary": "Check out the significant signings and departures in the Premier League, Scottish Premiership, EFL and Women's Super League.",
       "published": "2026-10-07T19:45:58.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "ARSENAL PODCAST: Listen to an Arteta new contract special!",
-      "link": "https://www.skysports.com/football/live-blog/12040/13025486/arsenal-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-      "summary": "",
-      "published": "2026-10-07T19:32:00.000Z"
     },
     {
       "outlet": "BBC Sport",
@@ -149,18 +457,11 @@
       "published": "2026-10-07T19:11:26.000Z"
     },
     {
-      "outlet": "Sky Sports",
-      "title": "Scot Prem latest: Hibs sign ex-Rangers winger as backroom team revealed",
-      "link": "https://www.skysports.com/football/live-blog/12040/13176154/scottish-premiership-news-transfers-rumours-gossip-and-more",
-      "summary": "",
-      "published": "2026-10-07T19:00:00.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "Fury vs Joshua: Have your say - who wins the mega-fight?",
-      "link": "https://www.skysports.com/boxing/live-blog/12040/13596038/fury-vs-joshua-latest-news-live-updates-predictions-and-video-ahead-of-december-heavyweight-fight-in-cardiff",
-      "summary": "",
-      "published": "2026-10-07T18:10:00.000Z"
+      "outlet": "The Guardian",
+      "title": "Southampton manager Tonda Eckert given six-week suspended ban for Spygate scandal",
+      "link": "https://www.theguardian.com/football/2026/oct/07/southampton-manager-tonda-eckert-six-week-suspended-ban-spygate-fa",
+      "summary": "<ul><li><p>Independent commission cites ‘genuine contrition’</p></li><li><p>But FA wanted three-month ban and may appeal</p></li></ul><p>The Southampton head coach, Tonda Eckert, has escaped a ban from the Football Association for his part in the <a href=\"https://www.theguardian.com/football/2026/may/08/playoff-semi-final-efl-southampton-spying-middlesbrough\">Spygate scandal</a> that led to the club being expelled from last season’s Championship playoff final and denied the chance to win promotion to the Premier League.</p><p>The German has been given a six-week suspended ban and £28,000 fine ",
+      "published": "2026-10-07T18:53:31.000Z"
     },
     {
       "outlet": "The Guardian",
@@ -170,25 +471,11 @@
       "published": "2026-10-07T18:00:01.000Z"
     },
     {
-      "outlet": "Sky Sports",
-      "title": "Late-night Fury vs Joshua ringwalk application submitted",
-      "link": "https://www.skysports.com/boxing/news/12040/13596275/tyson-fury-vs-anthony-joshua-cardiff-council-asked-to-approve-1am-ringwalk-at-principality-stadium",
-      "summary": "Tyson Fury and Anthony Joshua are set for a 1am ringwalk in their heavyweight boxing clash in Cardiff.",
-      "published": "2026-10-07T17:47:00.000Z"
-    },
-    {
       "outlet": "BBC Sport",
-      "title": "Barry-Murphy and Bellamy 'so similar' - Lawlor",
+      "title": "Barry-Murphy and Bellamy so similar - Lawlor",
       "link": "https://www.bbc.co.uk/sport/football/articles/c5y43n38z0ndo?at_medium=RSS&at_campaign=rss",
       "summary": "Cardiff boss Brian Barry-Murphy and Wales head coach Craig Bellamy have similar outlooks says Dylan Lawlor.",
       "published": "2026-10-07T17:42:30.000Z"
-    },
-    {
-      "outlet": "The Independent",
-      "title": "Gianni Infantino’s first presidential rival emerges with former Spurs defender set to stand in Fifa election",
-      "link": "https://www.independent.co.uk/sport/football/gianni-infantino-ramon-vega-fifa-president-elections-b3063001.html",
-      "summary": "Former Tottenham defender Ramon Vega intends to challenge Infantino for the Fifa presidency",
-      "published": "2026-10-07T17:28:43.000Z"
     },
     {
       "outlet": "BBC Sport",
@@ -205,27 +492,6 @@
       "published": "2026-10-07T17:02:22.000Z"
     },
     {
-      "outlet": "Sky Sports",
-      "title": "Garcia targets Ryder Cup return",
-      "link": "https://www.skysports.com/golf/news/12040/13596264/ryder-cup-2027-sergio-garcia-targets-european-team-spot-and-refuses-to-rule-out-pga-tour-return",
-      "summary": "Sergio Garcia is desperate to be involved in next year's Ryder Cup, either as a player or vice-captain, with his time on LIV Golf appearing to be coming to an end.",
-      "published": "2026-10-07T16:48:00.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "Ex-Spurs, Celtic and Switzerland defender Vega to stand against Infantino",
-      "link": "https://www.skysports.com/football/live-blog/12040/12507208/football-latest-news-gossip",
-      "summary": "",
-      "published": "2026-10-07T16:30:00.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "Rahm to quit LIV Golf over 'unacceptable' terms",
-      "link": "https://www.skysports.com/golf/news/12040/13596245/jon-rahm-set-to-end-liv-golf-involvement-over-unacceptable-terms-for-proposed-relaunch",
-      "summary": "Jon Rahm is to quit LIV Golf after deeming the terms offered for the proposed relaunch of the breakaway series &#8220;unacceptable&#8221;.",
-      "published": "2026-10-07T16:15:00.000Z"
-    },
-    {
       "outlet": "BBC Sport",
       "title": "Eckert free to stay as Southampton boss as Spygate ban suspended",
       "link": "https://www.bbc.co.uk/sport/football/articles/cqj9knmvm2ryo?at_medium=RSS&at_campaign=rss",
@@ -238,13 +504,6 @@
       "link": "https://www.bbc.co.uk/sport/articles/cked39dp0476o?at_medium=RSS&at_campaign=rss",
       "summary": "Harry Kane's record-breaking England career can't go on for ever. But do the Three Lions already have a ready-made replacement?",
       "published": "2026-10-07T16:00:58.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "Why Sprint in Singapore adds new twist to F1's toughest race",
-      "link": "https://www.skysports.com/f1/news/12040/13596146/singapore-gp-why-sprint-debut-at-marina-bay-street-track-provides-new-twist-to-f1s-toughest-race-weekend",
-      "summary": "Formula 1 stages its sixth and final Sprint event of the year this weekend to conclude the first flyaway triple header of the sport's busy 2026 season run in.",
-      "published": "2026-10-07T16:00:00.000Z"
     },
     {
       "outlet": "The Independent",
@@ -273,20 +532,6 @@
       "link": "https://www.independent.co.uk/sport/football/man-city-premier-league-english-football-appeal-b3062548.html",
       "summary": "Regardless of the outcome of the club’s appeal, Miguel Delaney writes, an entire era of the Premier League now feels tainted",
       "published": "2026-10-07T15:12:59.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "What's next for Littler? Can he still qualify for Players Championship Finals?",
-      "link": "https://www.skysports.com/darts/news/12040/13596082/luke-littler-world-champion-can-still-qualify-for-players-championship-finals-8211-but-will-he-play-and-what-else-can-he-win",
-      "summary": "Two-time world champion Luke Littler can still qualify for the Players Championship Finals in Minehead &#8211; but what else can he win?",
-      "published": "2026-10-07T15:09:00.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
-      "title": "Football Daily",
-      "link": "https://www.bbc.co.uk/sounds/play/p0pf94jc?at_medium=RSS&at_campaign=rss",
-      "summary": "Is refereeing the impossible job?",
-      "published": "2026-10-07T15:00:00.000Z"
     },
     {
       "outlet": "The Independent",
@@ -352,13 +597,6 @@
       "published": "2026-10-07T13:41:43.000Z"
     },
     {
-      "outlet": "Sky Sports",
-      "title": "'Very humbling' - Sinfield receives knighthood at Windsor Castle",
-      "link": "https://www.skysports.com/watch/video/13596153/sir-kevin-sinfield-receives-knighthood-at-windsor-castle-very-humbling",
-      "summary": "Sir Kevin Sinfield has received a knighthood at Windsor Castle for services to the MND community - after raising money in memory of his late friend and former team-mate Rob Burrow - and for services to league and union rugby.",
-      "published": "2026-10-07T13:20:00.000Z"
-    },
-    {
       "outlet": "The Independent",
       "title": "The major problems with the Man City appeal and the ‘magic bullet’ they need",
       "link": "https://www.independent.co.uk/sport/football/man-city-appeal-charges-premier-league-what-next-b3062691.html",
@@ -387,20 +625,6 @@
       "published": "2026-10-07T12:30:09.000Z"
     },
     {
-      "outlet": "Sky Sports",
-      "title": "Verstappen: F1 'less stressful' without Horner",
-      "link": "https://www.skysports.com/f1/news/12040/13596132/formula-1-max-verstappen-says-sport-less-stressful-without-christian-horner-speaks-on-whether-he-would-drive-for-ferrari-and-his-new-contract",
-      "summary": "Max Verstappen says the Formula 1 paddock is \"less stressful\" following Christian Horner's exit because \"it is not nice when you constantly have tension between people\".",
-      "published": "2026-10-07T12:25:00.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
-      "title": "Savage wants Peterborough 'mentality' shift",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cq9vznwdzxd4o?at_medium=RSS&at_campaign=rss",
-      "summary": "Robbie Savage challenges his Peterborough squad to change their \"mentality\" in order to arrest a period of \"underachieving\".",
-      "published": "2026-10-07T12:02:07.000Z"
-    },
-    {
       "outlet": "The Guardian",
       "title": "Robertson rant and the wrong system? Pocognoli’s Scotland start raises questions",
       "link": "https://www.theguardian.com/football/2026/oct/07/robertson-system-pocognoli-scotland-start-questions",
@@ -413,34 +637,6 @@
       "link": "https://www.theguardian.com/football/2026/oct/07/many-british-footballers-playing-serie-a-italian-top-flight",
       "summary": "<p>The 1990s felt like a golden age, but there are 21 British players in Serie A this season – more than ever before</p><p>By <a href=\"https://thefootballmine.com/about/\">The Football Mine</a></p><p>What do Jimmy Greaves, Ray Wilkins, David Beckham, Paul Gascoigne and Kyle Walker have in common? They all made more than 50 appearances for England as well as playing for Italian clubs. While they are household names, the first Englishman to represent an Italian club is less familiar.</p><p>The former soldier Charles Adcock moved to Padova just after the second world war having been spotted playin",
       "published": "2026-10-07T12:00:09.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "Pettersen to make golf comeback - and it may not be a one-off",
-      "link": "https://www.skysports.com/golf/news/12040/13596111/suzann-pettersen-two-time-major-winner-to-return-at-aramco-korea-championship-and-could-play-five-or-six-events-a-year",
-      "summary": "Suzann Pettersen is making a second return to professional golf since her retirement in 2019 with an appearance at this week's Aramco Korea Championship - and it may not be a one-off.",
-      "published": "2026-10-07T11:45:00.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
-      "title": "Senior figures worried about Man City being in next season's Champions League",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c9p8gxgm71zzo?at_medium=RSS&at_campaign=rss",
-      "summary": "Senior figures within the English game are concerned that Manchester City could play in the Champions League next season even if they are relegated for breaching financial regulations.",
-      "published": "2026-10-07T11:44:08.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "World Cup criticism still stings Tuchel despite Nations League positives",
-      "link": "https://www.skysports.com/football/news/12040/13596119/england-thomas-tuchel-still-stinging-from-world-cup-criticism-despite-nations-league-positives",
-      "summary": "The Wembley crowd was in party mood and the fans sang Thomas Tuchel's name. Three straight wins without conceding, Harry Kane feted as England's greatest ever servant, a Nations League quarter-final all-but guaranteed.",
-      "published": "2026-10-07T11:38:00.000Z"
-    },
-    {
-      "outlet": "The Independent",
-      "title": "Mikel Arteta signs improved contract to lead Arsenal into new era",
-      "link": "https://www.independent.co.uk/sport/football/mikel-arteta-arsenal-contract-length-b3054305.html",
-      "summary": "Arteta, who is already the longest-serving manager in the Premier League, is now set to lead the club into a new future after agreeing an improved deal",
-      "published": "2026-10-07T11:16:12.000Z"
     },
     {
       "outlet": "The Guardian",
@@ -478,48 +674,6 @@
       "published": "2026-10-07T10:35:28.000Z"
     },
     {
-      "outlet": "The Independent",
-      "title": "Every Premier League team’s biggest weakness right now",
-      "link": "https://www.independent.co.uk/tv/acfc/premier-league-anaylsis-weakness-adam-clery-b3062707.html",
-      "summary": "With The Premier League returning this week, Adam Clery looks at this season's opening 5 games to see what on-field issues EVERY team currently has.",
-      "published": "2026-10-07T10:28:14.000Z"
-    },
-    {
-      "outlet": "The Independent",
-      "title": "Kyle Walker: Man City’s guilty verdict can’t take glory years away from players",
-      "link": "https://www.independent.co.uk/sport/football/man-city-guilty-charges-punishment-kyle-walker-b3062699.html",
-      "summary": "City have appealed against last week’s seismic judgment of an independent commission that they broke Premier League financial rules",
-      "published": "2026-10-07T10:22:55.000Z"
-    },
-    {
-      "outlet": "The Guardian",
-      "title": "Portuguese authorities took 83 days to tell Rui Pinto his witness protection was ending",
-      "link": "https://www.theguardian.com/football/2026/oct/07/rui-pinto-witness-protection-ending-portuguese-authorities-manchester-city",
-      "summary": "<ul><li><p>Commission concluded in July threat level was low</p></li><li><p>Manchester City whistleblower given 10 days’ notice</p></li></ul><p>Portuguese authorities kept Rui Pinto in the dark for almost three months about their decision to <a href=\"https://www.theguardian.com/football/2026/sep/30/manchester-city-whistleblower-rui-pinto-no-longer-protected-witness-premier-league-portuguese-police\">end his status as a protected witness</a> and notified the Manchester City whistleblower 10 days before it was due to expire, it can be revealed.</p><p>According to documents seen by the Guardian, t",
-      "published": "2026-10-07T10:21:45.000Z"
-    },
-    {
-      "outlet": "The Guardian",
-      "title": "Manchester City’s glory cannot be taken away from the players, says Kyle Walker",
-      "link": "https://www.theguardian.com/football/2026/oct/07/manchester-city-glory-cannot-be-taken-away-from-players-kyle-walker",
-      "summary": "<ul><li><p>Former captain admits guilty verdict ‘doesn’t look great’</p></li><li><p>But he insists memories of ‘many trophies’ will remain</p></li></ul><p>Manchester City’s glory years cannot be taken away from the players, despite the club being <a href=\"https://www.theguardian.com/football/2026/sep/29/manchester-city-found-guilty-all-premier-league-charges-rule-breaches\">found guilty of all charges of breaching Premier League financial rules over a nine-year period</a>, insists former captain Kyle Walker.</p><p>City have appealed against last week’s seismic judgment of an independent commiss",
-      "published": "2026-10-07T10:01:13.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
-      "title": "Quiz: Name England's all-time leading appearance makers",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmlylv1xl9qgo?at_medium=RSS&at_campaign=rss",
-      "summary": "Can you name every England men's player who has at least 60 caps?",
-      "published": "2026-10-07T09:58:16.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
-      "title": "South Korea to review military service exemption after Asian Games row",
-      "link": "https://www.bbc.co.uk/sport/articles/cqrky4y0v2pdo?at_medium=RSS&at_campaign=rss",
-      "summary": "South Korea are discussing making changes to military exemptions for athletes after Asian Games controversy.",
-      "published": "2026-10-07T09:48:42.000Z"
-    },
-    {
       "outlet": "The Guardian",
       "title": "Arsenal and Chelsea set to miss a month of next WSL season due to Club World Cup",
       "link": "https://www.theguardian.com/football/2026/oct/07/wsl-concerns-over-fixture-congestion-caused-by-2028-club-world-cup",
@@ -528,24 +682,10 @@
     },
     {
       "outlet": "BBC Sport",
-      "title": "'Nothing can take my attention' - Ward on World Cup",
+      "title": "'Nothing can take my attention' - Ward on World Cup and Villa link",
       "link": "https://www.bbc.co.uk/sport/football/articles/cqvg07v9xrz4o?at_medium=RSS&at_campaign=rss",
       "summary": "Republic of Ireland manager Carla Ward says that \"nothing is tempting\" her away from her job as they prepare for a World Cup qualifying double-header against Kazakhstan.",
       "published": "2026-10-07T08:57:21.000Z"
-    },
-    {
-      "outlet": "The Guardian",
-      "title": "Cristiano Ronaldo: the extraordinary eight points he says Jorge Jesus agreed to make",
-      "link": "https://www.theguardian.com/football/2026/oct/07/cristiano-ronaldo-eight-points-jorge-jesus-statement-portugal",
-      "summary": "<ul><li><p>Ronaldo lists notes ‘validated’ for Portugal coach to say</p></li><li><p>Pelé, Maradona, loyalty and selfies get mentions</p></li></ul><p>Cristiano Ronaldo said in a lengthy <a href=\"https://www.theguardian.com/football/2026/oct/06/cristiano-ronaldo-accuses-portugal-coach-jorge-jesus-of-broken-promises\">statement on Tuesday</a> that the Portugal head coach, Jorge Jesus, had agreed to make eight points relating to him in a press conference before the team’s game in Denmark last week.</p><p>Ronaldo said he had approved a document listing the points after a video meeting involving him,",
-      "published": "2026-10-07T08:20:14.000Z"
-    },
-    {
-      "outlet": "The Independent",
-      "title": "England look like a team reborn in the Nations League. Does it matter?",
-      "link": "https://www.independent.co.uk/sport/football/england-thomas-tuchel-nations-league-harry-kane-jude-bellingham-b3062410.html",
-      "summary": "England’s dominant win over Czech Republic rounded off a positive international break – but Will Castle ponders whether anything has actually changed",
-      "published": "2026-10-07T08:09:24.000Z"
     },
     {
       "outlet": "BBC Sport",
@@ -555,46 +695,11 @@
       "published": "2026-10-07T07:44:24.000Z"
     },
     {
-      "outlet": "BBC Sport",
-      "title": "What questions face Pocognoli after Scotland defeat?",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqn49204wer7o?at_medium=RSS&at_campaign=rss",
-      "summary": "Sebastien Pocognoli has much to ponder before next month's Nations League group-stage finale after a bruising home defeat by Slovenia.",
-      "published": "2026-10-07T07:43:11.000Z"
-    },
-    {
-      "outlet": "The Independent",
-      "title": "South Korea considers ending military service exemption for athletes after Asian Games controversy",
-      "link": "https://www.independent.co.uk/asia/east-asia/south-korea-military-service-exemption-asian-games-b3062562.html",
-      "summary": "South Korea is reconsidering military service exemptions for champion athletes",
-      "published": "2026-10-07T07:35:01.000Z"
-    },
-    {
       "outlet": "The Guardian",
-      "title": "Lionel Messi describes ending Argentina career as his ‘saddest day’ in football",
-      "link": "https://www.theguardian.com/football/2026/oct/07/lionel-messi-ends-argentina-career-saddest-day",
-      "summary": "<ul><li><p>Messi addresses crowd after scoring in win against Benin</p></li><li><p>‘Not coming any more is going to be deeply painful’</p></li></ul><p>Lionel Messi described his retirement from international football as the “saddest day of my career” after playing <a href=\"https://www.theguardian.com/football/2026/oct/06/lionel-messi-argentina-benin-international-retirement\">his final game for Argentina</a> in a 3-0 defeat of Benin.</p><p>Messi, who scored and provided two assists in the victory at the Monumental Stadium in Buenos Aires, took to the field after the win to express gratitude to ",
-      "published": "2026-10-07T07:20:00.000Z"
-    },
-    {
-      "outlet": "The Independent",
-      "title": "Thomas Tuchel hails ‘brilliant, brilliant’ Harry Kane after landmark double",
-      "link": "https://www.independent.co.uk/sport/football/harry-kane-thomas-tuchel-england-czech-republic-b3062450.html",
-      "summary": "Kane scored twice against Czechia as he equalled Peter Shilton’s record of 125 England caps",
-      "published": "2026-10-07T07:12:49.000Z"
-    },
-    {
-      "outlet": "The Independent",
-      "title": "Harry Kane scores best goal of the Tuchel era to show what England were missing at the World Cup",
-      "link": "https://www.independent.co.uk/sport/football/kane-goal-england-result-score-nations-league-b3062365.html",
-      "summary": "England 3-0 Czech Republic: Harry Kane scored twice on the night of his record-equalling 125th cap after a bizarre own goal by Vladimir Coufal in the Nations League",
-      "published": "2026-10-07T07:10:38.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
-      "title": "Family, football and Dalglish - what drives NI boss McArdle?",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cx305g0qv83qo?at_medium=RSS&at_campaign=rss",
-      "summary": "BBC Sport NI's Andy Gray sits down with Northern Ireland manager Michael McArdle to discuss his long career before his biggest managerial test in the World Cup play-offs.",
-      "published": "2026-10-07T07:10:00.000Z"
+      "title": "Indonesia triumph in Infantino’s Asian brainchild but real impact could be votes",
+      "link": "https://www.theguardian.com/football/2026/oct/07/indonesia-infantino-southeast-asia-asean-cup",
+      "summary": "<p>The inaugural Asean Cup, not to be confused with the existing Hyundai Asean Cup, may not live long in the memory but Fifa president sees benefit</p><p>It’s probably not a coincidence, what with Fifa’s presidential election getting closer all the time, but Gianni Infantino has been sweeping through Asian member associations. There he was attending a ceremony in Macau to inaugurate new headquarters, signing an agreement in Mongolia to build a new national stadium and in Uzbekistan to open a Fifa Arena mini-pitch. All wise moves as Asia is still divided when it comes to the battle for the bigg",
+      "published": "2026-10-07T07:00:36.000Z"
     },
     {
       "outlet": "The Guardian",
@@ -604,32 +709,11 @@
       "published": "2026-10-07T07:00:36.000Z"
     },
     {
-      "outlet": "The Guardian",
-      "title": "Indonesia triumph in Infantino’s Asian brainchild but real impact could be votes",
-      "link": "https://www.theguardian.com/football/2026/oct/07/indonesia-infantino-southeast-asia-asean-cup",
-      "summary": "<p>The inaugural Asean Cup, not to be confused with the existing Hyundai Asean Cup, may not live long in the memory but Fifa president sees benefit</p><p>It’s probably not a coincidence, what with Fifa’s presidential election getting closer all the time, but Gianni Infantino has been sweeping through Asian member associations. There he was attending a ceremony in Macau to inaugurate new headquarters, signing an agreement in Mongolia to build a new national stadium and in Uzbekistan to open a Fifa Arena mini-pitch. All wise moves as Asia is still divided when it comes to the battle for the bigg",
-      "published": "2026-10-07T07:00:36.000Z"
-    },
-    {
-      "outlet": "The Independent",
-      "title": "Teenage star fires USMNT to victory over Canada to extend winning streak",
-      "link": "https://www.independent.co.uk/sport/football/usmnt-canada-score-justin-ellis-b3062532.html",
-      "summary": "The USMNT won all four of their games during the international window",
-      "published": "2026-10-07T06:32:56.000Z"
-    },
-    {
       "outlet": "BBC Sport",
       "title": "Can Man City juggle WSL title defence and Champions League?",
       "link": "https://www.bbc.co.uk/sport/football/articles/c32l4nwr7z05o?at_medium=RSS&at_campaign=rss",
       "summary": "Manchester City have had a strong start to the WSL season, but have they showed they are capable of juggling Champions League football?",
       "published": "2026-10-07T06:14:35.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
-      "title": "Who am I? Plus today's other quizzes",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmkgwg15nwy6o?at_medium=RSS&at_campaign=rss",
-      "summary": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
-      "published": "2026-10-07T05:36:31.000Z"
     },
     {
       "outlet": "BBC Sport",
@@ -644,69 +728,6 @@
       "link": "https://www.bbc.co.uk/sport/football/videos/c61kdn0nwld4o?at_medium=RSS&at_campaign=rss",
       "summary": "Watch every World Cup goal scored by Lionel Messi, as the Argentina forward retires from international football.",
       "published": "2026-10-07T05:24:54.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
-      "title": "More than the Score",
-      "link": "https://www.bbc.co.uk/sounds/play/p0pf8h14?at_medium=RSS&at_campaign=rss",
-      "summary": "What could the consequences of the Manchester City verdict be?",
-      "published": "2026-10-07T00:00:00.000Z"
-    },
-    {
-      "outlet": "The Guardian",
-      "title": "Total Midweek Kane: England’s icon delivers a classic on his way to footballing ultimacy | Barney Ronay",
-      "link": "https://www.theguardian.com/football/2026/oct/06/total-midweek-kane-englands-icon-delivers-a-classic-on-his-way-to-footballing-ultimacy",
-      "summary": "<p>On a night where he equalled Peter Shilton’s England appearance record, Harry Kane did what he always does</p><p>It is a very Harry Kane kind of thing to equal a record. Respectful, no ego, all about the collective. On a room temperature night at Wembley Stadium Kane duly did this, drawing level with Peter Shilton’s record for England caps, and doing so while delivering a performance of Total Midweek Kane.</p><p>There were two neat, slick goals, one in each half, the high points of a 3-0 <a href=\"https://www.theguardian.com/football/2026/oct/06/england-czechia-nations-league-match-report\">w",
-      "published": "2026-10-06T22:56:09.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
-      "title": "Midfield options and a fab front four - what we've learned about England",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cq62y431dj8vo?at_medium=RSS&at_campaign=rss",
-      "summary": "From Trent Alexander-Arnold's return to Alex Scott's debut, Phil McNulty assesses what England have learned during this international window.",
-      "published": "2026-10-06T22:34:46.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
-      "title": "Honeymoon over as Pocognoli's Scotland suffer domestic disharmony",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c5lye031jvgro?at_medium=RSS&at_campaign=rss",
-      "summary": "Sebastien Pocognoli is left with questions to answer after an inert Scotland performance leaves him still searching for his first home win, writes Tom English.",
-      "published": "2026-10-06T22:28:47.000Z"
-    },
-    {
-      "outlet": "The Guardian",
-      "title": "Jude Bellingham hails 125-cap Harry Kane as England’s best-ever player",
-      "link": "https://www.theguardian.com/football/2026/oct/06/jude-bellingham-hails-harry-kane-as-englands-best-ever-player",
-      "summary": "<ul><li><p>Captain scores twice in 3-0 win over Czechia</p></li><li><p>Kane equals Peter Shilton’s appearance record</p></li></ul><p>Jude Bellingham called Harry Kane England’s best-ever player after the captain equalled Peter Shilton’s record of 125 caps during Tuesday’s <a href=\"https://www.theguardian.com/football/2026/oct/06/england-czechia-nations-league-match-report\">3-0 win over Czechia</a> in the Nations League.</p><p>Kane, who is only nine off a century of international goals after scoring twice in another fine display, was the star attraction as the Wembley crowd watched Thomas Tuche",
-      "published": "2026-10-06T22:25:01.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
-      "title": "'Outfought' and 'not good enough' - Robertson on Scotland defeat",
-      "link": "https://www.bbc.co.uk/sport/football/articles/crz98xv1e8nlo?at_medium=RSS&at_campaign=rss",
-      "summary": "Scotland were \"outfought\" and simply \"not good enough\" in their 2-1 Nations League defeat by Slovenia, according to captain Andy Robertson.",
-      "published": "2026-10-06T22:13:15.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
-      "title": "Scotland let lead slip in abject defeat by Slovenia",
-      "link": "https://www.bbc.co.uk/sport/football/videos/ckpqgdyyg2wgo?at_medium=RSS&at_campaign=rss",
-      "summary": "Watch the best of the action as Slovenia come from behind to beat Scotland 2-1 in the Nations League at Hampden.",
-      "published": "2026-10-06T21:23:34.000Z"
-    },
-    {
-      "outlet": "The Guardian",
-      "title": "Sturm warning rocks Pocognoli as abject Scotland turned over by Slovenia",
-      "link": "https://www.theguardian.com/football/2026/oct/06/scotland-slovenia-nations-league-match-report",
-      "summary": "<p>The nature of this Scotland defeat felt far more significant than the fact it arrived at all. Sébastien Pocognoli is already in tricky territory, just four games into his tenure as Scotland head coach. Slovenia comprehensively outplayed the fragile hosts at Hampden Park, which leaves Pocognoli staring at a third-placed finish in a soft Nations League section. Brave new dawn or beginning of an error?</p><p>Scotland were defensively disorganised. Their attacking play was timid. Long before full time, the 39-year-old Belgian had the look of a coach throwing darts blindly at a board. And missin",
-      "published": "2026-10-06T20:50:13.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
-      "title": "Kane's rise from childhood keeper to equalling England cap record",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cx2ln5n7yqdo?at_medium=RSS&at_campaign=rss",
-      "summary": "Harry Kane reaches another significant England milestone by equalling Peter Shilton's record as the most-capped Three Lions player that he has held for 36 years.",
-      "published": "2026-10-06T19:15:12.000Z"
     }
   ]
 }
