@@ -1,53 +1,48 @@
 // GENERATED FILE — do not edit by hand. Front Page news written by gpt-5.5 from the sources listed in each story; illustrations by gpt-image-2.
-// Written 2026-10-08T12:08:27.726Z by the Halftime data pipeline.
+// Written 2026-10-08T22:39:33.853Z by the Halftime data pipeline.
 window.HALFTIME_NEWS = {
-  "updated": "2026-10-08T12:07:22.459Z",
+  "updated": "2026-10-08T22:38:32.069Z",
   "model": "gpt-5.5",
-  "articlesConsidered": 104,
-  "candidatesHash": "17b96a6bc32e13e7",
+  "articlesConsidered": 105,
+  "candidatesHash": "af7e74fad6cef78f",
   "lead": {
     "tag": "Premier League",
-    "headline": "City verdict draws fresh scrutiny",
-    "standfirst": "Manchester City’s guilty verdict continues to shape the Premier League’s return, with an appeal, political concern and Guardiola’s Etihad visit in view.",
+    "headline": "City seek calm as verdict storm rolls on",
+    "standfirst": "Maresca and Haaland urged togetherness before Liverpool, while rival voices warned of damage to the league’s standing.",
     "paragraphs": [
-      "Manchester City’s guilty verdict remains at the centre of the game as the Premier League prepares to resume. BBC Sport says clubs are concerned about possible political interference in City’s appeal following comments by Prime Minister Andy Burnham. The Independent also carried Gary Lineker’s call for the club to accept its punishment after the verdict, framing the issue as one that reaches beyond one dressing room or one set of supporters.",
-      "Pep Guardiola is expected to return to the Etihad Stadium for Manchester City’s Champions League match against Paris Saint-Germain, his first home appearance since leaving last summer. BBC Sport noted that Guardiola managed the club for a decade and has backed the owners since the verdict, while Sky Sports and The Independent said his attendance is expected amid the continuing financial rules fallout.",
-      "The verdict has also reopened wider conversations around City’s recent era. The Independent argued that, whatever follows from the Premier League’s position on the charges, the rivalry between Liverpool under Jurgen Klopp and City under Guardiola does not need to be rewritten. The Guardian’s supporters’ piece presented a more unsettled mood, with many fans wanting to stand by the team while some feared the owners’ actions could divide the fanbase."
+      "Manchester City return to the pitch at Liverpool on Sunday with the club under a glare created by the Premier League verdict. Enzo Maresca said the mood inside the squad is strong, telling BBC Sport that the “feeling is fantastic”, and arguing that his players are not dwelling on the surrounding noise. The manager was described as calm as City gathered again after the international break.",
+      "Erling Haaland also put the emphasis on togetherness, with Sky Sports carrying his message to supporters to “stick together, enjoy the ride and smile”. The Guardian said he had called for unity, while the Independent noted City are preparing for their first match since the ruling. The public line from player and manager was simple: keep the group steady and move towards the next fixture.",
+      "Beyond City, the matter continues to carry weight around the division. Nottingham Forest head coach Oliver Glasner urged a quick conclusion and warned that the league’s image had suffered globally, with integrity placed at the centre of his concern. His fear was that supporters could lose patience if the affair drags on, showing how widely the verdict is being felt."
     ],
     "sources": [
       {
         "outlet": "BBC Sport",
-        "title": "Clubs fear political interference in Man City appeal",
-        "url": "https://www.bbc.co.uk/sport/football/articles/c6y93qq5175wo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "outlet": "The Independent",
-        "title": "Gary Lineker calls on Man City to ‘own it’ and accept punishment after guilty verdict",
-        "url": "https://www.independent.co.uk/sport/football/man-city-guilty-verdict-gary-lineker-b3063425.html"
-      },
-      {
-        "outlet": "Sky Sports",
-        "title": "Guardiola set to attend Man City's first home game since guilty verdict",
-        "url": "https://www.skysports.com/football/news/12040/13596452/pep-guardiola-set-to-attend-man-citys-first-home-game-since-guilty-verdict"
-      },
-      {
-        "outlet": "The Independent",
-        "title": "Liverpool and Manchester City drove each other to new heights – their Premier League rivalry does not need rewriting",
-        "url": "https://www.independent.co.uk/sport/football/liverpool-man-city-premier-league-pep-guardiola-jurgen-klopp-b3063398.html"
+        "title": "Maresca says 'feeling is fantastic' among Man City squad",
+        "url": "https://www.bbc.co.uk/sport/football/articles/c6n4ex2lgg2ko?at_medium=RSS&at_campaign=rss"
       },
       {
         "outlet": "The Guardian",
-        "title": "‘Those memories are ours and no verdict changes that’: Manchester City fans’ views",
-        "url": "https://www.theguardian.com/football/2026/oct/08/manchester-city-verdict-fans-views"
+        "title": "Maresca believes City players ‘don’t care about the noise’ as Haaland calls for unity",
+        "url": "https://www.theguardian.com/football/2026/oct/08/manchester-city-pep-guardiola-owners-guilty-verdict"
+      },
+      {
+        "outlet": "Sky Sports",
+        "title": "'Stick together, enjoy the ride and smile' - Haaland's message to Man City fans",
+        "url": "https://www.skysports.com/football/news/12040/13596522/man-city-charges-erling-haaland-encourages-clubs-fans-to-stay-positive-after-guilty-verdict"
+      },
+      {
+        "outlet": "The Guardian",
+        "title": "Glasner urges quick end to Manchester City saga and fears damage to Premier League",
+        "url": "https://www.theguardian.com/football/2026/oct/08/glasner-urges-quick-end-to-manchester-city-saga-and-fears-damage-to-premier-league"
       }
     ],
     "picture": {
-      "scene": "A floodlit football ground with a distant crowd as a textured mass, an empty touchline and a subdued evening mood, with no insignia or writing.",
-      "alt": "Floodlit stadium with an empty touchline."
+      "scene": "A packed terrace under floodlights, a lone manager on the touchline, rain on the grass, players warming up in shadow without visible faces or markings.",
+      "alt": "A tense floodlit football touchline scene."
     },
     "image": {
-      "file": "images/news/3ef8b379d419.jpg",
-      "alt": "Floodlit stadium with an empty touchline.",
+      "file": "images/news/b7e9f9faafc9.jpg",
+      "alt": "A tense floodlit football touchline scene.",
       "kind": "illustration",
       "model": "gpt-image-2"
     }
@@ -55,13 +50,13 @@ window.HALFTIME_NEWS = {
   "stories": [
     {
       "tag": "Women's Game",
-      "headline": "England adjust squad for Greece play-off",
-      "summary": "England have adjusted their squad for the World Cup play-off double-header with Greece, with Ella Toone called up after Lucy Bronze withdrew because of a minor injury. Lauren James said Sarina Wiegman’s side must keep looking ahead, while BBC Sport set England alongside Wales, Northern Ireland, Scotland and the Republic of Ireland in the play-off picture.",
+      "headline": "Toone earns late England recall",
+      "summary": "Ella Toone has joined England’s squad for the Women’s World Cup play-off against Greece after Lucy Bronze sustained what Sarina Wiegman called a small injury. Toone had been left out at first, but Wiegman praised her response and Sky Sports said the recall may strengthen her World Cup prospects.",
       "sources": [
         {
-          "outlet": "Sky Sports",
-          "title": "James: England must keep looking forward in quest for World Cup place",
-          "url": "https://www.skysports.com/football/news/12040/13595901/england-lauren-james-says-sarina-wiegmans-side-must-have-no-regrets-as-greece-world-cup-play-off-awaits"
+          "outlet": "The Guardian",
+          "title": "Wiegman praises Toone’s attitude after late Lionesses recall for Greece playoff",
+          "url": "https://www.theguardian.com/football/2026/oct/08/sarina-wiegman-praises-ella-toone-attitude-late-england-lionesses-recall-greece-playoff"
         },
         {
           "outlet": "The Independent",
@@ -69,91 +64,101 @@ window.HALFTIME_NEWS = {
           "url": "https://www.independent.co.uk/sport/football/ella-toone-england-sarina-wiegman-world-cup-b3063397.html"
         },
         {
-          "outlet": "BBC Sport",
-          "title": "Toone comes into England squad as Bronze withdraws",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c962yzlgln8po?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "BBC Sport",
-          "title": "How can home nations reach Women's World Cup?",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cqzrdmjp5162o?at_medium=RSS&at_campaign=rss"
+          "outlet": "Sky Sports",
+          "title": "How England snub could boost Toone’s World Cup chances",
+          "url": "https://www.skysports.com/football/news/12040/13596592/greece-vs-england-how-ella-toones-lionesses-snub-could-boost-her-world-cup-chances"
         }
       ],
       "picture": {
-        "scene": "A training pitch at dusk with players stretching beside scattered balls, a coach watching from distance, and soft floodlights over empty stands.",
-        "alt": "Players train under floodlights at dusk."
+        "scene": "A player stretching beside a quiet training pitch at dusk, substitutes jogging in the background, rain glistening on the grass and stands fading into mist.",
+        "alt": "A footballer stretches before training at dusk."
       },
       "image": {
-        "file": "images/news/72390733387a.jpg",
-        "alt": "Players train under floodlights at dusk.",
+        "file": "images/news/863799bf8f92.jpg",
+        "alt": "A footballer stretches before training at dusk.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     },
     {
-      "tag": "Africa",
-      "headline": "Afcon title wait heads to CAS",
-      "summary": "The Afcon 2025 title is set for a legal finish, with the Court of Arbitration for Sport due to rule on the decision to strip Senegal of the crown. BBC Sport warned that supporters should not expect an immediate verdict, while Sky Sports said CAS intends to deliver its final decision as soon as possible.",
+      "tag": "Governance",
+      "headline": "Montagliani move eases Infantino path",
+      "summary": "Victor Montagliani plans to seek another Concacaf term, a move BBC Sport and the Guardian said would remove him from a possible Fifa presidency contest with Gianni Infantino. The Independent also reported African football leaders backing Infantino, while Aleksander Ceferin intends a fourth Uefa term and Ramon Vega plans to stand.",
       "sources": [
         {
           "outlet": "BBC Sport",
-          "title": "Afcon final to play out in court - when will Morocco or Senegal be crowned champions?",
-          "url": "https://www.bbc.co.uk/sport/football/articles/ckjw5jj2l26lo?at_medium=RSS&at_campaign=rss"
+          "title": "Infantino given re-election boost as Montagliani seeks final Concacaf term",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cmn4ex2y53l8o?at_medium=RSS&at_campaign=rss"
         },
         {
-          "outlet": "Sky Sports",
-          "title": "CAS: Final decision on 2025 AFCON winner will be made 'as soon as possible'",
-          "url": "https://www.skysports.com/football/live-blog/12040/12507208/football-latest-news-gossip"
+          "outlet": "The Guardian",
+          "title": "Victor Montagliani eyes re-election at Concacaf that would rule out Fifa presidency run",
+          "url": "https://www.theguardian.com/football/2026/oct/08/victor-montagliani-concacaf-reelection-fifa-presidency"
+        },
+        {
+          "outlet": "The Independent",
+          "title": "Gianni Infantino secures backing of African football leaders for Fifa re-election after investment promise",
+          "url": "https://www.independent.co.uk/sport/football/gianni-infantino-fifa-election-african-football-investment-b3063647.html"
+        },
+        {
+          "outlet": "The Independent",
+          "title": "Aleksander Ceferin to seek fourth term as Uefa president after calling for Gianni Infantino to quit Fifa",
+          "url": "https://www.independent.co.uk/sport/football/aleksander-ceferin-uefa-president-election-gianni-infantino-fifa-b3063501.html"
+        },
+        {
+          "outlet": "The Independent",
+          "title": "Gianni Infantino’s first presidential rival emerges with former Spurs defender set to stand in Fifa election",
+          "url": "https://www.independent.co.uk/sport/football/gianni-infantino-ramon-vega-fifa-president-elections-b3063001.html"
         }
       ],
       "picture": {
-        "scene": "A silent football pitch after full time, with a covered trophy plinth near the centre circle and empty terraces under warm floodlights.",
-        "alt": "Empty pitch with a covered trophy plinth."
+        "scene": "An empty directors’ box above a floodlit pitch, rows of vacant seats, a polished table with blank papers, evening shadows falling across the grass.",
+        "alt": "An empty football boardroom overlooking a pitch."
       },
       "image": {
-        "file": "images/news/4d127a0719ae.jpg",
-        "alt": "Empty pitch with a covered trophy plinth.",
+        "file": "images/news/587bfc371a0b.jpg",
+        "alt": "An empty football boardroom overlooking a pitch.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     },
     {
-      "tag": "Scotland",
-      "headline": "Scottish Premiership returns after long pause",
-      "summary": "The Scottish Premiership returns after a three-week break, with Sky Sports pointing to pressure on Martin O’Neill, Rangers’ pursuit of top spot and a new Hibs era. Rangers manager Derek McInnes said the international pause was too long, while the SPFL paid clubs a record £49.6m and early data suggested a shift in playing style.",
+      "tag": "Discipline",
+      "headline": "Xhaka and Sherif learn punishments",
+      "summary": "Sunderland captain Granit Xhaka says he has received a suspended fine of 150,000 Swiss francs after obtaining a forged Covid-19 vaccination certificate. Everton forward Martin Sherif was fined £5,000 by the FA over betting breaches, with the Independent saying he avoided a ban after admitting his part in 61 bets.",
       "sources": [
         {
           "outlet": "BBC Sport",
-          "title": "Rangers boss McInnes 'not a fan' of extended break",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cm3vqrz41l2vo?at_medium=RSS&at_campaign=rss"
+          "title": "Suspended fine for Xhaka over Covid-19 certificate",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cvrly346j5djo?at_medium=RSS&at_campaign=rss"
         },
         {
-          "outlet": "Sky Sports",
-          "title": "Scot Prem returns! O'Neill under pressure, Rangers eye top spot & Hibs' new era",
-          "url": "https://www.skysports.com/football/news/12040/13595855/scottish-premiership-martin-oneills-celtic-on-sky-rangers-eye-top-spot-as-hibs-begin-marink-reedijk-era"
-        },
-        {
-          "outlet": "BBC Sport",
-          "title": "SPFL pays out close to £50m in record year",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cm93z85ggy79o?at_medium=RSS&at_campaign=rss"
+          "outlet": "The Independent",
+          "title": "Granit Xhaka reveals investigation outcome after admitting to using fake Covid certificate",
+          "url": "https://www.independent.co.uk/sport/football/granit-xhaka-fake-covid-certificate-investigation-b3063532.html"
         },
         {
           "outlet": "BBC Sport",
-          "title": "How early-season data signals Scottish Premiership style shift",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cwnv0j499jrgo?at_medium=RSS&at_campaign=rss"
+          "title": "Everton's Sherif fined for breaching betting rules",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c54g13we4rero?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "The Independent",
+          "title": "Everton striker avoids ban after admitting to betting breaches",
+          "url": "https://www.independent.co.uk/sport/football/everton-martin-sherif-betting-punishment-fa-b3063690.html"
         }
       ],
       "picture": {
-        "scene": "A brisk northern football ground before kick-off, with low clouds, bright floodlights, bundled supporters and players warming up without visible markings.",
-        "alt": "Players warm up at a cloudy ground."
+        "scene": "A referee holding a closed notebook near the touchline, players waiting at a distance, low winter light and a hushed stand behind.",
+        "alt": "A referee pauses near the touchline."
       },
       "image": {
-        "file": "images/news/b1c9d80e01ee.jpg",
-        "alt": "Players warm up at a cloudy ground.",
+        "file": "images/news/74bbdbbcb4a5.jpg",
+        "alt": "A referee pauses near the touchline.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     }
   ],
-  "notes": "Several items were short summaries or live-blog entries, so details on the Man City verdict, any sanction and the Afcon case are limited."
+  "notes": "Coverage is strongest on Manchester City and England Women; several transfer and live-blog items offered limited detail."
 };
