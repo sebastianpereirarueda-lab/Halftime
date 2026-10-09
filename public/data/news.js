@@ -1,53 +1,63 @@
 // GENERATED FILE — do not edit by hand. Front Page news written by gpt-5.5 from the sources listed in each story; illustrations by gpt-image-2.
-// Written 2026-10-09T02:41:08.540Z by the Halftime data pipeline.
+// Written 2026-10-09T22:00:42.313Z by the Halftime data pipeline.
 window.HALFTIME_NEWS = {
-  "updated": "2026-10-09T02:40:04.681Z",
+  "updated": "2026-10-09T21:59:36.921Z",
   "model": "gpt-5.5",
-  "articlesConsidered": 100,
-  "candidatesHash": "86eb4d7b854061f3",
+  "articlesConsidered": 107,
+  "candidatesHash": "2e25c14c04bf07d2",
   "lead": {
     "tag": "Premier League",
-    "headline": "City seek calm after guilty verdict",
-    "standfirst": "City return at Liverpool after a guilty verdict as their manager and leading striker appeal for calm and unity.",
+    "headline": "City verdict shadows Premier League return",
+    "standfirst": "Managers faced the first wave of questions as Manchester City prepared for a charged trip to Liverpool.",
     "paragraphs": [
-      "Manchester City return to Premier League duty at Liverpool with the club’s financial case still at the centre of the game. Enzo Maresca said he remained calm before the first match since City were found guilty of breaches of Premier League financial rules, and BBC Sport carried his view that the feeling within the squad is fantastic. His message was that the players are not dwelling on the surrounding noise.",
-      "Erling Haaland also addressed supporters, urging them to stay together, keep smiling and remain positive after the ruling. Maresca and his players came back together following the international break, with the next fixture now carrying significance beyond the pitch. The immediate football task is plain enough, but the wider attention around the club will travel with them.",
-      "The issue has drawn concern elsewhere in the division. Nottingham Forest head coach Oliver Glasner said the case had harmed the Premier League’s reputation globally, and warned that the competition’s integrity must be protected. He also suggested some supporters could switch off if the matter drags on, and called for a swift conclusion to the saga."
+      "The Premier League resumes with Manchester City’s case at the front of the queue. City have been judged to have broken league financial rules, with BBC Sport saying the club were found guilty of the majority of the 115 charges brought against them. Their trip to Liverpool is their first match since the verdict, and a noisy reception is expected at Anfield.",
+      "Mikel Arteta, who was an assistant manager at City during part of the period under scrutiny, said his conscience was clear and called for respect for the process. Enzo Maresca, now City manager, rejected the idea that the club’s titles had been tainted by the verdict.",
+      "Elsewhere, Michael Carrick said the case had affected him personally and left him with questions, while other managers were drawn into the wider unease around the league. Andoni Iraola said he understood why Liverpool supporters were angry, as the weekend’s football begins with the issue still hanging over it."
     ],
     "sources": [
       {
         "outlet": "BBC Sport",
-        "title": "Maresca says 'feeling is fantastic' among Man City squad",
-        "url": "https://www.bbc.co.uk/sport/football/articles/c6n4ex2lgg2ko?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "outlet": "The Guardian",
-        "title": "Maresca believes City players ‘don’t care about the noise’ as Haaland calls for unity",
-        "url": "https://www.theguardian.com/football/2026/oct/08/manchester-city-pep-guardiola-owners-guilty-verdict"
-      },
-      {
-        "outlet": "The Independent",
-        "title": "Enzo Maresca breaks silence after Man City found guilty of financial breaches",
-        "url": "https://www.independent.co.uk/sport/football/enzo-maresca-man-city-guilty-premier-league-b3063710.html"
+        "title": "Arteta's conscience clear over Man City charges",
+        "url": "https://www.bbc.co.uk/sport/football/articles/c6d93ql8jvdko?at_medium=RSS&at_campaign=rss"
       },
       {
         "outlet": "Sky Sports",
-        "title": "'Stick together, enjoy the ride and smile' - Haaland's message to Man City fans",
-        "url": "https://www.skysports.com/football/news/12040/13596522/man-city-charges-erling-haaland-encourages-clubs-fans-to-stay-positive-after-guilty-verdict"
+        "title": "Arteta says conscience clear over time at Man City",
+        "url": "https://www.skysports.com/football/news/12040/13596973/man-city-charges-arsenal-boss-mikel-arteta-says-he-has-clear-conscience-over-his-time-at-etihad-after-serious-breaches-of-financial-rules"
       },
       {
         "outlet": "The Guardian",
-        "title": "Glasner urges quick end to Manchester City saga and fears damage to Premier League",
-        "url": "https://www.theguardian.com/football/2026/oct/08/glasner-urges-quick-end-to-manchester-city-saga-and-fears-damage-to-premier-league"
+        "title": "Managers react to Manchester City’s guilty verdict: ‘Uncertainty is not good for anyone’",
+        "url": "https://www.theguardian.com/football/2026/oct/09/premier-league-managers-reaction-manchester-city-verdict"
+      },
+      {
+        "outlet": "The Independent",
+        "title": "What every Premier League manager said about the Man City verdict",
+        "url": "https://www.independent.co.uk/sport/football/man-city-guilty-reaction-premier-league-maresca-arteta-iraola-b3064251.html"
+      },
+      {
+        "outlet": "BBC Sport",
+        "title": "I've got my own questions on Man City case - Carrick",
+        "url": "https://www.bbc.co.uk/sport/football/articles/ck5ynv45lymdo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "outlet": "BBC Sport",
+        "title": "Man City titles 'absolutely not' tainted - Maresca",
+        "url": "https://www.bbc.co.uk/sport/football/articles/cmzxjdvv784xo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "outlet": "BBC Sport",
+        "title": "What reception awaits Man City at Anfield?",
+        "url": "https://www.bbc.co.uk/sport/football/articles/cjkgey07lq15o?at_medium=RSS&at_campaign=rss"
       }
     ],
     "picture": {
-      "scene": "A packed football ground under floodlights, players gathering near the centre circle, touchline figures in shadow and a tense evening atmosphere.",
-      "alt": "Floodlit stadium before a tense match"
+      "scene": "A packed terrace under floodlights, stewards lining a narrow approach, supporters raising plain scarves in a tense evening setting.",
+      "alt": "Crowd scene under floodlights before a tense match"
     },
     "image": {
-      "file": "images/news/073750879ff9.jpg",
-      "alt": "Floodlit stadium before a tense match",
+      "file": "images/news/0ed13f0859ed.jpg",
+      "alt": "Crowd scene under floodlights before a tense match",
       "kind": "illustration",
       "model": "gpt-image-2"
     }
@@ -55,100 +65,100 @@ window.HALFTIME_NEWS = {
   "stories": [
     {
       "tag": "Women's Game",
-      "headline": "Toone recalled for England’s Greece play-off",
-      "summary": "Ella Toone has joined England in Crete for the Women’s World Cup play-off first leg against Greece after Lucy Bronze sustained a minor injury and returned to Chelsea. Sarina Wiegman praised Toone’s response to being left out initially, while Sky Sports framed the recall as a chance to strengthen her tournament prospects.",
+      "headline": "England build first-leg cushion in Greece",
+      "summary": "England beat Greece 3-1 in Crete to take control of their Women’s World Cup play-off, with Georgia Stanway, Maya Le Tissier and Alessia Russo scoring. Greece remained in the tie through Kallisti Brouksair’s goal, while Sarina Wiegman wanted more from her side.",
       "sources": [
         {
           "outlet": "The Guardian",
-          "title": "Wiegman praises Toone’s attitude after late Lionesses recall for Greece playoff",
-          "url": "https://www.theguardian.com/football/2026/oct/08/sarina-wiegman-praises-ella-toone-attitude-late-england-lionesses-recall-greece-playoff"
+          "title": "Lionesses take control of World Cup playoff tie but unfancied Greece still in fight",
+          "url": "https://www.theguardian.com/football/2026/oct/09/greece-england-womens-world-cup-qualifying-playoff"
         },
         {
           "outlet": "The Independent",
-          "title": "Ella Toone handed late England call-up for World Cup play-off after Sarina Wiegman snub",
-          "url": "https://www.independent.co.uk/sport/football/ella-toone-england-sarina-wiegman-world-cup-b3063397.html"
+          "title": "England take control of World Cup play-off tie with dominant win in Greece",
+          "url": "https://www.independent.co.uk/sport/football/england-greece-world-cup-play-off-result-b3064385.html"
         },
         {
           "outlet": "Sky Sports",
-          "title": "How England snub could boost Toone’s World Cup chances",
-          "url": "https://www.skysports.com/football/news/12040/13596592/greece-vs-england-how-ella-toones-lionesses-snub-could-boost-her-world-cup-chances"
-        }
-      ],
-      "picture": {
-        "scene": "A women’s training session in a small floodlit stadium, players stretching beside cones, coastal hills beyond and a purposeful calm in the air.",
-        "alt": "Players train in a quiet stadium"
-      },
-      "image": {
-        "file": "images/news/46891f3b1bcc.jpg",
-        "alt": "Players train in a quiet stadium",
-        "kind": "illustration",
-        "model": "gpt-image-2"
-      }
-    },
-    {
-      "tag": "Governance",
-      "headline": "Infantino path clears as Concacaf chief stays",
-      "summary": "Gianni Infantino’s re-election prospects appear stronger after Victor Montagliani indicated he wants another term leading Concacaf, a move the Guardian said would rule out a Fifa presidency run. The Independent also reported backing from African football leaders after an investment promise, while former Tottenham defender Ramon Vega intends to stand.",
-      "sources": [
+          "title": "England take control of World Cup play-off with win in Greece",
+          "url": "https://www.skysports.com/football/greece-women-vs-england-women/report/559077"
+        },
         {
           "outlet": "BBC Sport",
-          "title": "Infantino given re-election boost as Montagliani seeks final Concacaf term",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cmn4ex2y53l8o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "The Guardian",
-          "title": "Victor Montagliani eyes re-election at Concacaf that would rule out Fifa presidency run",
-          "url": "https://www.theguardian.com/football/2026/oct/08/victor-montagliani-concacaf-reelection-fifa-presidency"
-        },
-        {
-          "outlet": "The Independent",
-          "title": "Gianni Infantino secures backing of African football leaders for Fifa re-election after investment promise",
-          "url": "https://www.independent.co.uk/sport/football/gianni-infantino-fifa-election-african-football-investment-b3063647.html"
-        },
-        {
-          "outlet": "The Independent",
-          "title": "Gianni Infantino’s first presidential rival emerges with former Spurs defender set to stand in Fifa election",
-          "url": "https://www.independent.co.uk/sport/football/gianni-infantino-ramon-vega-fifa-president-elections-b3063001.html"
+          "title": "Greek takeaways: What did we learn from Lionesses' win?",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cwp8g1ry6rjlo?at_medium=RSS&at_campaign=rss"
         }
       ],
       "picture": {
-        "scene": "A broad stadium concourse before a match, suited officials in silhouette near the turnstiles, the floodlit pitch visible beyond, formal and subdued.",
-        "alt": "Officials stand near a stadium entrance"
+        "scene": "A floodlit playoff match on a tight pitch, attackers probing patiently against a deep defence, evening stands full and expectant.",
+        "alt": "Players attack a deep defence under floodlights"
       },
       "image": {
-        "file": "images/news/9ff3c9202982.jpg",
-        "alt": "Officials stand near a stadium entrance",
+        "file": "images/news/b42f83e40ca5.jpg",
+        "alt": "Players attack a deep defence under floodlights",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     },
     {
-      "tag": "Transfers",
-      "headline": "United risk losing Gabriel despite new offer",
-      "summary": "Manchester United have offered JJ Gabriel an official scholarship contract, but the Guardian says they remain at risk of losing him for as little as £350,000. The teenager turned 16 this week and asked for his registration to be cancelled last month, with Sky’s paper round also pointing to a small possible fee.",
+      "tag": "Championship",
+      "headline": "Charles denies West Ham at the death",
+      "summary": "West Ham were held 1-1 by QPR and missed the chance to go top of the Championship after Jarrod Bowen’s stoppage-time penalty was saved. QPR goalkeeper Pierce Charles also kept out the rebound, after Bowen had earlier cancelled out Nicolas Madsen’s first-half penalty.",
       "sources": [
         {
           "outlet": "The Guardian",
-          "title": "Manchester United offer JJ Gabriel new deal but risk losing prodigy for £350,000",
-          "url": "https://www.theguardian.com/football/2026/oct/08/manchester-united-offer-jj-gabriel-new-deal-risk-losing-prodigy-football-premier-league"
+          "title": "West Ham’s penalty pain costs them top spot in Championship after QPR draw",
+          "url": "https://www.theguardian.com/football/2026/oct/09/west-ham-qpr-championship-report-penalties"
         },
         {
           "outlet": "Sky Sports",
-          "title": "Papers: Fee Man Utd could receive for wantaway JJ Gabriel revealed",
-          "url": "https://www.skysports.com/football/news/12040/13596653/jj-gabriel-manchester-united-could-be-forced-to-accept-small-fee-for-wantaway-teen-paper-talk"
+          "title": "Bowen's late penalty saved as West Ham held by QPR",
+          "url": "https://www.skysports.com/football/west-ham-united-vs-queens-park-rangers/report/560605"
+        },
+        {
+          "outlet": "Sky Sports",
+          "title": "INCREDIBLE! QPR's Charles saves stoppage-time Bowen pen AND rebound!",
+          "url": "https://www.skysports.com/watch/video/13597075/west-ham-vs-qpr-charles-the-hero-as-he-saves-bowens-penalty-and-the-rebound"
         }
       ],
       "picture": {
-        "scene": "A quiet academy training pitch at dusk, a lone ball near the touchline, empty benches and long shadows suggesting decisions ahead.",
-        "alt": "Empty academy pitch at dusk"
+        "scene": "A goalkeeper dives low from a penalty under bright floodlights, the loose ball spinning back into a crowded six-yard area.",
+        "alt": "Goalkeeper saves a late penalty under floodlights"
       },
       "image": {
-        "file": "images/news/19d1521c6e77.jpg",
-        "alt": "Empty academy pitch at dusk",
+        "file": "images/news/d079befdb660.jpg",
+        "alt": "Goalkeeper saves a late penalty under floodlights",
+        "kind": "illustration",
+        "model": "gpt-image-2"
+      }
+    },
+    {
+      "tag": "International",
+      "headline": "Alonso backs Palmer’s England commitment",
+      "summary": "Xabi Alonso said Cole Palmer remains committed to England after the Chelsea attacker withdrew from the squad with an issue linked to last season’s groin injury. Palmer is available for Chelsea’s match with Bournemouth, after Thomas Tuchel had expressed disappointment over his absence.",
+      "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "Chelsea manager Alonso insists Cole Palmer is committed to playing for England",
+          "url": "https://www.theguardian.com/football/2026/oct/09/chelsea-xabi-alonso-cole-palmer-england-thomas-tuchel"
+        },
+        {
+          "outlet": "The Independent",
+          "title": "Xabi Alonso defends Cole Palmer's England commitment after Thomas Tuchel criticism",
+          "url": "https://www.independent.co.uk/sport/football/cole-palmer-thomas-tuchel-xabi-alonso-england-commitment-b3064261.html"
+        }
+      ],
+      "picture": {
+        "scene": "A lone attacker trains beneath grey afternoon skies, a coach watching from the touchline beside scattered cones and empty seats.",
+        "alt": "Player trains alone while a coach watches"
+      },
+      "image": {
+        "file": "images/news/3477ea7a4bdb.jpg",
+        "alt": "Player trains alone while a coach watches",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     }
   ],
-  "notes": "Transfer item is partly based on paper-talk coverage; details have been kept to the reported contract offer and possible compensation."
+  "notes": "Manchester City coverage is heavy on reaction; sanction details are not included."
 };
