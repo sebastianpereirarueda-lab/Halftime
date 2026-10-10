@@ -1,11 +1,298 @@
 {
-  "fetched": "2026-10-10T11:32:19.239Z",
+  "fetched": "2026-10-10T16:32:29.492Z",
   "items": [
     {
+      "outlet": "The Independent",
+      "title": "Man United vs Tottenham LIVE: Amad Diallo starts for hosts as under pressure teams collide in Premier League",
+      "link": "https://www.independent.co.uk/sport/football/manchester-united-tottenham-live-stream-score-result-premier-league-b3063010.html",
+      "summary": "Spurs desperately need to turn around their form as they travel to Old Trafford",
+      "published": "2026-10-10T16:23:53.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "Ten-man Brighton continue fine form with battling win at Sunderland",
+      "link": "https://www.theguardian.com/football/2026/oct/10/sunderland-brighton-premier-league-match-report",
+      "summary": "<p></p><p>When Jaouen Hadjam lashed Brighton’s second goal beyond the reach of Robin Roefs, it sparked a mass exodus.</p><p>As the Stadium of Light emptied amid a smattering of boos, and frown lines creased the forehead of the Sunderland manager, Régis Le Bris, the Brighton players and their manager, Fabian Hürzeler, prepared to celebrate.</p> <a href=\"https://www.theguardian.com/football/2026/oct/10/sunderland-brighton-premier-league-match-report\">Continue reading...</a>",
+      "published": "2026-10-10T16:20:30.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "Brentford continue unbeaten start with draw at Aston Villa",
+      "link": "https://www.independent.co.uk/sport/football/brentford-aston-villa-premier-league-goals-result-b3064622.html",
+      "summary": "Aston Villa 2-2 Brentford: Keith Andrews’ side have now gone six games without defeat to begin the campaign while Villa’s wait for a home league win continues",
+      "published": "2026-10-10T16:19:29.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "Manchester United v Tottenham: Premier League – live",
+      "link": "https://www.theguardian.com/football/live/2026/oct/10/manchester-united-v-tottenham-premier-league-live",
+      "summary": "<p>⚽ Updates from the 5.30pm BST kick-off at Old Trafford<br>⚽ <a href=\"https://www.theguardian.com/football/live\">Scores</a> | <a href=\"https://www.theguardian.com/football/premierleague/table\">Table</a> | <a href=\"mailto:scott.murray@theguardian.com\">Mail Scott</a></p><p><strong>Tottenham coach Roberto De Zerbi’s turn to talk to Sky.</strong> “[Micky van de Ven does not start] because he plays four games in a row for 90 minutes … we have a squad good enough to change … Marcos Senesi is one of the first XI players no less than Micky or any other centre-back … when Lucas [Bergvall] has played ",
+      "published": "2026-10-10T16:18:56.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "Henderson and João Pedro lead Chelsea charge against Bournemouth",
+      "link": "https://www.theguardian.com/football/2026/oct/10/chelsea-bournemouth-premier-league-match-report",
+      "summary": "<p>Watch and learn, kids. The day began with one for the youth audience, Cole Palmer appearing on a live stream to explain the thinking behind his latest contract extension, and it ended with the oldest player to join Chelsea during the BlueCo era stealing the show with an all-action midfield display in a 5-1 win over Bournemouth.</p><p>The Age of Henderson is under way. There was a time when the idea of a 36-year-old starting in midfield for the Chelsea constructed by Clearlake Capital was impossible to imagine, but not any more. The vibe changed when Xabi Alonso joined as manager last summer",
+      "published": "2026-10-10T16:18:07.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "10-men Brighton overcome Sunderland to maintain exceptional start to season",
+      "link": "https://www.independent.co.uk/sport/football/sunderland-brighton-premier-league-goals-result-b3064624.html",
+      "summary": "Sunderland 0-2 Brighton: Pascal Struijk was sent off shortly after Maxim De Cuyper’s opener but the Seagulls secured all three points",
+      "published": "2026-10-10T16:16:13.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "Ipswich score two late goals to claim dramatic victory against Fulham",
+      "link": "https://www.independent.co.uk/sport/football/ipswich-fulham-premier-league-goals-result-b3064621.html",
+      "summary": "Ipswich 2-1 Fulham: Abdoul Ouattara and Dara O’Shea snatched the home side the points",
+      "published": "2026-10-10T16:15:14.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Ronaldo provisionally suspended by Portugal FA after walkout",
+      "link": "https://www.skysports.com/football/news/12040/13597244/cristiano-ronaldo-portuguese-football-federation-provisionally-suspends-forward-after-walkout-following-disagreement-with-manager-jorge-jesus",
+      "summary": "Cristiano Ronaldo has been provisionally suspended by Portugal after walking out on the national team.",
+      "published": "2026-10-10T16:15:00.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Burnley thump Watford to finally collect first win",
+      "link": "https://www.skysports.com/football/watford-vs-burnley/report/560603",
+      "summary": "Burnley's first win of the season, and their first away from home since February, sent Watford fans into open revolt as the Clarets cruised home 4-0 at Vicarage Road.",
+      "published": "2026-10-10T16:15:00.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Lankshear scores again as Middlesbrough mark 150th anniversary with win",
+      "link": "https://www.skysports.com/football/middlesbrough-vs-wolverhampton-wanderers/report/560598",
+      "summary": "Middlesbrough celebrated their 150th anniversary game in style as Will Lankshear's second-half header secured a 1-0 victory over Wolves at the Riverside Stadium.",
+      "published": "2026-10-10T16:15:00.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Bamford at the double as Sheff Utd breeze past Lincoln",
+      "link": "https://www.skysports.com/football/sheffield-united-vs-lincoln-city/report/560600",
+      "summary": "Patrick Bamford scored twice to help Sheffield United to a comfortable 3-0 victory over Lincoln.",
+      "published": "2026-10-10T16:15:00.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "Aston Villa’s wait for home win goes on after Ajer hits back for Brentford",
+      "link": "https://www.theguardian.com/football/2026/oct/10/aston-villa-brentford-premier-league-match-report",
+      "summary": "<p>Kristoffer Ajer spent a chunk of the extended international window fielding questions about the state of mind of his Norway teammate Erling Haaland and perhaps in recent weeks he also picked up some finishing tips. Two minutes after John McGinn’s shot cannoned in via Ajer’s calf, the centre-back strode forward in the Villa box and kept three defenders at arm’s length before scoring the equaliser, his shot also catching a nick off a defender, this time Victor Lindelöf.</p><p>For the second time in the game, one team cancelled out the other within two minutes, just 88 seconds between Yehor Ya",
+      "published": "2026-10-10T16:09:59.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "Ipswich’s O’Shea and and Outtara stun Fulham with last-gasp comeback win",
+      "link": "https://www.theguardian.com/football/2026/oct/10/ipswich-fulham-premier-league-match-report",
+      "summary": "<p>Ipswich produced a dramatic turnaround to beat Fulham 2-1 after late goals by Abdoul Ouattara and Dara O’Shea extended Álvaro Arbeloa’s winless start to six Premier League matches.</p><p>The former Real Madrid manager had been on course to toast a maiden league victory in charge of the Cottagers after Ryan Sessegnon’s sweet 55th-minute strike put the visitors ahead. It would have eased the pressure on Arbeloa, but the Spaniard watched his team collapse, with Ouattara producing a spectacular 30-yard equaliser with two minutes left before O’Shea, the Ipswich captain, headed home in stoppage t",
+      "published": "2026-10-10T16:07:05.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Norris 'told off' as McLaren lament 'unacceptable' crash with Piastri",
+      "link": "https://www.skysports.com/f1/news/12040/13597104/singapore-gp-mclaren-will-be-furious-at-lando-norris-oscar-piastri-crash-during-sprint-says-martin-brundle",
+      "summary": "Lando Norris has revealed he was \"told off\" by McLaren following a collision with team-mate Oscar Piastri during the Singapore Grand Prix Sprint that team principal Andrea Stella said was \"not acceptable\".",
+      "published": "2026-10-10T16:05:00.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "Jordan Henderson rolls back the years as Chelsea blow away Bournemouth",
+      "link": "https://www.independent.co.uk/sport/football/chelsea-bournemouth-result-score-premier-league-jordan-henderson-cole-palemer-b3064618.html",
+      "summary": "Chelsea 5-1 Bournemouth: The 36-year-old scored twice in a rampant attacking display at Stamford Bridge",
+      "published": "2026-10-10T16:04:49.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Henderson stars as Chelsea thrash Bournemouth",
+      "link": "https://www.skysports.com/football/chelsea-vs-bournemouth/report/559496",
+      "summary": "Chelsea thumped Bournemouth 5-1 in a stunning show of their attacking firepower to go fifth in the early Premier League table.",
+      "published": "2026-10-10T16:00:00.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Ten-player Brighton win at Sunderland to stay third",
+      "link": "https://www.skysports.com/football/sunderland-vs-brighton-and-hove-albion/report/559503",
+      "summary": "High-flying Brighton and Hove Albion won 2-0 at Sunderland to make it three straight Premier League wins without conceding despite having to play more than half an hour with ten men.",
+      "published": "2026-10-10T16:00:00.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Ipswich late show keeps Fulham winless under Arbeloa",
+      "link": "https://www.skysports.com/football/ipswich-town-vs-fulham/report/559500",
+      "summary": "Fulham remain winless in the Premier League under Alvaro Arbeloa after Ipswich stung them with two late goals in a 2-1 win.",
+      "published": "2026-10-10T16:00:00.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Brentford still unbeaten after Ajer levels at Villa",
+      "link": "https://www.skysports.com/football/aston-villa-vs-brentford/report/559495",
+      "summary": "Kristoffer Ajer's equaliser earned a 2-2 draw for Brentford at Aston Villa to maintain their unbeaten start to the Premier League season.",
+      "published": "2026-10-10T16:00:00.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Alphonse Le Grande edges Sea Lantern for historic Cesarewitch win",
+      "link": "https://www.skysports.com/racing/news/12040/13597377/cesarewitch-alphonse-le-grande-edges-sea-lantern-for-historic-newmarket-win",
+      "summary": "Alphonse Le Grande became only the second horse in history to win the Club Godolphin Cesarewitch twice when coming with a late rattle to foil a major gamble on Sea Lantern at Newmarket.",
+      "published": "2026-10-10T15:48:00.000Z"
+    },
+    {
       "outlet": "BBC Sport",
-      "title": "Listen: Off the Ball with Stuart & Tam",
-      "link": "https://www.bbc.co.uk/sounds/play/live:bbc_radio_scotland_fm?at_medium=RSS&at_campaign=rss",
-      "summary": "The most petty and ill-informed football show on radio.",
+      "title": "Hincapie injury adds to Arsenal issues after Guimaraes rescue act",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c63r5w20ez3do?at_medium=RSS&at_campaign=rss",
+      "summary": "Heroics and battling performances have already become a theme of Arsenal's season with Bruno Guimaraes coming to the rescue again.",
+      "published": "2026-10-10T15:44:14.000Z"
+    },
+    {
+      "outlet": "BBC Sport",
+      "title": "Manager ins and outs - 2026-27",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cd94713djgyo?at_medium=RSS&at_campaign=rss",
+      "summary": "BBC Sport tracks all the manager ins and outs in the Premier League, Scottish Premiership, Women's Super League, English Football League and National League.",
+      "published": "2026-10-10T15:42:13.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Record-breaking Renshaw puts Australia on top in Durban",
+      "link": "https://www.skysports.com/cricket/news/12040/13597340/south-africa-vs-australia-matt-renshaw-8204strikes-career-best-190-to-guide-australia-to-390-all-out-on-day-two-of-the-8203first-test",
+      "summary": "Matt Renshaw &#8204;struck a career-best 190 to guide Australia to 390 all out on day two of the &#8203;first test against South Africa at Kingsmead on Saturday, as the home side reached 27-1 in reply before play was &#8203;ended prematurely by bad light.",
+      "published": "2026-10-10T15:25:00.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "Manchester United fans bring back banner mocking Man City trophy drought after guilty verdict",
+      "link": "https://www.independent.co.uk/sport/football/manchester-united-man-city-fans-banner-trophies-premier-league-guilty-verdict-b3064247.html",
+      "summary": "The banner had been a fixture at Old Trafford before Manchester City won the FA Cup in 2011",
+      "published": "2026-10-10T15:23:21.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "'Moustache is here to stay' - Alcaraz advances in straight-sets win",
+      "link": "https://www.skysports.com/watch/video/13597346/juan-manuel-cerundolo-vs-carlos-alcaraz-shanghai-masters-highlights",
+      "summary": "Highlights of Juan Martin Cerundolo against Carlos Alcaraz from the Shanghai Masters.",
+      "published": "2026-10-10T15:15:00.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "'Team's bigger than anyone's ego!' - Stella fumes at Norris-Piastri collision",
+      "link": "https://www.skysports.com/watch/video/13597344/singapore-gp-sprint-collision-not-acceptable-stella-team-interest-is-far-bigger-than-anyones-ego",
+      "summary": "McLaren team principal Andrea Stella reacts to the Sprint collision between Lando Norris and Oscar Piastri at the Singapore Grand Prix.",
+      "published": "2026-10-10T15:14:00.000Z"
+    },
+    {
+      "outlet": "BBC Sport",
+      "title": "Rayo Vallecano game abandoned after paper plane protest",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cw99zy27x0rro?at_medium=RSS&at_campaign=rss",
+      "summary": "Rayo Vallecano's match against Athletic Club was abandoned after the home fans threw paper airplanes onto the pitch in protest against the club's owner.",
+      "published": "2026-10-10T15:04:13.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "Cristiano Ronaldo suspended by Portugal after walking out on national team",
+      "link": "https://www.independent.co.uk/sport/football/cristiano-ronaldo-portugal-suspension-investigation-b3064591.html",
+      "summary": "Ronaldo left camp after an argument with manager Jorge Jesus",
+      "published": "2026-10-10T15:01:07.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Verstappen surge continues with Singapore pole ahead of Ferraris",
+      "link": "https://www.skysports.com/f1/news/12040/13597102/singapore-gp-qualifying-max-verstappen-claims-pole-position-again-as-charles-leclerc-pips-lewis-hamilton-to-second-on-grid",
+      "summary": "Max Verstappen claimed his second pole position of the Singapore Grand Prix weekend to put himself at the head of the grid for Sunday's race and prolong Ferrari's wait for a first full pole of the season.",
+      "published": "2026-10-10T14:45:00.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "Championship roundup: Swansea top after beating Norwich; Blues win at West Brom",
+      "link": "https://www.theguardian.com/football/2026/oct/10/championship-roundup-swansea-norwich-birmingham-west-brom-middlesbrough-wolves",
+      "summary": "<ul><li><p>Swansea 2-1 Norwich; West Brom 0-1 Birmingham</p></li><li><p>Charlton’s winless record goes on against Bristol City</p></li></ul><p>Adam Idah made up for three near misses in the first half to head <strong>Swansea</strong>, the Championship leaders, to a 2-1 home win over <strong>Norwich</strong>. The Republic of Ireland striker scored with a glancing header in the 59th minute to complete his side’s comeback after falling behind to Jacob Wright’s goal in the first half.</p><p>Joseph Opoku gave Idah a great chance to add to his three goals this season in the 22nd minute after winning",
+      "published": "2026-10-10T14:18:17.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Darkness Falls strikes Dewhurst gold for O'Brien",
+      "link": "https://www.skysports.com/racing/news/12040/13597306/dewhurst-stakes-darkness-falls-ignites-triple-crown-dreams-with-newmarket-triumph",
+      "summary": "Darkness Falls took over at the top of the 2000 Guineas market after edging a heavyweight clash against previously unbeaten Desert Castle in a thrilling Darley Dewhurst Stakes at Newmarket.",
+      "published": "2026-10-10T14:15:00.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "The Bruno Guimaraes moment that showed why Arsenal remain Premier League favourites",
+      "link": "https://www.independent.co.uk/sport/football/arsenal-leeds-result-score-premier-league-bruno-guimaraes-b3064575.html",
+      "summary": "Arsenal 2-1 Leeds: The big-money midfielder struck superbly off the bench as Arsenal came from behind to beat Leeds",
+      "published": "2026-10-10T14:10:38.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Man Utd vs Spurs LIVE!",
+      "link": "https://www.skysports.com/football/manchester-united-vs-tottenham-hotspur/live/559502",
+      "summary": "",
+      "published": "2026-10-10T14:00:00.000Z"
+    },
+    {
+      "outlet": "The Independent",
+      "title": "Arsenal v Leeds LIVE: Bruno Guimaraes stunner earns champions hard-fought Premier League win",
+      "link": "https://www.independent.co.uk/sport/football/arsenal-leeds-live-stream-score-result-premier-league-b3063008.html",
+      "summary": "Can Arsenal bounce back from defeat to Brighton against high-flying Leeds?",
+      "published": "2026-10-10T13:44:03.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "Bruno Guimarães completes Arsenal comeback to end Leeds’ unbeaten run",
+      "link": "https://www.theguardian.com/football/2026/oct/10/arsenal-leeds-premier-league-match-report",
+      "summary": "<p>Arsenal built the foundations of their new success on a desire for competition, an appetite for battle. But what happens when that spirit is insufficient, when your opponents play just as hard as you do? Well, then you bring on Bruno Guimarães and you play even harder.</p><p>Arsenal had just snatched an equaliser against a dominant Leeds side when Mikel Arteta <a href=\"https://www.theguardian.com/football/2026/aug/08/arsenal-transfer-bruno-guimaraes-newcastle-football\">introduced his key summer signing</a>. The former Newcastle captain has been having to bide his time but when he entered th",
+      "published": "2026-10-10T13:41:25.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Priske penalty earns Birmingham narrow win over WBA",
+      "link": "https://www.skysports.com/football/west-bromwich-albion-vs-birmingham-city/report/560604",
+      "summary": "West Brom defender Nat Phillips was at fault for the second successive derby as Birmingham won 1-0 at The Hawthorns.",
+      "published": "2026-10-10T13:35:00.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Bristol City extend Charlton's winless run to six games",
+      "link": "https://www.skysports.com/football/charlton-athletic-vs-bristol-city/report/560596",
+      "summary": "Bristol City goalkeeper Sam Tickle pulled off two big saves in the second half to extend Charlton's winless run in the Championship to six matches after a 1-1 draw at The Valley.",
+      "published": "2026-10-10T13:35:00.000Z"
+    },
+    {
+      "outlet": "BBC Sport",
+      "title": "Who changed the game? - player ratings for Arsenal v Leeds",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmx2dpwv02e1o?at_medium=RSS&at_campaign=rss",
+      "summary": "How Arsenal and Leeds players rated following their Premier League match.",
+      "published": "2026-10-10T13:30:28.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "Portugal suspend Cristiano Ronaldo after walking out on national team",
+      "link": "https://www.theguardian.com/football/2026/oct/10/portugal-suspend-cristiano-ronaldo",
+      "summary": "<ul><li><p>Federation opens disciplinary proceedings</p></li><li><p>Veteran has been critical of coach Jorge Jesus</p></li></ul><p>Cristiano Ronaldo has been provisionally suspended as the Portuguese football federation opened disciplinary proceedings against the 41-year-old after his <a href=\"https://www.theguardian.com/football/2026/oct/01/cristiano-ronaldos-portugal-walkout-divides-a-nation-as-jorge-jesus-asserts-control\">decision to walk out on the national team</a>.</p><p>Ronaldo apologised to supporters on Tuesday<a href=\"https://www.theguardian.com/football/2026/oct/06/cristiano-ronaldo",
+      "published": "2026-10-10T13:30:04.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Arsenal come from behind to beat stubborn Leeds",
+      "link": "https://www.skysports.com/football/arsenal-vs-leeds-united/report/559494",
+      "summary": "Arsenal scored two goals in eight minutes to come from behind and get back to winning ways via a 2-1 comeback win over Daniel Farke's stubborn Leeds.",
+      "published": "2026-10-10T13:30:00.000Z"
+    },
+    {
+      "outlet": "The Guardian",
+      "title": "South Melbourne make history with Australia Cup win that could change the future too | Joey Lynch",
+      "link": "https://www.theguardian.com/football/2026/oct/11/south-melbourne-vs-victory-australia-cup-final",
+      "summary": "<p>South Melbourne defeat Melbourne Victory 4-3 on penalties (1-1 aet) to cap night of celebration and become first non-A-League club to win the cup</p><ul><li><p><a href=\"https://www.theguardian.com/football/2026/sep/25/football-desk-australia-newsletter-sign-up-subscribe-soccer-free-weekly-email\">Sign up for Football Desk Australia: our newsletter from Jonathan Wilson</a></p></li></ul><p>It was remarkable. It was incredible. It featured the type of grandstand finish one dare not suggest as a possibility beforehand, lest you be dismissed for self-indulgence. And when South Melbourne emerged a",
+      "published": "2026-10-10T13:15:17.000Z"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Naderi and Kelsy on target as Rangers beat Kilmarnock to go top LIVE!",
+      "link": "https://www.skysports.com/football/rangers-vs-kilmarnock/live/558380",
+      "summary": "",
       "published": "2026-10-10T13:00:00.000Z"
     },
     {
@@ -14,41 +301,6 @@
       "link": "https://www.independent.co.uk/sport/football/andoni-iraola-liverpool-man-city-premier-league-b3064155.html",
       "summary": "Manchester City’s trip to Anfield will be more highly charged than ever after the revelations of their financial misconduct, but the meeting of the two sides also highlights different attitudes to money at the top of the Premier League",
       "published": "2026-10-10T11:25:48.000Z"
-    },
-    {
-      "outlet": "The Independent",
-      "title": "Arsenal v Leeds LIVE: Rice fit to start with champions in action as Premier League returns",
-      "link": "https://www.independent.co.uk/sport/football/arsenal-leeds-live-stream-score-result-premier-league-b3063008.html",
-      "summary": "Can Arsenal bounce back from defeat to Brighton against high-flying Leeds?",
-      "published": "2026-10-10T11:25:36.000Z"
-    },
-    {
-      "outlet": "The Guardian",
-      "title": "Arsenal v Leeds: Premier League – live",
-      "link": "https://www.theguardian.com/football/live/2026/oct/10/arsenal-v-leeds-premier-league-live",
-      "summary": "<p>⚽ Updates from the Emirates: kick-off 12.30pm BST<br>⚽ <a href=\"https://www.theguardian.com/football/2026/oct/09/premier-league-10-things-to-look-out-for-this-weekend\">Ten things to look out for</a> | <a href=\"https://www.theguardian.com/football/live\">Live scores</a> | <a href=\"mailto:barry.glendenning@theguardian.com\">Mail Barry</a></p><p><strong>An email:</strong> “Happy Saturday, Barry,” writes Mark Kerry. “Is it just me or are there other baffled Arsenal fans out there regarding Arteta’s obsession with starting Havertz as a centre forward? I just can’t see the rationale for it at this ",
-      "published": "2026-10-10T11:23:45.000Z"
-    },
-    {
-      "outlet": "The Guardian",
-      "title": "Palmer signs new Chelsea deal, Iraola backs Barcola after France displays – as it happened",
-      "link": "https://www.theguardian.com/football/live/2026/oct/10/arsenal-bid-to-close-gap-on-city-lowly-spurs-head-to-manchester-united-matchday-live",
-      "summary": "<p>Cole Palmer signs a new deal at Chelsea and build-up to the return of the Premier League following the international break</p><p><strong>Talking of West Ham and stoppage-time drama – it’ll all become clear – there was also late drama in the Bundesliga last night.</strong> Leaders Borussia Dortmund were all set to maintain their 100% start after late goals from Daniel Svensson (80) and Nico Schlotterbeck (85) put them 2-0 up on Werder Bremen. But Ludovit Reis pulled one back for the visitors on 88 before on-loan West Ham striker, Niclas Füllkrug, headed home an equaliser deep into added time",
-      "published": "2026-10-10T10:59:56.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "Verstappen wins wet Singapore Sprint after Russell crashes",
-      "link": "https://www.skysports.com/f1/news/12040/13597101/singapore-gp-sprint-max-verstappen-beats-lewis-hamilton-after-george-russell-crashes-out-from-lead",
-      "summary": "Max Verstappen won a rain-affected Singapore Grand Prix Sprint after George Russell dramatically crashed out from the lead.",
-      "published": "2026-10-10T10:30:00.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "'We win major trophies here': Palmer signs new Chelsea contract",
-      "link": "https://www.skysports.com/football/news/12040/13597179/cole-palmer-contract-chelsea-forward-signs-extension-at-stamford-bridge-until-2034",
-      "summary": "Cole Palmer has signed a contract extension with Chelsea.",
-      "published": "2026-10-10T10:09:00.000Z"
     },
     {
       "outlet": "BBC Sport",
@@ -65,32 +317,18 @@
       "published": "2026-10-10T09:51:09.000Z"
     },
     {
-      "outlet": "Sky Sports",
-      "title": "Arsenal vs Leeds as Premier League returns LIVE!",
-      "link": "https://www.skysports.com/football/arsenal-vs-leeds-united/live/559494",
-      "summary": "",
-      "published": "2026-10-10T09:30:00.000Z"
-    },
-    {
       "outlet": "BBC Sport",
       "title": "NI debut 'something I thought had passed' - Elmore",
       "link": "https://www.bbc.co.uk/sport/football/articles/ck7vpdz0lnmvo?at_medium=RSS&at_campaign=rss",
-      "summary": "Northern Ireland's World Cup hopes may have all but come to an end against Portugal, but for Kess Elmore the 4-0 defeat marks the start of a long-awaited international journey.",
+      "summary": "Northern Ireland's World Cup hopes may have all but come to an end against Portugal, but for Kess Elmore, the 4-0 defeat marks the start of a long-awaited first foray into senior international football.",
       "published": "2026-10-10T09:19:45.000Z"
     },
     {
-      "outlet": "Sky Sports",
-      "title": "Aramco Korea Championship | Day three highlights",
-      "link": "https://www.skysports.com/watch/video/13597146/aramco-korea-championship-day-three-highlights",
-      "summary": "Highlights from the third round of the Aramco Korea Championship.",
-      "published": "2026-10-10T08:42:00.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "Dominant All Blacks score 50 points in big win over Australia",
-      "link": "https://www.skysports.com/rugby-union/new-zealand-vs-australia/report/111859",
-      "summary": "New Zealand will retain the Bledisloe Cup for a 24th year after powering to a 50-19 victory over Australia at Eden Park on Saturday.&#160;",
-      "published": "2026-10-10T08:29:00.000Z"
+      "outlet": "BBC Sport",
+      "title": "Football Daily",
+      "link": "https://www.bbc.co.uk/sounds/play/p0pfxl7m?at_medium=RSS&at_campaign=rss",
+      "summary": "Kelly Somers speaks to Arsenal captain Martin Odegaard.",
+      "published": "2026-10-10T09:00:00.000Z"
     },
     {
       "outlet": "BBC Sport",
@@ -107,27 +345,6 @@
       "published": "2026-10-10T08:27:28.000Z"
     },
     {
-      "outlet": "Sky Sports",
-      "title": "Singapore GP Sprint: Reaction to dramatic Sprint as Verstappen wins and Russell crashes LIVE!",
-      "link": "https://www.skysports.com/f1/live-blog/12040/13597107/f1-singapore-gp-live-sprint-qualifying-updates-results-stream-highlights-video-from-marina-bay-circuit-race-weekend",
-      "summary": "",
-      "published": "2026-10-10T07:50:00.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
-      "title": "Celtic decide against offering Bakayoko deal - gossip",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c8r4ylzn6gkxo?at_medium=RSS&at_campaign=rss",
-      "summary": "Celtic elect not to offer deal to midfielder as Derek Riordan urges patience under new Hibernian boss.",
-      "published": "2026-10-10T07:17:27.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "England's Smith shines with Baycurrent Classic set for final-round thriller",
-      "link": "https://www.skysports.com/watch/video/13597124/the-baycurrent-classic-day-three-highlights",
-      "summary": "Highlights from the third round of the PGA Tour Baycurrent Classic.",
-      "published": "2026-10-10T07:06:00.000Z"
-    },
-    {
       "outlet": "The Guardian",
       "title": "Sliding Doors meets Biff’s Almanac: City saga stirs up a world of alternate histories | Max Rushden",
       "link": "https://www.theguardian.com/football/2026/oct/10/manchester-city-enzo-maresca",
@@ -142,32 +359,11 @@
       "published": "2026-10-10T06:29:58.000Z"
     },
     {
-      "outlet": "Sky Sports",
-      "title": "Masked Man and Wellington Arch tackle Chepstow's Silver Trophy",
-      "link": "https://www.skysports.com/racing/news/12040/13596603/today-on-sky-sports-racing-chepstow-hexham-and-southwell-feature-live-on-saturday",
-      "summary": "We have a busy day's racing on Saturday with action from Chepstow, Hexham and Southwell, live on Sky Sports Racing...",
-      "published": "2026-10-10T06:00:00.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "Opetaia could fight Wilder on Fury-AJ undercard: 'He’s ready to go!'",
-      "link": "https://www.skysports.com/boxing/news/12040/13597094/fury-vs-joshua-undercard-jai-opetaia-could-fight-deontay-wilder-on-principality-stadium-bill",
-      "summary": "Deontay Wilder could fight Jai Opetaia on the undercard of the Tyson Fury vs Anthony Joshua blockbuster clash on December 11.",
-      "published": "2026-10-10T06:00:00.000Z"
-    },
-    {
       "outlet": "BBC Sport",
       "title": "Man City titles 'absolutely not' tainted - Maresca",
       "link": "https://www.bbc.co.uk/sport/football/articles/cmzxjdvv784xo?at_medium=RSS&at_campaign=rss",
       "summary": "Manchester City manager Enzo Maresca says the club's titles are \"absolutely not\" tainted after they were found guilty of the majority of the 115 charges brought against them by the Premier League.",
       "published": "2026-10-10T05:56:59.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "As it happened - All Blacks POWER away vs Australia to retain Bledisloe Cup",
-      "link": "https://www.skysports.com/rugby-union/live-blog/12040/13596789/new-zealand-vs-australia-live-all-blacks-host-wallabies-in-first-bledisloe-cup-test-updates-latest-scores-team-news-commentary",
-      "summary": "",
-      "published": "2026-10-10T05:50:00.000Z"
     },
     {
       "outlet": "The Independent",
@@ -198,13 +394,6 @@
       "published": "2026-10-09T22:59:32.000Z"
     },
     {
-      "outlet": "Sky Sports",
-      "title": "'You will see me back' - Smith vows 2027 return after Swiss Darts Trophy win",
-      "link": "https://www.skysports.com/darts/news/12040/13597050/swiss-darts-trophy-former-world-champion-michael-smith-plans-on-playing-100-per-cent-of-the-tournaments-in-2027-after-opening-win",
-      "summary": "Former world champion Michael Smith says he plans on \"playing 100 per cent of the tournaments\" in 2027 after an opening win at the Swiss Darts Trophy.",
-      "published": "2026-10-09T22:05:00.000Z"
-    },
-    {
       "outlet": "BBC Sport",
       "title": "Arteta's conscience clear over Man City charges",
       "link": "https://www.bbc.co.uk/sport/football/articles/c6d93ql8jvdko?at_medium=RSS&at_campaign=rss",
@@ -226,32 +415,11 @@
       "published": "2026-10-09T21:30:05.000Z"
     },
     {
-      "outlet": "Sky Sports",
-      "title": "Papers: Man Utd forced into transfer market in January?",
-      "link": "https://www.skysports.com/football/news/12040/13597035/man-utd-may-be-forced-into-transfer-market-in-january-paper-talk",
-      "summary": "The top stories and transfer rumours from Saturday's newspapers...",
-      "published": "2026-10-09T21:30:00.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "Arteta says conscience clear over time at Man City",
-      "link": "https://www.skysports.com/football/news/12040/13596973/man-city-charges-arsenal-boss-mikel-arteta-says-he-has-clear-conscience-over-his-time-at-etihad-after-serious-breaches-of-financial-rules",
-      "summary": "Mikel Arteta has said he has a clear conscience over his former club Manchester City's serious breaches of financial rules.",
-      "published": "2026-10-09T21:30:00.000Z"
-    },
-    {
       "outlet": "BBC Sport",
       "title": "NI World Cup hopes gone from 'improbable to impossible'",
       "link": "https://www.bbc.co.uk/sport/football/articles/c6gqw03lxxnno?at_medium=RSS&at_campaign=rss",
       "summary": "Michael McArdle admits Northern Ireland's chances of beating Portugal in a Women's World Cup play-off have \"gone from improbable to impossible\" after a 4-0 first leg defeat.",
       "published": "2026-10-09T21:24:28.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "Wainwright opens Leicester account with Gloucester win in front of Prince Harry",
-      "link": "https://www.skysports.com/rugby-union/news/12040/13597061/gallagher-prem-aaron-wainwright-scores-his-first-try-for-leicester-tigers-as-they-defeat-gloucester-in-front-of-prince-harry",
-      "summary": "Wales back-rower Aaron Wainwright scored his first try for Leicester Tigers as they defeated Gloucester 38-31 in a forward-dominated contest in the Gallagher Prem watched by The Duke of Sussex, Prince Harry.",
-      "published": "2026-10-09T21:22:00.000Z"
     },
     {
       "outlet": "BBC Sport",
@@ -275,34 +443,6 @@
       "published": "2026-10-09T21:15:24.000Z"
     },
     {
-      "outlet": "Sky Sports",
-      "title": "Bowen's late penalty saved as West Ham held by QPR",
-      "link": "https://www.skysports.com/football/west-ham-united-vs-queens-park-rangers/report/560605",
-      "summary": "Jarrod Bowen saw his 91st-minute penalty saved as West Ham missed the chance to move top of the Sky Bet Championship after a 1-1 draw with QPR.",
-      "published": "2026-10-09T21:00:00.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "INCREDIBLE! QPR's Charles saves stoppage-time Bowen pen AND rebound!",
-      "link": "https://www.skysports.com/watch/video/13597075/west-ham-vs-qpr-charles-the-hero-as-he-saves-bowens-penalty-and-the-rebound",
-      "summary": "Pierce Charles was the QPR hero as he helped them secure a point away to West Ham by saving a last-minute penalty and the rebound.",
-      "published": "2026-10-09T20:56:00.000Z"
-    },
-    {
-      "outlet": "The Guardian",
-      "title": "Sam Kerr on target but Matildas outclassed by youthful Germany in European friendly",
-      "link": "https://www.theguardian.com/football/2026/oct/10/matildas-australia-germany-sam-kerr-friendly-match-report",
-      "summary": "<ul><li><p>Australia fall 4-2 to world No 3 side in Karlsruhe</p></li><li><p>Holly McNamara joins Kerr on scoresheet for Matildas</p></li><li><p><a href=\"https://www.theguardian.com/football/2026/sep/25/football-desk-australia-newsletter-sign-up-subscribe-soccer-free-weekly-email\">Sign up for Football Desk Australia: our free newsletter with Jonathan Wilson</a></p></li></ul><p>For a moment, it felt like the Matildas were back. Ellie Carpenter took off down the right wing, eating up the metres with the ball at her feet, bouncing a pass off Hayley Raso before chipping a cross to the front post f",
-      "published": "2026-10-09T20:52:54.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "Scotland and Wales win in World Cup play-offs",
-      "link": "https://www.skysports.com/football/live-blog/12040/12507208/football-latest-news-gossip",
-      "summary": "",
-      "published": "2026-10-09T20:20:00.000Z"
-    },
-    {
       "outlet": "The Guardian",
       "title": "Russo’s return to form is vital but Lionesses still lack bite against low blocks | Suzanne Wrack",
       "link": "https://www.theguardian.com/football/2026/oct/09/lionesses-alessia-russo-england-greece-womens-world-cup-qualification-playoff",
@@ -310,25 +450,11 @@
       "published": "2026-10-09T20:05:40.000Z"
     },
     {
-      "outlet": "Sky Sports",
-      "title": "White: Fury-AJ will be most lucrative gate in British boxing history",
-      "link": "https://www.skysports.com/boxing/news/12040/13596848/fury-vs-joshua-will-draw-the-most-lucrative-gate-in-british-boxing-history-says-dana-white",
-      "summary": "Tyson Fury vs Anthony Joshua will generate the most lucrative gate in British boxing history, Dana White tells Sky Sports.",
-      "published": "2026-10-09T20:00:00.000Z"
-    },
-    {
       "outlet": "BBC Sport",
       "title": "Wales must improve in World Cup bid - Wilkinson",
       "link": "https://www.bbc.co.uk/sport/football/articles/cw4g1z0g17x8o?at_medium=RSS&at_campaign=rss",
       "summary": "Rhian Wilkinson accepts Wales must raise their standards after they scrape to a 1-0 victory in their Women's World Cup play-off semi-final in Albania.",
       "published": "2026-10-09T19:34:54.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "Forrest holds halfway lead at Open de Espana",
-      "link": "https://www.skysports.com/golf/news/12040/13597032/open-de-espana-grant-forrest-continues-good-record-to-take-one-stroke-lead-into-the-weekend-in-madrid",
-      "summary": "Scotland's Grant Forrest continued his good record at the Open de Espana to take a one-stroke lead into the weekend.",
-      "published": "2026-10-09T19:18:00.000Z"
     },
     {
       "outlet": "The Guardian",
@@ -357,13 +483,6 @@
       "link": "https://www.theguardian.com/football/2026/oct/09/greece-england-womens-world-cup-qualifying-playoff",
       "summary": "<ul><li><p>World Cup qualifying playoff: Greece 1-3 England</p></li><li><p>Stanway, Le Tissier and Russo on target</p></li></ul><p>Sarina Wiegman said she wanted to see a bit more from her side after their fairly underwhelming performance against a hugely unfancied Greek side, despite securing a valuable first-leg victory in their Women’s World Cup playoff tie.</p><p>Georgia Stanway’s neat finish, Maya Le Tissier’s first England goal and Alessia Russo’s low strike were enough to give England control but a Kallisti Brouksair goal for Greece means that the tie is not definitively over, going int",
       "published": "2026-10-09T18:46:37.000Z"
-    },
-    {
-      "outlet": "Sky Sports",
-      "title": "England take control of World Cup play-off with win in Greece",
-      "link": "https://www.skysports.com/football/greece-women-vs-england-women/report/559077",
-      "summary": "England are in control of their World Cup play-off with Greece after winning the first leg 3-1 in Crete.",
-      "published": "2026-10-09T18:30:00.000Z"
     },
     {
       "outlet": "BBC Sport",
@@ -401,13 +520,6 @@
       "published": "2026-10-09T16:06:15.000Z"
     },
     {
-      "outlet": "BBC Sport",
-      "title": "Decision to stay at Celtic did not take long - O'Neill",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cm89z77egpw5o?at_medium=RSS&at_campaign=rss",
-      "summary": "Martin O'Neill suggests he was never close to leaving Celtic after a three-game losing streak, with the veteran manager stressing his \"great enthusiasm\" for the role.",
-      "published": "2026-10-09T16:04:03.000Z"
-    },
-    {
       "outlet": "The Guardian",
       "title": "Maresca maintains almost total control as he follows Manchester City owners’ line | Jamie Jackson",
       "link": "https://www.theguardian.com/football/2026/oct/09/maresca-maintains-almost-total-control-as-he-follows-manchester-city-owners-line",
@@ -423,31 +535,10 @@
     },
     {
       "outlet": "BBC Sport",
-      "title": "Football Daily",
-      "link": "https://www.bbc.co.uk/sounds/play/m0032mc0?at_medium=RSS&at_campaign=rss",
-      "summary": "Conor McNamara joins Ian Dennis and John Murray ahead of a big Premier League weekend.",
-      "published": "2026-10-09T15:51:00.000Z"
-    },
-    {
-      "outlet": "The Independent",
-      "title": "What every Premier League manager said about the Man City verdict",
-      "link": "https://www.independent.co.uk/sport/football/man-city-guilty-reaction-premier-league-maresca-arteta-iraola-b3064251.html",
-      "summary": "Man City’s guilty verdict was the topic on everyone’s lips ahead of the return of Premier League football",
-      "published": "2026-10-09T15:42:08.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
       "title": "Everton up for sale again - so what next as owners TFG look for a way out?",
       "link": "https://www.bbc.co.uk/sport/football/articles/c3y0e8n9q4e0o?at_medium=RSS&at_campaign=rss",
       "summary": "Everton are up for sale again. Chief football writer Phil McNulty looks at what happens next as owners The Friedkin Group look for a way out.",
       "published": "2026-10-09T15:38:59.000Z"
-    },
-    {
-      "outlet": "The Independent",
-      "title": "Mikel Arteta reacts to Man City verdict by calling for ‘respect’ for process",
-      "link": "https://www.independent.co.uk/sport/football/mikel-arteta-man-city-guilty-arsenal-premier-league-b3064271.html",
-      "summary": "Arteta worked as City’s assistant coach during the back-end of the period when the club were guilty of financial breaches",
-      "published": "2026-10-09T15:25:28.000Z"
     },
     {
       "outlet": "The Guardian",
@@ -464,20 +555,6 @@
       "published": "2026-10-09T15:01:41.000Z"
     },
     {
-      "outlet": "The Independent",
-      "title": "Roberto De Zerbi explains surprise Dejan Kulusevski role as Tottenham return nears",
-      "link": "https://www.independent.co.uk/sport/football/dejan-kulusevski-tottenham-spurs-roberto-de-zerbi-pedro-porro-b3064268.html",
-      "summary": "Kulusevski has not played competitively in more than 500 days",
-      "published": "2026-10-09T14:53:43.000Z"
-    },
-    {
-      "outlet": "The Independent",
-      "title": "Xabi Alonso defends Cole Palmer's England commitment after Thomas Tuchel criticism",
-      "link": "https://www.independent.co.uk/sport/football/cole-palmer-thomas-tuchel-xabi-alonso-england-commitment-b3064261.html",
-      "summary": "Cole Palmer withdrew from the England squad but will be fit to play this weekend",
-      "published": "2026-10-09T14:52:15.000Z"
-    },
-    {
       "outlet": "The Guardian",
       "title": "Football Daily | The Premier League is back and you absolutely can’t look away",
       "link": "https://www.theguardian.com/football/2026/oct/09/football-daily-email-premier-league",
@@ -485,46 +562,11 @@
       "published": "2026-10-09T14:50:09.000Z"
     },
     {
-      "outlet": "The Independent",
-      "title": "Man United dealt triple injury blow ahead of crucial Tottenham clash",
-      "link": "https://www.independent.co.uk/sport/football/man-united-injury-news-sesko-dorgu-mazraoui-carrick-b3064248.html",
-      "summary": "Manchester United will host winless Tottenham on Saturday evening",
-      "published": "2026-10-09T14:39:42.000Z"
-    },
-    {
-      "outlet": "The Independent",
-      "title": "Manchester United fans bring back banner mocking Man City trophy drought after guilty verdict",
-      "link": "https://www.independent.co.uk/sport/football/manchester-united-man-city-fans-banner-trophies-premier-league-guilty-verdict-b3064247.html",
-      "summary": "The banner had been a fixture at Old Trafford before Manchester City won the FA Cup in 2011",
-      "published": "2026-10-09T14:35:05.000Z"
-    },
-    {
-      "outlet": "The Independent",
-      "title": "Mikel Arteta reveals Declan Rice worry in Arsenal injury update",
-      "link": "https://www.independent.co.uk/sport/football/declan-rice-injury-arsenal-team-news-mikel-arteta-b3064186.html",
-      "summary": "Rice withdrew from the England squad during the international break and has endured a heavy workload in the last few seasons",
-      "published": "2026-10-09T14:33:54.000Z"
-    },
-    {
-      "outlet": "The Guardian",
-      "title": "Rui Pinto to remain under witness protection after U-turn by Portuguese authorities",
-      "link": "https://www.theguardian.com/football/2026/oct/09/rui-pinto-remain-under-witness-protection-u-turn-portuguese-authorities-manchester-city-whistleblower",
-      "summary": "<ul><li><p>CPES will now allow Pinto to challenge original decision</p></li><li><p>Whistleblower to receive risk assessment reports</p></li></ul><p>Rui Pinto will remain under witness protection for the time being after Portuguese authorities suspended the decision to end it. The special security programmes commission (CPES) acknowledged he should have been given an opportunity to present his case before the decision was taken. The Manchester City whistleblower can now challenge the withdrawal of his protection, with the commission expected to reconsider the matter.</p><p>In a statement signed",
-      "published": "2026-10-09T14:32:39.000Z"
-    },
-    {
       "outlet": "BBC Sport",
       "title": "I've got my own questions on Man City case - Carrick",
       "link": "https://www.bbc.co.uk/sport/football/articles/ck5ynv45lymdo?at_medium=RSS&at_campaign=rss",
       "summary": "Manchester United boss Michael Carrick says he was personally affected by the Manchester City case which has seen the club found guilty of breaching Premier League financial rules and still has questions about the matter.",
       "published": "2026-10-09T14:30:38.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
-      "title": "'Intense' talks convinced Reedijk over Hibs job",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqx29kvj790yo?at_medium=RSS&at_campaign=rss",
-      "summary": "Marink Reedijk was convinced Hibernian was the right move for him after a seven-hour meeting with the club's board in London.",
-      "published": "2026-10-09T14:14:42.000Z"
     },
     {
       "outlet": "BBC Sport",
@@ -541,39 +583,11 @@
       "published": "2026-10-09T14:00:30.000Z"
     },
     {
-      "outlet": "The Independent",
-      "title": "Michael Carrick reacts to ‘unprecedented’ Manchester City verdict: ‘Thrown up a lot of questions’",
-      "link": "https://www.independent.co.uk/sport/football/michael-carrick-man-city-charges-verdict-man-utd-b3064200.html",
-      "summary": "Carrick was part of the United team who twice finished runners-up to City during the period covered by the charges",
-      "published": "2026-10-09T13:43:22.000Z"
-    },
-    {
-      "outlet": "The Independent",
-      "title": "Amateur football club wins £1m Lotto jackpot after 30 years of playing the same numbers",
-      "link": "https://www.independent.co.uk/sport/football/news/national-lottery-longlevens-afc-gloucestershire-b3064197.html",
-      "summary": "Club president Bill Davis said the money would be used to secure the club’s long-term future",
-      "published": "2026-10-09T13:30:23.000Z"
-    },
-    {
-      "outlet": "The Independent",
-      "title": "Andoni Iraola confirms double injury blow for Liverpool ahead of Man City clash",
-      "link": "https://www.independent.co.uk/sport/football/liverpool-man-city-alexander-isak-cody-gakpo-andoni-iraola-b3064176.html",
-      "summary": "Andoni Iraola offered reassurance that the injuries were not ‘long-term’ but has ruled them out of the Man City game",
-      "published": "2026-10-09T13:15:30.000Z"
-    },
-    {
       "outlet": "BBC Sport",
       "title": "What impact has break had & how will Reedijk fare? Premiership questions",
       "link": "https://www.bbc.co.uk/sport/football/articles/crje53gx34qeo?at_medium=RSS&at_campaign=rss",
       "summary": "After an extended international break, the Scottish Premiership's usual suspects - and one newcomer - limber up for a full weekend card of fixtures.",
       "published": "2026-10-09T13:07:09.000Z"
-    },
-    {
-      "outlet": "The Independent",
-      "title": "Enzo Maresca’s eloquent defence distracts from the real truth about Manchester City",
-      "link": "https://www.independent.co.uk/sport/football/man-city-premier-league-enzo-maresca-pep-guardiola-b3064156.html",
-      "summary": "The new Manchester City manager was polished and poised as he faced questions about their misdeeds – but, Richard Jolly wonders, how long can it last?",
-      "published": "2026-10-09T12:43:24.000Z"
     },
     {
       "outlet": "BBC Sport",
@@ -602,20 +616,6 @@
       "link": "https://www.bbc.co.uk/sport/football/articles/cm040l634249o?at_medium=RSS&at_campaign=rss",
       "summary": "With Manchester City found guilty of the majority of 115 charges against them, how are their fans feeling?",
       "published": "2026-10-09T09:02:26.000Z"
-    },
-    {
-      "outlet": "The Guardian",
-      "title": "Zavier Gozo: ‘You have to be uncomfortable to get to the highest levels’",
-      "link": "https://www.theguardian.com/football/2026/oct/09/zavier-gozo-crystal-palace-usmnt-interview",
-      "summary": "<p>Crystal Palace’s American import had never lived anywhere but Utah before moving to London. Now, he’s aiming for more Premier League minutes</p><p>Much has changed in Zavier Gozo’s life since May.</p><p><a href=\"https://www.theguardian.com/football/2026/aug/18/zavier-gozo-crystal-palace-mls-real-salt-lake-transfer\">Back then</a>, Gozo was a day removed from learning he wasn’t among Mauricio Pochettino’s 26 selections for the World Cup, having just made what proved to be his third-to-last appearance with boyhood club Real Salt Lake.</p> <a href=\"https://www.theguardian.com/football/2026/oct/",
-      "published": "2026-10-09T09:00:44.000Z"
-    },
-    {
-      "outlet": "The Guardian",
-      "title": "European FAs pushing for three-week international break to be abandoned",
-      "link": "https://www.theguardian.com/football/2026/oct/09/european-fas-want-three-week-international-break-abandoned-injuries",
-      "summary": "<ul><li><p>Workload, injuries and finances underpin concerns</p></li><li><p>Most European FAs want return to previous format</p></li></ul><p>Europe’s football associations have raised serious concerns about the impact of the extended international break and will ask Uefa to push for a reversion to the previous scheduling.</p><p>The new three-week break left European countries tasked with four Nations League games, which typically took place within 11 days. It has brought deep misgivings about <a href=\"https://www.theguardian.com/football/2026/oct/08/premier-league-injuries-kai-havertz-alexande",
-      "published": "2026-10-09T09:00:01.000Z"
     },
     {
       "outlet": "BBC Sport",
@@ -651,20 +651,6 @@
       "link": "https://www.theguardian.com/football/2026/oct/09/oliver-glasner-there-was-no-plan-for-me-to-be-nottingham-forest-manager",
       "summary": "<p>On Sunday, Austrian returns to Crystal Palace, the club he left in the summer after leading them to unprecedented success, but accepts there could be ‘booing’</p><p>Oliver Glasner puffs his cheeks and starts the search for the right words to explain his emotions as he prepares to return to Crystal Palace for the first time since leaving. There is the small matter of heading back on Sunday with Nottingham Forest to Selhurst Park, where bitterness runs deep over the club seizing Palace’s place in the Europa League last season. Forest’s owner, Evangelos Marinakis, is suing Palace for defamatio",
       "published": "2026-10-09T07:00:41.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
-      "title": "How Arteta's response to Brighton loss may shape Arsenal's next chapter",
-      "link": "https://www.bbc.co.uk/sport/football/articles/crn8wg221lnvo?at_medium=RSS&at_campaign=rss",
-      "summary": "Mikel Arteta has shown an increased appetite for risk this season but, as Arsenal look to stay at the top, failing to reinvent would be a greater gamble.",
-      "published": "2026-10-09T06:41:14.000Z"
-    },
-    {
-      "outlet": "BBC Sport",
-      "title": "Maresca will be demanding a siege mentality from Man City - Pulis",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmy4x3908kpqo?at_medium=RSS&at_campaign=rss",
-      "summary": "BBC Sport columnist Tony Pulis explains why Manchester City players have a great chance to show unity and togetherness when they travel to Anfield on Sunday.",
-      "published": "2026-10-09T05:25:04.000Z"
     }
   ]
 }
