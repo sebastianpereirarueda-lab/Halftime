@@ -1,154 +1,154 @@
 // GENERATED FILE — do not edit by hand. Front Page news written by gpt-5.5 from the sources listed in each story; illustrations by gpt-image-2.
-// Written 2026-10-10T11:33:52.387Z by the Halftime data pipeline.
+// Written 2026-10-10T16:34:05.969Z by the Halftime data pipeline.
 window.HALFTIME_NEWS = {
-  "updated": "2026-10-10T11:32:43.105Z",
+  "updated": "2026-10-10T16:32:57.972Z",
   "model": "gpt-5.5",
-  "articlesConsidered": 95,
-  "candidatesHash": "5894e63842469eee",
+  "articlesConsidered": 93,
+  "candidatesHash": "1f9ffa722079ee9a",
   "lead": {
-    "tag": "Premier League",
-    "headline": "City verdict hangs over Premier League return",
-    "standfirst": "Manchester City’s rule-breach verdict gives their Anfield visit and the wider title race a sharper edge.",
+    "tag": "International",
+    "headline": "Ronaldo suspended after Portugal walkout",
+    "standfirst": "Portugal have provisionally suspended Cristiano Ronaldo and opened disciplinary proceedings after he left the national-team camp.",
     "paragraphs": [
-      "Manchester City return to Premier League business with the consequences of their case still close at hand. The club have been found guilty of the majority of the 115 charges brought by the league, and their trip to Liverpool is now framed by more than the usual rivalry. The Independent cast the fixture as a meeting that also exposes contrasting approaches to spending at the top end of the division.",
-      "City manager Enzo Maresca has rejected the idea that the club’s titles should be viewed differently after the verdict. Elsewhere, Mikel Arteta, who worked under Pep Guardiola at City between 2016 and 2019, said he had a clear conscience about that period. The reactions have kept the issue at the centre of the weekend’s football, even as attention begins to move back towards the pitch.",
-      "The Guardian reported that managers across the league have been responding to the ruling, with Michael Carrick referring to the loss of immediacy around past moments and Andoni Iraola saying he understood why Liverpool supporters felt anger. The story is not confined to one match, but Anfield gives it a prominent stage as the Premier League resumes."
+      "Cristiano Ronaldo has been provisionally suspended by the Portuguese football federation after walking out on the national team. The federation has also opened disciplinary proceedings against the forward, with reports linking the decision to his departure from camp following a disagreement with manager Jorge Jesus.",
+      "The Independent reported that Ronaldo left after an argument with Jesus, while Sky Sports said the suspension was provisional. The Guardian described the 41-year-old as having been critical of the coach and said he had apologised to supporters earlier in the week.",
+      "The episode leaves Portugal dealing with a disciplinary matter involving one of their most prominent players. For now, the confirmed position is that the federation has acted, proceedings have begun, and Ronaldo’s immediate international involvement is under formal sanction."
     ],
     "sources": [
       {
-        "outlet": "The Independent",
-        "title": "How Liverpool’s clash with Manchester City casts awkward new light on Premier League’s big-money model",
-        "url": "https://www.independent.co.uk/sport/football/andoni-iraola-liverpool-man-city-premier-league-b3064155.html"
+        "outlet": "Sky Sports",
+        "title": "Ronaldo provisionally suspended by Portugal FA after walkout",
+        "url": "https://www.skysports.com/football/news/12040/13597244/cristiano-ronaldo-portuguese-football-federation-provisionally-suspends-forward-after-walkout-following-disagreement-with-manager-jorge-jesus"
       },
       {
-        "outlet": "BBC Sport",
-        "title": "Man City titles 'absolutely not' tainted - Maresca",
-        "url": "https://www.bbc.co.uk/sport/football/articles/cmzxjdvv784xo?at_medium=RSS&at_campaign=rss"
+        "outlet": "The Independent",
+        "title": "Cristiano Ronaldo suspended by Portugal after walking out on national team",
+        "url": "https://www.independent.co.uk/sport/football/cristiano-ronaldo-portugal-suspension-investigation-b3064591.html"
       },
       {
         "outlet": "The Guardian",
-        "title": "Managers react to Manchester City’s guilty verdict: ‘Uncertainty is not good for anyone’",
-        "url": "https://www.theguardian.com/football/2026/oct/09/premier-league-managers-reaction-manchester-city-verdict"
-      },
-      {
-        "outlet": "Sky Sports",
-        "title": "Arteta says conscience clear over time at Man City",
-        "url": "https://www.skysports.com/football/news/12040/13596973/man-city-charges-arsenal-boss-mikel-arteta-says-he-has-clear-conscience-over-his-time-at-etihad-after-serious-breaches-of-financial-rules"
+        "title": "Portugal suspend Cristiano Ronaldo after walking out on national team",
+        "url": "https://www.theguardian.com/football/2026/oct/10/portugal-suspend-cristiano-ronaldo"
       }
     ],
     "picture": {
-      "scene": "A packed evening ground under floodlights, two teams lining up in the centre circle while the touchline staff stand apart in a tense hush.",
-      "alt": "Teams gather under floodlights before kick-off."
+      "scene": "A lone footballer walking away from a training pitch at dusk, with distant staff figures near cones and a muted, unsettled atmosphere.",
+      "alt": "Player leaving a quiet training pitch."
     },
     "image": {
-      "file": "images/news/b0983cf4fab0.jpg",
-      "alt": "Teams gather under floodlights before kick-off.",
+      "file": "images/news/969e79dc8c03.jpg",
+      "alt": "Player leaving a quiet training pitch.",
       "kind": "illustration",
       "model": "gpt-image-2"
     }
   },
   "stories": [
     {
-      "tag": "Contracts",
-      "headline": "Palmer commits future to Chelsea",
-      "summary": "Cole Palmer has signed a new Chelsea contract, with BBC Sport reporting improved terms running until 2034. Sky Sports also carried confirmation of the extension, while The Guardian reported Chelsea’s manager saying Palmer remains committed to England after missing the latest international break through an injury issue.",
+      "tag": "Premier League",
+      "headline": "Guimarães lifts Arsenal past Leeds",
+      "summary": "Arsenal came from behind to beat Leeds 2-1, with Bruno Guimarães scoring after coming off the bench as the home side returned to winning ways. The Guardian said the result ended Leeds’ unbeaten run, while BBC Sport noted an injury to Hincapie added to Arsenal’s concerns.",
       "sources": [
-        {
-          "outlet": "BBC Sport",
-          "title": "Palmer signs new Chelsea contract until 2034",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cwe9lngxzjpno?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Sky Sports",
-          "title": "'We win major trophies here': Palmer signs new Chelsea contract",
-          "url": "https://www.skysports.com/football/news/12040/13597179/cole-palmer-contract-chelsea-forward-signs-extension-at-stamford-bridge-until-2034"
-        },
-        {
-          "outlet": "The Guardian",
-          "title": "Chelsea manager Alonso insists Cole Palmer is committed to playing for England",
-          "url": "https://www.theguardian.com/football/2026/oct/09/chelsea-xabi-alonso-cole-palmer-england-thomas-tuchel"
-        }
-      ],
-      "picture": {
-        "scene": "A young attacker ties his boots beside the technical area, with a busy stadium behind him and a contract folder resting on a bench.",
-        "alt": "Player preparing beside a bench."
-      },
-      "image": {
-        "file": "images/news/6a882a0dc49b.jpg",
-        "alt": "Player preparing beside a bench.",
-        "kind": "illustration",
-        "model": "gpt-image-2"
-      }
-    },
-    {
-      "tag": "Women's Game",
-      "headline": "Lionesses take charge in Greece",
-      "summary": "England beat Greece 3-1 in the first leg of their Women’s World Cup qualifying play-off, with Georgia Stanway, Maya Le Tissier and Alessia Russo scoring. The Guardian noted Greece remain in the tie, while BBC Sport said England left with a valuable advantage after the opening match.",
-      "sources": [
-        {
-          "outlet": "Sky Sports",
-          "title": "England take control of World Cup play-off with win in Greece",
-          "url": "https://www.skysports.com/football/greece-women-vs-england-women/report/559077"
-        },
-        {
-          "outlet": "The Guardian",
-          "title": "Lionesses take control of World Cup playoff tie but unfancied Greece still in fight",
-          "url": "https://www.theguardian.com/football/2026/oct/09/greece-england-womens-world-cup-qualifying-playoff"
-        },
-        {
-          "outlet": "BBC Sport",
-          "title": "Greek takeaways: What did we learn from Lionesses' win?",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cwp8g1ry6rjlo?at_medium=RSS&at_campaign=rss"
-        },
         {
           "outlet": "The Independent",
-          "title": "England take control of World Cup play-off tie with dominant win in Greece",
-          "url": "https://www.independent.co.uk/sport/football/england-greece-world-cup-play-off-result-b3064385.html"
+          "title": "The Bruno Guimaraes moment that showed why Arsenal remain Premier League favourites",
+          "url": "https://www.independent.co.uk/sport/football/arsenal-leeds-result-score-premier-league-bruno-guimaraes-b3064575.html"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Bruno Guimarães completes Arsenal comeback to end Leeds’ unbeaten run",
+          "url": "https://www.theguardian.com/football/2026/oct/10/arsenal-leeds-premier-league-match-report"
+        },
+        {
+          "outlet": "Sky Sports",
+          "title": "Arsenal come from behind to beat stubborn Leeds",
+          "url": "https://www.skysports.com/football/arsenal-vs-leeds-united/report/559494"
+        },
+        {
+          "outlet": "BBC Sport",
+          "title": "Hincapie injury adds to Arsenal issues after Guimaraes rescue act",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c63r5w20ez3do?at_medium=RSS&at_campaign=rss"
         }
       ],
       "picture": {
-        "scene": "A forward strikes low at goal on a warm night, with defenders turning and a small crowd watching from steep stands.",
-        "alt": "Forward shoots during a night match."
+        "scene": "A packed ground under soft floodlights as one midfielder strikes through the ball, defenders bracing and supporters rising behind the goal.",
+        "alt": "Midfielder shooting under floodlights."
       },
       "image": {
-        "file": "images/news/af9aa31118fc.jpg",
-        "alt": "Forward shoots during a night match.",
+        "file": "images/news/c156a37fa818.jpg",
+        "alt": "Midfielder shooting under floodlights.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     },
     {
       "tag": "Championship",
-      "headline": "Charles denies West Ham at the last",
-      "summary": "QPR earned a 1-1 draw at West Ham after Pierce Charles saved Jarrod Bowen’s stoppage-time penalty and then kept out the follow-up. West Ham had the chance to go top of the Championship, but the late escape left QPR with a point.",
+      "headline": "Swansea stay top as Birmingham take derby",
+      "summary": "Swansea remained at the Championship summit after a 2-1 win over Norwich, while Birmingham beat West Brom 1-0 at The Hawthorns. Elsewhere, Bristol City held Charlton to a 1-1 draw, extending Charlton’s winless league run to six matches.",
       "sources": [
         {
           "outlet": "The Guardian",
-          "title": "West Ham’s penalty pain costs them top spot in Championship after QPR draw",
-          "url": "https://www.theguardian.com/football/2026/oct/09/west-ham-qpr-championship-report-penalties"
+          "title": "Championship roundup: Swansea top after beating Norwich; Blues win at West Brom",
+          "url": "https://www.theguardian.com/football/2026/oct/10/championship-roundup-swansea-norwich-birmingham-west-brom-middlesbrough-wolves"
         },
         {
           "outlet": "Sky Sports",
-          "title": "Bowen's late penalty saved as West Ham held by QPR",
-          "url": "https://www.skysports.com/football/west-ham-united-vs-queens-park-rangers/report/560605"
+          "title": "Priske penalty earns Birmingham narrow win over WBA",
+          "url": "https://www.skysports.com/football/west-bromwich-albion-vs-birmingham-city/report/560604"
         },
         {
           "outlet": "Sky Sports",
-          "title": "INCREDIBLE! QPR's Charles saves stoppage-time Bowen pen AND rebound!",
-          "url": "https://www.skysports.com/watch/video/13597075/west-ham-vs-qpr-charles-the-hero-as-he-saves-bowens-penalty-and-the-rebound"
+          "title": "Bristol City extend Charlton's winless run to six games",
+          "url": "https://www.skysports.com/football/charlton-athletic-vs-bristol-city/report/560596"
         }
       ],
       "picture": {
-        "scene": "A goalkeeper dives across the goalmouth to palm away a penalty, the rebound hanging loose as the crowd rises behind the net.",
-        "alt": "Goalkeeper saves a penalty."
+        "scene": "A busy second-tier stadium on a crisp afternoon, with players contesting a high cross and supporters packed close to the touchline.",
+        "alt": "Players challenge for a cross."
       },
       "image": {
-        "file": "images/news/4fd301a43f88.jpg",
-        "alt": "Goalkeeper saves a penalty.",
+        "file": "images/news/29665d9d054b.jpg",
+        "alt": "Players challenge for a cross.",
+        "kind": "illustration",
+        "model": "gpt-image-2"
+      }
+    },
+    {
+      "tag": "Governance",
+      "headline": "City verdict draws fresh reaction",
+      "summary": "Manchester City manager Enzo Maresca said the club’s titles were not tainted after City were found guilty of the majority of the Premier League charges against them. Mikel Arteta said his conscience was clear over his period as City assistant, while the wider reaction continued across the division.",
+      "sources": [
+        {
+          "outlet": "BBC Sport",
+          "title": "Man City titles 'absolutely not' tainted - Maresca",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cmzxjdvv784xo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "The Independent",
+          "title": "Mikel Arteta insists his conscience is clear over Man City rule breaches",
+          "url": "https://www.independent.co.uk/sport/football/mikel-arteta-man-city-arsenal-pep-guardiola-b3064450.html"
+        },
+        {
+          "outlet": "BBC Sport",
+          "title": "Arteta's conscience clear over Man City charges",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c6d93ql8jvdko?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Managers react to Manchester City’s guilty verdict: ‘Uncertainty is not good for anyone’",
+          "url": "https://www.theguardian.com/football/2026/oct/09/premier-league-managers-reaction-manchester-city-verdict"
+        }
+      ],
+      "picture": {
+        "scene": "A solemn touchline scene beneath grey skies, with suited officials beside the technical area and players warming up in the distance.",
+        "alt": "Officials stand by a quiet touchline."
+      },
+      "image": {
+        "file": "images/news/9c08e5d78986.jpg",
+        "alt": "Officials stand by a quiet touchline.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     }
   ],
-  "notes": "Several items were live blogs, audio listings or non-football reports, so they were not used as main stories."
+  "notes": "Manchester United v Tottenham was still live in the available coverage, so no result has been included."
 };
