@@ -1,30 +1,20 @@
 // GENERATED FILE — do not edit by hand. Front Page news written by gpt-5.5 from the sources listed in each story; illustrations by gpt-image-2.
-// Written 2026-10-10T02:00:21.041Z by the Halftime data pipeline.
+// Written 2026-10-10T11:33:52.387Z by the Halftime data pipeline.
 window.HALFTIME_NEWS = {
-  "updated": "2026-10-10T01:59:17.034Z",
+  "updated": "2026-10-10T11:32:43.105Z",
   "model": "gpt-5.5",
-  "articlesConsidered": 102,
-  "candidatesHash": "2e7b6fb6145da30c",
+  "articlesConsidered": 95,
+  "candidatesHash": "5894e63842469eee",
   "lead": {
     "tag": "Premier League",
     "headline": "City verdict hangs over Premier League return",
-    "standfirst": "Manchester City’s case has moved from legal argument to match-day atmosphere as managers and supporters absorb the verdict.",
+    "standfirst": "Manchester City’s rule-breach verdict gives their Anfield visit and the wider title race a sharper edge.",
     "paragraphs": [
-      "Manchester City go to Liverpool for their first match since being found guilty of breaching Premier League financial rules, with BBC Sport reporting that a charged reception is expected at Anfield. The fixture already carried weight; now it sits in the shadow of a ruling that has prompted questions across the division and sharpened attention on football’s money at the top end of the table.",
-      "Managers have been drawn into the discussion before the weekend’s games. Michael Carrick said he had been personally affected by the case and still had questions, while Mikel Arteta said his conscience was clear over his spell as an assistant at City. Enzo Maresca rejected the suggestion that City’s titles were tainted after the club were found guilty of the majority of the charges brought by the Premier League.",
-      "The Guardian reported a broad unease among managers, with uncertainty around the case described as harmful for everyone involved. The Independent framed City’s trip to Anfield as a meeting that now puts different approaches to spending under fresh scrutiny. For supporters, the matter is no longer distant: it arrives with the teams, the coaches and the noise around the ground."
+      "Manchester City return to Premier League business with the consequences of their case still close at hand. The club have been found guilty of the majority of the 115 charges brought by the league, and their trip to Liverpool is now framed by more than the usual rivalry. The Independent cast the fixture as a meeting that also exposes contrasting approaches to spending at the top end of the division.",
+      "City manager Enzo Maresca has rejected the idea that the club’s titles should be viewed differently after the verdict. Elsewhere, Mikel Arteta, who worked under Pep Guardiola at City between 2016 and 2019, said he had a clear conscience about that period. The reactions have kept the issue at the centre of the weekend’s football, even as attention begins to move back towards the pitch.",
+      "The Guardian reported that managers across the league have been responding to the ruling, with Michael Carrick referring to the loss of immediacy around past moments and Andoni Iraola saying he understood why Liverpool supporters felt anger. The story is not confined to one match, but Anfield gives it a prominent stage as the Premier League resumes."
     ],
     "sources": [
-      {
-        "outlet": "BBC Sport",
-        "title": "What reception awaits Man City at Anfield?",
-        "url": "https://www.bbc.co.uk/sport/football/articles/cjkgey07lq15o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "outlet": "The Guardian",
-        "title": "Managers react to Manchester City’s guilty verdict: ‘Uncertainty is not good for anyone’",
-        "url": "https://www.theguardian.com/football/2026/oct/09/premier-league-managers-reaction-manchester-city-verdict"
-      },
       {
         "outlet": "The Independent",
         "title": "How Liverpool’s clash with Manchester City casts awkward new light on Premier League’s big-money model",
@@ -32,13 +22,13 @@ window.HALFTIME_NEWS = {
       },
       {
         "outlet": "BBC Sport",
-        "title": "I've got my own questions on Man City case - Carrick",
-        "url": "https://www.bbc.co.uk/sport/football/articles/ck5ynv45lymdo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "outlet": "BBC Sport",
         "title": "Man City titles 'absolutely not' tainted - Maresca",
         "url": "https://www.bbc.co.uk/sport/football/articles/cmzxjdvv784xo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "outlet": "The Guardian",
+        "title": "Managers react to Manchester City’s guilty verdict: ‘Uncertainty is not good for anyone’",
+        "url": "https://www.theguardian.com/football/2026/oct/09/premier-league-managers-reaction-manchester-city-verdict"
       },
       {
         "outlet": "Sky Sports",
@@ -47,21 +37,53 @@ window.HALFTIME_NEWS = {
       }
     ],
     "picture": {
-      "scene": "A packed terrace under floodlights as two teams emerge from the tunnel, with stewards on the touchline and a tense evening mood.",
-      "alt": "Teams walk out before a tense floodlit match"
+      "scene": "A packed evening ground under floodlights, two teams lining up in the centre circle while the touchline staff stand apart in a tense hush.",
+      "alt": "Teams gather under floodlights before kick-off."
     },
     "image": {
-      "file": "images/news/03f1644049c8.jpg",
-      "alt": "Teams walk out before a tense floodlit match",
+      "file": "images/news/b0983cf4fab0.jpg",
+      "alt": "Teams gather under floodlights before kick-off.",
       "kind": "illustration",
       "model": "gpt-image-2"
     }
   },
   "stories": [
     {
+      "tag": "Contracts",
+      "headline": "Palmer commits future to Chelsea",
+      "summary": "Cole Palmer has signed a new Chelsea contract, with BBC Sport reporting improved terms running until 2034. Sky Sports also carried confirmation of the extension, while The Guardian reported Chelsea’s manager saying Palmer remains committed to England after missing the latest international break through an injury issue.",
+      "sources": [
+        {
+          "outlet": "BBC Sport",
+          "title": "Palmer signs new Chelsea contract until 2034",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cwe9lngxzjpno?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Sky Sports",
+          "title": "'We win major trophies here': Palmer signs new Chelsea contract",
+          "url": "https://www.skysports.com/football/news/12040/13597179/cole-palmer-contract-chelsea-forward-signs-extension-at-stamford-bridge-until-2034"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Chelsea manager Alonso insists Cole Palmer is committed to playing for England",
+          "url": "https://www.theguardian.com/football/2026/oct/09/chelsea-xabi-alonso-cole-palmer-england-thomas-tuchel"
+        }
+      ],
+      "picture": {
+        "scene": "A young attacker ties his boots beside the technical area, with a busy stadium behind him and a contract folder resting on a bench.",
+        "alt": "Player preparing beside a bench."
+      },
+      "image": {
+        "file": "images/news/6a882a0dc49b.jpg",
+        "alt": "Player preparing beside a bench.",
+        "kind": "illustration",
+        "model": "gpt-image-2"
+      }
+    },
+    {
       "tag": "Women's Game",
-      "headline": "England take charge of Greek play-off",
-      "summary": "England beat Greece in Crete to take control of their Women’s World Cup play-off, with Georgia Stanway, Maya Le Tissier and Alessia Russo scoring. The Guardian noted Greece remain in the tie, while BBC Sport and Sky Sports both described England’s position as strong after the first leg.",
+      "headline": "Lionesses take charge in Greece",
+      "summary": "England beat Greece 3-1 in the first leg of their Women’s World Cup qualifying play-off, with Georgia Stanway, Maya Le Tissier and Alessia Russo scoring. The Guardian noted Greece remain in the tie, while BBC Sport said England left with a valuable advantage after the opening match.",
       "sources": [
         {
           "outlet": "Sky Sports",
@@ -85,12 +107,12 @@ window.HALFTIME_NEWS = {
         }
       ],
       "picture": {
-        "scene": "A forward strikes low toward goal on a warm night, with defenders retreating and a small crowd watching from simple stands.",
-        "alt": "A forward shoots during a night match"
+        "scene": "A forward strikes low at goal on a warm night, with defenders turning and a small crowd watching from steep stands.",
+        "alt": "Forward shoots during a night match."
       },
       "image": {
-        "file": "images/news/2e6ab7a00697.jpg",
-        "alt": "A forward shoots during a night match",
+        "file": "images/news/af9aa31118fc.jpg",
+        "alt": "Forward shoots during a night match.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
@@ -98,7 +120,7 @@ window.HALFTIME_NEWS = {
     {
       "tag": "Championship",
       "headline": "Charles denies West Ham at the last",
-      "summary": "Pierce Charles saved Jarrod Bowen’s stoppage-time penalty and then kept out the rebound as QPR drew with West Ham. The result meant West Ham missed the chance to go top of the Championship, after Bowen had earlier equalised following Nicolas Madsen’s first-half penalty.",
+      "summary": "QPR earned a 1-1 draw at West Ham after Pierce Charles saved Jarrod Bowen’s stoppage-time penalty and then kept out the follow-up. West Ham had the chance to go top of the Championship, but the late escape left QPR with a point.",
       "sources": [
         {
           "outlet": "The Guardian",
@@ -117,43 +139,16 @@ window.HALFTIME_NEWS = {
         }
       ],
       "picture": {
-        "scene": "A goalkeeper dives across the goalmouth to parry a penalty, with the loose ball spinning upward beneath bright stadium lights.",
-        "alt": "Goalkeeper saves a penalty under floodlights"
+        "scene": "A goalkeeper dives across the goalmouth to palm away a penalty, the rebound hanging loose as the crowd rises behind the net.",
+        "alt": "Goalkeeper saves a penalty."
       },
       "image": {
-        "file": "images/news/1cdd70f7249c.jpg",
-        "alt": "Goalkeeper saves a penalty under floodlights",
-        "kind": "illustration",
-        "model": "gpt-image-2"
-      }
-    },
-    {
-      "tag": "Club Business",
-      "headline": "Everton put back on the market",
-      "summary": "Everton are up for sale again, with The Friedkin Group looking for a way out, according to BBC Sport. Sky Sports reported that David Moyes was surprised by the development and said he learned of it on Friday morning when the club statement was released to supporters.",
-      "sources": [
-        {
-          "outlet": "BBC Sport",
-          "title": "Everton up for sale again - so what next as owners TFG look for a way out?",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c3y0e8n9q4e0o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Sky Sports",
-          "title": "'I only found out this morning' - Moyes surprised Everton are up for sale",
-          "url": "https://www.skysports.com/football/news/12040/13596920/david-moyes-everton-manager-admits-surprise-at-seeing-the-club-being-put-up-for-sale-by-the-friedkin-group"
-        }
-      ],
-      "picture": {
-        "scene": "A quiet stadium exterior at dusk, with closed gates, a lone scarf on railings and soft light over empty steps.",
-        "alt": "Quiet stadium gates at dusk"
-      },
-      "image": {
-        "file": "images/news/a87e73b3f85b.jpg",
-        "alt": "Quiet stadium gates at dusk",
+        "file": "images/news/4fd301a43f88.jpg",
+        "alt": "Goalkeeper saves a penalty.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     }
   ],
-  "notes": ""
+  "notes": "Several items were live blogs, audio listings or non-football reports, so they were not used as main stories."
 };
