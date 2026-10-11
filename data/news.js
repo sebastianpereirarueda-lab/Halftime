@@ -1,164 +1,139 @@
 // GENERATED FILE — do not edit by hand. Front Page news written by gpt-5.5 from the sources listed in each story; illustrations by gpt-image-2.
-// Written 2026-10-11T01:26:11.904Z by the Halftime data pipeline.
+// Written 2026-10-11T11:48:07.610Z by the Halftime data pipeline.
 window.HALFTIME_NEWS = {
-  "updated": "2026-10-11T01:25:06.376Z",
+  "updated": "2026-10-11T11:47:03.551Z",
   "model": "gpt-5.5",
-  "articlesConsidered": 100,
-  "candidatesHash": "5477c285826ee0dc",
+  "articlesConsidered": 90,
+  "candidatesHash": "20b8aff7a37d8af5",
   "lead": {
     "tag": "Premier League",
-    "headline": "United frustration deepens after Spurs escape",
-    "standfirst": "A late Tottenham equaliser against ten men left Old Trafford restless and Michael Carrick under sharper scrutiny.",
+    "headline": "City enter Anfield after guilty verdict",
+    "standfirst": "Liverpool host Manchester City in a charged meeting after a commission found City breached Premier League financial rules.",
     "paragraphs": [
-      "Manchester United’s difficult start took another heavy knock as Tottenham, reduced to ten men, left Old Trafford with a 1-1 draw. Bryan Mbeumo had put United ahead, but Dominic Solanke struck late to share the points after Rodrigo Bentancur had been dismissed. The final whistle brought boos from the home crowd, with the result adding to a run that has yielded six points from six league matches.",
-      "Carrick accepted the discontent after the match, while reports across the evening centred on a side unable to make its advantage tell. BBC analysis also pointed to United’s midfield problems, with Danny Murphy saying the team could not control games. Sky Sports framed the coming spell as a defining one for Carrick, though also stressed that responsibility sits with the players as well as the manager.",
-      "Tottenham’s response was praised by Roberto de Zerbi, who defended the spirit shown despite acknowledging the red card decision was right. For United, the issue was plainer: another lead had slipped away, and another chance to steady the season had gone. The mood around Old Trafford, already tense, was left with little comfort beyond the point itself."
+      "Manchester City go to Anfield for their first match since an independent commission found the club guilty of breaking Premier League financial rules. The Independent has billed the Liverpool fixture as one likely to carry a hostile edge in the stands, with City returning to action under a judgement that has pushed the match beyond the normal rhythms of a familiar rivalry.",
+      "The wider argument is not confined to one afternoon. The Independent’s analysis places the game in the context of differing approaches to money at the top of the Premier League, while BBC Sport describes uncertainty around City as they head into the fixture. The Guardian has noted that City’s rule breaches have drawn attention away from the problems facing Manchester United and Tottenham.",
+      "There is still football to be played before Sunday’s Premier League game. BBC Sport trailed the meeting with a look back at notable Liverpool-City moments, underlining how often the fixture has carried a heavy sporting charge on its own terms. This time, the build-up is inseparable from the financial verdict, and the reception at Anfield is expected to reflect that."
     ],
     "sources": [
       {
-        "outlet": "The Guardian",
-        "title": "Carrick ‘massively disappointed’ after United drop points against 10-man Spurs",
-        "url": "https://www.theguardian.com/football/2026/oct/10/michael-carrick-manchester-united-tottenham-roberto-de-zerbi"
-      },
-      {
-        "outlet": "Sky Sports",
-        "title": "Ten-man Spurs claim dramatic draw at Old Trafford as Man Utd booed off",
-        "url": "https://www.skysports.com/football/manchester-united-vs-tottenham-hotspur/report/559502"
+        "outlet": "The Independent",
+        "title": "Liverpool v Manchester City LIVE: Hostile atmosphere expected at Anfield after City’s guilty verdict",
+        "url": "https://www.independent.co.uk/sport/football/liverpool-man-city-charges-verdict-live-stream-score-result-b3064557.html"
       },
       {
         "outlet": "The Independent",
-        "title": "The consistent and concerning trend that should worry Manchester United",
-        "url": "https://www.independent.co.uk/sport/football/manchester-united-tottenham-premier-league-result-mbeumo-solanke-bentancur-b3064633.html"
+        "title": "How Liverpool’s clash with Manchester City casts awkward new light on Premier League’s big-money model",
+        "url": "https://www.independent.co.uk/sport/football/andoni-iraola-liverpool-man-city-premier-league-b3064155.html"
       },
       {
         "outlet": "BBC Sport",
-        "title": "'It hurts a lot' - Carrick 'understands' Man Utd boos after draw",
-        "url": "https://www.bbc.co.uk/sport/football/videos/cqlye9evnm7lo?at_medium=RSS&at_campaign=rss"
+        "title": "Toxicity and uncertainty await Man City - will their season even matter?",
+        "url": "https://www.bbc.co.uk/sport/football/articles/cvy0rp14xz7lo?at_medium=RSS&at_campaign=rss"
       },
       {
         "outlet": "BBC Sport",
-        "title": "Man Utd midfield can't control games - Murphy",
-        "url": "https://www.bbc.co.uk/sport/football/videos/c6lye9kmnvpzo?at_medium=RSS&at_campaign=rss"
+        "title": "Top five Liverpool-Man City moments",
+        "url": "https://www.bbc.co.uk/sport/football/videos/cqvg0m1my97go?at_medium=RSS&at_campaign=rss"
       },
       {
-        "outlet": "Sky Sports",
-        "title": "Carrick must share burden of Man Utd's underperformance with his players",
-        "url": "https://www.skysports.com/football/news/12040/13597374/man-utd-1-1-spurs-michael-carrick-entering-a-defining-period-and-must-correct-underperformance-quickly"
+        "outlet": "The Guardian",
+        "title": "Manchester United and Spurs come back to reality as City saga offers brief distraction | John Brewin",
+        "url": "https://www.theguardian.com/football/2026/oct/10/draw-brings-no-respite-for-manchester-united-and-tottenham-as-crises-continue"
       }
     ],
     "picture": {
-      "scene": "A floodlit ground after the final whistle, players scattered in weary poses while a solitary manager stands near the touchline before a restless terrace.",
-      "alt": "A tense football touchline after a draw."
+      "scene": "A packed terrace under floodlights, two indistinct teams emerging from a tunnel while a referee waits on the halfway line in a tense evening atmosphere.",
+      "alt": "Teams walk out under floodlights before a tense match."
     },
     "image": {
-      "file": "images/news/e01aed76f482.jpg",
-      "alt": "A tense football touchline after a draw.",
+      "file": "images/news/2ca81d38609f.jpg",
+      "alt": "Teams walk out under floodlights before a tense match.",
       "kind": "illustration",
       "model": "gpt-image-2"
     }
   },
   "stories": [
     {
-      "tag": "Premier League",
-      "headline": "Henderson marks home bow in Chelsea rout",
-      "summary": "Jordan Henderson scored twice on his Stamford Bridge home debut as Chelsea beat Bournemouth 5-1, with BBC Sport also highlighting Moises Caicedo’s influence in midfield. The result left Bournemouth still looking for a first Premier League win of the season.",
+      "tag": "EFL",
+      "headline": "Savage starts Peterborough post with Leicester win",
+      "summary": "Robbie Savage’s first League One match as Peterborough manager came at Leicester, the club where he made his name as a player. The Guardian described a striking win for his new side at a struggling former club, while BBC Sport included the debut among the weekend’s EFL talking points.",
       "sources": [
         {
-          "outlet": "BBC Sport",
-          "title": "Henderson scores twice as five-star Chelsea thrash Bournemouth",
-          "url": "https://www.bbc.co.uk/sport/football/videos/cjy5zxv9qq1po?at_medium=RSS&at_campaign=rss"
+          "outlet": "The Guardian",
+          "title": "Robbie Savage the panto villain puts scepticism aside to leave Leicester reeling",
+          "url": "https://www.theguardian.com/football/2026/oct/11/robbie-savage-peterborough-manager-leicester"
         },
         {
           "outlet": "BBC Sport",
-          "title": "The rock behind Chelsea's entertainers: Midfield duo key for Blues",
-          "url": "https://www.bbc.co.uk/sport/articles/cw3dj5yx4ej2o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "BBC Sport",
-          "title": "'Absolutely superb' - How Caicedo proved pivotal in Chelsea win",
-          "url": "https://www.bbc.co.uk/sport/football/videos/cmx2dp7xgew6o?at_medium=RSS&at_campaign=rss"
-        },
+          "title": "Savage success and statement win for Boro - Sam Parkin's EFL Takeaways",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cw77prgk52zro?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "picture": {
+        "scene": "A lower-league ground at dusk, a lone manager standing near the touchline as players celebrate distantly by the corner flag.",
+        "alt": "A manager watches players celebrate at a small ground."
+      },
+      "image": {
+        "file": "images/news/1bce0cc401ca.jpg",
+        "alt": "A manager watches players celebrate at a small ground.",
+        "kind": "illustration",
+        "model": "gpt-image-2"
+      }
+    },
+    {
+      "tag": "Europe",
+      "headline": "Vinícius sent off as Real Madrid beat Villarreal",
+      "summary": "Real Madrid beat Villarreal through Yan Diomandé’s goal, keeping six points behind La Liga leaders Barcelona. Vinícius Júnior came off the bench, had a goal ruled out and was then dismissed after VAR showed a hair pull on Nathan Saliba; The Independent said José Mourinho did not attend the press conference.",
+      "sources": [
         {
           "outlet": "The Guardian",
-          "title": "Henderson and João Pedro lead Chelsea charge against Bournemouth",
-          "url": "https://www.theguardian.com/football/2026/oct/10/chelsea-bournemouth-premier-league-match-report"
+          "title": "Real Madrid’s Vinícius Júnior sent off for hair-pulling in victory over Villarreal",
+          "url": "https://www.theguardian.com/football/2026/oct/10/real-madrids-vinicius-junior-sent-off-for-hair-pulling-in-victory-over-villarreal"
         },
         {
           "outlet": "The Independent",
-          "title": "Jordan Henderson rolls back the years as Chelsea blow away Bournemouth",
-          "url": "https://www.independent.co.uk/sport/football/chelsea-bournemouth-result-score-premier-league-jordan-henderson-cole-palemer-b3064618.html"
-        }
-      ],
-      "picture": {
-        "scene": "A busy penalty area under bright floodlights, with midfielders arriving late and a goalkeeper rooted as the crowd rises behind the goal.",
-        "alt": "A crowded penalty area during an attack."
-      },
-      "image": {
-        "file": "images/news/f91ebf2be597.jpg",
-        "alt": "A crowded penalty area during an attack.",
-        "kind": "illustration",
-        "model": "gpt-image-2"
-      }
-    },
-    {
-      "tag": "International",
-      "headline": "Ronaldo suspended after Portugal camp exit",
-      "summary": "Cristiano Ronaldo has been provisionally suspended by the Portuguese Football Federation after leaving the national camp last month. The Guardian said disciplinary proceedings have begun, while BBC Sport also reported the suspension by the federation.",
-      "sources": [
-        {
-          "outlet": "BBC Sport",
-          "title": "Ronaldo provisionally suspended by Portuguese FA",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cm4g13909lp7o?at_medium=RSS&at_campaign=rss"
+          "title": "Real Madrid’s Vinicius Jr sent off for hair pull as Jose Mourinho boycotts press conference",
+          "url": "https://www.independent.co.uk/sport/football/vinicius-jr-hair-pull-real-madrid-jose-mourinho-b3064762.html"
         },
-        {
-          "outlet": "The Guardian",
-          "title": "Portugal suspend Cristiano Ronaldo after walking out on national team",
-          "url": "https://www.theguardian.com/football/2026/oct/10/portugal-suspend-cristiano-ronaldo"
-        }
-      ],
-      "picture": {
-        "scene": "An empty training pitch at dusk, a ball left near the centre circle and distant figures walking towards the dressing-room tunnel.",
-        "alt": "An empty training pitch at dusk."
-      },
-      "image": {
-        "file": "images/news/f9a4640f2581.jpg",
-        "alt": "An empty training pitch at dusk.",
-        "kind": "illustration",
-        "model": "gpt-image-2"
-      }
-    },
-    {
-      "tag": "Scotland",
-      "headline": "Naderi double sends Rangers top",
-      "summary": "Ryan Naderi scored twice as Rangers beat Kilmarnock 3-1 and moved to the top of the Scottish Premiership. The Guardian also noted Hearts’ 5-0 win over St Mirren, with Calvin Miller scoring two penalties in a full domestic programme.",
-      "sources": [
         {
           "outlet": "Sky Sports",
-          "title": "Naderi scores twice as Rangers beat Kilmarnock to move top",
-          "url": "https://www.skysports.com/football/rangers-vs-kilmarnock/report/558380"
-        },
-        {
-          "outlet": "The Guardian",
-          "title": "Scottish Premiership: Naderi puts Rangers top and Hearts rout St Mirren",
-          "url": "https://www.theguardian.com/football/2026/oct/10/scottish-premiership-rangers-hearts-celtic"
-        },
-        {
-          "outlet": "BBC Sport",
-          "title": "'Reminds me of Muller' - Naderi proving worth in Rangers revival",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cqzjx3z4ljr0o?at_medium=RSS&at_campaign=rss"
+          "title": "Crazy scenes! Vinicius Jr SENT OFF and has goal disallowed for hair pull!",
+          "url": "https://www.skysports.com/watch/video/13597628/from-celebrations-to-despair-vinicius-junior-is-red-carded-after-his-goal-is-disallowed-for-hair-pull"
         }
       ],
       "picture": {
-        "scene": "A packed old stand on a cool evening, supporters leaning forward as a striker meets a high cross in a crowded box.",
-        "alt": "A striker challenges for a cross."
+        "scene": "A referee raises a card beneath bright stadium lights, with one player turning away and others gathered in a tense semicircle.",
+        "alt": "A referee shows a card during a tense match."
       },
       "image": {
-        "file": "images/news/5d3cc6314d7f.jpg",
-        "alt": "A striker challenges for a cross.",
+        "file": "images/news/a42ee91b84c7.jpg",
+        "alt": "A referee shows a card during a tense match.",
+        "kind": "illustration",
+        "model": "gpt-image-2"
+      }
+    },
+    {
+      "tag": "Women's Game",
+      "headline": "Russo named England player of the year",
+      "summary": "Arsenal forward Alessia Russo has been named England women’s player of the year after scoring five goals in 10 games. The award recognises her England form, with BBC Sport also identifying her club role as an Arsenal forward.",
+      "sources": [
+        {
+          "outlet": "BBC Sport",
+          "title": "Russo named England player of the year",
+          "url": "https://www.bbc.co.uk/sport/football/articles/ckgel112lr1qo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "picture": {
+        "scene": "A women’s training pitch on a clear morning, with a forward striking at goal while teammates watch from the edge of the area.",
+        "alt": "A forward shoots during a women’s training session."
+      },
+      "image": {
+        "file": "images/news/4e344dec7a9e.jpg",
+        "alt": "A forward shoots during a women’s training session.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     }
   ],
-  "notes": "Some video and live-blog items carried little detail, so the edition leans on the fullest match reports and summaries available."
+  "notes": "Several live entries carried little detail. The England women’s player of the year item is single-source and brief."
 };
