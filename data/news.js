@@ -1,25 +1,20 @@
 // GENERATED FILE — do not edit by hand. Front Page news written by gpt-5.5 from the sources listed in each story; illustrations by gpt-image-2.
-// Written 2026-10-11T21:12:58.402Z by the Halftime data pipeline.
+// Written 2026-10-12T01:56:16.065Z by the Halftime data pipeline.
 window.HALFTIME_NEWS = {
-  "updated": "2026-10-11T21:11:55.591Z",
+  "updated": "2026-10-12T01:55:07.277Z",
   "model": "gpt-5.5",
-  "articlesConsidered": 99,
-  "candidatesHash": "c2736f0a5fed8fec",
+  "articlesConsidered": 97,
+  "candidatesHash": "871c08a021ffd32f",
   "lead": {
     "tag": "Premier League",
-    "headline": "City silence Anfield but questions remain",
-    "standfirst": "Manchester City won handsomely at Liverpool, yet the argument around their season travelled with them all afternoon.",
+    "headline": "City win at Anfield amid wider uncertainty",
+    "standfirst": "Manchester City beat Liverpool 3-0, but the result was quickly folded into the unresolved question of possible punishment.",
     "paragraphs": [
-      "Manchester City returned to Premier League business with a 3-0 win at Liverpool, their first outing since an independent commission ruled against the club over the league’s financial regulations. Erling Haaland, Jeremy Doku and Rayan Cherki were named among the scorers as City beat a Liverpool side reduced to 10 men and left Anfield with the table still bending their way.",
-      "The victory extended City’s perfect opening run to six matches and moved them three points clear at the top. Anfield greeted them with boos and chants, but Enzo Maresca praised his squad for handling the surrounding noise and urged them to keep winning as the questions around the club continue.",
-      "For all the authority of the performance, the wider picture remains unsettled. BBC Sport framed the win as a statement made during a campaign still in limbo, while The Independent noted that possible punishment for the financial-rule breaches still hangs over City’s future."
+      "Manchester City returned to Premier League action with a 3-0 win at Liverpool, their first match since an independent commission found the club guilty of breaching the league’s financial rules. Erling Haaland, Jeremy Doku and Rayan Cherki scored at Anfield, with Doku’s arrival from the bench picked out in post-match analysis as a decisive influence. Ryan Gravenberch was dismissed after two yellow cards, and the decision drew immediate scrutiny from pundits and Andoni Iraola.",
+      "The result sat inside a larger uncertainty around City. BBC Sport described the season as being in limbo while possible sanctions, including a points deduction, are awaited; The Independent set out that punishments could also include fines or expulsion. Enzo Maresca said his side had dealt with the noise, while Guardian and Sky accounts described a charged reception at Anfield before City quietened the ground with the result.",
+      "The match also sharpened debate over what the result can mean before the disciplinary process reaches its end. BBC and Sky both carried reaction asking whether Premier League games can be viewed in the usual way while the potential punishment remains unresolved. On the pitch, City extended their perfect start to six matches, but the victory was immediately framed alongside the question of what comes next."
     ],
     "sources": [
-      {
-        "outlet": "BBC Sport",
-        "title": "Doku delights as Manchester City cruise past 10-man Liverpool",
-        "url": "https://www.bbc.co.uk/sport/football/videos/c6vgy2ll1zypo?at_medium=RSS&at_campaign=rss"
-      },
       {
         "outlet": "BBC Sport",
         "title": "Man City's statement win has feeling of irrelevance with season in limbo",
@@ -31,32 +26,69 @@ window.HALFTIME_NEWS = {
         "url": "https://www.theguardian.com/football/2026/oct/11/liverpool-manchester-city-premier-league-match-report"
       },
       {
+        "outlet": "Sky Sports",
+        "title": "Man City issue on-field statement by beating 10-man Liverpool",
+        "url": "https://www.skysports.com/football/liverpool-vs-manchester-city/report/559501"
+      },
+      {
         "outlet": "The Independent",
         "title": "Man City blow Liverpool away at Anfield – but was it all meaningless?",
         "url": "https://www.independent.co.uk/sport/football/man-city-liverpool-result-score-b3064860.html"
       },
       {
-        "outlet": "Sky Sports",
-        "title": "Man City issue on-field statement by beating 10-man Liverpool",
-        "url": "https://www.skysports.com/football/liverpool-vs-manchester-city/report/559501"
+        "outlet": "BBC Sport",
+        "title": "Doku delights as Manchester City cruise past 10-man Liverpool",
+        "url": "https://www.bbc.co.uk/sport/football/videos/c6vgy2ll1zypo?at_medium=RSS&at_campaign=rss"
       }
     ],
     "picture": {
-      "scene": "A packed terrace under floodlights as players gather near the centre circle, the air tense and smoky after a decisive evening match.",
-      "alt": "Floodlit football ground with tense crowd atmosphere."
+      "scene": "A floodlit stadium with packed terraces, players in plain contrasting kits chasing a loose ball, and a lone manager watching from the touchline.",
+      "alt": "Players contest a ball under floodlights."
     },
     "image": {
-      "file": "images/news/36c04a2f5b8b.jpg",
-      "alt": "Floodlit football ground with tense crowd atmosphere.",
+      "file": "images/news/2cf069fcf698.jpg",
+      "alt": "Players contest a ball under floodlights.",
       "kind": "illustration",
       "model": "gpt-image-2"
     }
   },
   "stories": [
     {
+      "tag": "Premier League",
+      "headline": "Palace comeback brings VAR argument",
+      "summary": "Crystal Palace recovered from an early Nottingham Forest goal to win 3-1, giving Oliver Glasner an unhappy Selhurst Park return with his new side. The second Palace goal brought a VAR row, with Wayne Rooney saying on Match of the Day that the decision to award it was wrong.",
+      "sources": [
+        {
+          "outlet": "BBC Sport",
+          "title": "'Call it a day with VAR' - Rooney on Palace's controversial goal",
+          "url": "https://www.bbc.co.uk/sport/football/videos/cqlyendmk7wyo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "The Independent",
+          "title": "Wasteful Forest beaten by Palace on Oliver Glasner’s Selhurst Park return",
+          "url": "https://www.independent.co.uk/sport/football/crystal-palace-nottingham-forest-oliver-glasner-goals-result-premier-league-b3064826.html"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Pino finishes off Nottingham Forest on Glasner’s unhappy Crystal Palace return",
+          "url": "https://www.theguardian.com/football/2026/oct/11/crystal-palace-nottingham-forest-premier-league-match-report"
+        }
+      ],
+      "picture": {
+        "scene": "A tense penalty-area scene under low afternoon light, defenders appealing as an official gestures and spectators rise in a compact stand.",
+        "alt": "Defenders appeal during a crowded penalty-area incident."
+      },
+      "image": {
+        "file": "images/news/8706786049ef.jpg",
+        "alt": "Defenders appeal during a crowded penalty-area incident.",
+        "kind": "illustration",
+        "model": "gpt-image-2"
+      }
+    },
+    {
       "tag": "Europe",
-      "headline": "Freiburg rise as Lazio and Betis prosper",
-      "summary": "Freiburg went top of the Bundesliga after a late 2-1 home win over Schalke despite playing with 10 men, with Keisuke Goto scoring in the 85th minute. Lazio joined Inter at the head of Serie A, while Betis moved third in Spain as Isco kept their strong run going.",
+      "headline": "Freiburg go top after late winner",
+      "summary": "Freiburg went top of the Bundesliga after Keisuke Goto’s late goal sealed a 2-1 home win over Schalke despite playing with 10 men. The wider European round also had Lazio level with Inter at the summit of Serie A, Roma held at Como, and Betis up to third in Spain.",
       "sources": [
         {
           "outlet": "The Guardian",
@@ -70,20 +102,20 @@ window.HALFTIME_NEWS = {
         }
       ],
       "picture": {
-        "scene": "A crowded penalty area in a continental stadium at dusk, one player wheeling away as the goalkeeper looks back towards the net.",
-        "alt": "Late goal scene in a busy penalty area."
+        "scene": "A jubilant late-goal celebration near the corner of a packed ground, with bare winter trees visible beyond the roofline.",
+        "alt": "Players celebrate a late goal near the corner."
       },
       "image": {
-        "file": "images/news/5bd1ba029373.jpg",
-        "alt": "Late goal scene in a busy penalty area.",
+        "file": "images/news/2fede103532c.jpg",
+        "alt": "Players celebrate a late goal near the corner.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     },
     {
       "tag": "Scotland",
-      "headline": "Jota return helps Celtic lift the mood",
-      "summary": "Jota came back from a long injury lay-off as Celtic won 2-0 at Motherwell, ending a losing run and easing recent tension around the club. The result took them back to the top of the Scottish Premiership, with Rangers also winning and Hearts beating St Mirren heavily.",
+      "headline": "Celtic respond as Jota returns",
+      "summary": "Celtic ended a losing run with a 2-0 win at Motherwell, with Jota returning from a long-term injury and the result taking them back to the top of the Premiership. Rangers beat Kilmarnock 3-1, while Hearts defeated St Mirren 5-0 with two Calvin Miller penalties.",
       "sources": [
         {
           "outlet": "BBC Sport",
@@ -94,46 +126,24 @@ window.HALFTIME_NEWS = {
           "outlet": "The Guardian",
           "title": "Scottish Premiership: Celtic end losing skid and take top spot back from Rangers",
           "url": "https://www.theguardian.com/football/2026/oct/10/scottish-premiership-rangers-hearts-celtic"
-        }
-      ],
-      "picture": {
-        "scene": "A player returning to the pitch beneath low winter light, team-mates applauding from a muddy touchline before a busy stand.",
-        "alt": "Player returns to the pitch before a stand."
-      },
-      "image": {
-        "file": "images/news/a949da0db5f6.jpg",
-        "alt": "Player returns to the pitch before a stand.",
-        "kind": "illustration",
-        "model": "gpt-image-2"
-      }
-    },
-    {
-      "tag": "Championship",
-      "headline": "Ten-man Southampton take derby honours",
-      "summary": "Southampton edged Portsmouth in a feisty south coast derby, with James Bree’s goal helping Tonda Eckert’s side draw a line under a difficult spell. They had to see it out with 10 men after Cameron Bragg was sent off in Eckert’s first game since his Spygate punishment.",
-      "sources": [
-        {
-          "outlet": "The Guardian",
-          "title": "Joy for Eckert as 10-man Southampton edge out Portsmouth in feisty derby",
-          "url": "https://www.theguardian.com/football/2026/oct/11/southampton-portsmouth-championship-match-report"
         },
         {
-          "outlet": "The Independent",
-          "title": "10-man Southampton battle to derby win in Tonda Eckert’s first game since Spygate punishment",
-          "url": "https://www.independent.co.uk/sport/football/southampton-portsmouth-derby-tonda-eckert-spygate-b3064818.html"
+          "outlet": "Sky Sports",
+          "title": "Motherwell 0-2 Celtic",
+          "url": "https://www.skysports.com/watch/video/13597820/motherwell-0-2-celtic-scottish-premiership-highlights"
         }
       ],
       "picture": {
-        "scene": "Two rivals contest a loose ball on a churned-up pitch, with a packed old stand looming close behind under grey skies.",
-        "alt": "Derby challenge on a muddy pitch."
+        "scene": "A rain-damp Scottish ground with players applauding the away end, floodlights glowing through mist and a manager standing by the dugout.",
+        "alt": "Players applaud supporters at a misty ground."
       },
       "image": {
-        "file": "images/news/4a14cb551edb.jpg",
-        "alt": "Derby challenge on a muddy pitch.",
+        "file": "images/news/792ddcae332b.jpg",
+        "alt": "Players applaud supporters at a misty ground.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     }
   ],
-  "notes": ""
+  "notes": "Several video and live-blog entries carried limited detail, so those points have been kept brief."
 };
