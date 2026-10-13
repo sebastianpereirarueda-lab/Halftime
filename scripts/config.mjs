@@ -14,7 +14,7 @@ export const LEAGUES = [
   { id: 78,  name: "Bundesliga",       short: "BL"  },
   { id: 61,  name: "Ligue 1",          short: "L1"  },
   { id: 2,   name: "Champions League", short: "UCL" },
-  { id: 5,   name: "UEFA Nations League", short: "UNL" },
+  { id: 3,   name: "Europa League",     short: "UEL" },
 ];
 
 // The pipeline asks the provider for one calendar day at a time (all

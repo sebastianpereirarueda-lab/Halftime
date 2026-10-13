@@ -181,7 +181,7 @@ function storyCaption(c, story) {
     "Full story on Halftime, link in bio.", "", tags.join(" ")].filter(l => l !== null).join("\n");
 }
 
-const COMP_TAGS = { PL: "#PremierLeague", LAL: "#LaLiga", SA: "#SerieA", BL: "#Bundesliga", L1: "#Ligue1", UCL: "#ChampionsLeague", UNL: "#NationsLeague" };
+const COMP_TAGS = { PL: "#PremierLeague", LAL: "#LaLiga", SA: "#SerieA", BL: "#Bundesliga", L1: "#Ligue1", UCL: "#ChampionsLeague", UEL: "#EuropaLeague" };
 function resultsCaption(results) {
   const lines = results.map(r => `${r.home} ${r.score.home}–${r.score.away} ${r.away}`);
   const tags = ["#football", "#results", "#halftime", ...new Set(results.map(r => COMP_TAGS[r.competition]).filter(Boolean))];
