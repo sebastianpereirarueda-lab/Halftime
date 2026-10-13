@@ -249,6 +249,8 @@ img, svg { max-width: 100%; }
 }
 .results__row .score { font-weight: 700; white-space: nowrap; }
 .results__row .away { text-align: right; }
+.results__row .comp { flex-basis: 100%; font-family: var(--mono); font-size: 10px; letter-spacing: 2px; color: #5A5750; margin-top: -6px; }
+.results__row { flex-wrap: wrap; }
 .results__more {
   display: block;
   text-align: center;
