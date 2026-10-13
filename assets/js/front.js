@@ -54,7 +54,8 @@
     var list = document.querySelector('.results__list');
     var rows = res.results.slice(0, 6).map(function (r) {
       var score = r.score.home + ' - ' + r.score.away;
-      var inner = '<span class="home">' + H.esc(r.home) + '</span><span class="score">' + score + '</span><span class="away">' + H.esc(r.away) + '</span>';
+      var inner = '<span class="home">' + H.esc(r.home) + '</span><span class="score">' + score + '</span><span class="away">' + H.esc(r.away) + '</span>' +
+        (r.competition ? '<span class="comp">' + H.esc(r.competition) + '</span>' : '');
       return '<li class="results__row">' + (r.hasCard ? '<a class="results__link" href="matches/match.html?id=' + encodeURIComponent(r.id) + '">' + inner + '</a>' : inner) + '</li>';
     }).join('');
     list.innerHTML = rows;
