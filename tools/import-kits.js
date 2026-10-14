@@ -38,6 +38,7 @@ const path = require('path');
 
 const { decodePng, encodePng, mainColours, scaleUp } = require('./png.js');
 const { drawShirt, PARTS } = require('./kit-art.js');
+const { loadExisting, js, writeDataFile } = require('./datafile.js');
 
 const ROOT = path.join(__dirname, '..');
 const CACHE = path.join(__dirname, '.cache');
@@ -131,18 +132,6 @@ async function fetchJson(relPath) {
   return JSON.parse(text);
 }
 
-// Load an existing data file by running it with a fake window.
-function loadExisting(file, globalName) {
-  const src = fs.readFileSync(file, 'utf8');
-  const marker = 'window.' + globalName + ' = [';
-  const at = src.indexOf(marker);
-  if (at === -1) throw new Error('Could not find "' + marker + '" in ' + file);
-  const header = src.slice(0, at);
-  const win = {};
-  new Function('window', src)(win);
-  return { header, items: win[globalName] || [] };
-}
-
 function slug(s) {
   return String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
     .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -217,28 +206,6 @@ function teamInfo(name) {
   const words = name.replace(/[^A-Za-z0-9 ]/g, '').split(/\s+/).filter(w => !/^(fc|cf|sc|ac|afc|de|of|the|club)$/i.test(w));
   const short = (words.length >= 2 ? words.map(w => w[0]).join('').slice(0, 3) : name.slice(0, 3)).toUpperCase();
   return { short: short, body: '#9A9A9A', trim: '#1B1A17', stripes: [], desc: 'colours to be researched' };
-}
-
-// Writes a value as JavaScript in the same style as the hand-written files.
-function js(v, indent) {
-  const pad = '  '.repeat(indent);
-  if (v === null || v === undefined) return 'null';
-  if (typeof v === 'number' || typeof v === 'boolean') return String(v);
-  if (typeof v === 'string') return JSON.stringify(v);
-  if (Array.isArray(v)) {
-    if (!v.length) return '[]';
-    if (v.every(x => typeof x !== 'object' || x === null)) return '[' + v.map(x => js(x, indent)).join(', ') + ']';
-    return '[\n' + v.map(x => pad + '  ' + js(x, indent + 1)).join(',\n') + '\n' + pad + ']';
-  }
-  const keys = Object.keys(v);
-  const inline = keys.every(k => typeof v[k] !== 'object' || v[k] === null || (Array.isArray(v[k]) && v[k].every(x => typeof x !== 'object')));
-  if (inline && keys.length <= 6) return '{ ' + keys.map(k => k + ': ' + js(v[k], indent)).join(', ') + ' }';
-  return '{\n' + keys.map(k => pad + '  ' + k + ': ' + js(v[k], indent + 1)).join(',\n') + '\n' + pad + '}';
-}
-
-function writeDataFile(file, header, globalName, items) {
-  const body = items.map(it => '  ' + js(it, 1)).join(',\n');
-  fs.writeFileSync(file, header + 'window.' + globalName + ' = [\n' + body + '\n];\n');
 }
 
 // ---------- Wikipedia: the kits worn in each final ----------

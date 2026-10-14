@@ -11,7 +11,8 @@
     "update": "npm run scores && npm run news:fetch && npm run news:write && npm run news:images && npm run social",
     "test": "node scripts/test.mjs",
     "news:images": "node scripts/make-images.mjs",
-    "social": "node scripts/make-social.mjs"
+    "social": "node scripts/make-social.mjs",
+    "kits:facts": "node tools/plug-kit-facts.js"
   },
   "dependencies": {
     "openai": "^7.28.0",

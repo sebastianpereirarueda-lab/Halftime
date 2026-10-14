@@ -1,0 +1,119 @@
+{
+  "_about": "Claude's edits to the Perplexity kit research (A1-kits-batch-*.md), applied by tools/plug-kit-facts.js. Each entry replaces fields for one shirt. 'why' is for people only and is never shown on the site.",
+
+  "west-germany-1954": {
+    "manufacturerNote": "Sources disagree: some name Adidas, who made the team's boots",
+    "why": "Wikipedia's supplier table says Leuzela but the same article dates Adidas from 1954."
+  },
+  "brazil-1970": {
+    "story": "The 1970 World Cup was the first to be broadcast live around the world and, in some countries, in colour, which made Brazil's yellow shirt, blue shorts and white socks the defining image of the tournament. In the final at the Azteca, Brazil beat Italy 4-1, finishing with Carlos Alberto's goal after a team move often ranked among the best ever scored.",
+    "why": "Tidied the attribution of the last clause."
+  },
+  "celtic-1970": {
+    "story": "Three years after Lisbon, Celtic reached a second final in the same hoops and white shorts, with the numbers still on the shorts. Their semi-final second leg against Leeds United drew 136,505, which Historical Football Kits says is still the highest attendance recorded for a UEFA match. In Milan, though, they lost 2-1 to Feyenoord after extra time.",
+    "why": "Fixed the 'numbered shorts' repetition."
+  },
+  "feyenoord-1970": {
+    "wornInFinal": "red and white halved shirt with white V-neck trim, black shorts, black socks with red and white tops",
+    "why": "Which half was red is not confirmed."
+  },
+  "ajax-1972": {
+    "manufacturer": null,
+    "story": "Ajax retained the European Cup in Rotterdam, beating Inter 2-0 in a match hailed as a victory for attacking Total Football over catenaccio. Johan Cruyff scored both goals.",
+    "why": "Le Coq Sportif is drawn on one reconstruction, but Ajax's history dates the deal from 1973. Dropped the unsourced 'first maker's marks' sentence."
+  },
+  "west-germany-1972": {
+    "story": "West Germany won their first European Championship in Brussels in white shirts with black collar and cuffs and black shorts, beating the Soviet Union 3-0. Gerd Müller scored twice. Through the 1970s the team's kits were made by Erima.",
+    "why": "Dropped 'then a subsidiary of Adidas': ownership dates not confirmed."
+  },
+  "inter-milan-1967": {
+    "story": "Inter wore their black and blue stripes and black shorts for the 1967 final in Lisbon. They scored a seventh-minute penalty and defended the lead, but Celtic equalised and won with six minutes left.",
+    "why": "'Returned to' implied a change that is not sourced."
+  },
+  "benfica-1968": {
+    "story": "Benfica, playing their fifth final in eight years, wore a white change shirt with red collar and cuffs at Wembley in 1968, while Manchester United also changed into blue. Benfica equalised to force extra time but lost 4-1.",
+    "why": "Dropped 'in the heat' and the comparison of players: not in the sources."
+  },
+  "real-madrid-1959": {
+    "story": "The 1959 final in Stuttgart was a rematch of the first final, and this time Madrid, in their all-white kit, scored early and won 2-0. Raymond Kopa, who had played for Reims in 1956, now lined up for Madrid against his old club.",
+    "why": "'From the first minute' is not exact."
+  },
+  "reims-1959": {
+    "story": "Three years after their first final, Reims met Real Madrid again, now without Kopa. They wore red shirts with white sleeves, as in 1956, but with white shorts rather than black. Madrid scored early and won 2-0.",
+    "why": "'In the first minute' is not exact."
+  },
+  "eintracht-frankfurt-1960": {
+    "story": "Eintracht Frankfurt wore red shirts with white sleeves, red shorts and red socks for the 1960 final at Hampden Park. They took the lead but lost 7-3 to Real Madrid in front of more than 127,000, in a match often called one of the greatest ever played. For many British viewers, who had seen almost no European club football, the televised final was a revelation.",
+    "why": "'Record crowd' was ambiguous."
+  },
+  "soviet-union-1960": {
+    "story": "The Soviet Union won the first European Nations' Cup in Paris in red shirts with the Cyrillic letters CCCP across the chest, white shorts and white socks with red hoops. They came from behind to beat Yugoslavia 2-1 after extra time.",
+    "why": "'Only major title' ignores their Olympic golds."
+  },
+  "yugoslavia-1960": {
+    "story": "Yugoslavia reached the first European Nations' Cup final in blue shirts with the national emblem, white shorts and red socks. They led the Soviet Union at half-time in Paris but lost 2-1 after extra time.",
+    "why": "The flag link was an inference, not sourced."
+  },
+  "benfica-1962": {
+    "story": "Benfica kept the European Cup in Amsterdam in the same red and white kit, beating Real Madrid 5-3. They came from behind twice, and a young Eusébio scored two decisive goals, while Ferenc Puskás scored all three for Real.",
+    "why": "Dropped the 'handover' opinion."
+  },
+  "ajax-1973": {
+    "story": "Ajax completed a hat-trick of European Cups in Belgrade wearing an all-red change kit rather than their white shirt with red stripe. Johnny Rep scored the only goal early on against Juventus, and Ajax dominated without adding to the lead. Le Coq Sportif began making Ajax's shirts in 1973.",
+    "why": "Sources give the 4th and 5th minute."
+  },
+  "bayern-munich-1974": {
+    "wornNote": "One reconstruction shows red shorts in the replay",
+    "why": "Shorts conflict between sources."
+  },
+  "netherlands-1974": {
+    "wornInFinal": "orange shirt with black Adidas sleeve stripes (two on Cruyff's), orange socks",
+    "wornNote": "Reconstructions disagree on whether the shorts were white or orange",
+    "why": "Shorts conflict between sources."
+  },
+  "colombia-1975": {
+    "story": "Before adopting yellow, blue and red in 1985, Colombia wore an orange shirt from around 1971. In it they reached the 1975 Copa América final against Peru, won the first leg 1-0 in Bogotá, lost 2-0 in Lima, and lost the play-off 1-0 in Caracas.",
+    "wornInFinal": "orange shirt with the national flag across the chest, orange socks (all three final matches)",
+    "wornNote": "Reconstructions disagree on whether the shorts were black or white",
+    "why": "Dropped the unverified Netherlands comparison; shorts conflict."
+  },
+  "czechoslovakia-1976": {
+    "story": "Czechoslovakia won the 1976 European Championship in red shirts, white shorts and blue socks. They led West Germany 2-0 inside 25 minutes, were pegged back by a last-minute equaliser, and won the first European Championship final decided on penalties. Antonín Panenka's winning spot-kick, chipped softly down the middle past Sepp Maier, gave the technique its name.",
+    "why": "'First major final' was broader than the source."
+  },
+  "borussiamonchengladbach-1977": {
+    "story": "Borussia Mönchengladbach reached the 1977 European Cup final in Rome. Allan Simonsen's equaliser briefly levelled the match, but Liverpool won 3-1.",
+    "wornInFinal": "white shirt with green collar and green and black trim and Puma logo, white shorts with green and black side stripes, white socks",
+    "wornNote": "Reconstructions disagree on the shirt: one shows white, another green",
+    "why": "Shirt colour conflict between sources."
+  },
+  "liverpool-1977": {
+    "wornInFinal": "all red: red shirt with white V-neck trim and Umbro logo, red shorts, red socks",
+    "why": "The badge is not confirmed."
+  },
+  "netherlands-1978": {
+    "wornInFinal": "orange shirt with black Adidas sleeve stripes and KNVB lion badge, orange socks with black hoops",
+    "wornNote": "Reconstructions disagree on whether the shorts were white or orange",
+    "why": "Shorts conflict between sources."
+  },
+  "paraguay-1979": {
+    "debut": "Red and white stripes chosen when the national team was formally created, around 1919–21",
+    "why": "Kept the date range when tidying."
+  },
+  "west-germany-1980": {
+    "story": "West Germany won their second European title in a specially designed shirt, which Wikipedia records as the team's first Adidas jersey after years of Erima kits. Horst Hrubesch got both goals in a 2-1 win over Belgium.",
+    "why": "'Had never scored for his country' is not sourced."
+  },
+  "real-madrid-1981": {
+    "wornNote": "One reconstruction shows purple shorts and socks",
+    "why": "Shorts and socks conflict between sources."
+  },
+  "bayern-munich-1982": {
+    "story": "Bayern were heavy favourites for a fourth European Cup and wore all red with white Adidas trim in Rotterdam. They were repeatedly denied by Villa's substitute goalkeeper Nigel Spink and lost 1-0.",
+    "why": "Disallowed goals not confirmed."
+  },
+  "uruguay-1983": {
+    "story": "Uruguay's nickname La Celeste comes from the sky blue shirt first worn against Argentina in 1910. In the 1983 Copa América final, Enzo Francescoli and Víctor Diogo scored in a 2-0 first-leg win in Montevideo, and Carlos Aguilera's equaliser in Salvador secured a 12th continental title.",
+    "why": "The 1910 score is not in the other batch."
+  }
+}

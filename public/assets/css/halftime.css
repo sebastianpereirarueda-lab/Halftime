@@ -587,6 +587,29 @@ img, svg { max-width: 100%; }
 }
 .facts .v { flex: 1 1 200px; min-width: 0; }
 .tbr { font-style: italic; color: #5A5750; }
+.fact-note { display: block; font-style: italic; font-size: 14px; color: #5A5750; }
+.kit-story__worn .fact-note { display: inline; }
+.src {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+  padding: 13px 0; margin: -13px 0; /* 44px tap height without changing the line */
+}
+.kit-story { padding: 12px 0 4px; }
+.kit-story p { font-size: 17px; line-height: 1.6; margin: 0 0 12px; }
+.kit-story p:first-child::first-letter {
+  font-family: var(--display);
+  float: left;
+  font-size: 3.4em;
+  line-height: 0.85;
+  padding: 4px 8px 0 0;
+}
+.kit-story__worn { font-size: 15px !important; }
+.kit-story__worn .label { margin-right: 6px; }
+.kit-story .sources { margin-top: 4px; line-height: 1.9; }
 
 .section-title {
   font-family: var(--mono);
