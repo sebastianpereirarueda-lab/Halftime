@@ -1,170 +1,159 @@
 // GENERATED FILE — do not edit by hand. Front Page news written by gpt-5.5 from the sources listed in each story; illustrations by gpt-image-2.
-// Written 2026-10-14T01:30:20.745Z by the Halftime data pipeline.
+// Written 2026-10-18T19:51:32.025Z by the Halftime data pipeline.
 window.HALFTIME_NEWS = {
-  "updated": "2026-10-14T01:29:16.732Z",
+  "updated": "2026-10-18T19:50:30.499Z",
   "model": "gpt-5.5",
-  "articlesConsidered": 108,
-  "candidatesHash": "666c6ade55a9bea6",
+  "articlesConsidered": 92,
+  "candidatesHash": "35fd420527344d42",
   "lead": {
-    "tag": "Europe",
-    "headline": "Martínez turns fire on United hierarchy",
-    "standfirst": "Manchester United’s night in Madrid ended in defeat and a public challenge from one of their senior defenders.",
+    "tag": "Premier League",
+    "headline": "Madueke lifts Arsenal after Forest resistance",
+    "standfirst": "A late intervention from the bench gave Arsenal a third straight win and kept their title defence moving.",
     "paragraphs": [
-      "Lisandro Martínez criticised Manchester United’s leadership after the 2-0 Champions League defeat at Atlético Madrid, saying responsibility for the club’s poor start should not rest only with the coach and players. The Argentina defender said he expected more from those above the team and pointed to a failure to strengthen the squad after qualification for the Champions League.",
-      "The match gave United little relief. Atlético went ahead inside the opening minute, with Pablo Barrios among the scorers and Ademola Lookman also on target in the home side’s win. United missed chances and finished with 10 men after Leny Yoro was sent off, a decision Sky Sports described as controversial.",
-      "The remarks drew further attention when Wayne Rooney criticised Martínez, saying he had gone too far in challenging the club’s leadership and technical director Jason Wilcox. Michael Carrick’s side remain under pressure after another European defeat, with the discussion around United now stretching from the touchline to the boardroom."
+      "Arsenal found a narrow route through at the City Ground, beating Nottingham Forest 1-0 through Noni Madueke’s late contribution from the bench. Sky Sports reported that the champions’ only effort on target was enough, with the decisive strike taking a deflection. For Forest, the defeat carried a further cost, leaving them in the relegation places after another frustrating home afternoon.",
+      "The result fitted the recent pattern of Arsenal doing what was required rather than overwhelming opponents. The Guardian noted that they have won three matches since the international break despite not leading any of them at half-time, while BBC Sport carried Mikel Arteta’s view that the substitutes altered the contest. It was another small but useful entry in a defence built on patience and depth."
     ],
     "sources": [
       {
-        "outlet": "BBC Sport",
-        "title": "Martinez issues scathing attack on Man Utd board - has he made things worse?",
-        "url": "https://www.bbc.co.uk/sport/football/articles/crlykw9eevx3o?at_medium=RSS&at_campaign=rss"
+        "outlet": "The Independent",
+        "title": "The ‘absurd’ part of this Arsenal team that can help champions defend their Premier League crown",
+        "url": "https://www.independent.co.uk/sport/football/arsenal-noni-madueke-goal-nottingham-forest-premier-league-b3068843.html"
       },
       {
         "outlet": "The Guardian",
-        "title": "‘I expect more’: Lisandro Martínez hits out at Manchester United hierarchy",
-        "url": "https://www.theguardian.com/football/2026/oct/13/lisandro-martinez-hits-out-at-united-hierarchy-after-defeat-at-atletico-madrid"
-      },
-      {
-        "outlet": "The Independent",
-        "title": "‘We expect more from the top’: Lisandro Martinez scorches Man United leadership in astonishing interview",
-        "url": "https://www.independent.co.uk/sport/football/lisandro-martinez-interview-man-utd-transfers-b3066240.html"
+        "title": "Another unremarkable win shows Arsenal’s strength is in depth rather than creativity | Jonathan Wilson",
+        "url": "https://www.theguardian.com/football/2026/oct/18/arsenal-strength-in-depth-nottingham-forest-premier-league"
       },
       {
         "outlet": "Sky Sports",
-        "title": "Man Utd beaten by Atletico as Yoro controversially sent off",
-        "url": "https://www.skysports.com/football/atletico-madrid-vs-manchester-united/report/577616"
+        "title": "Arsenal win with one shot on target as Forest sink into bottom three",
+        "url": "https://www.skysports.com/football/nottingham-forest-vs-arsenal/report/559512"
       },
       {
-        "outlet": "The Independent",
-        "title": "Wayne Rooney criticises ‘disrespectful’ Lisandro Martinez after bombshell Man United interview",
-        "url": "https://www.independent.co.uk/sport/football/wayne-rooney-lisandro-martinez-disrespectful-man-utd-b3066263.html"
+        "outlet": "BBC Sport",
+        "title": "Madueke's strike enough as Arsenal pick up narrow win over Forest",
+        "url": "https://www.bbc.co.uk/sport/football/videos/cm70px0l7p7no?at_medium=RSS&at_campaign=rss"
       }
     ],
     "picture": {
-      "scene": "A lone defender walks from a floodlit pitch as a manager stands near the technical area, with blurred terraces behind them.",
-      "alt": "A defender leaves the pitch under floodlights."
+      "scene": "A tense floodlit stadium with substitutes warming beside the touchline as a late attack forms near a crowded penalty area.",
+      "alt": "Substitutes warm up during a floodlit football match."
     },
     "image": {
-      "file": "images/news/9487f66a393f.jpg",
-      "alt": "A defender leaves the pitch under floodlights.",
+      "file": "images/news/bd876d5fd731.jpg",
+      "alt": "Substitutes warm up during a floodlit football match.",
       "kind": "illustration",
       "model": "gpt-image-2"
     }
   },
   "stories": [
     {
-      "tag": "Europe",
-      "headline": "Saka sparks Arsenal’s second-half surge",
-      "summary": "Arsenal shook off a frustrating first half to beat Lille 3-0, scoring three times in seven second-half minutes and preserving their winning Champions League start. Bukayo Saka came off the bench to alter the contest, with BBC Sport framing his display as a response to Mikel Arteta’s challenge.",
+      "tag": "Women's Game",
+      "headline": "City perfect as Chelsea keep pace",
+      "summary": "Manchester City preserved their flawless WSL start with a 3-2 win over Brighton, as Khadija Shaw scored twice before the leaders held off a comeback. Chelsea stayed in pursuit by putting six past Tottenham, with Lauren James scoring two and Ellie Carpenter also twice on target.",
       "sources": [
         {
-          "outlet": "BBC Sport",
-          "title": "Saka responds to Arteta's challenge with 'huge impact'",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cqrlyd1grwkko?at_medium=RSS&at_campaign=rss"
+          "outlet": "The Independent",
+          "title": "Man City continue perfect start to WSL defence as Lauren James inspires Chelsea again",
+          "url": "https://www.independent.co.uk/sport/football/wsl-man-city-chelsea-lauren-james-b3068856.html"
         },
         {
-          "outlet": "The Independent",
-          "title": "Arsenal produce second-half blitz to sink Lille and continue perfect Champions League start",
-          "url": "https://www.independent.co.uk/sport/football/arsenal-vs-losc-result-saka-eze-timber-b3066233.html"
+          "outlet": "BBC Sport",
+          "title": "Man City remain unbeaten as Shaw scores twice against Brighton",
+          "url": "https://www.bbc.co.uk/sport/football/videos/cqrly0ly7j59o?at_medium=RSS&at_campaign=rss"
         },
         {
           "outlet": "The Guardian",
-          "title": "Timber’s touch of class and supersub Saka secure Arsenal win against Lille",
-          "url": "https://www.theguardian.com/football/2026/oct/13/arsenal-lille-champions-league-match-report"
+          "title": "James and Carpenter lead Chelsea surge as sorry Spurs hit for six in WSL again",
+          "url": "https://www.theguardian.com/football/2026/oct/18/chelsea-tottenham-wsl-match-report"
         },
         {
           "outlet": "Sky Sports",
-          "title": "Saka shines as Arsenal cruise to Champions League win over Lille",
-          "url": "https://www.skysports.com/football/arsenal-vs-lille/report/577615"
+          "title": "Man City maintain perfect WSL record as Chelsea, Man Utd, London City win",
+          "url": "https://www.skysports.com/football/news/12040/13600686/man-city-maintain-perfect-record-as-chelsea-man-utd-and-london-city-lionesses-all-win-womens-super-league-round-up"
         }
       ],
       "picture": {
-        "scene": "A substitute sprints towards a loose ball on a bright European night, with packed stands and sweeping floodlights in the background.",
-        "alt": "A substitute chases the ball under floodlights."
+        "scene": "A lively women’s match under afternoon light, with a forward shaping to shoot as defenders crowd the edge of the box.",
+        "alt": "A forward prepares to shoot in a women’s football match."
       },
       "image": {
-        "file": "images/news/e42bfe4d51ac.jpg",
-        "alt": "A substitute chases the ball under floodlights.",
+        "file": "images/news/9e929a9f0583.jpg",
+        "alt": "A forward prepares to shoot in a women’s football match.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     },
     {
-      "tag": "Championship",
-      "headline": "Alleged racist chanting mars Swansea win",
-      "summary": "Swansea City’s 1-0 win at Millwall was halted in the second half after an allegation of racist chanting aimed at winger Ji-sung Eom while he warmed up. Vítor Matos said the stoppage followed racist abuse; Sky Sports said police were investigating, and Ronald later scored a last-minute winner.",
+      "tag": "Premier League",
+      "headline": "United wait goes on at Leeds",
+      "summary": "Manchester United were held 1-1 at Leeds after Bryan Mbeumo’s first-half finish was cancelled out by Dominic Calvert-Lewin. The result kept Michael Carrick under scrutiny after a difficult week, with BBC calling it six games without a win and The Independent five in the league.",
       "sources": [
         {
-          "outlet": "BBC Sport",
-          "title": "Swans' Eom the target of alleged racism at Millwall",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cmdx3nk7kwwro?at_medium=RSS&at_campaign=rss"
-        },
-        {
           "outlet": "The Independent",
-          "title": "Swansea’s Eom Ji-Sung targeted by alleged racist chanting in Millwall clash",
-          "url": "https://www.independent.co.uk/sport/football/eom-ji-sung-racist-abuse-swansea-millwall-b3066270.html"
+          "title": "Manchester United miss chance to make statement after turbulent week with draw at Leeds",
+          "url": "https://www.independent.co.uk/sport/football/leeds-man-utd-michael-carrick-lisandro-martinez-premier-league-b3068818.html"
         },
         {
           "outlet": "The Guardian",
-          "title": "Championship roundup: racist chanting mars Swansea’s win at Millwall",
-          "url": "https://www.theguardian.com/football/2026/oct/13/championship-roundup-racist-chanting-mars-swanseas-win-at-millwall"
+          "title": "Manchester United held as Calvert-Lewin’s Leeds leveller keeps pressure on Carrick",
+          "url": "https://www.theguardian.com/football/2026/oct/18/leeds-manchester-united-premier-league-match-report"
+        },
+        {
+          "outlet": "BBC Sport",
+          "title": "Mbeumo offers Carrick solace as Man Utd winless run goes on",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c699zmgmx9vzo?at_medium=RSS&at_campaign=rss"
         },
         {
           "outlet": "Sky Sports",
-          "title": "EFL latest: Police investigating after Swansea's Eom targeted by alleged racist chanting",
-          "url": "https://www.skysports.com/football/live-blog/12040/13163353/championship-news-transfer-latest-and-gossip-plus-efl-updates-from-league-one-and-league-two"
+          "title": "Man Utd held by Leeds as winless run continues",
+          "url": "https://www.skysports.com/football/leeds-united-vs-manchester-united/report/559509"
         }
       ],
       "picture": {
-        "scene": "Players wait near the centre circle during a stoppage, with stewards by the touchline and a tense evening crowd beyond.",
-        "alt": "Players wait during a match stoppage."
+        "scene": "A packed ground at dusk, players resetting near the centre circle while a manager stands alone on the touchline.",
+        "alt": "Players restart as a manager watches from the touchline."
       },
       "image": {
-        "file": "images/news/afe72e5f991e.jpg",
-        "alt": "Players wait during a match stoppage.",
+        "file": "images/news/1ec1335a3a6c.jpg",
+        "alt": "Players restart as a manager watches from the touchline.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     },
     {
-      "tag": "Governance",
-      "headline": "Regulator warns clubs face financial strain",
-      "summary": "The Independent Football Regulator’s State of the Game report warned that English football’s finances are exposed, with BBC Sport citing research that found 94% of clubs loss-making and more than 60% of EFL and National League clubs technically insolvent. Chair David Kogan also said he would resign if political pressure affected the regulator’s response to Manchester City.",
+      "tag": "Scotland",
+      "headline": "Celtic put seven past Hearts",
+      "summary": "Celtic beat Hearts 7-1 at Celtic Park and moved four points ahead of Rangers, who had been held at Dundee. Callum Osmand and Nygren both scored twice as Celtic strengthened their position at the top of the Scottish Premiership.",
       "sources": [
         {
-          "outlet": "BBC Sport",
-          "title": "Majority of clubs on edge of 'financial disaster' - regulator",
-          "url": "https://www.bbc.co.uk/sport/football/videos/ck3wvxz8n1nyo?at_medium=RSS&at_campaign=rss"
-        },
-        {
           "outlet": "The Independent",
-          "title": "Majority of English football clubs ‘on the edge of financial disaster’, landmark report finds",
-          "url": "https://www.independent.co.uk/sport/football/premier-league-independent-regulator-state-of-the-game-report-b3066002.html"
-        },
-        {
-          "outlet": "Sky Sports",
-          "title": "'State of the Game' report finds most English clubs living on financial brink",
-          "url": "https://www.skysports.com/football/news/12040/13598894/state-of-the-game-independent-football-regulators-report-finds-most-english-clubs-living-on-financial-brink"
+          "title": "Celtic inflict more misery on Hearts to seize advantage at top of Scottish Premiership",
+          "url": "https://www.independent.co.uk/sport/football/celtic-hearts-result-score-scottish-premiership-b3068836.html"
         },
         {
           "outlet": "The Guardian",
-          "title": "Football regulator chair insists he will resign if politically pressured over Manchester City",
-          "url": "https://www.theguardian.com/football/2026/oct/13/football-regulator-chair-david-kogan-manchester-city"
+          "title": "Scottish Premiership: Osmand and Nygren at the double as Celtic thrash Hearts 7-1",
+          "url": "https://www.theguardian.com/football/2026/oct/17/scottish-premiership-kilmarnock-rangers-dundee-celtic-hearts"
+        },
+        {
+          "outlet": "Sky Sports",
+          "title": "Ruthless Celtic hit seven past title rivals Hearts in emphatic win",
+          "url": "https://www.skysports.com/football/celtic-vs-hearts/report/558382"
         },
         {
           "outlet": "BBC Sport",
-          "title": "Football regulator says he would quit over Man City political interference",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cjkge245n0gzo?at_medium=RSS&at_campaign=rss"
+          "title": "Hearts roll out red carpet ... and Celtic walk all over it",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c62kezneyq8vo?at_medium=RSS&at_campaign=rss"
         }
       ],
       "picture": {
-        "scene": "An empty lower-league ground at dusk, turnstiles closed and floodlights glowing faintly over a worn pitch.",
-        "alt": "An empty football ground at dusk."
+        "scene": "A rain-bright stadium with one side attacking in waves, the crowd rising behind a goal beneath heavy floodlights.",
+        "alt": "An attacking move unfolds in a floodlit stadium."
       },
       "image": {
-        "file": "images/news/51707a5be146.jpg",
-        "alt": "An empty football ground at dusk.",
+        "file": "images/news/b7967ffcb861.jpg",
+        "alt": "An attacking move unfolds in a floodlit stadium.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
