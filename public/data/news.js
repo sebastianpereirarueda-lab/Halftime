@@ -1,53 +1,48 @@
 // GENERATED FILE — do not edit by hand. Front Page news written by gpt-5.5 from the sources listed in each story; illustrations by gpt-image-2.
-// Written 2026-10-19T00:37:03.071Z by the Halftime data pipeline.
+// Written 2026-10-19T11:31:09.758Z by the Halftime data pipeline.
 window.HALFTIME_NEWS = {
-  "updated": "2026-10-19T00:35:58.881Z",
+  "updated": "2026-10-19T11:30:06.123Z",
   "model": "gpt-5.5",
-  "articlesConsidered": 93,
-  "candidatesHash": "37fa1df317ef9b97",
+  "articlesConsidered": 87,
+  "candidatesHash": "d5437dcc1393138a",
   "lead": {
-    "tag": "Premier League",
-    "headline": "Brighton’s Five Leaves Palace Reeling",
-    "standfirst": "A derby rout, a halfway-line strike and 23 goals in seven matches have Brighton looking upward with clear purpose.",
+    "tag": "International",
+    "headline": "Wiegman commits England future to Euro 2029",
+    "standfirst": "England’s settled hand stays in place, with Sarina Wiegman extending her reign through another European Championship cycle.",
     "paragraphs": [
-      "Brighton’s fine opening to the Premier League season gathered fresh force with a 5-0 win over Crystal Palace, a result that carried local weight as well as league significance. The victory ended a run of four meetings without beating their rivals and kept attention on an attack that has now produced 23 goals in seven league matches. With Palace heavily beaten, the afternoon became another marker of Brighton’s sharp form and growing confidence.",
-      "The moment that travelled furthest came from Diego Gomez, who scored from around halfway to begin his account for the season. BBC Sport also placed the strike among the long-range Premier League goals of recent years, while The Independent described the Palace goalkeeper as stranded. It was the sort of goal that turns a comfortable win into a shared memory for a crowd, especially in a fixture that matters deeply.",
-      "Palace head coach Pierre Sage said afterwards that his main feeling was shame, and BBC Sport reported that he was unsure whether he would be given time to change the mood. Brighton, meanwhile, were being discussed in broader terms: on Match of the Day, Dion Dublin suggested they could enter the title conversation. For now, the firm fact is simpler and impressive enough: Brighton have goals, momentum and a result that will live long in the stands."
+      "Sarina Wiegman will remain England women head coach through to the end of Euro 2029 after signing a new contract extension. The agreement keeps her in post beyond next summer’s Women’s World Cup and gives the Lionesses continuity at the top of the national team. BBC Sport, The Guardian, The Independent and Sky Sports all reported the new deal on Monday morning.",
+      "Wiegman’s previous arrangement had been due to run out after the World Cup, but the extension carries her a further two years. She said she could not think of a better job in football, underlining the strength of her attachment to the role and to a squad now looking well beyond the next tournament.",
+      "The new contract also gives Wiegman the chance to lead England in pursuit of a third successive European Championship title. For the players, staff and supporters, the news removes one major question before a busy spell, allowing attention to rest on the pitch rather than the manager’s future."
     ],
     "sources": [
       {
         "outlet": "BBC Sport",
-        "title": "'Why not?' - are 'breathtaking' Brighton in title race?",
-        "url": "https://www.bbc.co.uk/sport/football/videos/c679plrx05q7o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "outlet": "BBC Sport",
-        "title": "Shades of Barca and Beckham - Brighton aim to maintain superb start",
-        "url": "https://www.bbc.co.uk/sport/football/articles/cmwyd05wj00do?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "outlet": "The Guardian",
-        "title": "Gómez halfway-line wondergoal sparks Brighton’s 5-0 thrashing of sorry Crystal Palace",
-        "url": "https://www.theguardian.com/football/2026/oct/18/brighton-crystal-palace-premier-league-match-report"
+        "title": "England manager Wiegman signs contract extension",
+        "url": "https://www.bbc.co.uk/sport/football/articles/c679plpvellgo?at_medium=RSS&at_campaign=rss"
       },
       {
         "outlet": "The Independent",
-        "title": "Diego Gomez scores from halfway line as high-flying Brighton rout Crystal Palace",
-        "url": "https://www.independent.co.uk/sport/football/brighton-crystal-palace-premier-league-diego-gomez-b3068790.html"
+        "title": "Sarina Wiegman signs Lionesses contract extension until end of Euro 2029",
+        "url": "https://www.independent.co.uk/sport/football/sarina-wiegman-lionesses-contract-extension-euro-2029-b3069071.html"
       },
       {
-        "outlet": "BBC Sport",
-        "title": "Sage feels 'shame' at Palace thrashing with future in doubt",
-        "url": "https://www.bbc.co.uk/sport/football/articles/cq1kdzp093jwo?at_medium=RSS&at_campaign=rss"
+        "outlet": "The Guardian",
+        "title": "Sarina Wiegman signs contract extension to stay as England women head coach until 2029",
+        "url": "https://www.theguardian.com/football/2026/oct/19/sarina-wiegman-signs-contract-extension-england-women-euro-2029"
+      },
+      {
+        "outlet": "Sky Sports",
+        "title": "England Women boss Wiegman signs new deal through to Euro 2029",
+        "url": "https://www.skysports.com/football/news/12040/13600890/sarina-wiegman-england-women-boss-signs-new-two-year-contract-extension-through-to-end-of-euro-2029"
       }
     ],
     "picture": {
-      "scene": "A floodlit stadium with crowded terraces, a ball sailing from near the centre circle as a goalkeeper retreats towards an empty net, evening air tense.",
-      "alt": "Long-range shot under floodlights with goalkeeper retreating."
+      "scene": "A composed coach standing beside a quiet training pitch at dusk, players moving through drills in the distance under soft floodlights.",
+      "alt": "Coach watches a training session under floodlights."
     },
     "image": {
-      "file": "images/news/1caa8cab9a2c.jpg",
-      "alt": "Long-range shot under floodlights with goalkeeper retreating.",
+      "file": "images/news/7738aaf85def.jpg",
+      "alt": "Coach watches a training session under floodlights.",
       "kind": "illustration",
       "model": "gpt-image-2"
     }
@@ -55,50 +50,13 @@ window.HALFTIME_NEWS = {
   "stories": [
     {
       "tag": "Premier League",
-      "headline": "United Held as Leeds Extend Uneasy Run",
-      "summary": "Manchester United drew 1-1 at Leeds, with Bryan Mbeumo scoring before Dominic Calvert-Lewin levelled after the interval. Michael Carrick spoke of unity and a possible fresh start, but the winless run continued and scrutiny around his side remained.",
+      "headline": "Madueke gives Arsenal another narrow step",
+      "summary": "Arsenal’s 1-0 win at Nottingham Forest was settled by Noni Madueke, who came from the bench to score late. Mikel Arteta said his substitutes changed the match, while wider analysis centred on the champions’ depth and an attack still short of fluency.",
       "sources": [
-        {
-          "outlet": "BBC Sport",
-          "title": "Mbeumo offers Carrick solace as Man Utd winless run goes on",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c699zmgmx9vzo?at_medium=RSS&at_campaign=rss"
-        },
         {
           "outlet": "The Independent",
-          "title": "Manchester United miss chance to make statement after turbulent week with draw at Leeds",
-          "url": "https://www.independent.co.uk/sport/football/leeds-man-utd-michael-carrick-lisandro-martinez-premier-league-b3068818.html"
-        },
-        {
-          "outlet": "Sky Sports",
-          "title": "Man Utd held by Leeds as winless run continues",
-          "url": "https://www.skysports.com/football/leeds-united-vs-manchester-united/report/559509"
-        },
-        {
-          "outlet": "The Guardian",
-          "title": "‘Like a fresh start’: Michael Carrick relieved by Manchester United’s draw at Leeds",
-          "url": "https://www.theguardian.com/football/2026/oct/18/manchester-united-michael-carrick-draw-leeds-fresh-start"
-        }
-      ],
-      "picture": {
-        "scene": "A packed old ground under grey skies, two midfielders contesting a loose ball while a manager stands alone near the technical area.",
-        "alt": "Players challenge for the ball as a manager watches."
-      },
-      "image": {
-        "file": "images/news/69e989f6d35e.jpg",
-        "alt": "Players challenge for the ball as a manager watches.",
-        "kind": "illustration",
-        "model": "gpt-image-2"
-      }
-    },
-    {
-      "tag": "Champions",
-      "headline": "Madueke Gives Arsenal Another Narrow Lift",
-      "summary": "Noni Madueke came off the bench to score the decisive goal as Arsenal beat Nottingham Forest 1-0 at the City Ground. The win was described through Arsenal’s depth, with Sky Sports noting their only shot on target was enough as Forest fell into the bottom three.",
-      "sources": [
-        {
-          "outlet": "The Guardian",
-          "title": "Madueke breaks Nottingham Forest’s resistance as dogged Arsenal edge to victory",
-          "url": "https://www.theguardian.com/football/2026/oct/18/nottingham-forest-arsenal-premier-league-match-report"
+          "title": "Mikel Arteta salutes ‘special’ Noni Madueke after late winner rescues Arsenal",
+          "url": "https://www.independent.co.uk/sport/football/noni-madueke-mikel-arteta-arsenal-nottingham-forest-b3068848.html"
         },
         {
           "outlet": "The Independent",
@@ -106,64 +64,101 @@ window.HALFTIME_NEWS = {
           "url": "https://www.independent.co.uk/sport/football/arsenal-noni-madueke-goal-nottingham-forest-premier-league-b3068843.html"
         },
         {
+          "outlet": "The Guardian",
+          "title": "Another unremarkable win shows Arsenal’s strength is in depth rather than creativity | Jonathan Wilson",
+          "url": "https://www.theguardian.com/football/2026/oct/18/arsenal-strength-in-depth-nottingham-forest-premier-league"
+        },
+        {
           "outlet": "BBC Sport",
           "title": "Madueke's 'anger and conviction' shows he's more than a 'finisher'",
           "url": "https://www.bbc.co.uk/sport/football/articles/c3qjnyw8qe4do?at_medium=RSS&at_campaign=rss"
         },
         {
-          "outlet": "Sky Sports",
-          "title": "Arsenal win with one shot on target as Forest sink into bottom three",
-          "url": "https://www.skysports.com/football/nottingham-forest-vs-arsenal/report/559512"
+          "outlet": "BBC Sport",
+          "title": "Madueke's strike enough as Arsenal pick up narrow win over Forest",
+          "url": "https://www.bbc.co.uk/sport/football/videos/cm70px0l7p7no?at_medium=RSS&at_campaign=rss"
         }
       ],
       "picture": {
-        "scene": "A late attack in a shadowed penalty area, substitutes warming nearby, defenders turning as the ball skids towards goal.",
-        "alt": "A late shot heads through a crowded penalty area."
+        "scene": "A substitute sprinting from the touchline towards celebrating team-mates, floodlights glowing above a tense evening ground.",
+        "alt": "Substitute runs towards celebrating team-mates."
       },
       "image": {
-        "file": "images/news/077416b011f7.jpg",
-        "alt": "A late shot heads through a crowded penalty area.",
+        "file": "images/news/e38a9872f1b3.jpg",
+        "alt": "Substitute runs towards celebrating team-mates.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     },
     {
-      "tag": "Women’s Game",
-      "headline": "City Perfect, Chelsea Press On in WSL",
-      "summary": "Manchester City made it six Women’s Super League wins from six as Khadija Shaw scored twice in a 3-2 victory over Brighton. Chelsea stayed in pursuit with a sixth-goal win over Tottenham, Lauren James scoring two on Sonia Bompastor’s 50th match in the competition.",
+      "tag": "Women's Game",
+      "headline": "City set WSL pace as Arsenal stall",
+      "summary": "Manchester City remain top of the WSL with a 100% record after a round in which Arsenal were held 1-1 by Birmingham. Chelsea kept up pursuit as Lauren James scored twice against Spurs, while Sky highlighted London City’s rapid development.",
       "sources": [
+        {
+          "outlet": "The Guardian",
+          "title": "WSL talking points: pressure mounts on Slegers as Hemp closes on record",
+          "url": "https://www.theguardian.com/football/2026/oct/19/wsl-talking-points-pressure-slegers-arsenal-hemp-assists-record-manchester-city"
+        },
+        {
+          "outlet": "Sky Sports",
+          "title": "London City developing at a rapid rate as Arsenal flop again",
+          "url": "https://www.skysports.com/football/news/12040/13600861/wsl-london-city-lionesses-showing-rapid-development-in-pursuit-of-champions-league-football-as-arsenal-flop-again"
+        },
         {
           "outlet": "The Independent",
           "title": "Man City continue perfect start to WSL defence as Lauren James inspires Chelsea again",
           "url": "https://www.independent.co.uk/sport/football/wsl-man-city-chelsea-lauren-james-b3068856.html"
-        },
-        {
-          "outlet": "BBC Sport",
-          "title": "Man City remain unbeaten as Shaw scores twice against Brighton",
-          "url": "https://www.bbc.co.uk/sport/football/videos/cqrly0ly7j59o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "BBC Sport",
-          "title": "James scores brilliant double as Chelsea put six past Spurs",
-          "url": "https://www.bbc.co.uk/sport/football/videos/c962yd2ykejmo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "The Guardian",
-          "title": "James and Carpenter lead Chelsea surge as sorry Spurs hit for six in WSL again",
-          "url": "https://www.theguardian.com/football/2026/oct/18/chelsea-tottenham-wsl-match-report"
         }
       ],
       "picture": {
-        "scene": "A lively women’s match beneath clear floodlights, a striker meeting a low cross in a crowded box as supporters lean forward.",
-        "alt": "A striker attacks a cross in a women’s match."
+        "scene": "A busy women’s match in a compact stadium, attackers crowding the penalty area as spectators lean forward in anticipation.",
+        "alt": "Women’s match with pressure in the penalty area."
       },
       "image": {
-        "file": "images/news/725279b7c476.jpg",
-        "alt": "A striker attacks a cross in a women’s match.",
+        "file": "images/news/5f26708b935d.jpg",
+        "alt": "Women’s match with pressure in the penalty area.",
+        "kind": "illustration",
+        "model": "gpt-image-2"
+      }
+    },
+    {
+      "tag": "Derby",
+      "headline": "Brighton flourish as Palace pressure deepens",
+      "summary": "Brighton’s 5-0 victory over Crystal Palace brought another striking entry to their free-scoring start, with Diego Gomez scoring from the halfway line. BBC Sport noted 23 goals in seven Premier League matches, while Palace manager Pierre Sage said he felt shame and was unsure about time to save his job.",
+      "sources": [
+        {
+          "outlet": "BBC Sport",
+          "title": "Gomez scores extraordinary goal as Brighton put five past Palace",
+          "url": "https://www.bbc.co.uk/sport/football/videos/ckm23z2qem45o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "BBC Sport",
+          "title": "Shades of Barca and Beckham - Brighton aim to maintain superb start",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cmwyd05wj00do?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "BBC Sport",
+          "title": "Sage feels 'shame' at Palace thrashing with future in doubt",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cq1kdzp093jwo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Premier League: 10 talking points from the weekend’s action",
+          "url": "https://www.theguardian.com/football/2026/oct/19/premier-league-10-talking-points-from-the-weekends-action"
+        }
+      ],
+      "picture": {
+        "scene": "A ball arcing high from midfield towards an unguarded goal, with a stunned crowd rising beneath bright afternoon skies.",
+        "alt": "Long-range shot heads towards an empty goal."
+      },
+      "image": {
+        "file": "images/news/138908c340b4.jpg",
+        "alt": "Long-range shot heads towards an empty goal.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     }
   ],
-  "notes": "The Independent gives Manchester United’s winless Premier League run as five matches, while BBC Sport refers to six games without a win; the story avoids choosing between those counts."
+  "notes": ""
 };
