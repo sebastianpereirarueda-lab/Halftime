@@ -1,20 +1,25 @@
 // GENERATED FILE — do not edit by hand. Front Page news written by gpt-5.5 from the sources listed in each story; illustrations by gpt-image-2.
-// Written 2026-10-19T21:51:36.334Z by the Halftime data pipeline.
+// Written 2026-10-20T01:22:48.706Z by the Halftime data pipeline.
 window.HALFTIME_NEWS = {
-  "updated": "2026-10-19T21:50:32.850Z",
+  "updated": "2026-10-20T01:21:47.309Z",
   "model": "gpt-5.5",
   "articlesConsidered": 106,
-  "candidatesHash": "b4de1b7a073fcf6f",
+  "candidatesHash": "47d2d348e33f5a7b",
   "lead": {
     "tag": "Premier League",
-    "headline": "Spurs climb off bottom with first league win",
-    "standfirst": "Tottenham’s home victory over Coventry brought relief, a long-awaited return, and pride in defeat from Frank Lampard.",
+    "headline": "Maddison lifts Spurs as first win arrives",
+    "standfirst": "Tottenham’s first Premier League victory of the season brought relief, returns and a move away from the foot of the table.",
     "paragraphs": [
-      "Tottenham Hotspur earned their first Premier League win of the season, beating Coventry City 3-1 at home and moving off the bottom of the table. The night brought some relief for a side described as struggling, though the win was not presented as a smooth one. Sky Sports reported goals from James Maddison and Omar Marmoush, while the Guardian said Coventry disputed Tottenham’s second goal after Jack Rudoni had levelled for the visitors.",
-      "There was also a notable comeback, with Dejan Kulusevski returning after 526 days out injured, according to Sky Sports. BBC Sport’s player ratings focused on Maddison’s display on his return, adding another strand to an evening that mattered for more than the result. Tottenham’s league position improved, but the reports framed the performance as hard-earned rather than emphatic.",
-      "Coventry left north London beaten, yet their head coach Frank Lampard spoke of pride in the performance. BBC Sport said his comments came despite defeat away to Tottenham, and that note fitted a match in which the visitors had at least one moment of response through Rudoni. For Spurs, the importance was plain: the first league win of the campaign and a step away from the foot of the table."
+      "Tottenham’s season has its first league foothold at last. A 3-1 home win against Coventry City ended their wait for a Premier League victory and, according to BBC Sport, moved them off the bottom of the table. The evening also carried the feeling of renewal: James Maddison made his first start since May 2025, while Sky Sports noted Dejan Kulusevski’s return after 526 days out injured.",
+      "It was not a smooth procession. Coventry found a route back through Jack Rudoni before Omar Marmoush restored Tottenham’s advantage, with the Guardian describing a gritty, untidy win rather than a polished one. Frank Lampard said he was proud of Coventry’s performance despite the defeat, leaving Spurs with relief rather than flourish, and a first meaningful step away from early-season trouble.",
+      "Roberto de Zerbi praised the spirit and attitude of his players afterwards, while also acknowledging a side short of confidence. Maddison’s contribution gave Tottenham the spark they had been waiting for, and the wider significance was plain enough: after a difficult start, Spurs had a league win, returning players, and a table position that no longer began at the very bottom."
     ],
     "sources": [
+      {
+        "outlet": "BBC Sport",
+        "title": "Maddison's magic moment for Spurs - 18 months in the making",
+        "url": "https://www.bbc.co.uk/sport/football/articles/cwz0v8le7y3eo?at_medium=RSS&at_campaign=rss"
+      },
       {
         "outlet": "BBC Sport",
         "title": "Spurs beat Coventry to earn first league win of the season",
@@ -32,17 +37,22 @@ window.HALFTIME_NEWS = {
       },
       {
         "outlet": "BBC Sport",
-        "title": "Lampard 'proud' of Coventry performance in defeat to Spurs",
+        "title": "Spurs 'lack confidence' but we are a good team - De Zerbi",
+        "url": "https://www.bbc.co.uk/sport/football/videos/cqvgrn518d6jo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "outlet": "BBC Sport",
+        "title": "Lampard 'proud' of Coventry performance in defeat by Spurs",
         "url": "https://www.bbc.co.uk/sport/football/videos/c32l4x1k28ero?at_medium=RSS&at_campaign=rss"
       }
     ],
     "picture": {
-      "scene": "A packed football ground under floodlights, players in plain kits contesting a loose ball, with a manager watching quietly from the touchline.",
-      "alt": "Players challenge for the ball under floodlights."
+      "scene": "A floodlit stadium at night, players gathering in celebration near the corner while opponents drift back towards halfway, packed stands in soft vintage tones.",
+      "alt": "Players celebrate under floodlights in a packed stadium."
     },
     "image": {
-      "file": "images/news/1f7e840bfa8b.jpg",
-      "alt": "Players challenge for the ball under floodlights.",
+      "file": "images/news/a9eaa6c08f42.jpg",
+      "alt": "Players celebrate under floodlights in a packed stadium.",
       "kind": "illustration",
       "model": "gpt-image-2"
     }
@@ -50,8 +60,8 @@ window.HALFTIME_NEWS = {
   "stories": [
     {
       "tag": "International",
-      "headline": "Ronaldo given Portugal ban and fine",
-      "summary": "Cristiano Ronaldo has received a 30-day suspension from the Portuguese Football Federation after leaving Portugal’s international camp last month. The Guardian said the disciplinary council upheld the charge and imposed a €255 fine, reported in the UK as £215, after a rift with coach Jorge Jesus over his role.",
+      "headline": "Ronaldo punished for Portugal walkout",
+      "summary": "Cristiano Ronaldo has been given a 30-day suspension by the Portuguese FA and fined £215 after leaving Portugal’s national team camp. The sanction followed his departure amid a reported disagreement with Jorge Jesus over his role in the side.",
       "sources": [
         {
           "outlet": "BBC Sport",
@@ -67,23 +77,28 @@ window.HALFTIME_NEWS = {
           "outlet": "The Independent",
           "title": "Cristiano Ronaldo suspended and issued £215 fine for walking out on Portugal squad",
           "url": "https://www.independent.co.uk/sport/football/cristiano-ronaldo-portugal-30-day-suspended-fine-b3069466.html"
+        },
+        {
+          "outlet": "Sky Sports",
+          "title": "Ronaldo punished over Portugal walkout with fine he can pay off in 39 seconds",
+          "url": "https://www.skysports.com/football/news/12040/13601082/cristiano-ronaldo-portugal-captain-punished-over-walkout-following-explosive-row-with-head-coach-jorge-jesus"
         }
       ],
       "picture": {
-        "scene": "An empty training pitch at dusk, footballs gathered near the halfway line, with a lone figure walking away in the distance.",
-        "alt": "A lone figure leaves an empty training pitch."
+        "scene": "A lone footballer walking from a quiet training pitch towards a shadowed tunnel, empty seats beyond and subdued evening light overhead.",
+        "alt": "A player leaves a quiet training pitch."
       },
       "image": {
-        "file": "images/news/5a72fa0613b5.jpg",
-        "alt": "A lone figure leaves an empty training pitch.",
+        "file": "images/news/fcddbc35e32b.jpg",
+        "alt": "A player leaves a quiet training pitch.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     },
     {
       "tag": "Governance",
-      "headline": "Uefa presses Fifa for Infantino answers",
-      "summary": "Uefa has asked Fifa to release key documents within two weeks, with the request covering Gianni Infantino’s World Cup sell-off plan and other governance issues. BBC Sport said the letter contained 42 questions, including private investment proposals, a Peace Prize and the fallout from Folarin Balogun’s World Cup red card.",
+      "headline": "Uefa presses Fifa for answers",
+      "summary": "Uefa has sent Fifa an urgent letter and set a two-week deadline for key documents linked to Gianni Infantino’s leadership. The request includes 42 questions on private-investment proposals, a Peace Prize and the fallout from Folarin Balogun’s World Cup red card.",
       "sources": [
         {
           "outlet": "The Guardian",
@@ -91,50 +106,60 @@ window.HALFTIME_NEWS = {
           "url": "https://www.theguardian.com/football/2026/oct/19/uefa-demands-fifa-releases-documents-relating-to-world-cup-sell-off-scheme"
         },
         {
+          "outlet": "Sky Sports",
+          "title": "UEFA demands answers from FIFA over Infantino dealings in urgent letter",
+          "url": "https://www.skysports.com/football/news/12040/13601072/uefa-writes-letter-to-fifa-demanding-answers-over-gianni-infantinos-presidency-and-his-relationship-with-donald-trump"
+        },
+        {
           "outlet": "BBC Sport",
           "title": "Uefa gives Infantino two-week deadline to release key documents",
           "url": "https://www.bbc.co.uk/sport/football/articles/cq398rkpjljlo?at_medium=RSS&at_campaign=rss"
         },
         {
-          "outlet": "Sky Sports",
-          "title": "UEFA demands answers from FIFA over Infantino dealings in urgent letter",
-          "url": "https://www.skysports.com/football/news/12040/13601072/uefa-writes-letter-to-fifa-demanding-answers-over-gianni-infantinos-presidency-and-his-relationship-with-donald-trump"
+          "outlet": "The Independent",
+          "title": "Uefa sets Fifa deadline for answers on Gianni Infantino controversies",
+          "url": "https://www.independent.co.uk/sport/football/gianni-infantino-fifa-uefa-deadline-trump-balogun-world-cup-b3069488.html"
         }
       ],
       "picture": {
-        "scene": "A formal boardroom beside a dimly lit stadium, papers spread across a long table, with an untouched football near the door.",
-        "alt": "Papers lie on a boardroom table near a football."
+        "scene": "An empty stadium viewed from a directors’ area, papers beside a match ball on a table, floodlights glowing over silent seats.",
+        "alt": "An empty stadium with papers and a ball."
       },
       "image": {
-        "file": "images/news/5d07b64ebb7e.jpg",
-        "alt": "Papers lie on a boardroom table near a football.",
+        "file": "images/news/fb17c5ee1844.jpg",
+        "alt": "An empty stadium with papers and a ball.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
     },
     {
-      "tag": "Women's Game",
-      "headline": "Wiegman extends England stay to Euro 2029",
-      "summary": "Sarina Wiegman has signed a contract extension with England through to the end of Euro 2029. The Independent said the agreement adds two years beyond next summer’s Women’s World Cup, while BBC Sport framed the deal around the challenge of building the next Lionesses side.",
+      "tag": "FA Cup",
+      "headline": "Leicester handed Oxford City trip",
+      "summary": "Leicester City will travel to National League North side Oxford City in the first round of the 2026-27 FA Cup, five years after winning the competition. The draw brought League One and League Two clubs into the competition, with former winners Leicester and Wigan Athletic among those learning their opponents.",
       "sources": [
         {
-          "outlet": "The Independent",
-          "title": "Sarina Wiegman signs Lionesses contract extension until end of Euro 2029",
-          "url": "https://www.independent.co.uk/sport/football/sarina-wiegman-lionesses-contract-extension-euro-2029-b3069071.html"
+          "outlet": "BBC Sport",
+          "title": "Leicester to visit Oxford City in FA Cup first round - full draw",
+          "url": "https://www.bbc.co.uk/sport/football/articles/ckwyqdvedj32o?at_medium=RSS&at_campaign=rss"
         },
         {
-          "outlet": "BBC Sport",
-          "title": "Building Lionesses 2.0 - Wiegman's new challenge awaits",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cvze4w57746yo?at_medium=RSS&at_campaign=rss"
+          "outlet": "The Independent",
+          "title": "FA Cup minnows discover first round opponents as full draw revealed",
+          "url": "https://www.independent.co.uk/sport/football/fa-cup-first-round-draw-leicester-wigan-fixtures-b3069473.html"
+        },
+        {
+          "outlet": "The Independent",
+          "title": "FA Cup draw LIVE: Former winners Leicester among EFL teams to enter fray in first round",
+          "url": "https://www.independent.co.uk/sport/football/fa-cup-draw-live-first-round-leicester-wigan-efl-teams-b3069109.html"
         }
       ],
       "picture": {
-        "scene": "A women’s team training on a crisp morning pitch, cones set out neatly, with a coach observing from the sideline.",
-        "alt": "A women’s team trains on a morning pitch."
+        "scene": "A small football ground at dusk with supporters packed behind a low barrier, players warming up on a worn pitch under simple floodlights.",
+        "alt": "Players warm up at a small floodlit ground."
       },
       "image": {
-        "file": "images/news/fc264a56b54a.jpg",
-        "alt": "A women’s team trains on a morning pitch.",
+        "file": "images/news/0070988edcaf.jpg",
+        "alt": "Players warm up at a small floodlit ground.",
         "kind": "illustration",
         "model": "gpt-image-2"
       }
